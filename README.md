@@ -11,13 +11,14 @@
 |                                      Screenshot 1                                      |                                      Screenshot 2                                      |
 
 <!-- Synopsis -->
-Corporate Web site of sforzando LLC. and Inc.
+Official Corporate Web site of sforzando LLC. and Inc.
 
 <!-- TOC -->
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [First time preparation](#first-time-preparation)
     - [Install Hugo](#install-hugo)
+    - [Install Congo](#install-congo)
   - [Develop](#develop)
   - [Document](#document)
     - [CHANGELOG](#changelog)
@@ -45,6 +46,12 @@ To install Hugo for MacOS, run below.
 
 ```shell
 brew install hugo
+```
+
+#### Install Congo
+
+```shell
+git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
 ```
 
 ### Develop
@@ -80,7 +87,7 @@ To deploy this to `(T. B. D.)` manually, run below.
 See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
 
 ```shell
-hugo mod get -u
+git submodule update --remote --merge
 ```
 
 ### Clean
