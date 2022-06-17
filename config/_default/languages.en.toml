@@ -5,14 +5,18 @@ isoCode = "en"
 weight = 1
 rtl = false
 
-title = "Congo"
-# logo = "img/logo.jpg"
-# description = "My awesome website"
-# copyright = "Copy, _right?_ :thinking_face:"
+title = "sforzando LLC. and Inc."
+logo = "img/logo/661x661_ffffff.png"
+description = "sforzando LLC. and Inc. is a full-service, multi-disciplinary, and multi-cultural company that specializes in the design, development, and production of high-quality, high-value products and services."
+copyright = "&copy; 2022 sforzando LLC. and Inc."
 
 dateFormat = "2 January 2006"
 
 [author]
+name = "Shin'ichiro Suzuki"
+image = "img/author/penguin.jpg"
+headline = "CEO & Founder"
+bio = "Japanese, born in Japan. Currently living in Vancouver, B.C."
   # name = "Your name here"
   # image = "img/author.jpg"
   # headline = "I'm only human"
