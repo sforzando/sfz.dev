@@ -19,7 +19,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [First time preparation](#first-time-preparation)
     - [Install Hugo](#install-hugo)
     - [Install Congo](#install-congo)
-  - [Develop](#develop)
+  - [Start](#start)
   - [Document](#document)
     - [CHANGELOG](#changelog)
   - [Deploy](#deploy)
@@ -33,16 +33,34 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ## Prerequisites
 
 - Go (v1.18 or higher)
-  - Hugo (v.0.98.0 or higher)
+  - Hugo (v.0.101.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
 
 ## How to
 
+```shell
+$ make help
+default              常用
+setup                初期
+open                 閲覧
+hide                 秘匿
+reveal               暴露
+start                開始
+deploy               配備
+update               追随
+clean                掃除
+help                 助言
+```
+
 ### First time preparation
+
+```shell
+make setup
+```
 
 #### Install Hugo
 
-To install Hugo for MacOS, run below.
+To install Hugo manually, run below.
 
 ```shell
 brew install hugo
@@ -54,13 +72,14 @@ brew install hugo
 git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
 ```
 
-### Develop
+### Start
 
 ```shell
-hugo server --buildDrafts
+make
 ```
 
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
+To open it, `make open`.
 
 ### Document
 
@@ -79,7 +98,7 @@ git cliff --output CHANGELOG.md
 To deploy this to `(T. B. D.)` manually, run below.
 
 ```shell
-(T. B. D.)
+make deploy
 ```
 
 ### Update Congo
@@ -87,7 +106,7 @@ To deploy this to `(T. B. D.)` manually, run below.
 See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
 
 ```shell
-git submodule update --remote --merge
+make update
 ```
 
 ### Clean
@@ -95,7 +114,7 @@ git submodule update --remote --merge
 To clean up miscellaneous files, run below.
 
 ```shell
-(T. B. D.)
+make clean
 ```
 
 ## Misc
