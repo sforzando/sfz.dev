@@ -7,7 +7,7 @@ rtl = false
 
 title = "sforzando LLC. and Inc."
 logo = "img/logo/661x661_ffffff.png"
-description = "sforzando LLC. and Inc. is a full-service, multi-disciplinary, and multi-cultural company that specializes in the design, development, and production of high-quality, high-value products and services."
+description = "sforzando LLC. and Inc. specializes in rapid and flexible prototyping with a focus on software development."
 copyright = "&copy; 2022 sforzando LLC. and Inc."
 
 dateFormat = "2 January 2006"
@@ -17,11 +17,7 @@ name = "Shin'ichiro Suzuki"
 image = "img/author/penguin.jpg"
 headline = "CEO & Founder"
 bio = "Japanese, born in Japan. Currently living in Vancouver, B.C."
-  # name = "Your name here"
-  # image = "img/author.jpg"
-  # headline = "I'm only human"
-  # bio = "A little bit about you"
-  # links = [
+links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -34,7 +30,7 @@ bio = "Japanese, born in Japan. Currently living in Vancouver, B.C."
   #   { facebook = "https://facebook.com/username" },
   #   { flickr = "https://www.flickr.com/photos/username/" },
   #   { foursquare = "https://foursquare.com/username" },
-  #   { github = "https://github.com/username" },
+    { github = "https://github.com/shin-sforzando" },
   #   { gitlab = "https://gitlab.com/username" },
   #   { google = "https://www.google.com/" },
   #   { hashnode = "https://username.hashnode.dev" },
@@ -63,4 +59,4 @@ bio = "Japanese, born in Japan. Currently living in Vancouver, B.C."
   #   { twitter = "https://twitter.com/username" },
   #   { whatsapp = "https://wa.me/phone-number" },
   #   { youtube = "https://youtube.com/username" },
-  # ]
+]

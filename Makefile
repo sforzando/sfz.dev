@@ -33,7 +33,7 @@ reveal: ## 暴露
 
 start: ## 開始
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start the application." ; fi
-	hugo server --buildDrafts
+	hugo server --buildDrafts --buildFuture
 
 deploy: ## 配備
 	echo "TODO: Not Implemented Yet!"
