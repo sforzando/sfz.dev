@@ -10,4 +10,5 @@ showReadingTime: false
 showTaxonomies: true
 showTableOfContents: false
 showWordCount: false
+thumbnail: "http://placehold.jp/999999/ffffff/500x500.png"
 ---
