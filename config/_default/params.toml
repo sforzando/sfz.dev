@@ -9,17 +9,17 @@ colorScheme = "ocean"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 showAppearanceSwitcher = false
-
 enableSearch = true
 enableCodeCopy = false
 
-# mainSections = ["section1", "section2"]
+logo = "img/logo/661x661_ffffff.png"
+mainSections = ["posts", "works"]
 # robots = ""
 showScrollToTop = true
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
-  showRecent = false
+  showRecent = true
 
 [article]
   showDate = true
@@ -37,7 +37,7 @@ showScrollToTop = true
   showTableOfContents = false
   showTaxonomies = false
   showWordCount = false
-  # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+  sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 
 [list]
   showBreadcrumbs = false

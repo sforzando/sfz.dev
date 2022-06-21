@@ -1,8 +1,8 @@
-languageCode = "en"
-languageName = "English"
-displayName = "EN"
-isoCode = "en"
-weight = 1
+languageCode = "ja"
+languageName = "日本語"
+displayName = "JP"
+isoCode = "ja"
+weight = 2
 rtl = false
 
 title = "sforzando LLC. and Inc."

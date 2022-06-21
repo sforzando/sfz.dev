@@ -2,10 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-sharingLinks: false
+sharingLinks: ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 showAuthor: false
 showDate: true
-showDateUpdated: false
+showDateUpdated: true
 showReadingTime: false
 showTaxonomies: true
 showTableOfContents: false
