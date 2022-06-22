@@ -52,8 +52,8 @@ showScrollToTop = true
   showTermCount = true
 
 [fathomAnalytics]
-  # site = "ABC12345"
-  # domain = "llama.yoursite.com"
+  site = "NDBFFLKC"
+  domain = "sfz.dev"
 
 [verification]
   # google = ""
