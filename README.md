@@ -17,13 +17,14 @@ Official Corporate Web site of sforzando LLC. and Inc.
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [First time preparation](#first-time-preparation)
-    - [Install Hugo](#install-hugo)
-    - [Install Congo](#install-congo)
+    - [Introduce Congo](#introduce-congo)
   - [Start](#start)
+  - [Deploy](#deploy)
+  - [Catch-up the latest Congo](#catch-up-the-latest-congo)
+    - [Update](#update)
+    - [Endorse](#endorse)
   - [Document](#document)
     - [CHANGELOG](#changelog)
-  - [Deploy](#deploy)
-  - [Update Congo](#update-congo)
   - [Clean](#clean)
 - [Misc](#misc)
 - [Notes](#notes)
@@ -48,6 +49,7 @@ reveal               暴露
 start                開始
 deploy               配備
 update               追随
+endorse              裏書
 clean                掃除
 help                 助言
 ```
@@ -58,15 +60,7 @@ help                 助言
 make setup
 ```
 
-#### Install Hugo
-
-To install Hugo manually, run below.
-
-```shell
-brew install hugo
-```
-
-#### Install Congo
+#### Introduce Congo
 
 ```shell
 git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
@@ -81,6 +75,24 @@ make
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
 To open it, `make open`.
 
+### Deploy
+
+To deploy this to `(T. B. D.)` manually, `make deploy`.
+
+### Catch-up the latest Congo
+
+#### Update
+
+See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
+
+```shell
+make update
+```
+
+#### Endorse
+
+To confirm the differences from the latest update, `make endorse`.
+
 ### Document
 
 #### CHANGELOG
@@ -93,29 +105,9 @@ To update `CHANGELOG.md` manually, run [git-cliff](https://github.com/orhun/git-
 git cliff --output CHANGELOG.md
 ```
 
-### Deploy
-
-To deploy this to `(T. B. D.)` manually, run below.
-
-```shell
-make deploy
-```
-
-### Update Congo
-
-See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
-
-```shell
-make update
-```
-
 ### Clean
 
-To clean up miscellaneous files, run below.
-
-```shell
-make clean
-```
+To clean up miscellaneous files, `make clean`.
 
 ## Misc
 

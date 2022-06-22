@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start deploy update clean help
+.PHONY: default setup open hide reveal start deploy update endorse clean help
 
 default: start ## 常用
 
@@ -41,6 +41,9 @@ deploy: ## 配備
 
 update: ## 追随
 	git submodule update --remote --merge
+
+endorse: ## 裏書
+	./endorse.sh
 
 clean: down ## 掃除
 	echo "TODO: Not Implemented Yet!"
