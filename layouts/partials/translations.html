@@ -1,0 +1,7 @@
+{{ if .IsTranslated }}
+<nav class="inline italic" aria-labelledby="translations">
+    {{ range .AllTranslations }}
+      <a href="{{ .RelPermalink }}" alt="{{ .Language.Params.languageName | emojify }}">{{ .Language.Params.displayName | emojify }}</a><br>
+    {{ end }}
+  </nav>
+{{ end }}

@@ -47,6 +47,7 @@ open                 閲覧
 hide                 秘匿
 reveal               暴露
 start                開始
+ngrok                転送
 deploy               配備
 update               追随
 endorse              裏書
@@ -74,6 +75,8 @@ make
 
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
 To open it, `make open`.
+
+Transfer by ngrok is convenient for checking on a smartphone, use `make ngrok`.
 
 ### Deploy
 

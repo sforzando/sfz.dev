@@ -65,6 +65,8 @@ DIFFERENCE=0
 set -x
 diff --side-by-side ./archetypes/default.md ./themes/congo/archetypes/default.md || DIFFERENCE=$?
 diff --side-by-side ./archetypes/external.md ./themes/congo/archetypes/external.md || DIFFERENCE=$?
+diff --side-by-side ./layouts/partials/header.html ./themes/congo/layouts/partials/header.html || DIFFERENCE=$?
+diff --side-by-side ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html || DIFFERENCE=$?
 set +x
 
 if [ $DIFFERENCE -ge 2 ]; then
