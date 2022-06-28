@@ -20,7 +20,7 @@ mainSections = ["posts", "works"]
   showRecent = true
 
 [header]
-  layout = "hamburger" # valid options: basic, hamburger, custom
+  layout = "custom" # valid options: basic, hamburger, custom
 
 [footer]
   showCopyright = true

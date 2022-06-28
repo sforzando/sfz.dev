@@ -58,7 +58,11 @@ parse_params() {
 }
 
 endorse() {
-  diff --side-by-side $1 $2 || exit_code=$?
+  if which colordiff > /dev/null 2>&1; then
+    colordiff --side-by-side $1 $2 || exit_code=$?
+  else
+    diff --side-by-side $1 $2 || exit_code=$?
+  fi
   if [ $exit_code -ge $DIFFERENCE ]; then
     DIFFERENCE=$exit_code
   fi
@@ -72,7 +76,7 @@ DIFFERENCE=0
 set -x
 endorse ./archetypes/default.md ./themes/congo/archetypes/default.md
 endorse ./archetypes/external.md ./themes/congo/archetypes/external.md
-endorse ./layouts/partials/header.html ./themes/congo/layouts/partials/header.html
+endorse ./layouts/works/list.html ./themes/congo/layouts/_default/list.html
 endorse ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html
 set +x
 

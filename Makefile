@@ -14,6 +14,7 @@ default: start ## 常用
 
 setup: ## 初期
 ifeq ($(OS_NAME),Darwin)
+	brew install colordiff
 	brew install direnv
 	brew install git-cliff
 	brew install git-secret
