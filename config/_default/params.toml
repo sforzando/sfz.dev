@@ -1,0 +1,70 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customize the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/configuration/#theme-parameters
+
+colorScheme = "ocean"
+defaultAppearance = "dark" # valid options: light or dark
+showAppearanceSwitcher = false
+enableSearch = true
+enableCodeCopy = false
+
+logo = "img/logo/661x661_ffffff.png"
+mainSections = ["posts", "works"]
+# robots = ""
+
+[homepage]
+  layout = "page" # valid options: page, profile, custom
+  showRecent = true
+
+[header]
+  layout = "hamburger" # valid options: basic, hamburger, custom
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
+  showScrollToTop = true
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = false
+  showTaxonomies = false
+  showWordCount = false
+  showComments = false
+  sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+
+[list]
+  showBreadcrumbs = false
+  showSummary = false
+  showTableOfContents = false
+  groupByYear = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+
+[fathomAnalytics]
+  site = "NDBFFLKC"
+  domain = "sfz.dev"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""

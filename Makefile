@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start deploy update clean help
+.PHONY: default setup open hide reveal start ngrok deploy update endorse clean help
 
 default: start ## 常用
 
@@ -18,6 +18,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install git-cliff
 	brew install git-secret
 	brew install hugo
+	brew install --cask ngrok
 endif
 	direnv allow
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
@@ -33,7 +34,11 @@ reveal: ## 暴露
 
 start: ## 開始
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start the application." ; fi
-	hugo server --buildDrafts
+	hugo server --buildDrafts --buildFuture
+
+ngrok: ## 転送
+	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi
+	ngrok http 1313
 
 deploy: ## 配備
 	echo "TODO: Not Implemented Yet!"
@@ -41,6 +46,9 @@ deploy: ## 配備
 
 update: ## 追随
 	git submodule update --remote --merge
+
+endorse: ## 裏書
+	./endorse.sh
 
 clean: down ## 掃除
 	echo "TODO: Not Implemented Yet!"
