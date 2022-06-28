@@ -57,16 +57,23 @@ parse_params() {
   return 0
 }
 
+endorse() {
+  diff --side-by-side $1 $2 || exit_code=$?
+  if [ $exit_code -ge $DIFFERENCE ]; then
+    DIFFERENCE=$exit_code
+  fi
+}
+
 parse_params "$@"
 setup_colors
 
 msg "${CYAN}Diff:${NOFORMAT}"
 DIFFERENCE=0
 set -x
-diff --side-by-side ./archetypes/default.md ./themes/congo/archetypes/default.md || DIFFERENCE=$?
-diff --side-by-side ./archetypes/external.md ./themes/congo/archetypes/external.md || DIFFERENCE=$?
-diff --side-by-side ./layouts/partials/header.html ./themes/congo/layouts/partials/header.html || DIFFERENCE=$?
-diff --side-by-side ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html || DIFFERENCE=$?
+endorse ./archetypes/default.md ./themes/congo/archetypes/default.md
+endorse ./archetypes/external.md ./themes/congo/archetypes/external.md
+endorse ./layouts/partials/header.html ./themes/congo/layouts/partials/header.html
+endorse ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html
 set +x
 
 if [ $DIFFERENCE -ge 2 ]; then
