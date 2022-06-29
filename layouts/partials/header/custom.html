@@ -24,41 +24,39 @@
         >
       {{- end }}
     </div>
-    {{/* Main menu */}}
     {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
-    <div class="hidden lg:block">
-      <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
-        {{ if .Site.Menus.main }}
-          {{ range .Site.Menus.main }}
-            <li class="mb-1 sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-              <a
-                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-                href="{{ .URL }}"
-                title="{{ .Title }}"
-                >{{ .Name | markdownify | emojify }}</a
+      {{/* Main menu */}}
+      <div class="hidden lg:flex">
+        <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
+          {{ if .Site.Menus.main }}
+            {{ range .Site.Menus.main }}
+              <li class="mb-1 sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+                <a
+                  class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                  href="{{ .URL }}"
+                  title="{{ .Title }}"
+                  >{{ .Name | markdownify | emojify }}</a
+                >
+              </li>
+            {{ end }}
+          {{ end }}
+          {{ if .Site.Params.enableSearch | default false }}
+            <li class="ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+              <button
+                id="search-button"
+                class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="{{ i18n "search.open_button_title" }}"
               >
+                {{ partial "icon.html" "search" }}
+              </button>
             </li>
           {{ end }}
-        {{ end }}
-        {{ if .Site.Params.enableSearch | default false }}
-          <li class="ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-            <button
-              id="search-button"
-              class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-              title="{{ i18n "search.open_button_title" }}"
-            >
-              {{ partial "icon.html" "search" }}
-            </button>
+          <li>
+            {{ partial "translations.html" . }}
           </li>
-        {{ end }}
-        <li>
-          {{ partial "translations.html" . }}
-        </li>
-      </ul>
-    </div>
-    {{ end }}
-    {{/* Hamburger menu */}}
-    {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
+        </ul>
+      </div>
+      {{/* Hamburger menu */}}
       <label id="menu-button" for="menu-controller" class="block lg:hidden">
         <input type="checkbox" id="menu-controller" class="hidden" />
         <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
