@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "Success"
 date: 2022-06-01T12:34:56+09:00
 draft: false
 sharingLinks: false
@@ -12,6 +12,4 @@ showTableOfContents: false
 showWordCount: false
 ---
 
-English
-
-{{< contactform >}}
+Inquiry accepted. / お問い合わせを受け付けました。
