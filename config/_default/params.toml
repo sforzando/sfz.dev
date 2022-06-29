@@ -7,7 +7,6 @@
 
 colorScheme = "ocean"
 defaultAppearance = "dark" # valid options: light or dark
-showAppearanceSwitcher = false
 enableSearch = true
 enableCodeCopy = false
 
