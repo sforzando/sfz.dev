@@ -1,5 +1,5 @@
 [build]
-  command = "hugo --gc --minify --baseURL $URL"
+  command = "hugo --theme=congo --gc --minify --baseURL $URL"
   publish = "public"
 
 [build.environment]
