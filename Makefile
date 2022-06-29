@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start ngrok deploy update endorse clean help
+.PHONY: default setup open hide reveal start build watch ngrok deploy update endorse clean help
 
 default: start ## 常用
 
@@ -35,7 +35,13 @@ reveal: ## 暴露
 
 start: ## 開始
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start the application." ; fi
-	hugo server --buildDrafts --buildFuture
+	hugo server --buildDrafts --buildFuture --verbose
+
+build: ## 構築
+	NODE_ENV=production ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit
+
+watch: ## 監視
+	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
 
 ngrok: ## 転送
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi

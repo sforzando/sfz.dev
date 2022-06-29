@@ -1,20 +1,33 @@
-<form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field">
-  <input type="hidden" name="subject" value="Contact inquiry from sfz.dev" />
-  <p class="hidden">
-    <label>
-      Do NOT fill this out if you are human: <input name="bot-field" />
-    </label>
-  </p>
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+<div class="w-screen max-w-lg mx-auto">
+  <form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="subject" value="Contact inquiry from sfz.dev" />
+    <div class="hidden">
+      <label for="bot-field">
+        Do NOT fill this out if you are human:
+      </label>
+      <input id="bot-field" name="bot-field" />
+    </div>
+    <div class="">
+      <label class="block" for="form-name">Name / 名前</label>
+      <input type="text" id="form-name"
+        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        name="name" placeholder="Barney Rubble" />
+    </div>
+    <div class="">
+      <label for="form-email">Email / Eメールアドレス</label>
+      <input type="email" id="form-email"
+        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        name="email" placeholder="foo@example.com" />
+    </div>
+    <div class="">
+      <label for="form-message">Message / 本文</label>
+      <textarea id="form-message"
+        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        name="message" rows="5"></textarea>
+    </div>
+    <div class="">
+      <button type="submit"
+        class="">Send / 送信</button>
+    </div>
+  </form>
+</div>

@@ -6,6 +6,7 @@ sharingLinks: false
 showAuthor: false
 showDate: false
 showDateUpdated: false
+showPagination: false
 showReadingTime: false
 showTaxonomies: false
 showTableOfContents: false
