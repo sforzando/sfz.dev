@@ -1,0 +1,15 @@
+[build]
+  command = "git submodule update --init --recursive && hugo --theme=congo --gc --minify --baseURL $URL"
+  publish = "public"
+
+[build.environment]
+  NODE_ENV = "production"
+  GO_VERSION = "1.18"
+  TZ = "Asia/Tokyo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.101.0"
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.101.0"

@@ -14,6 +14,7 @@ Script description here.
 Available options:
 
 -h, --help      Print this help and exit
+-f, --force     Run with no prompts
 --no-color      Output without color
 EOF
   exit
@@ -47,6 +48,7 @@ parse_params() {
     case "${1-}" in
     -h | --help) usage ;;
     --no-color) NO_COLOR=1 ;;
+    -f | --force) FORCE=1 ;;
     -?*) die "Unknown option: $1" ;;
     *) break ;;
     esac
@@ -58,27 +60,33 @@ parse_params() {
 }
 
 endorse() {
+  msg "${CYAN}Comparing... $1 $2${NOFORMAT}"
   if which colordiff > /dev/null 2>&1; then
-    colordiff --side-by-side $1 $2 || exit_code=$?
+    colordiff --side-by-side --suppress-common-lines $1 $2 || exit_code=$?
   else
-    diff --side-by-side $1 $2 || exit_code=$?
+    diff --side-by-side --suppress-common-lines $1 $2 || exit_code=$?
   fi
+  msg "${CYAN}Exit: $exit_code${NOFORMAT}"
   if [ $exit_code -ge $DIFFERENCE ]; then
     DIFFERENCE=$exit_code
+  fi
+  if [[ -z "${FORCE-}" ]]; then
+    read -p "Press any key to continue..."
   fi
 }
 
 parse_params "$@"
 setup_colors
 
-msg "${CYAN}Diff:${NOFORMAT}"
 DIFFERENCE=0
-set -x
+
 endorse ./archetypes/default.md ./themes/congo/archetypes/default.md
 endorse ./archetypes/external.md ./themes/congo/archetypes/external.md
 endorse ./layouts/works/list.html ./themes/congo/layouts/_default/list.html
+endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/basic.html
+endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/hamburger.html
 endorse ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html
-set +x
+endorse ./assets/css/compiled/main.css ./themes/congo/assets/css/compiled/main.css
 
 if [ $DIFFERENCE -ge 2 ]; then
   msg "${RED}Some errors occurred.${NOFORMAT}"
@@ -89,4 +97,3 @@ if [ $DIFFERENCE -eq 1 ]; then
   msg "${ORANGE}Differences were found.${NOFORMAT}"
   exit 1
 fi
-
