@@ -1,33 +1,26 @@
-<div class="w-screen max-w-lg mx-auto">
+<div class="w-screen max-w-lg mx-auto justify-center">
   <form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="subject" value="Contact inquiry from sfz.dev" />
     <div class="hidden">
       <label for="bot-field">
-        Do NOT fill this out if you are human:
+        Do NOT fill this out if you are human.
       </label>
       <input id="bot-field" name="bot-field" />
     </div>
-    <div class="">
+    <div>
       <label class="block" for="form-name">Name / 名前</label>
-      <input type="text" id="form-name"
-        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        name="name" placeholder="Barney Rubble" />
+      <input type="text" id="form-name" class="block w-full rounded-md" name="name" placeholder="Barney Rubble" />
     </div>
-    <div class="">
-      <label for="form-email">Email / Eメールアドレス</label>
-      <input type="email" id="form-email"
-        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        name="email" placeholder="foo@example.com" />
+    <div>
+      <label for="form-email">Email / Eメール</label>
+      <input type="email" id="form-email" class="block w-full rounded-md" name="email" placeholder="foo@example.com" />
     </div>
-    <div class="">
+    <div>
       <label for="form-message">Message / 本文</label>
-      <textarea id="form-message"
-        class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        name="message" rows="5"></textarea>
+      <textarea id="form-message" class="block w-full rounded-md" name="message" rows="5" placeholder="日本語/英語、どちらでも結構です。"></textarea>
     </div>
-    <div class="">
-      <button type="submit"
-        class="">Send / 送信</button>
+    <div class="flex justify-end">
+      <button type="submit" class="mt-2 py-2 px-4 font-bold border hover:scale-105 rounded-md">Send / 送信</button>
     </div>
   </form>
 </div>
