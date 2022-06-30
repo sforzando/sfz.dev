@@ -2,6 +2,7 @@
 title: "Contact"
 date: 2022-06-01T12:34:56+09:00
 draft: false
+layout: "simple"
 sharingLinks: false
 showAuthor: false
 showDate: false

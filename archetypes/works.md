@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 sharingLinks: false
 showAuthor: false
 showDate: true
@@ -10,5 +10,16 @@ showReadingTime: false
 showTaxonomies: true
 showTableOfContents: false
 showWordCount: false
-thumbnail: "http://placehold.jp/999999/ffffff/500x500.png"
+
+tags:
+  - "works"
+clients:
+  - "sforzando LLC. and Inc."
+collaborators:
+  - "OMD"
+thumbnail: "img/works/{{ .Name }}_key.jpg"
 ---
+
+{{< figure src="img/works/{{ .Name }}_key.jpg" alt="{{ .Name }}" >}}
+
+{{< figure src="img/works/{{ .Name }}_tech.jpg" alt="Tech Rider of {{ .Name }}" >}}

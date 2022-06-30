@@ -61,6 +61,7 @@ parse_params() {
 
 endorse() {
   msg "${CYAN}Comparing... $1 $2${NOFORMAT}"
+  exit_code=0
   if which colordiff > /dev/null 2>&1; then
     colordiff --side-by-side --suppress-common-lines $1 $2 || exit_code=$?
   else
@@ -83,6 +84,7 @@ DIFFERENCE=0
 endorse ./archetypes/default.md ./themes/congo/archetypes/default.md
 endorse ./archetypes/external.md ./themes/congo/archetypes/external.md
 endorse ./layouts/works/list.html ./themes/congo/layouts/_default/list.html
+endorse ./layouts/works/single.html ./themes/congo/layouts/_default/single.html
 endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/basic.html
 endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/hamburger.html
 endorse ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html
