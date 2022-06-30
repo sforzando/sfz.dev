@@ -37,6 +37,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 - Go (v1.18 or higher)
   - Hugo (v.0.101.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
+- [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 
 ## How to
 
@@ -81,7 +82,7 @@ Transfer by ngrok is convenient for checking on a smartphone, use `make ngrok`.
 
 ### Deploy
 
-To deploy this to `(T. B. D.)` manually, `make deploy`.
+To deploy this to [Netlify](https://www.netlify.com) manually, `make deploy`.
 
 ### Catch-up the latest Congo
 
@@ -92,6 +93,8 @@ See. [Congo official document](https://jpanther.github.io/congo/docs/installatio
 ```shell
 make update
 ```
+
+When the submodule is update, it may be necessary "Clear cache and deploy site." on Netlify.
 
 #### Endorse
 

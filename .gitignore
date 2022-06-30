@@ -354,3 +354,6 @@ fabric.properties
 # git-secret
 .gitsecret/keys/random_seed
 !*.secret
+
+# Local Netlify folder
+.netlify

@@ -19,6 +19,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install git-cliff
 	brew install git-secret
 	brew install hugo
+	brew install netlify-cli
 	brew install --cask ngrok
 endif
 	direnv allow
@@ -48,7 +49,8 @@ ngrok: ## 転送
 	ngrok http 1313
 
 deploy: ## 配備
-	echo "TODO: Not Implemented Yet!"
+	netlify init
+	netlify deploy $(OPTS)
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The deployment process is complete." ; fi
 
 update: ## 追随
