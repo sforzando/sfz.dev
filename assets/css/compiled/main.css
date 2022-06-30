@@ -2345,6 +2345,10 @@ body:has(#menu-controller:checked) {
   font-weight: 400;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2415,6 +2419,11 @@ body:has(#menu-controller:checked) {
   color: rgba(var(--color-neutral), var(--tw-text-opacity)) !important;
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .\!no-underline {
   -webkit-text-decoration-line: none !important;
           text-decoration-line: none !important;
@@ -2428,6 +2437,11 @@ body:has(#menu-controller:checked) {
 .decoration-neutral-300 {
   -webkit-text-decoration-color: rgba(var(--color-neutral-300), 1);
           text-decoration-color: rgba(var(--color-neutral-300), 1);
+}
+
+.decoration-double {
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
 }
 
 .opacity-0 {
