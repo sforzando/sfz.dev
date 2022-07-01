@@ -1,0 +1,26 @@
+<div class="w-screen max-w-lg mx-auto justify-center">
+  <form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="subject" value="Contact inquiry from sfz.dev" />
+    <div class="hidden">
+      <label for="bot-field">
+        Do NOT fill this out if you are human.
+      </label>
+      <input id="bot-field" name="bot-field" />
+    </div>
+    <div>
+      <label class="block font-semibold" for="form-name">名前</label>
+      <input type="text" id="form-name" class="block w-full rounded-md" name="name" placeholder="山田 太郎" required />
+    </div>
+    <div>
+      <label class="block font-semibold" for="form-email">Eメール</label>
+      <input type="email" id="form-email" class="block w-full rounded-md" name="email" placeholder="taro@example.com" required />
+    </div>
+    <div>
+      <label class="block font-semibold" for="form-message">本文</label>
+      <textarea id="form-message" class="block w-full rounded-md" name="message" rows="5" placeholder="日英、どちらでも結構です。" required></textarea>
+    </div>
+    <div class="flex justify-end">
+      <button type="submit" class="mt-2 py-2 px-4 font-bold border hover:scale-105 rounded-md">送信</button>
+    </div>
+  </form>
+</div>

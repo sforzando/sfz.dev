@@ -18,7 +18,7 @@ showWordCount: false
 イタリア語の「力を示す」が語源です。
 {{< /lead >}}
 
-{{< figure src="img/top.jpg" alt="Indicate your power." class="flex justify-center" >}}
+{{< figureWidthFull src="img/top.jpg" alt="Indicate your power." class="flex justify-center" >}}
 
 私たちは、ソフトウェア開発を主軸とした「迅速かつ柔軟なプロトタイピング」を得意としています。  
 あらゆるビジネスにおいて、プロトタイプの存在が市場調査や資金調達においても強力な武器となります。  

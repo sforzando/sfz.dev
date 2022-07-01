@@ -20,4 +20,4 @@ If you prefer to communicate by email, send it to [contact[at]sfz.dev](mailto:co
 We usually reply within 3 working days.  
 Please make sure that your name and contact information are correct.
 
-{{< contactform >}}
+{{< contactFormEng >}}

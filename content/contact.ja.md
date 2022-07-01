@@ -20,4 +20,4 @@ showWordCount: false
 通常、3営業日以内に返信いたします。  
 お名前と連絡先が正しいかどうか、ご確認ください。
 
-{{< contactform >}}
+{{< contactFormJpn >}}
