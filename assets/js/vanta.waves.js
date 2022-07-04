@@ -1,3 +1,4 @@
+// Vanta.js waves (Version Jul 5th, 2022)
 ! function (t, e) {
   "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports._vantaEffect = e() : t._vantaEffect = e()
 }("undefined" != typeof self ? self : this, (function () {
