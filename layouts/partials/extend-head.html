@@ -1,5 +1,27 @@
 {{/* Vanta Waves */}}
 {{ $threeJs := resources.Get "js/three.js" }}
 {{ $vantaWaveJs := resources.Get "js/vanta.waves.js" }}
-<script type="text/javascript" src="{{ $threeJs.RelPermalink }}"></script>
-<script type="text/javascript" src="{{ $vantaWaveJs.RelPermalink }}"></script>
+{{ $backgroundMinJs := slice $threeJs $vantaWaveJs | resources.Concat "js/background.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $backgroundMinJs.RelPermalink }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const vantaElement = document.createElement("div")
+    vantaElement.id = "wave-background"
+    vantaElement.className = "-z-50 fixed flex-none w-screen h-full top-0 left-0 p-0 m-0"
+    vantaElement.style.position = "fixed"
+    document.body.insertBefore(vantaElement, document.body.firstChild)
+    VANTA.WAVES({
+      el: "#wave-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0d1f2c,
+      shininess: 15.00, // default: 30.00
+      waveHeight: 15, // default: 15
+      waveSpeed: 0.75, // default: 1.00
+      zoom: 1.00 // default: 1.00
+    })
+  })
+</script>

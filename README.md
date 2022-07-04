@@ -37,6 +37,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 - Go (v1.18 or higher)
   - Hugo (v.0.101.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
+    - [Vanta.js](https://github.com/tengbao/vanta)
 - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 
 ## How to
