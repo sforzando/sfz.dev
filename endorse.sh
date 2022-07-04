@@ -59,6 +59,10 @@ parse_params() {
   return 0
 }
 
+FILE_COUNT=0
+DIFFERENCE=0
+DIFF_COUNT=0
+
 endorse() {
   msg "${CYAN}Comparing... $1 $2${NOFORMAT}"
   exit_code=0
@@ -71,24 +75,29 @@ endorse() {
   if [ $exit_code -ge $DIFFERENCE ]; then
     DIFFERENCE=$exit_code
   fi
+  if [ $exit_code -ne 0 ]; then
+    DIFF_COUNT=$((DIFF_COUNT+1))
+  fi
   if [[ -z "${FORCE-}" ]]; then
     read -p "Press any key to continue..."
   fi
+  FILE_COUNT=$((FILE_COUNT+1))
 }
 
 parse_params "$@"
 setup_colors
 
-DIFFERENCE=0
+CONGO_PATH="./themes/congo"
 
-endorse ./archetypes/default.md ./themes/congo/archetypes/default.md
-endorse ./archetypes/external.md ./themes/congo/archetypes/external.md
-endorse ./layouts/works/list.html ./themes/congo/layouts/_default/list.html
-endorse ./layouts/works/single.html ./themes/congo/layouts/_default/single.html
-endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/basic.html
-endorse ./layouts/partials/header/custom.html ./themes/congo/layouts/partials/header/hamburger.html
-endorse ./layouts/partials/translations.html ./themes/congo/layouts/partials/translations.html
-endorse ./assets/css/compiled/main.css ./themes/congo/assets/css/compiled/main.css
+endorse ./archetypes/default.md $CONGO_PATH/archetypes/default.md
+endorse ./archetypes/external.md $CONGO_PATH/archetypes/external.md
+endorse ./layouts/works/list.html $CONGO_PATH/layouts/_default/list.html
+endorse ./layouts/works/single.html $CONGO_PATH/layouts/_default/single.html
+endorse ./layouts/partials/header/custom.html $CONGO_PATH/layouts/partials/header/basic.html
+endorse ./layouts/partials/header/custom.html $CONGO_PATH/layouts/partials/header/hamburger.html
+endorse ./layouts/partials/translations.html $CONGO_PATH/layouts/partials/translations.html
+endorse ./layouts/shortcodes/figureWidthFull.html $CONGO_PATH/layouts/shortcodes/figure.html
+endorse ./assets/css/compiled/main.css $CONGO_PATH/assets/css/compiled/main.css
 
 if [ $DIFFERENCE -ge 2 ]; then
   msg "${RED}Some errors occurred.${NOFORMAT}"
@@ -96,6 +105,6 @@ if [ $DIFFERENCE -ge 2 ]; then
 fi
 
 if [ $DIFFERENCE -eq 1 ]; then
-  msg "${ORANGE}Differences were found.${NOFORMAT}"
+  msg "${ORANGE}Differences found in $DIFF_COUNT / $FILE_COUNT files.${NOFORMAT}"
   exit 1
 fi

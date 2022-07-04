@@ -17,5 +17,3 @@ showWordCount: false
 Inquiry accepted. / お問い合わせを受け付けました。
 
 {{< figureWidthFull src="img/thanks.jpg" alt="Thank you so much." class="flex justify-center" >}}
-
-<!-- {{< button href="/" target="_self" >}}Return to TOP{{< /button >}} -->
