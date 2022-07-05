@@ -89,14 +89,20 @@ setup_colors
 
 CONGO_PATH="./themes/congo"
 
+# archetypes
 endorse ./archetypes/default.md $CONGO_PATH/archetypes/default.md
 endorse ./archetypes/external.md $CONGO_PATH/archetypes/external.md
+# works
 endorse ./layouts/works/list.html $CONGO_PATH/layouts/_default/list.html
+endorse ./layouts/partials/works/article-link.html $CONGO_PATH/layouts/partials/article-link.html
 endorse ./layouts/works/single.html $CONGO_PATH/layouts/_default/single.html
+# header
 endorse ./layouts/partials/header/custom.html $CONGO_PATH/layouts/partials/header/basic.html
 endorse ./layouts/partials/header/custom.html $CONGO_PATH/layouts/partials/header/hamburger.html
 endorse ./layouts/partials/translations.html $CONGO_PATH/layouts/partials/translations.html
+# shortcodes for figure
 endorse ./layouts/shortcodes/figureWidthFull.html $CONGO_PATH/layouts/shortcodes/figure.html
+# css
 endorse ./assets/css/compiled/main.css $CONGO_PATH/assets/css/compiled/main.css
 
 if [ $DIFFERENCE -ge 2 ]; then
