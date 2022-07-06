@@ -25,12 +25,14 @@ collaborators:
     url: "http://www.example.com"
   - name: "MAZDA"
     url: "http://www.example.com"
+  - name: "SUZUKI"
+    url: "http://www.example.com"
 thumbnail: "img/works/{{ .Name }}_thumbnail.jpg"
 keyVisual: "img/works/{{ .Name }}_key.jpg"
 techRider: "img/works/{{ .Name }}_tech.jpg"
 ---
 
-{{< figure src="img/works/{{ .Name }}_key.jpg" alt="{{ .Name }}" >}}
+{{< figureWidthFull src="img/works/{{ .Name }}_key.jpg" alt="{{ .Name }}" >}}
 
 Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
 

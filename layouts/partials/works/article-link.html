@@ -1,31 +1,11 @@
-{{/*  <article>
-  <h3 class="flex items-center mt-6 text-xl font-semibold">
-    <a class="decoration-primary-500 hover:underline hover:underline-offset-2 text-neutral-800 dark:text-neutral"
-      href="{{ .RelPermalink }}">{{ .Title | emojify }}</a>
-    {{ if and .Draft .Site.Params.article.showDraftLabel }}
-      <div class=" ltr:ml-2 rtl:mr-2">
-        {{ partial "badge.html" (i18n "article.draft" | emojify) }}
-      </div>
-    {{ end }}
-    {{ if templates.Exists "partials/extend-article-link.html" }}
-      {{ partial "extend-article-link.html" . }}
-    {{ end }}
-  </h3>
-  <div class="text-sm text-neutral-500 dark:text-neutral-400">
-    {{ partial "article-meta.html" . }}
-  </div>
-  {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
-    <div class="py-1 prose dark:prose-invert">
-      {{ .Summary | emojify }}
-    </div>
-  {{ end }}
-</article>  */}}
-
-<div class="group sm:flex lg:items-start">
+<article class="group sm:flex lg:items-start">
   <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
     <a href="{{ .RelPermalink }}">
-      <img class="w-full rounded-lg object-cover transition hover:scale-105 sm:h-32 sm:w-32"
-        src="https://placehold.jp/3d4070/ffffff/640x480.png?text=640x480_01" alt="text" />
+      {{ $thumbnail := resources.Get .Params.thumbnail }}
+      {{ if not $thumbnail }}
+        {{ $thumbnail = resources.Get "img/wip.jpg" }}
+      {{ end }}
+      <img class="w-full rounded-lg object-cover transition hover:scale-105 sm:h-32 sm:w-32" src="{{ $thumbnail.RelPermalink }}" alt="{{ .Title | emojify }}" />
     </a>
   </div>
   <div>
@@ -38,7 +18,9 @@
       </a>
     </p>
     <p class="text mt-2 leading-normal text-gray-500">
-      {{ .Summary | emojify }}
+      {{ range $client := .Params.clients }}
+        {{ $client.url | emojify }}
+      {{ end }}
     </p>
   </div>
-</div>
+</article>
