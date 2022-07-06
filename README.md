@@ -20,6 +20,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [First time preparation](#first-time-preparation)
     - [Introduce Congo](#introduce-congo)
   - [Start](#start)
+    - [Dummy Articles](#dummy-articles)
   - [Deploy](#deploy)
   - [Catch-up the latest Congo](#catch-up-the-latest-congo)
     - [Update](#update)
@@ -80,6 +81,16 @@ Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
 To open it, `make open`.
 
 Transfer by ngrok is convenient for checking on a smartphone, use `make ngrok`.
+
+#### Dummy Articles
+
+Generate dummy articles for testing.
+
+```shell
+for i in {0000..0023}; do
+  hugo new "works/${i}.ja.md"
+done
+```
 
 ### Deploy
 
