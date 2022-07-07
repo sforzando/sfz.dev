@@ -94,6 +94,8 @@ for i in {0000..0023}; do
 done
 ```
 
+All dummy photos from [Unsplash](https://unsplash.com).
+
 ### Deploy
 
 To deploy this to [Netlify](https://www.netlify.com) manually, `make deploy`.
