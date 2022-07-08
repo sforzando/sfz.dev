@@ -11,7 +11,7 @@ enableSearch = true
 enableCodeCopy = false
 
 logo = "img/logo/800x800_ffffff.png"
-mainSections = ["posts", "works"]
+mainSections = ["posts"]
 # robots = ""
 
 [homepage]
