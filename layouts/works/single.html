@@ -23,28 +23,64 @@
       {{ .Content | emojify }}
     </div>
   </section>
-  <div class="flex flex-row bg-neutral-700/50 border border-neutral-500 rounded-md shadow-md p-2">
-    {{ if .Params.Clients }}
-      <div class="basis-1/2">
-        Clients:
-        <ul>
-          {{ range .Params.Clients }}
-            <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-    {{ if .Params.Collaborators }}
-      <div class="basis-1/2">
-        Collaborators:
-        <ul>
-          {{ range .Params.Collaborators }}
-            <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-  </div>
+  {{ if (or .Params.clients .Params.collaborators .Params.references) }}
+    <div class="flex flex-row bg-neutral-600/50 border border-neutral-500 shadow-inner shadow-neutral-500 rounded-md p-2">
+      {{ if .Params.clients }}
+        <div class="flex-auto">
+          <span class="font-semibold">Clients:</span>
+          <ul class="list-disc list-inside text-sm">
+            {{ range .Params.clients }}
+              <li>
+                {{ if .url }}
+                <a href="{{ .url }}" target="_blank">
+                  {{ .name }}
+                </a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+      {{ if .Params.collaborators }}
+        <div class="flex-auto">
+          <span class="font-semibold">Collaborators:</span>
+          <ul class="list-disc list-inside text-sm">
+            {{ range .Params.collaborators }}
+              <li>
+                {{ if .url }}
+                <a href="{{ .url }}" target="_blank">
+                  {{ .name }}
+                </a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+      {{ if .Params.references }}
+        <div class="flex-auto">
+          <span class="font-semibold">References:</span>
+          <ul class="list-disc list-inside text-sm">
+            {{ range .Params.references }}
+              <li>
+                {{ if .url }}
+                <a href="{{ .url }}" target="_blank">
+                  {{ .name }}
+                </a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
   <footer class="pt-8 max-w-prose print:hidden">
     {{ partial "author.html" . }}
     {{ partial "sharing-links.html" . }}

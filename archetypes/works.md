@@ -27,9 +27,14 @@ collaborators:
     url: "http://www.example.com"
   - name: "SUZUKI"
     url: "http://www.example.com"
+references:
+  - name: "AUDI"
+    url: "http://www.example.com"
+  - name: "LAND ROVER"
+    url: "http://www.example.com"
+  - name: "JAGUAR"
+    url: "http://www.example.com"
 thumbnail: "img/works/{{ .Name }}_thumbnail.jpg"
-keyVisual: "img/works/{{ .Name }}_key.jpg"
-subVisual: "img/works/{{ .Name }}_sub.jpg"
 ---
 
 {{< figureWidthFull src="img/works/{{ .Name }}_key.jpg" alt="{{ .Name }}" >}}

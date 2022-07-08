@@ -558,6 +558,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -2017,10 +2051,6 @@ body:has(#menu-controller:checked) {
   flex-grow: 1;
 }
 
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
 .-translate-y-8 {
   --tw-translate-y: -2rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2034,8 +2064,16 @@ body:has(#menu-controller:checked) {
   cursor: default;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
 .list-none {
   list-style-type: none;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
@@ -2078,6 +2116,12 @@ body:has(#menu-controller:checked) {
 
 .gap-12 {
   gap: 3rem;
+}
+
+.divide-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(0px * var(--tw-divide-x-reverse));
+  border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .place-self-center {
@@ -2141,13 +2185,14 @@ body:has(#menu-controller:checked) {
   border-style: dotted;
 }
 
-.border-double {
-  border-style: double;
-}
-
 .border-neutral-400 {
   --tw-border-opacity: 1;
   border-color: rgba(var(--color-neutral-400), var(--tw-border-opacity));
+}
+
+.border-neutral-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-neutral-500), var(--tw-border-opacity));
 }
 
 .border-neutral-300 {
@@ -2165,14 +2210,8 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
 }
 
-.border-neutral-700 {
-  --tw-border-opacity: 1;
-  border-color: rgba(var(--color-neutral-700), var(--tw-border-opacity));
-}
-
-.border-neutral-500 {
-  --tw-border-opacity: 1;
-  border-color: rgba(var(--color-neutral-500), var(--tw-border-opacity));
+.bg-neutral-600\/50 {
+  background-color: rgba(var(--color-neutral-600), 0.5);
 }
 
 .bg-neutral-100\/50 {
@@ -2219,15 +2258,6 @@ body:has(#menu-controller:checked) {
 .bg-primary-600 {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity));
-}
-
-.bg-neutral-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-neutral-700), var(--tw-bg-opacity));
-}
-
-.bg-neutral-700\/50 {
-  background-color: rgba(var(--color-neutral-700), 0.5);
 }
 
 .object-cover {
@@ -2510,28 +2540,25 @@ body:has(#menu-controller:checked) {
   opacity: 0;
 }
 
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.shadow-neutral-500 {
+  --tw-shadow-color: rgba(var(--color-neutral-500), 1);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.outline {
+  outline-style: solid;
 }
 
 .backdrop-blur-sm {
