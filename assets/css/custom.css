@@ -2,6 +2,10 @@
   font-feature-settings: "palt"1;
 }
 
+[type="checkbox"]#menu-controller {
+  display: none;
+}
+
 /* from tailwindcss-forms v0.5.2
    https://github.com/tailwindlabs/tailwindcss-forms
 */

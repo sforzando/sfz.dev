@@ -1,0 +1,29 @@
+<article class="group sm:flex lg:items-start">
+  <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
+    <a href="{{ .RelPermalink }}">
+      {{ $thumbnail := resources.Get .Params.thumbnail }}
+      {{ if not $thumbnail }}
+        {{ $thumbnail = resources.Get "img/wip.jpg" }}
+      {{ end }}
+      <img class="w-full rounded-lg object-cover transition hover:scale-105 sm:h-32 sm:w-32"
+        src="{{ $thumbnail.RelPermalink }}" alt="{{ .Title | emojify }}" />
+    </a>
+  </div>
+  <div>
+    <div class="mt-3 text-lg font-medium leading-6">
+      <h3>
+        <a href="{{ .RelPermalink }}" class="text-xl text-gray-800 hover:text-gray-500">
+          {{ .Title | emojify }}
+        </a>
+        {{ if and .Draft .Site.Params.article.showDraftLabel }}
+          <div class="inline">
+            {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+          </div>
+        {{ end }}
+      </h3>
+    </div>
+    <span class="text-sm text-gray-500">
+      {{ partial "article-meta.html" . }}
+    </span>
+  </div>
+</article>

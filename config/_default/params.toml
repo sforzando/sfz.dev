@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 enableSearch = true
 enableCodeCopy = false
 
-logo = "img/logo/661x661_ffffff.png"
+logo = "img/logo/800x800_ffffff.png"
 mainSections = ["posts", "works"]
 # robots = ""
 
