@@ -1,0 +1,58 @@
+{{/* Mapbox GL */}}
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+<script>
+  mapboxgl.accessToken = "{{ getenv "MAPBOX_ACCESS_TOKEN" }}";
+
+  const map_kawasaki = new mapboxgl.Map({
+    container: "map-kawasaki",
+    style: "mapbox://styles/mapbox/navigation-night-v1",
+    center: [139.716971, 35.527478],
+    zoom: 12,
+    pitch: 60,
+    projection: "globe"
+  });
+
+  function rotateMapKawasaki(timestamp) {
+    map_kawasaki.rotateTo((timestamp / 300) % 360, {
+      duration: 0
+    });
+    requestAnimationFrame(rotateMapKawasaki);
+  }
+  const marker_kawasaki = new mapboxgl.Marker({
+    draggable: false,
+    color: "#ff3333"
+  }).setLngLat([139.716971, 35.527478]).addTo(map_kawasaki);
+  map_kawasaki.on("style.load", () => {
+    map_kawasaki.addControl(new mapboxgl.FullscreenControl());
+    // map_kawasaki.addControl(new mapboxgl.NavigationControl());
+    rotateMapKawasaki(0);
+  });
+
+  const map_vancouver = new mapboxgl.Map({
+    container: "map-vancouver",
+    style: "mapbox://styles/mapbox/navigation-night-v1",
+    center: [-123.138900, 49.261872],
+    zoom: 12,
+    pitch: 60,
+    projection: "globe"
+  });
+
+  function rotateMapVancouver(timestamp) {
+    map_vancouver.rotateTo((timestamp / 300) % 360, {
+      duration: 0
+    });
+    requestAnimationFrame(rotateMapVancouver);
+  }
+  const marker_vancouver = new mapboxgl.Marker({
+    draggable: false,
+    color: "#ff3333"
+  }).setLngLat([-123.138900, 49.261872]).addTo(map_vancouver);
+  map_vancouver.on("style.load", () => {
+    map_vancouver.addControl(new mapboxgl.FullscreenControl());
+    // map_vancouver.addControl(new mapboxgl.NavigationControl());
+    map_vancouver.setLayoutProperty("country-label", "text-field", ["get", "name_ja"]);
+    rotateMapVancouver(0);
+  });
+
+</script>

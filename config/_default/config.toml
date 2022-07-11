@@ -13,3 +13,6 @@ summaryLength = 0
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[security.funcs]
+  getenv = ["^HUGO_", "^MAPBOX"]

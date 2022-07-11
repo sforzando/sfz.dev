@@ -35,7 +35,7 @@ These ambitious projects have kept us inspired and motivated.
 These details will be written about in other articles.  
 Anyway, we would like to thank all of our clients who keep us going in the face of COVID-19 Disaster.
 
-On August 14, 2018, SFORZANDO TECHNOLOGIES INC. was registered in BC, Canada.  
+On August 14, 2019, SFORZANDO TECHNOLOGIES INC. was registered in BC, Canada.  
 We have outside members such as accountants, lawyers, and laborers who support our group in Japan and Canada respectively.  
 They are all kind people who generously support our companies.  
 We would like to take this opportunity to thank them.

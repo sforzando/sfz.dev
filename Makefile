@@ -12,7 +12,7 @@ OPTS :=
 
 default: start ## 常用
 
-setup: ## 初期
+setup: reveal ## 初期
 ifeq ($(OS_NAME),Darwin)
 	brew install colordiff
 	brew install direnv
