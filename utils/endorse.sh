@@ -92,6 +92,10 @@ CONGO_PATH="./themes/congo"
 # archetypes
 endorse ./archetypes/default.md $CONGO_PATH/archetypes/default.md
 endorse ./archetypes/external.md $CONGO_PATH/archetypes/external.md
+# posts
+endorse ./layouts/posts/list.html $CONGO_PATH/layouts/_default/list.html
+endorse ./layouts/partials/posts/article-link.html $CONGO_PATH/layouts/partials/article-link.html
+endorse ./layouts/posts/single.html $CONGO_PATH/layouts/_default/single.html
 # works
 endorse ./layouts/works/list.html $CONGO_PATH/layouts/_default/list.html
 endorse ./layouts/partials/works/article-link.html $CONGO_PATH/layouts/partials/article-link.html

@@ -10,5 +10,8 @@ showReadingTime: true
 showTaxonomies: true
 showTableOfContents: true
 showWordCount: true
-thumbnail: "http://placehold.jp/999999/ffffff/500x500.png"
+
+tags:
+  - "{{ .Name }}"
+thumbnail: "img/logo/800x800_ffffff.png"
 ---
