@@ -56,7 +56,7 @@ Therefore, we will continue to work diligently so that our customers will be hap
 | Description of Business | <ol><li>Development and sales of software and hardware</li><li>Planning, development and operation of websites</li><li>Planning and management of  commercial events and exhibitions</li><li>Production of exhibits in public and commercial facilities</li><li>Technical support in planning and production of art works</li><li>Social implementation of researchers' results.</li><li>All operations related to the above</li></ol> |
 | Main Bank | MUFG Bank |
 
-### カナダ支社
+### Canada Subsidiary
 
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
