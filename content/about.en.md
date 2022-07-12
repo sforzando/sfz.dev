@@ -12,40 +12,63 @@ showTableOfContents: true
 showWordCount: false
 ---
 
-## 代表よりごあいさつ
+## Message from CEO
 
-## 沿革
+{{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="Shin`ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
 
-## 概要
+Our customers often tell us, "sfz has a unique culture."
+It is true that in most cases, we have not been able to deliver exactly what they originally requested.
 
-### 日本本社
+Through dialogue and trial and error, we may realize the possibility of making it faster, cheaper, safer, and better.
+When this happens, we do not hesitate to reveal new possibilities to the customer and reopen the discussion about how this project should be completed.
+We believe this is what really matters to our customers and how we can contribute to the world.
+
+We are grateful that so many people understand and support our business.
+Therefore, we will continue to work diligently so that our customers will be happy to say, "Yes, this is what I wanted to do!"
+
+## History
+
+- July 11, 2015
+  - szk-engineering is established in Koto-ku, Tokyo.
+- September 13, 2017
+  - sforzando LLC. is registered as limited liability company.
+- December 4, 2017
+  - sforzando LLC. moved to Kamakura, Kanagawa.
+- August 14, 2019
+  - SFORZANDO TECHNOLOGIES INC. is registered in BC, Canada.
+- October 2, 2019
+  - sforzando LLC. moved to Kawasaki, Kanagawa.
+
+## Overview
+
+### Japan Headquarters
 
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
-| 和文名称 | 合同会社スフォルツァンド |
-| 英文名称 | sforzando LLC. |
-| 所在地 | 〒210-0806 神奈川県川崎市川崎区中島3丁目9-11 La.Corte 402 <div id="map-kawasaki" class="w-full h-96"></div> |
-| 創業 | 2017(平成29)年9月13日 |
-| 資本金 | 500,000 円 |
-| 事業年度 | 毎年9月1日から翌年8月31日 |
-| 代表者 | 鈴木 真一朗 |
-| 法人番号 | 7010603006931 |
-| 事業内容 | <ol><li>ソフトウェア・ハードウェアの開発および販売</li><li>Webサイトの企画・開発・運営</li><li>イベントや展示会の企画・運営</li><li>公共施設や商業施設における展示物の制作</li><li>アート作品等の企画及び製作における技術支援</li><li>研究者の研究活動の支援並びにその研究成果の応用及び実用の支援</li><li>前各号に付帯または関連する一切の業務</li></ol> |
-| 取引先銀行 | 三菱UFJ銀行 |
+| Japanese Name | 合同会社スフォルツァンド |
+| English Name | sforzando LLC. |
+| Address | #402 La.Corte, 3-9-11 Nakajima Kawasaki-ku, Kawasaki-shi, Kanagawa JP 210-0806 <div id="map-kawasaki" class="w-full h-96 mt-2"></div> |
+| Date of Establishment | September 13, 2017 |
+| Capital | 500,000 JPY |
+| Fiscal Year | From September 1 to August 31 of the following year |
+| Representative | Shin'ichiro Suzuki |
+| Business Number | 7010603006931 |
+| Description of Business | <ol><li>Development and sales of software and hardware</li><li>Planning, development and operation of websites</li><li>Planning and management of  commercial events and exhibitions</li><li>Production of exhibits in public and commercial facilities</li><li>Technical support in planning and production of art works</li><li>Social implementation of researchers' results.</li><li>All operations related to the above</li></ol> |
+| Main Bank | MUFG Bank |
 
 ### カナダ支社
 
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
-| 名称 | SFORZANDO TECHNOLOGIES INC. |
-| 通称 | sforzando Inc. |
-| 所在地 | #210-2695 Granville St, Vancouver, B.C. V6H 3H4 <div id="map-vancouver" class="w-full h-96"></div> |
-| 創業 | 2019(令和元)年8月14日 |
-| 資本金 | 5,000,000 CAD |
-| 事業年度 | 毎年9月1日から翌年8月31日 |
-| 代表者 | 鈴木 真一朗 |
-| 法人番号 | BC1219587 |
-| 事業内容 | <ol><li>ソフトウェア・ハードウェアの開発および販売</li><li>Webサイトの企画・開発・運営</li><li>イベントや展示会の企画・運営</li><li>公共施設や商業施設における展示物の制作</li><li>アート作品等の企画及び製作における技術支援</li><li>研究者の研究活動の支援並びにその研究成果の応用及び実用の支援</li><li>前各号に付帯または関連する一切の業務</li></ol> |
-| 取引先銀行 | TD Canada Trust |
+| Name | SFORZANDO TECHNOLOGIES INC. |
+| Alias | sforzando Inc. |
+| Address | #210-2695 Granville St, Vancouver, B.C. V6H 3H4 <div id="map-vancouver" class="w-full h-96 mt-2"></div> |
+| Date of Establishment | August 14, 2019 |
+| Capital | 5,000,000 CAD |
+| Fiscal Year | From September 1 to August 31 of the following year |
+| Representative | Shin'ichiro Suzuki |
+| Business Number | BC1219587 |
+| Description of Business | <ol><li>Development and sales of software and hardware</li><li>Planning, development and operation of websites</li><li>Planning and management of  commercial events and exhibitions</li><li>Production of exhibits in public and commercial facilities</li><li>Technical support in planning and production of art works</li><li>Social implementation of researchers' results.</li><li>All operations related to the above</li></ol> |
+| Main Bank | TD Canada Trust |
 
 {{< mapboxGl >}}
