@@ -16,11 +16,13 @@ showWordCount: false
 
 {{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="Shin`ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
 
+Hello, I am [Shin'ichiro Suzuki](/teams/shin-sforzando), the CEO of sforzando group.
+
 Our customers often tell us, "sfz has a unique culture."
 It is true that in most cases, we have not been able to deliver exactly what they originally requested.
 
 Through dialogue and trial and error, we may realize the possibility of making it faster, cheaper, safer, and better.
-When this happens, we do not hesitate to reveal new possibilities to the customer and reopen the discussion about how this project should be completed.
+When this happens, we do not hesitate to reveal new possibilities to the customer and reopen the discussion about how this project should be completed.  
 We believe this is what really matters to our customers and how we can contribute to the world.
 
 We are grateful that so many people understand and support our business.

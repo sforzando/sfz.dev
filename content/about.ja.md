@@ -16,6 +16,8 @@ showWordCount: false
 
 {{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="鈴木 真一朗" caption="Photo by [niacari](https://niacari.jp)" >}}
 
+こんにちは、代表の[鈴木](/ja/teams/shin-sforzando)です。
+
 お客さまに「sfzはクセがありますね」と言われることがあります。
 たしかに、最初のリクエスト通りに納品となったケースがほとんどありません。
 
