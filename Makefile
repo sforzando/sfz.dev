@@ -22,6 +22,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install netlify-cli
 	brew install --cask ngrok
 endif
+	make reveal
 	direnv allow
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
 

@@ -39,7 +39,10 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - Hugo (v.0.101.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
     - [Vanta.js](https://github.com/tengbao/vanta)
-- [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+- [Netlify](https://www.netlify.com)
+  - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+- [Mapbox](https://www.mapbox.com)
+  - [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/)
 
 ## How to
 
@@ -61,9 +64,13 @@ help                 助言
 
 ### First time preparation
 
-```shell
-make setup
+Prepare `.envrc` like this,
+
+```.envrc
+MAPBOX_ACCESS_TOKEN="xxxx"
 ```
+
+Then, run `make setup`.
 
 #### Introduce Congo
 
