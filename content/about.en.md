@@ -40,6 +40,8 @@ Therefore, we will continue to work diligently so that our customers will be hap
   - SFORZANDO TECHNOLOGIES INC. is registered in BC, Canada.
 - October 2, 2019
   - sforzando LLC. moved to Kawasaki, Kanagawa.
+- July 1, 2022
+  - Consolidate main domain to `sfz.dev`
 
 ## Overview
 
