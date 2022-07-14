@@ -8,6 +8,7 @@ baseURL = "https://sfz.dev/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
+googleAnalytics = "UA-234471337-1"
 paginate = 10
 summaryLength = 0
 
