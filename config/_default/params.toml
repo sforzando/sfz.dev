@@ -60,7 +60,6 @@ mainSections = ["posts"]
 
 [fathomAnalytics]
   site = "NDBFFLKC"
-  domain = "sfz.dev"
 
 [verification]
   # google = ""

@@ -17,3 +17,9 @@ showWordCount: false
 Inquiry accepted. / お問い合わせを受け付けました。
 
 {{< figureWidthFull src="img/thanks.jpg" alt="Thank you so much." class="flex justify-center" >}}
+
+<script>
+  window.addEventListener("load", (event) => {
+    window.fathom.trackGoal("TIPEOI6G", 0);
+  });
+</script>
