@@ -13,3 +13,21 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.100.2"
+
+[[redirects]]
+  from = "https://sforzando.co.jp"
+  to = "https://sfz.dev"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://sforzando.net"
+  to = "https://sfz.dev"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://szk-engineering.com"
+  to = "https://sfz.dev"
+  status = 301
+  force = true
