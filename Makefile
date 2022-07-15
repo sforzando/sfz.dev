@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start build watch ngrok deploy update endorse clean help
+.PHONY: default setup open hide reveal start build watch test ngrok deploy update endorse clean help
 
 default: start ## 常用
 
@@ -22,6 +22,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install netlify-cli
 	brew install --cask ngrok
 endif
+	npm install
 	make reveal
 	direnv allow
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
@@ -44,6 +45,9 @@ build: ## 構築
 
 watch: ## 監視
 	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
+
+test: ## 試験
+	NODE_ENV=test npx playwright test --headed
 
 ngrok: ## 転送
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi

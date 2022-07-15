@@ -9,13 +9,14 @@
     "url": "git+https://github.com/sforzando/sfz.dev.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "sforzando LLC. and Inc.",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sforzando/sfz.dev/issues"
   },
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
   "devDependencies": {
-    "@playwright/test": "^1.23.3"
+    "@playwright/test": "^1.23.3",
+    "dotenv": "^16.0.1"
   }
 }
