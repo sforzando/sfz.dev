@@ -47,7 +47,7 @@ watch: ## 監視
 	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
 
 test: ## 試験
-	NODE_ENV=test npx playwright test --headed
+	npx playwright test --headed
 
 ngrok: ## 転送
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi
@@ -64,8 +64,9 @@ update: ## 追随
 endorse: ## 裏書
 	./utils/endorse.sh
 
-clean: down ## 掃除
-	echo "TODO: Not Implemented Yet!"
+clean: ## 掃除
+	rm -rf test-results
+	rm -rf tests/*.ts-snapshots
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The cleanup process is complete." ; fi
 
 help: ## 助言

@@ -17,6 +17,15 @@
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
   "devDependencies": {
     "@playwright/test": "^1.23.3",
-    "dotenv": "^16.0.1"
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1"
   }
 }

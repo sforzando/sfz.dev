@@ -1,8 +1,10 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test"
 
-test("Visual Regression Test", async ({ page }) => {
-  await page.goto("https://sfz.dev/");
+test("top", async ({ page }) => {
+  // Go to https://sfz.dev/
+  await page.goto("https://sfz.dev/")
 
-  await expect(page).toHaveTitle(/sforzando/);
-  await expect(await page.screenshot()).toMatchSnapshot({threshold: 0.2});
-});
+  // Click text=🇯🇵 To Jpn >> nth=0
+  await page.locator("text=🇯🇵 To Jpn").first().click()
+  await expect(page).toHaveURL("https://sfz.dev/ja/")
+})
