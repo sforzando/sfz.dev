@@ -47,7 +47,7 @@ watch: ## 監視
 	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
 
 test: ## 試験
-	npx playwright test --headed
+	npx playwright test --update-snapshots --headed
 
 ngrok: ## 転送
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi
