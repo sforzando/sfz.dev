@@ -21,6 +21,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
     - [Introduce Congo](#introduce-congo)
   - [Start](#start)
     - [Dummy Articles](#dummy-articles)
+  - [Test](#test)
   - [Deploy](#deploy)
   - [Catch-up the latest Congo](#catch-up-the-latest-congo)
     - [Update](#update)
@@ -39,6 +40,8 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - Hugo (v.0.101.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
     - [Vanta.js](https://github.com/tengbao/vanta)
+- Node.js
+  - [Playwright](https://playwright.dev/)
 - [Netlify](https://www.netlify.com)
   - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 - [Mapbox](https://www.mapbox.com)
@@ -102,6 +105,10 @@ done
 ```
 
 All dummy photos from [Unsplash](https://unsplash.com).
+
+### Test
+
+E2E tests is available, `make test`.
 
 ### Deploy
 

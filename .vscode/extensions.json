@@ -2,12 +2,14 @@
   "recommendations": [
     "bradlc.vscode-tailwindcss",
     "budparr.language-hugo-vscode",
+    "bungcip.better-toml",
     "christian-kohler.path-intellisense",
     "DavidAnson.vscode-markdownlint",
     "EditorConfig.EditorConfig",
+    "HookyQR.beautify",
+    "ms-playwright.playwright",
     "ms-vscode.makefile-tools",
     "shd101wyy.markdown-preview-enhanced",
-    "streetsidesoftware.code-spell-checker",
     "streetsidesoftware.code-spell-checker",
     "yzhang.markdown-all-in-one"
   ]
