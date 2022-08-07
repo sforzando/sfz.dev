@@ -7,7 +7,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const vantaElement = document.createElement("div")
     vantaElement.id = "wave-background"
-    vantaElement.className = "-z-50 fixed flex-none w-screen h-full top-0 left-0 p-0 m-0"
+    vantaElement.className = "-z-50 fixed flex-none w-screen h-full top-0 left-0 p-0 m-0 print:hidden"
     vantaElement.style.position = "fixed"
     document.body.insertBefore(vantaElement, document.body.firstChild)
     VANTA.WAVES({
