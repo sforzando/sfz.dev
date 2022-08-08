@@ -9,9 +9,9 @@
 
 <!-- Screenshots -->
 
-| ![Screenshot 1](https://placehold.jp/32/3d4070/ffffff/720x480.png?text=Screenshot%201) | ![Screenshot 2](https://placehold.jp/32/703d40/ffffff/720x480.png?text=Screenshot%202) |
-| :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
-|                                      Screenshot 1                                      |                                      Screenshot 2                                      |
+| ![2022-08-09 01 42 31 sfz dev 8d4063d3fcf6](https://user-images.githubusercontent.com/32637762/183469678-e07a9d2f-ad62-4efd-bb42-ffbfe035b21d.png) | ![IMG_A8CD90C669D7-1](https://user-images.githubusercontent.com/32637762/183469789-fc7deb47-f6ca-4ebb-9d5c-c4c57314c97f.jpeg) |
+| :---: | :---: |
+| PC | SP |
 
 <!-- Synopsis -->
 
