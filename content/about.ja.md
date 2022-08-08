@@ -46,6 +46,7 @@ showWordCount: false
 
 ### 日本本社
 
+<!-- prettier-ignore -->
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
 | 和文名称 | 合同会社スフォルツァンド |
@@ -61,6 +62,7 @@ showWordCount: false
 
 ### カナダ支社
 
+<!-- prettier-ignore -->
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
 | 名称 | SFORZANDO TECHNOLOGIES INC. |
