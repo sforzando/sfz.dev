@@ -3,3 +3,4 @@
 
 make format
 make test
+git add --all
