@@ -1,0 +1,7 @@
+.git
+.github
+.gitsecret
+.vscode
+node_modules
+public
+themes
