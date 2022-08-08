@@ -1,0 +1,4 @@
+assets/css/compiled/*.css
+node_modules
+public
+themes

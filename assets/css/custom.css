@@ -9,6 +9,7 @@
 /* from tailwindcss-forms v0.5.2
    https://github.com/tailwindlabs/tailwindcss-forms
 */
+/* stylelint-disable */
 [type='text'],
 [type='email'],
 [type='url'],
