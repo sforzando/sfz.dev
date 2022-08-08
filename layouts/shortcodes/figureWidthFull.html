@@ -8,7 +8,11 @@
   {{ $class := .Get "class" }}
   {{ if findRE "^https?" $url.Scheme }}
     <figure>
-      <img class="my-0 rounded-md" src="{{ $url.String }}" alt="{{ $altText }}" />
+      <img
+        class="my-0 rounded-md"
+        src="{{ $url.String }}"
+        alt="{{ $altText }}"
+      />
       {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
     </figure>
   {{ else }}
@@ -20,9 +24,22 @@
     {{ end }}
     {{ with $resource }}
       <figure {{ with $class }}class="{{ . }}"{{ end }}>
-        {{ with $href }}<a href="{{ . }}">{{ end }}
+        {{ if $href }}
+          <a href="{{ . }}">
+            <img
+              class="my-0 w-screen rounded-md"
+              srcset="
+            {{ (.Resize "330x").RelPermalink }} 330w,
+            {{ (.Resize "660x").RelPermalink }} 660w,
+            {{ (.Resize "1024x").RelPermalink }} 1024w,
+            {{ (.Resize "1320x").RelPermalink }} 2x"
+              src="{{ (.Resize "660x").RelPermalink }}"
+              alt="{{ $altText }}"
+            />
+          </a>
+        {{ else }}
           <img
-            class="my-0 rounded-md w-screen"
+            class="my-0 w-screen rounded-md"
             srcset="
             {{ (.Resize "330x").RelPermalink }} 330w,
             {{ (.Resize "660x").RelPermalink }} 660w,
@@ -31,13 +48,21 @@
             src="{{ (.Resize "660x").RelPermalink }}"
             alt="{{ $altText }}"
           />
-        {{ if $href }}</a>{{ end }}
-        {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        {{ end }}
+        {{ with $caption }}
+          <figcaption>{{ . | markdownify }}</figcaption>
+        {{ end }}
       </figure>
     {{ else }}
       <figure>
-        <img class="my-0 rounded-md" src="{{ $url.String }}" alt="{{ $altText }}" />
-        {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        <img
+          class="my-0 rounded-md"
+          src="{{ $url.String }}"
+          alt="{{ $altText }}"
+        />
+        {{ with $caption }}
+          <figcaption>{{ . | markdownify }}</figcaption>
+        {{ end }}
       </figure>
     {{ end }}
   {{ end }}

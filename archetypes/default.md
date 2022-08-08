@@ -11,4 +11,3 @@ showTaxonomies: false
 showTableOfContents: false
 showWordCount: false
 ---
-

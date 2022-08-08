@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start build watch ngrok deploy update endorse clean help
+.PHONY: default setup open hide reveal start build watch format test ngrok deploy update endorse clean help
 
 default: start ## 常用
 
@@ -22,6 +22,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install netlify-cli
 	brew install --cask ngrok
 endif
+	npm install
 	make reveal
 	direnv allow
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
@@ -45,6 +46,14 @@ build: ## 構築
 watch: ## 監視
 	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
 
+format: ## 整形
+	npx eslint --fix .
+	npx stylelint --fix '**/*.{css,scss,sass}'
+	npx prettier --write .
+
+test: ## 試験
+	npx playwright test --update-snapshots --headed
+
 ngrok: ## 転送
 	@if [ $(OS_NAME) = "Darwin" ]; then say "Start transfer using ngrok." ; fi
 	ngrok http 1313
@@ -60,8 +69,9 @@ update: ## 追随
 endorse: ## 裏書
 	./utils/endorse.sh
 
-clean: down ## 掃除
-	echo "TODO: Not Implemented Yet!"
+clean: ## 掃除
+	rm -rf test-results
+	rm -rf tests/*.ts-snapshots
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The cleanup process is complete." ; fi
 
 help: ## 助言

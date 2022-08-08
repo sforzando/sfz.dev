@@ -1,102 +1,114 @@
 {{ define "main" }}
-<article>
-  <header class="max-w-prose">
-    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
-      {{ partial "breadcrumbs.html" . }}
-    {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      {{ .Title | emojify }}
-    </h1>
-    <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-      {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
-    </div>
-  </header>
-  <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
-    {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
-      <div class="order-first px-0 lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:order-last">
-        <div class="ltr:pl-5 rtl:pr-5 toc lg:sticky lg:top-10 print:hidden">
-          {{ partial "toc.html" . }}
+  <article>
+    <header class="max-w-prose">
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1
+        class="dark:text-neutral mt-0 text-4xl font-extrabold text-neutral-900"
+      >
+        {{ .Title | emojify }}
+      </h1>
+      <div
+        class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden"
+      >
+        {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
+      </div>
+    </header>
+    <section
+      class="prose dark:prose-invert mt-0 flex max-w-full flex-col lg:flex-row"
+    >
+      {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+        <div
+          class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8"
+        >
+          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+            {{ partial "toc.html" . }}
+          </div>
         </div>
+      {{ end }}
+      <div class="min-h-0 min-w-0">
+        {{ .Content | emojify }}
+      </div>
+    </section>
+    {{ if (or .Params.clients .Params.collaborators .Params.references) }}
+      <div
+        class="flex flex-row rounded-md border border-neutral-500 bg-neutral-600/50 p-2 shadow-inner shadow-neutral-500"
+      >
+        {{ if .Params.clients }}
+          <div class="flex-auto">
+            <span class="font-semibold">Clients:</span>
+            <ul class="list-inside list-disc text-sm">
+              {{ range .Params.clients }}
+                <li>
+                  {{ if .url }}
+                    <a href="{{ .url }}" target="_blank">
+                      {{ .name }}
+                    </a>
+                  {{ else }}
+                    {{ .name }}
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ if .Params.collaborators }}
+          <div class="flex-auto">
+            <span class="font-semibold">Collaborators:</span>
+            <ul class="list-inside list-disc text-sm">
+              {{ range .Params.collaborators }}
+                <li>
+                  {{ if .url }}
+                    <a href="{{ .url }}" target="_blank">
+                      {{ .name }}
+                    </a>
+                  {{ else }}
+                    {{ .name }}
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ if .Params.references }}
+          <div class="flex-auto">
+            <span class="font-semibold">References:</span>
+            <ul class="list-inside list-disc text-sm">
+              {{ range .Params.references }}
+                <li>
+                  {{ if .url }}
+                    <a href="{{ .url }}" target="_blank">
+                      {{ .name }}
+                    </a>
+                  {{ else }}
+                    {{ .name }}
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
       </div>
     {{ end }}
-    <div class="min-w-0 min-h-0">
-      {{ .Content | emojify }}
-    </div>
-  </section>
-  {{ if (or .Params.clients .Params.collaborators .Params.references) }}
-    <div class="flex flex-row bg-neutral-600/50 border border-neutral-500 shadow-inner shadow-neutral-500 rounded-md p-2">
-      {{ if .Params.clients }}
-        <div class="flex-auto">
-          <span class="font-semibold">Clients:</span>
-          <ul class="list-disc list-inside text-sm">
-            {{ range .Params.clients }}
-              <li>
-                {{ if .url }}
-                <a href="{{ .url }}" target="_blank">
-                  {{ .name }}
-                </a>
-                {{ else }}
-                  {{ .name }}
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+    <footer class="max-w-prose pt-8 print:hidden">
+      {{ partial "author.html" . }}
+      {{ partial "sharing-links.html" . }}
+      {{ partial "article-pagination.html" . }}
+      {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+        {{ if templates.Exists "partials/comments.html" }}
+          <div class="pt-3">
+            <hr
+              class="border-dotted border-neutral-300 dark:border-neutral-600"
+            />
+            <div class="pt-3">
+              {{ partial "comments.html" . }}
+            </div>
+          </div>
+        {{ else }}
+          {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
+        {{ end }}
       {{ end }}
-      {{ if .Params.collaborators }}
-        <div class="flex-auto">
-          <span class="font-semibold">Collaborators:</span>
-          <ul class="list-disc list-inside text-sm">
-            {{ range .Params.collaborators }}
-              <li>
-                {{ if .url }}
-                <a href="{{ .url }}" target="_blank">
-                  {{ .name }}
-                </a>
-                {{ else }}
-                  {{ .name }}
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      {{ end }}
-      {{ if .Params.references }}
-        <div class="flex-auto">
-          <span class="font-semibold">References:</span>
-          <ul class="list-disc list-inside text-sm">
-            {{ range .Params.references }}
-              <li>
-                {{ if .url }}
-                <a href="{{ .url }}" target="_blank">
-                  {{ .name }}
-                </a>
-                {{ else }}
-                  {{ .name }}
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      {{ end }}
-    </div>
-  {{ end }}
-  <footer class="pt-8 max-w-prose print:hidden">
-    {{ partial "author.html" . }}
-    {{ partial "sharing-links.html" . }}
-    {{ partial "article-pagination.html" . }}
-    {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
-      {{ if templates.Exists "partials/comments.html" }}
-      <div class="pt-3">
-        <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-        <div class="pt-3">
-          {{ partial "comments.html" . }}
-        </div>
-      </div>
-      {{ else }}
-        {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
-      {{ end }}
-    {{ end }}
-  </footer>
-</article>
+    </footer>
+  </article>
 {{ end }}

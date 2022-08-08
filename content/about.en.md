@@ -47,6 +47,7 @@ Therefore, we will continue to work diligently so that our customers will be hap
 
 ### Japan Headquarters
 
+<!-- prettier-ignore -->
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
 | Japanese Name | 合同会社スフォルツァンド |
@@ -62,6 +63,7 @@ Therefore, we will continue to work diligently so that our customers will be hap
 
 ### Canada Subsidiary
 
+<!-- prettier-ignore -->
 | <!-- --> | <!-- --> |
 |:--------:|:---------|
 | Name | SFORZANDO TECHNOLOGIES INC. |

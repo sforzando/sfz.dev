@@ -2,7 +2,8 @@
 title: "あらためまして、ご挨拶"
 date: 2022-06-01T12:34:56+09:00
 draft: false
-sharingLinks: ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+sharingLinks:
+  ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 showAuthor: true
 showDate: true
 showDateUpdated: true
@@ -22,11 +23,11 @@ thumbnail: "img/posts/001-hello.jpg"
 {{< chart >}}
 type: 'bar',
 data: {
-  labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
-  datasets: [{
-    label: '# of Projects',
-    data: [6, 9, 14, 15, 18, 10, 12, 8],
-  }]
+labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+datasets: [{
+label: '# of Projects',
+data: [6, 9, 14, 15, 18, 10, 12, 8],
+}]
 }
 {{< /chart >}}
 

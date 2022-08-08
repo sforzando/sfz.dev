@@ -4,33 +4,43 @@
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
       {{ end }}
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      <h1
+        class="dark:text-neutral mt-0 text-4xl font-extrabold text-neutral-900"
+      >
         {{ .Title | emojify }}
       </h1>
-      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      <div
+        class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden"
+      >
         {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
       </div>
     </header>
-    <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+    <section
+      class="prose dark:prose-invert mt-0 flex max-w-full flex-col lg:flex-row"
+    >
       {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
-        <div class="order-first px-0 lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:order-last">
-          <div class="ltr:pl-5 rtl:pr-5 toc lg:sticky lg:top-10 print:hidden">
+        <div
+          class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8"
+        >
+          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
             {{ partial "toc.html" . }}
           </div>
         </div>
       {{ end }}
-      <div class="min-w-0 min-h-0">
+      <div class="min-h-0 min-w-0">
         {{ .Content | emojify }}
       </div>
     </section>
-    <footer class="pt-8 max-w-prose print:hidden">
+    <footer class="max-w-prose pt-8 print:hidden">
       {{ partial "author.html" . }}
       {{ partial "sharing-links.html" . }}
       {{ partial "article-pagination.html" . }}
       {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
         {{ if templates.Exists "partials/comments.html" }}
           <div class="pt-3">
-            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <hr
+              class="border-dotted border-neutral-300 dark:border-neutral-600"
+            />
             <div class="pt-3">
               {{ partial "comments.html" . }}
             </div>
