@@ -37,7 +37,7 @@ references:
 thumbnail: "img/works/{{ .Name }}_thumbnail.jpg"
 ---
 
-{{< figureWidthFull src="img/works/{{ .Name }}_key.jpg" alt="{{ .Name }}" >}}
+{{< figureWidthFull src="img/works/{{ .Name }}\_key.jpg" alt="{{ .Name }}" >}}
 
 Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
 
@@ -45,4 +45,4 @@ Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisici
 
 Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
 
-{{< figure src="img/works/{{ .Name }}_sub.jpg" alt="{{ .Name }}" >}}
+{{< figure src="img/works/{{ .Name }}\_sub.jpg" alt="{{ .Name }}" >}}

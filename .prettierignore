@@ -2,6 +2,10 @@
 .github
 .gitsecret
 .vscode
+assets/css/compiled/*.css
+assets/js/three.js
+assets/js/vanta.waves.js
 node_modules
+playwright-report
 public
 themes

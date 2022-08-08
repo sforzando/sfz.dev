@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start build watch test ngrok deploy update endorse clean help
+.PHONY: default setup open hide reveal start build watch format test ngrok deploy update endorse clean help
 
 default: start ## 常用
 
@@ -45,6 +45,11 @@ build: ## 構築
 
 watch: ## 監視
 	NODE_ENV=development ./themes/congo/node_modules/tailwindcss/lib/cli.js --config ./themes/congo/tailwind.config.js --input ./themes/congo/assets/css/main.css --output ./assets/css/compiled/main.css --jit --watch
+
+format: ## 整形
+	npx eslint --fix .
+	npx stylelint --fix '**/*.{css,scss,sass}'
+	npx prettier --write .
 
 test: ## 試験
 	npx playwright test --update-snapshots --headed

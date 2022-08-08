@@ -4,23 +4,27 @@
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <h1 class="dark:text-neutral mt-0 text-4xl font-extrabold text-neutral-900">
+      {{ .Title }}
+    </h1>
   </header>
   <section
-    class="flex flex-col max-w-full prose lg:flex-row dark:prose-invert {{ if $toc -}}
+    class="prose dark:prose-invert {{ if $toc -}}
       mt-12
     {{- else -}}
       mt-0
-    {{- end }}"
+    {{- end }} flex max-w-full flex-col lg:flex-row"
   >
     {{ if $toc }}
-      <div class="order-first px-0 lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:order-last">
-        <div class="ltr:pl-5 rtl:pr-5 toc lg:sticky lg:top-10">
+      <div
+        class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8"
+      >
+        <div class="toc ltr:pl-5 rtl:pr-5 lg:sticky lg:top-10">
           {{ partial "toc.html" . }}
         </div>
       </div>
     {{ end }}
-    <div class="min-w-0 min-h-0 max-w-prose">
+    <div class="min-h-0 min-w-0 max-w-prose">
       {{ .Content | emojify }}
     </div>
   </section>
@@ -28,10 +32,12 @@
     <section>
       {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
         {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-          <h2 class="mt-12 text-2xl font-bold first:mt-8 text-neutral-700 dark:text-neutral-300">
+          <h2
+            class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300"
+          >
             {{ .Key }}
           </h2>
-          <hr class="border-dotted border-neutral-400 w-36" />
+          <hr class="w-36 border-dotted border-neutral-400" />
         {{ end }}
         {{ range .Pages }}
           <div class="mt-12">
@@ -42,8 +48,8 @@
     </section>
     {{ partial "pagination.html" . }}
   {{ else }}
-    <section class="mt-10 prose dark:prose-invert">
-      <p class="py-8 border-t">
+    <section class="prose dark:prose-invert mt-10">
+      <p class="border-t py-8">
         <em>{{ i18n "list.no_articles" | emojify }}</em>
       </p>
     </section>

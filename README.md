@@ -1,20 +1,24 @@
 # sfz.dev
 
 <!-- Badges -->
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/32df5ba4-1ddb-4439-b630-ec8964cc1735/deploy-status)](https://app.netlify.com/sites/sfzdev/deploys)
 [![Last Commit](https://img.shields.io/github/last-commit/sforzando/sfz.dev)](https://github.com/sforzando/sfz.dev/graphs/commit-activity)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <!-- Screenshots -->
+
 | ![Screenshot 1](https://placehold.jp/32/3d4070/ffffff/720x480.png?text=Screenshot%201) | ![Screenshot 2](https://placehold.jp/32/703d40/ffffff/720x480.png?text=Screenshot%202) |
-|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
+| :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 |                                      Screenshot 1                                      |                                      Screenshot 2                                      |
 
 <!-- Synopsis -->
+
 Official Corporate Web site of sforzando LLC. and Inc.
 
 <!-- TOC -->
+
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [First time preparation](#first-time-preparation)
@@ -57,6 +61,10 @@ open                 閲覧
 hide                 秘匿
 reveal               暴露
 start                開始
+build                構築
+watch                監視
+format               整形
+test                 試験
 ngrok                転送
 deploy               配備
 update               追随
