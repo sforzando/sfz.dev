@@ -26,8 +26,12 @@ I won the NASA International Space Apps Challenge Tokyo 2011 and completed DL4US
 ## Interests
 
 - Micro Drone
-- Climbing
-- Work
+- Climbing (Bouldering)
+- 3D Printing (FDM)
+
+<!-- ## Credentials
+
+{{< figure src="img/teams/comptia-network-certification.png" class="" alt="CompTIA Network+" href="https://www.credly.com/badges/07101499-9d18-4d61-8120-9cb366c3c26f/public_url" >}} -->
 
 ## Motto
 

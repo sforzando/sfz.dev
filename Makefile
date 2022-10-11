@@ -65,6 +65,7 @@ deploy: ## 配備
 
 update: ## 追随
 	git submodule update --remote --merge
+	cd themes/congo && npm install
 
 endorse: ## 裏書
 	./utils/endorse.sh
