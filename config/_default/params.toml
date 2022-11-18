@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 enableSearch = true
 enableCodeCopy = false
 
-logo = "img/logo/800x800_ffffff.png"
+# logo = "img/logo/800x800_ffffff.png"
 mainSections = ["posts"]
 # robots = ""
 
@@ -19,7 +19,9 @@ mainSections = ["posts"]
   showRecent = true
 
 [header]
-  layout = "custom" # valid options: basic, hamburger, custom
+  layout = "custom" # valid options: basic, hamburger, hybrid, custom
+  logo = "img/logo/800x800_ffffff.png"
+  showTitle = false
 
 [footer]
   showCopyright = true

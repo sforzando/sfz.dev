@@ -4,8 +4,8 @@
   <nav class="flex justify-between">
     {{/* Site logo/title */}}
     <div class="z-40">
-      {{ if .Site.Params.Logo -}}
-        {{ $logo := resources.Get .Site.Params.Logo }}
+      {{ if .Site.Params.header.Logo -}}
+        {{ $logo := resources.Get .Site.Params.header.Logo }}
         {{ if $logo }}
           <a href="{{ "" | relLangURL }}">
             <img
