@@ -11,6 +11,8 @@ enableRobotsTXT = true
 googleAnalytics = "G-L2MP8FTCW6"
 
 paginate = 10
+
+hasCJKLanguage = true
 summaryLength = 0
 
 [outputs]
