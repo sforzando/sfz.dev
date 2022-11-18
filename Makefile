@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start build watch format test ngrok deploy update endorse clean help
+.PHONY: default setup open hide reveal start build watch format test ngrok deploy update-dependencies update-theme endorse clean help
 
 default: start ## 常用
 
@@ -23,6 +23,7 @@ ifeq ($(OS_NAME),Darwin)
 	brew install --cask ngrok
 endif
 	npm install
+	npx playwright install
 	make reveal
 	direnv allow
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
@@ -63,9 +64,12 @@ deploy: ## 配備
 	netlify deploy $(OPTS)
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The deployment process is complete." ; fi
 
-update: ## 追随
+update-dependencies: ## 追随
+	ncu --upgrade && rm -rfv node_modules && npm install && npx playwright install
+
+update-theme: ## 追随
 	git submodule update --remote --merge
-	cd themes/congo && npm install
+	cd themes/congo && npm install && git submodule update --remote --merge
 
 endorse: ## 裏書
 	./utils/endorse.sh

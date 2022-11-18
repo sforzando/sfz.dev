@@ -27,9 +27,10 @@ Official Corporate Web site of sforzando LLC. and Inc.
     - [Dummy Articles](#dummy-articles)
   - [Test](#test)
   - [Deploy](#deploy)
-  - [Catch-up the latest Congo](#catch-up-the-latest-congo)
-    - [Update](#update)
-    - [Endorse](#endorse)
+  - [Update](#update)
+    - [Dependencies](#dependencies)
+    - [Congo](#congo)
+      - [Endorse](#endorse)
   - [Document](#document)
     - [CHANGELOG](#changelog)
   - [Clean](#clean)
@@ -67,7 +68,8 @@ format               整形
 test                 試験
 ngrok                転送
 deploy               配備
-update               追随
+update-dependencies  追随
+update-theme         追随
 endorse              裏書
 clean                掃除
 help                 助言
@@ -122,9 +124,15 @@ E2E tests is available, `make test`.
 
 To deploy this to [Netlify](https://www.netlify.com) manually, `make deploy`.
 
-### Catch-up the latest Congo
+### Update
 
-#### Update
+#### Dependencies
+
+```shell
+make update-dependencies
+```
+
+#### Congo
 
 See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
 
@@ -134,9 +142,9 @@ make update
 
 When the submodule is update, it may be necessary "Clear cache and deploy site." on Netlify.
 
-#### Endorse
+##### Endorse
 
-To confirm the differences from the latest update, `make endorse`.
+To confirm the differences from the latest Congo, `make endorse`.
 
 ### Document
 
