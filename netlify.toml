@@ -8,11 +8,11 @@
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.100.2"
+  HUGO_VERSION = "0.108.0"
   HUGO_ENV = "production"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.100.2"
+  HUGO_VERSION = "0.108.0"
 
 [[redirects]]
   from = "https://sforzando.co.jp"
