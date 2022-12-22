@@ -68,8 +68,8 @@ update-dependencies: ## 追随
 	ncu --upgrade && rm -rfv node_modules && npm install && npx playwright install
 
 update-theme: ## 追随
-	git submodule update --remote --merge
-	cd themes/congo && npm install && git submodule update --remote --merge
+	git submodule update --remote --rebase
+	cd themes/congo && npm install && git submodule update --remote --rebase
 
 endorse: ## 裏書
 	./utils/endorse.sh
