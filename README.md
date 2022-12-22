@@ -42,7 +42,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ## Prerequisites
 
 - Go (v1.18 or higher)
-  - Hugo (v.0.101.0 or higher)
+  - Hugo (v.0.108.0 or higher)
     - [Congo](https://github.com/jpanther/congo)
     - [Vanta.js](https://github.com/tengbao/vanta)
 - Node.js
