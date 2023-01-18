@@ -1,0 +1,22 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+theme = "congo"
+
+baseURL = "https://sfz.dev/"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+googleAnalytics = "G-L2MP8FTCW6"
+
+paginate = 10
+
+hasCJKLanguage = true
+summaryLength = 0
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[security.funcs]
+  getenv = ["^HUGO_", "^MAPBOX"]
