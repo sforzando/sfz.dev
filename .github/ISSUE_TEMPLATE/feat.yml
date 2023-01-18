@@ -1,0 +1,48 @@
+name: Feat Form (機能追加)
+description: Suggest an idea for this project
+title: "feat: <title>"
+assignees:
+  - shin-sforzando
+labels: ["enhancement"]
+body:
+  - type: textarea
+    attributes:
+      label: Goal
+      description: |
+        Describe the desired **state**.
+
+        ex. Automated testing should be completed with just a push.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Acceptance criteria
+      description: |
+        Describe the acceptance criteria, like test code.
+
+        ex.
+
+        ```python
+        assert 1 + 1 == 2
+        ```
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Proposal
+      description: |
+        List any options that might solve the issue.
+
+        ex.
+
+        - GitHub Actions
+        - Circle CI
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Appendix
+      description: |
+        Links, references or anything that will give us more context about the issue!
+    validations:
+      required: false
