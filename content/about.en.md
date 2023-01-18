@@ -14,7 +14,7 @@ showWordCount: false
 
 ## Message from CEO
 
-{{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="Shin`ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
+{{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="Shin'ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
 
 Hello, I'm [Shin'ichiro Suzuki](/teams/shin-sforzando), the CEO of sforzando group.
 
