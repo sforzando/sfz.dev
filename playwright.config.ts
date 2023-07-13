@@ -1,18 +1,20 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-require('dotenv').config();
+require("dotenv").config();
 
-const baseURL = 'http://0.0.0.0:1313'
+const baseURL = "http://localhost:1313";
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
+  /* Maximum time one test can run for. */
+  timeout: 30 * 1000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -22,14 +24,14 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: baseURL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: "on-first-retry",
   },
 
   /* Configure projects for major browsers */
@@ -52,7 +54,6 @@ export default defineConfig({
         ...devices["Desktop Safari"],
       },
     },
-    /* Test against mobile. */
     {
       name: "Mobile Chrome",
       use: {
@@ -69,8 +70,11 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'make start',
+    command: "make start",
     url: baseURL,
+    ignoreHTTPSErrors: true,
+    stdout: process.env.CI ? "ignore" : "pipe",
+    stderr: process.env.CI ? "ignore" : "pipe",
     reuseExistingServer: !process.env.CI,
   },
 });
