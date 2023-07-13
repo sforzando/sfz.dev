@@ -1,0 +1,19 @@
+{
+  "name": "sfz.dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E2E Test for Official Corporate Web site of sforzando LLC. and Inc.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "sforzando LLC. and Inc.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sforzando/sfz.dev.git"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.36.0",
+    "dotenv": "^16.3.1"
+  }
+}
