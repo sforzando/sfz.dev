@@ -8,7 +8,7 @@ OPEN_TARGET := http://0.0.0.0:1313/
 
 OPTS :=
 .DEFAULT_GOAL := default
-.PHONY: default setup open hide reveal start ngrok test deploy update clean help
+.PHONY: default setup open hide reveal start ngrok test build deploy update clean help
 
 default: start ## 常用
 
@@ -18,11 +18,14 @@ ifeq ($(OS_NAME),Darwin)
 	brew install git-cliff
 	brew install git-secret
 	brew install hugo
+	brew install lefthook
 	brew install netlify-cli
 	brew install --cask ngrok
 endif
 	make reveal
 	direnv allow
+	npm install
+	npx playwright install --with-deps
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The setup process is complete." ; fi
 
 open: ## 閲覧
@@ -45,6 +48,10 @@ ngrok: ## 転送
 test: ## 試験
 	npx playwright test --update-snapshots --headed
 	@if [ $(OS_NAME) = "Darwin" ]; then say "The test process is complete." ; fi
+
+build: ## 構築
+	hugo --gc --ignoreCache --minify --logLevel debug
+	@if [ $(OS_NAME) = "Darwin" ]; then say "The build process is complete." ; fi
 
 deploy: ## 配備
 	netlify init

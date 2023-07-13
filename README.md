@@ -52,9 +52,9 @@ Official Corporate Web site of sforzando LLC. and Inc.
 
 ## ToDo
 
-- [ ] Introduce git-secret to hide `.envrc`
+- [x] Introduce git-secret to hide `.envrc`
 - [ ] Prepare Lefthook
-- [ ] Prepare `Makefile`
+- [x] Prepare `Makefile`
 - [ ] Reconfigure all files
 - [ ] Migrate old contents
 - [ ] Git Push to `main`
@@ -70,6 +70,8 @@ hide                 秘匿
 reveal               暴露
 start                開始
 ngrok                転送
+test                 試験
+build                構築
 deploy               配備
 update               更新
 clean                掃除
