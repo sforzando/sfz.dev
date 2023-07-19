@@ -1,6 +1,12 @@
 {
     "recommendations": [
-        "streetsidesoftware.code-spell-checker",
-        "editorconfig.editorconfig"
+      "budparr.language-hugo-vscode",
+      "davidanson.vscode-markdownlint",
+      "editorconfig.editorconfig",
+      "ms-playwright.playwright",
+      "ms-vscode.makefile-tools",
+      "shd101wyy.markdown-preview-enhanced",
+      "streetsidesoftware.code-spell-checker",
+      "yzhang.markdown-all-in-one"
     ]
 }

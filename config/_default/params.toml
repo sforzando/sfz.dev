@@ -9,14 +9,15 @@ colorScheme = "ocean"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = false
 
 # robots = ""
 
 [header]
-  layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  # logo = "img/logo.jpg"
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
+  logo = "image/logo/500x500_ffffff.png"
+  logoDark = "image/logo/500x500_000000.png"
   showTitle = false
 
 [footer]
@@ -27,7 +28,7 @@ enableCodeCopy = false
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
-  showRecent = false
+  showRecent = true
   recentLimit = 5
 
 [article]
@@ -64,7 +65,7 @@ enableCodeCopy = false
   showTermCount = true
 
 [fathomAnalytics]
-  # site = "ABC12345"
+  site = "NDBFFLKC"
   # domain = "llama.yoursite.com"
 
 [verification]
