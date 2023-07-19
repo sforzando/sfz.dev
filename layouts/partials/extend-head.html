@@ -1,0 +1,56 @@
+<!-- Vanta Waves -->
+{{ $threeJs := resources.Get "script/three.js" }}
+{{ $vantaWaveJs := resources.Get "script/vanta.waves.js" }}
+{{ $backgroundMinJs := slice $threeJs $vantaWaveJs | resources.Concat "script/background.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script
+  defer
+  type="text/javascript"
+  src="{{ $backgroundMinJs.RelPermalink }}"
+></script>
+<script>
+  const vantaDarkColor = 0x0d1f2c;
+  const vantaLightColor = 0xcccccc;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const vantaElement = document.createElement("div");
+    vantaElement.id = "wave-background";
+    vantaElement.className = "print:hidden";
+    vantaElement.style.zIndex = "-1";
+    vantaElement.style.position = "fixed";
+    vantaElement.style.minHeight = "100vh";
+    vantaElement.style.minWidth = "100vw";
+    vantaElement.style.top = "0";
+    vantaElement.style.left = "0";
+    document.body.insertBefore(vantaElement, document.body.firstChild);
+    const vantaWaves = VANTA.WAVES({
+      el: "#wave-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: document.documentElement.classList.contains("dark") ? vantaDarkColor : vantaLightColor,
+      shininess: 15.0, // default: 30.00
+      waveHeight: 15, // default: 15
+      waveSpeed: 0.75, // default: 1.00
+      zoom: 1.0, // default: 1.00
+    });
+
+    // Change Vanta color according to appearance
+    const switchers = document.querySelectorAll("[id^='appearance-switcher']");
+    switchers.forEach((switcher) => {
+      switcher.addEventListener("click", () => {
+        if (document.documentElement.classList.contains("dark")) {
+          vantaWaves.setOptions({
+            color: vantaLightColor,
+          });
+        } else {
+          vantaWaves.setOptions({
+            color: vantaDarkColor,
+          });
+        }
+      });
+    });
+
+  });
+</script>

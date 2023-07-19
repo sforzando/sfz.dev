@@ -56,6 +56,8 @@ Official Corporate Web site of sforzando LLC. and Inc.
 - [ ] Prepare Lefthook
 - [x] Prepare `Makefile`
 - [ ] Reconfigure all files
+- [ ] Prepare favicon
+- [ ] Set background using vanta.js
 - [ ] Migrate old contents
 - [ ] Git Push to `main`
 
