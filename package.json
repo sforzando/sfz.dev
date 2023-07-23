@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {},
   "devDependencies": {
-    "@playwright/test": "^1.36.0",
+    "@playwright/test": "^1.36.1",
     "dotenv": "^16.3.1"
   }
 }
