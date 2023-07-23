@@ -1,16 +1,16 @@
-languageCode = "en"
-languageName = "English"
-weight = 1
+languageCode = "ja"
+languageName = "Japanese"
+weight = 2
 
 title = "sforzando LLC. and Inc."
 copyright = "&copy; 2022 sforzando LLC. and Inc."
 
 [params]
-  isoCode = "en"
-  displayName = "ENG"
+  isoCode = "ja"
+  displayName = "JPN"
   rtl = false
 
-  dateFormat = "2 January 2006"
+  dateFormat = "2006年1月2日"
 
   # mainSections = ["section1", "section2"]
   description = "sforzando LLC. and Inc. specializes in rapid and flexible prototyping with a focus on software development."
