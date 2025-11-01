@@ -223,7 +223,6 @@ dist
 /public/
 /resources/_gen/
 /assets/jsconfig.json
-/assets/css/compiled/
 hugo_stats.json
 
 # Executable may be added to repository
@@ -353,6 +352,7 @@ fabric.properties
 ### Project Specific ###
 
 # Playwright
+.playwright-mcp/
 *snapshots
 
 # Local Netlify folder

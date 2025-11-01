@@ -25,7 +25,9 @@ tasks:
           brew install netlify-cli
           brew install --cask ngrok
         fi
+      - git submodule update --init --recursive
       - npm install
+      - npm install --prefix themes/congo
       - npx playwright install --with-deps
       - task: reveal
       - direnv allow
@@ -52,8 +54,15 @@ tasks:
     cmds:
       - git secret reveal -vf
 
+  build-css:
+    desc: 構築 - TailwindCSSをビルド
+    cmds:
+      - NODE_ENV=production ./themes/congo/node_modules/.bin/tailwindcss -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
+
   start:
     desc: 開始 - Hugo開発サーバー起動
+    deps:
+      - build-css
     cmds:
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
@@ -96,13 +105,13 @@ tasks:
       - ncu --upgrade
       - rm -rfv node_modules
       - npm install
-      - npx playwright install
+      - npx playwright install --with-deps
 
   update-theme:
     desc: 追随 - Congoテーマを更新
     cmds:
-      - hugo mod get -u github.com/jpanther/congo/v2
-      - hugo mod tidy
+      - git submodule update --remote --merge themes/congo
+      - npm install --prefix themes/congo
 
   clean:
     desc: 掃除 - テスト結果を削除

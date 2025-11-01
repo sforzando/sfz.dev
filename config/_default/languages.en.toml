@@ -11,7 +11,7 @@ copyright = "&copy; 2022 sforzando LLC. and Inc."
 
 dateFormat = "2 January 2006"
 
-[author]
+[params.author]
 name = "sforzando LLC. and Inc."
 image = "img/logo/1080x1080_ffffff.png"
 headline = "An international company specializing in prototyping."
@@ -55,7 +55,7 @@ links = [
   #   { tiktok = "https://tiktok.com/@username" },
   #   { tumblr = "https://username.tumblr.com" },
   #   { twitch = "https://twitch.tv/username" },
-    { twitter = "https://twitter.com/sforzando_llc" },
+    { x-twitter = "https://twitter.com/sforzando_llc" },
   #   { whatsapp = "https://wa.me/phone-number" },
   #   { youtube = "https://youtube.com/username" },
 ]
