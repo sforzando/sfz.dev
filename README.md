@@ -46,7 +46,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 
 - Go (v1.25 or higher)
   - Hugo (v.0.146.0 or higher, **Extended version required**)
-    - [Congo v2.12.2](https://github.com/jpanther/congo) (via Hugo Modules)
+    - [Congo v2.12.2](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
   - [Biome](https://biomejs.dev/) (v2.3.2)
   - [Prettier](https://prettier.io/) (v3.6.2) with go-template plugin
@@ -64,6 +64,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 $ task --list
 task: Available tasks for this project:
 * default:               常用 - 開発サーバー起動
+* build-css:             構築 - TailwindCSSをビルド
 * clean:                 掃除 - テスト結果を削除
 * deploy:                配備 - Netlifyへデプロイ
 * format:                整形 - コードフォーマット実行
@@ -90,16 +91,29 @@ Then, run `task setup`.
 
 #### Introduce Congo
 
-Congo theme is managed via Hugo Modules. It's automatically installed when you run `hugo` commands.
+Congo theme is managed as a Git submodule at `themes/congo/`.
 
-To manually update the theme:
+The theme is automatically initialized when you run `task setup`, which executes:
 
 ```shell
-task update-theme
-# or
-hugo mod get -u github.com/jpanther/congo/v2
-hugo mod tidy
+git submodule update --init --recursive
+npm install --prefix themes/congo
 ```
+
+**TailwindCSS Build**: Congo uses TailwindCSS, which must be built from source to support custom utility classes used in this project. The build process is automatically triggered when you run `task start`.
+
+The build uses Congo's own `themes/congo/tailwind.config.js`, which already includes content paths for the project root (`./layouts/**/*.html`, `./content/**/*.{html,md}`). This means:
+- No need to create a separate tailwind.config.js in the project root
+- The submodule remains clean and easy to update
+- Custom TailwindCSS classes in project content are automatically detected
+
+To manually build TailwindCSS:
+
+```shell
+task build-css
+```
+
+This compiles `themes/congo/assets/css/main.css` using `themes/congo/tailwind.config.js` and outputs to `assets/css/compiled/main.css`, which Hugo automatically uses instead of the theme's pre-compiled CSS.
 
 ### Start
 
@@ -146,13 +160,20 @@ task update-dependencies
 
 #### Congo
 
-See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
+To update the Congo theme to the latest stable version:
 
 ```shell
 task update-theme
 ```
 
-Hugo Modules are cached, so you may need to run `hugo mod clean` if updates don't appear.
+This executes:
+
+```shell
+git submodule update --remote --merge themes/congo
+npm install --prefix themes/congo
+```
+
+After updating, rebuild TailwindCSS with `task build-css` or restart the dev server with `task start`.
 
 ### Document
 
@@ -193,7 +214,10 @@ This project uses modern development tooling:
 - **[Task](https://taskfile.dev/)** - Modern task runner (replaces Make)
   - Configuration: `Taskfile.yml`
 - **[Hugo](https://gohugo.io/)** (v0.152.2+extended) - Static site generator
-- **[Congo](https://github.com/jpanther/congo)** (v2.12.2) - Hugo theme via Hugo Modules
+- **[Congo](https://github.com/jpanther/congo)** (v2.12.2) - Hugo theme via Git submodule
+  - **[TailwindCSS](https://tailwindcss.com/)** (v3.4.17) - Built from source to support custom utility classes
+  - Configuration: `themes/congo/tailwind.config.js`
+  - Output: `assets/css/compiled/main.css`
 
 ## Misc
 

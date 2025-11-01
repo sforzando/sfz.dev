@@ -4,6 +4,7 @@
 
 baseURL = "https://sfz.dev/"
 defaultContentLanguage = "en"
+theme = "congo"
 
 enableRobotsTXT = true
 googleAnalytics = "G-L2MP8FTCW6"
