@@ -2,21 +2,49 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-theme = "congo"
-
 baseURL = "https://sfz.dev/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
 googleAnalytics = "G-L2MP8FTCW6"
 
-paginate = 10
-
 hasCJKLanguage = true
 summaryLength = 0
+
+[pagination]
+  pagerSize = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [security.funcs]
   getenv = ["^HUGO_", "^MAPBOX"]
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/mapbox-gl/dist"
+    target = "assets/vendor/mapbox-gl"
+  [[module.mounts]]
+    source = "node_modules/three/build"
+    target = "assets/vendor/three"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"

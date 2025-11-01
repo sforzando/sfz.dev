@@ -1,15 +1,15 @@
 {
   "recommendations": [
+    "biomejs.biome",
     "bradlc.vscode-tailwindcss",
     "budparr.language-hugo-vscode",
-    "bungcip.better-toml",
-    "christian-kohler.path-intellisense",
     "DavidAnson.vscode-markdownlint",
     "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
     "ms-playwright.playwright",
-    "ms-vscode.makefile-tools",
     "shd101wyy.markdown-preview-enhanced",
     "streetsidesoftware.code-spell-checker",
+    "task.vscode-task",
     "yzhang.markdown-all-in-one"
   ]
 }

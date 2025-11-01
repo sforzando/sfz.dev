@@ -1,41 +1,45 @@
 {
   "name": "sfz.dev",
-  "version": "1.0.0",
-  "description": "<!-- Badges --> [![Netlify Status](https://api.netlify.com/api/v1/badges/32df5ba4-1ddb-4439-b630-ec8964cc1735/deploy-status)](https://app.netlify.com/sites/sfzdev/deploys) [![Last Commit](https://img.shields.io/github/last-commit/sforzando/sfz.dev)](https://github.com/sforzando/sfz.dev/graphs/commit-activity) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "sforzando LLC. Official Website - Built with Hugo and Congo theme",
+  "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "lefthook install",
+    "format": "npm run format:biome && npm run format:html",
+    "format:biome": "biome check --write .",
+    "format:html": "prettier --write '**/*.html'",
+    "format:check": "npm run format:biome:check && npm run format:html:check",
+    "format:biome:check": "biome check .",
+    "format:html:check": "prettier --check '**/*.html'",
+    "lint": "biome lint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sforzando/sfz.dev.git"
   },
-  "keywords": [],
+  "keywords": [
+    "hugo",
+    "congo",
+    "website",
+    "static-site"
+  ],
   "author": "sforzando LLC. and Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sforzando/sfz.dev/issues"
   },
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
+  "dependencies": {
+    "mapbox-gl": "^3.16.0",
+    "three": "^0.181.0"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.29.2",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
-    "dotenv": "^16.0.3",
-    "eslint": "^8.32.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.6.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "husky": "^8.0.3",
-    "prettier": "^2.8.3",
-    "prettier-plugin-go-template": "^0.0.13",
-    "prettier-plugin-md-nocjsp": "^1.5.1",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "stylelint": "^14.16.1",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-standard": "^29.0.0",
-    "typescript": "^4.9.4"
+    "@biomejs/biome": "2.3.2",
+    "@playwright/test": "^1.56.1",
+    "dotenv": "^17.2.3",
+    "lefthook": "^2.0.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-go-template": "^0.0.15",
+    "typescript": "^5.9.3"
   }
 }
