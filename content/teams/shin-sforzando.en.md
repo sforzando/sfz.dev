@@ -12,7 +12,7 @@ showTableOfContents: true
 showWordCount: false
 ---
 
-{{< figureWidthFull src="img/teams/shin-sforzando.jpg" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp) " >}}
+{{< figure class="w-screen" src="img/teams/shin-sforzando.jpg" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp) " >}}
 
 ## History
 

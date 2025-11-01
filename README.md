@@ -30,10 +30,13 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [Update](#update)
     - [Dependencies](#dependencies)
     - [Congo](#congo)
-      - [Endorse](#endorse)
   - [Document](#document)
     - [CHANGELOG](#changelog)
   - [Clean](#clean)
+- [Toolchain](#toolchain)
+  - [Code Quality](#code-quality)
+  - [Git Hooks](#git-hooks)
+  - [Build \& Development](#build--development)
 - [Misc](#misc)
 - [Notes](#notes)
   - [LICENSE](#license)
@@ -41,12 +44,15 @@ Official Corporate Web site of sforzando LLC. and Inc.
 
 ## Prerequisites
 
-- Go (v1.18 or higher)
-  - Hugo (v.0.108.0 or higher)
-    - [Congo](https://github.com/jpanther/congo)
-    - [Vanta.js](https://github.com/tengbao/vanta)
-- Node.js
+- Go (v1.25 or higher)
+  - Hugo (v.0.146.0 or higher, **Extended version required**)
+    - [Congo v2.12.2](https://github.com/jpanther/congo) (via Hugo Modules)
+- Node.js (v24 or higher)
+  - [Biome](https://biomejs.dev/) (v2.3.2)
+  - [Prettier](https://prettier.io/) (v3.6.2) with go-template plugin
   - [Playwright](https://playwright.dev/)
+- [Task](https://taskfile.dev/) (build automation)
+- [Lefthook](https://github.com/evilmartians/lefthook) (git hooks)
 - [Netlify](https://www.netlify.com)
   - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 - [Mapbox](https://www.mapbox.com)
@@ -55,24 +61,21 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ## How to
 
 ```shell
-$ make help
-default              常用
-setup                初期
-open                 閲覧
-hide                 秘匿
-reveal               暴露
-start                開始
-build                構築
-watch                監視
-format               整形
-test                 試験
-ngrok                転送
-deploy               配備
-update-dependencies  追随
-update-theme         追随
-endorse              裏書
-clean                掃除
-help                 助言
+$ task --list
+task: Available tasks for this project:
+* default:               常用 - 開発サーバー起動
+* clean:                 掃除 - テスト結果を削除
+* deploy:                配備 - Netlifyへデプロイ
+* format:                整形 - コードフォーマット実行
+* hide:                  秘匿 - git-secretで秘密情報を暗号化
+* ngrok:                 転送 - ngrokでローカルサーバーを公開
+* open:                  閲覧 - ブラウザで開く
+* reveal:                暴露 - git-secretで秘密情報を復号化
+* setup:                 初期セットアップ
+* start:                 開始 - Hugo開発サーバー起動
+* test:                  試験 - Playwrightテスト実行
+* update-dependencies:   追随 - 依存パッケージを更新
+* update-theme:          追随 - Congoテーマを更新
 ```
 
 ### First time preparation
@@ -83,24 +86,33 @@ Prepare `.envrc` like this,
 MAPBOX_ACCESS_TOKEN="xxxx"
 ```
 
-Then, run `make setup`.
+Then, run `task setup`.
 
 #### Introduce Congo
 
+Congo theme is managed via Hugo Modules. It's automatically installed when you run `hugo` commands.
+
+To manually update the theme:
+
 ```shell
-git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
+task update-theme
+# or
+hugo mod get -u github.com/jpanther/congo/v2
+hugo mod tidy
 ```
 
 ### Start
 
 ```shell
-make
+task
+# or
+task start
 ```
 
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
-To open it, `make open`.
+To open it, `task open`.
 
-Transfer by ngrok is convenient for checking on a smartphone, use `make ngrok`.
+Transfer by ngrok is convenient for checking on a smartphone, use `task ngrok`.
 
 #### Dummy Articles
 
@@ -118,18 +130,18 @@ All dummy photos from [Unsplash](https://unsplash.com).
 
 ### Test
 
-E2E tests is available, `make test`.
+E2E tests is available, `task test`.
 
 ### Deploy
 
-To deploy this to [Netlify](https://www.netlify.com) manually, `make deploy`.
+To deploy this to [Netlify](https://www.netlify.com) manually, `task deploy`.
 
 ### Update
 
 #### Dependencies
 
 ```shell
-make update-dependencies
+task update-dependencies
 ```
 
 #### Congo
@@ -137,14 +149,10 @@ make update-dependencies
 See. [Congo official document](https://jpanther.github.io/congo/docs/installation/#installing-updates).
 
 ```shell
-make update
+task update-theme
 ```
 
-When the submodule is update, it may be necessary "Clear cache and deploy site." on Netlify.
-
-##### Endorse
-
-To confirm the differences from the latest Congo, `make endorse`.
+Hugo Modules are cached, so you may need to run `hugo mod clean` if updates don't appear.
 
 ### Document
 
@@ -160,7 +168,32 @@ git cliff --output CHANGELOG.md
 
 ### Clean
 
-To clean up miscellaneous files, `make clean`.
+To clean up miscellaneous files, `task clean`.
+
+## Toolchain
+
+This project uses modern development tooling:
+
+### Code Quality
+
+- **[Biome](https://biomejs.dev/)** (v2.3.2) - Fast linter and formatter for JS/TS/JSON/CSS
+  - `npm run format:biome` - Format code with Biome
+  - `npm run lint` - Lint code with Biome
+- **[Prettier](https://prettier.io/)** (v3.6.2) - HTML formatter with Go template support
+  - `npm run format:html` - Format HTML files with Prettier
+
+### Git Hooks
+
+- **[Lefthook](https://github.com/evilmartians/lefthook)** (v2.0.2) - Fast Git hooks manager
+  - Automatically runs `npm run format` and `task test` on pre-commit
+  - Configuration: `.lefthook.yml`
+
+### Build & Development
+
+- **[Task](https://taskfile.dev/)** - Modern task runner (replaces Make)
+  - Configuration: `Taskfile.yml`
+- **[Hugo](https://gohugo.io/)** (v0.152.2+extended) - Static site generator
+- **[Congo](https://github.com/jpanther/congo)** (v2.12.2) - Hugo theme via Hugo Modules
 
 ## Misc
 

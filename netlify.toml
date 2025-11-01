@@ -1,18 +1,18 @@
 [build]
-  command = "hugo --theme=congo --gc --minify --baseURL $URL"
+  command = "hugo --gc --minify --baseURL $URL"
   publish = "public"
 
 [build.environment]
   NODE_ENV = "development"
-  GO_VERSION = "1.19.4"
+  GO_VERSION = "1.25.3"
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.108.0"
+  HUGO_VERSION = "0.152.2"
   HUGO_ENV = "production"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.108.0"
+  HUGO_VERSION = "0.152.2"
 
 [[redirects]]
   from = "https://sforzando.co.jp"

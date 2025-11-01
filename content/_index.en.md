@@ -18,7 +18,7 @@ It is written as **sfz** in the musical scores.
 Its etymology is the Italian word "Indicate your power."
 {{< /lead >}}
 
-{{< figureWidthFull src="img/top.jpg" alt="Indicate your power." class="flex justify-center" >}}
+{{< figure class="w-screen" src="img/top.jpg" alt="Indicate your power." class="flex justify-center" >}}
 
 We specialize in "rapid and flexible prototyping" with a focus on software development.  
 For any business, a prototype is not only a catalyst for actual production, but also a powerful weapon in market research and fundraising.  

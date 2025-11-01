@@ -223,6 +223,7 @@ dist
 /public/
 /resources/_gen/
 /assets/jsconfig.json
+/assets/css/compiled/
 hugo_stats.json
 
 # Executable may be added to repository
@@ -351,11 +352,6 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,pycharm+all,visualstudiocode,hugo,node
 ### Project Specific ###
 
-# git-secret
-.gitsecret/keys/random_seed
-!*.secret
-.envrc
-
 # Playwright
 *snapshots
 
@@ -364,3 +360,8 @@ fabric.properties
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# git-secret
+.gitsecret/keys/random_seed
+!*.secret
+.envrc

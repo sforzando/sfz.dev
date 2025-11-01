@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test"
+import { expect, test } from "@playwright/test"
 
 test("top", async ({ page, isMobile }) => {
   // Go to https://sfz.dev/

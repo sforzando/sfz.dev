@@ -1,9 +1,8 @@
 {{/* Mapbox GL */}}
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-<link
-  href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-  rel="stylesheet"
-/>
+{{ $mapboxCSS := resources.Get "vendor/mapbox-gl/mapbox-gl.css" | resources.Minify }}
+{{ $mapboxJS := resources.Get "vendor/mapbox-gl/mapbox-gl.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<link href="{{ $mapboxCSS.RelPermalink }}" rel="stylesheet" />
+<script src="{{ $mapboxJS.RelPermalink }}" defer></script>
 <script>
   mapboxgl.accessToken = "{{ getenv "MAPBOX_ACCESS_TOKEN" }}";
   const default_zoom = 12;

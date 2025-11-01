@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "WebFetch(domain:jpanther.github.io)",
+      "WebFetch(domain:biomejs.dev)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

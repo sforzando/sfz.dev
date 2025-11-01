@@ -7,8 +7,12 @@
 
 colorScheme = "ocean"
 defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = false
+enableImageLazyLoading = true
+enableImageWebp = true
+enableQuicklink = true
 
 # logo = "img/logo/800x800_ffffff.png"
 mainSections = ["posts"]
@@ -19,7 +23,7 @@ mainSections = ["posts"]
   showRecent = true
 
 [header]
-  layout = "custom" # valid options: basic, hamburger, hybrid, custom
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   logo = "img/logo/800x800_ffffff.png"
   showTitle = false
 
