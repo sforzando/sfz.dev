@@ -14,7 +14,8 @@ showWordCount: false
 
 ## 代表よりごあいさつ
 
-{{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="鈴木 真一朗" caption="Photo by [niacari](https://niacari.jp)" >}}
+<div class="flex flex-col md:flex-row gap-8 mb-12">
+  <div class="flex-1 order-2 md:order-1">
 
 こんにちは、代表の[鈴木](/ja/teams/shin-sforzando)です。
 
@@ -26,6 +27,14 @@ showWordCount: false
 それがお客さまにとって真に重要なことであり、弊社が世界に貢献できることと信じているからです。
 
 たくさんの方に弊社のクセをご理解いただき、応援いただき、だからこそ、これからも妥協なく「どうあるべきか」に向き合って、お客さまが「そう、こういうことがしたかったんだ！」と喜んでいただけるよう研鑽、邁進したいと思います。
+
+  </div>
+  <div class="flex-shrink-0 order-1 md:order-2 md:w-80">
+
+{{< figure src="img/teams/ceo.png" alt="鈴木 真一朗" caption="Photo by [niacari](https://niacari.jp)" >}}
+
+  </div>
+</div>
 
 ## 沿革
 

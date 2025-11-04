@@ -103,6 +103,7 @@ npm install --prefix themes/congo
 **TailwindCSS Build**: Congo uses TailwindCSS, which must be built from source to support custom utility classes used in this project. The build process is automatically triggered when you run `task start`.
 
 The build uses Congo's own `themes/congo/tailwind.config.js`, which already includes content paths for the project root (`./layouts/**/*.html`, `./content/**/*.{html,md}`). This means:
+
 - No need to create a separate tailwind.config.js in the project root
 - The submodule remains clean and easy to update
 - Custom TailwindCSS classes in project content are automatically detected

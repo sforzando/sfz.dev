@@ -1,17 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install)",
-      "WebFetch(domain:jpanther.github.io)",
-      "WebFetch(domain:biomejs.dev)",
-      "WebFetch(domain:github.com)",
-      "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_console_messages",
-      "WebFetch(domain:docs.mapbox.com)",
-      "mcp__playwright__browser_evaluate",
       "Bash(cat:*)",
       "Bash(hugo mod:*)",
-      "Bash(test:*)"
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_take_screenshot",
+      "WebFetch(domain:biomejs.dev)",
+      "WebFetch(domain:docs.mapbox.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:jpanther.github.io)",
+      "Bash(task build-css)"
     ],
     "deny": [],
     "ask": []
