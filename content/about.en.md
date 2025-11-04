@@ -14,7 +14,8 @@ showWordCount: false
 
 ## Message from CEO
 
-{{< figure src="img/teams/ceo.png" class="m-4 max-w-xs float-right" alt="Shin'ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
+<div class="flex flex-col md:flex-row gap-8 mb-12">
+  <div class="flex-1 order-2 md:order-1">
 
 Hello, I'm [Shin'ichiro Suzuki](/teams/shin-sforzando), the CEO of sforzando group.
 
@@ -27,6 +28,14 @@ We believe this is what really matters to our customers and how we contribute to
 
 We are grateful that so many people understand and support our business and culture.
 As a result, we will continue to work diligently to make sure our customers can say, "Yes, this is what We wanted to do!"
+
+  </div>
+  <div class="flex-shrink-0 order-1 md:order-2 md:w-80">
+
+{{< figure src="img/teams/ceo.png" alt="Shin'ichiro Suzuki" caption="Photo by [niacari](https://niacari.jp)" >}}
+
+  </div>
+</div>
 
 ## History
 
