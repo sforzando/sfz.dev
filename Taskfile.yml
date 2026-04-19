@@ -26,15 +26,19 @@ tasks:
           brew install --cask ngrok
         fi
       - git submodule update --init --recursive
-      - npm install
-      - npm install --prefix themes/congo
-      - npx playwright install --with-deps
       - task: reveal
       - direnv allow
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The setup process is complete."
         fi
+
+  install:
+    desc: 依存パッケージをインストール
+    cmds:
+      - npm install
+      - npm install --prefix themes/congo
+      - npx playwright install --with-deps
 
   open:
     desc: 閲覧 - ブラウザで開く

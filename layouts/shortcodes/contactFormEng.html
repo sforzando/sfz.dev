@@ -1,4 +1,4 @@
-<div class="mx-auto w-screen max-w-lg justify-center">
+<div class="w-full">
   <form
     name="contact"
     method="POST"
@@ -11,33 +11,45 @@
       <label for="bot-field"> Do NOT fill this out if you are human. </label>
       <input id="bot-field" name="bot-field" />
     </div>
-    <div>
-      <label class="block font-semibold" for="form-name">Name</label>
+    <div class="mb-4">
+      <label
+        class="mb-1 block text-sm font-semibold text-neutral-700 dark:text-neutral-300"
+        for="form-name"
+        >Name</label
+      >
       <input
         type="text"
         id="form-name"
-        class="block w-full rounded-md"
+        class="block w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral dark:placeholder-neutral-500"
         name="name"
         placeholder="Barney Rubble"
         required
       />
     </div>
-    <div>
-      <label class="block font-semibold" for="form-email">Email</label>
+    <div class="mb-4">
+      <label
+        class="mb-1 block text-sm font-semibold text-neutral-700 dark:text-neutral-300"
+        for="form-email"
+        >Email</label
+      >
       <input
         type="email"
         id="form-email"
-        class="block w-full rounded-md"
+        class="block w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral dark:placeholder-neutral-500"
         name="email"
         placeholder="barney@example.com"
         required
       />
     </div>
-    <div>
-      <label class="block font-semibold" for="form-message">Message</label>
+    <div class="mb-4">
+      <label
+        class="mb-1 block text-sm font-semibold text-neutral-700 dark:text-neutral-300"
+        for="form-message"
+        >Message</label
+      >
       <textarea
         id="form-message"
-        class="block w-full rounded-md"
+        class="block w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral dark:placeholder-neutral-500"
         name="message"
         rows="5"
         placeholder="Either English or Japanese is acceptable."
@@ -47,7 +59,7 @@
     <div class="flex justify-end">
       <button
         type="submit"
-        class="mt-2 rounded-md border py-2 px-4 font-bold hover:scale-105"
+        class="mt-2 rounded-md bg-primary-600 px-6 py-2 font-bold text-white transition-transform hover:scale-105 hover:bg-primary-700"
       >
         Send
       </button>

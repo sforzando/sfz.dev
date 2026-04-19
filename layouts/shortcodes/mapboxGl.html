@@ -1,6 +1,6 @@
 {{/* Mapbox GL */}}
 {{ $mapboxCSS := resources.Get "vendor/mapbox-gl/mapbox-gl.css" }}
-{{ $mapboxJS := resources.Get "vendor/mapbox-gl/mapbox-gl-unminified.js" | resources.Fingerprint "sha512" }}
+{{ $mapboxJS := resources.Get "vendor/mapbox-gl/mapbox-gl.js" | resources.Fingerprint "sha512" }}
 <link href="{{ $mapboxCSS.RelPermalink }}" rel="stylesheet" />
 <script src="{{ $mapboxJS.RelPermalink }}"></script>
 <script>
