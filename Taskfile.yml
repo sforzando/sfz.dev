@@ -74,10 +74,16 @@ tasks:
         fi
       - hugo server --buildDrafts --buildFuture
 
+  lint-markdown:
+    desc: 検査 - Markdownlintでマークダウンを検査
+    cmds:
+      - npx markdownlint-cli2 "**/*.md"
+
   format:
     desc: 整形 - コードフォーマット実行
     cmds:
-      - npm run format
+      - npm run check:biome
+      - npm run format:html
 
   test:
     desc: 試験 - Playwrightテスト実行

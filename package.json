@@ -5,12 +5,9 @@
   "private": true,
   "scripts": {
     "prepare": "lefthook install",
-    "format": "npm run format:biome && npm run format:html",
-    "format:biome": "biome check --write .",
+    "format": "npm run check:biome && npm run format:html",
+    "check:biome": "biome check --write .",
     "format:html": "prettier --write '**/*.html'",
-    "format:check": "npm run format:biome:check && npm run format:html:check",
-    "format:biome:check": "biome check .",
-    "format:html:check": "prettier --check '**/*.html'",
     "lint": "biome lint ."
   },
   "repository": {
@@ -38,6 +35,7 @@
     "@playwright/test": "^1.59.1",
     "dotenv": "^17.4.2",
     "lefthook": "^2.1.6",
+    "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",
     "typescript": "^5.9.3"

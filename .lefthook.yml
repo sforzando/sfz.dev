@@ -8,5 +8,10 @@ pre-commit:
       run: npm run format
       stage_fixed: true
 
+    lint-markdown:
+      glob: "*.md"
+      run: npx markdownlint-cli2 {staged_files}
+      stage_fixed: true
+
     test:
       run: task test
