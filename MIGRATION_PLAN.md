@@ -154,60 +154,62 @@
   {{< figure class="w-screen" ... >}}
   ```
 
-- [ ] `contactFormJpn.html`, `contactFormEng.html` を最適化
-  - Tailwind CSS Formsを削除しても問題ないか要確認
-- [ ] `mapboxGl.html` は維持
+- [x] `contactFormJpn.html`, `contactFormEng.html` を最適化
+  - `@tailwindcss/forms` に非依存であることを確認、基本Tailwindクラスのみで動作
+- [x] `mapboxGl.html` は維持
 
 ### Phase 6: 創発的背景アニメーション実装
 
 - [x] `package.json` に最新Three.jsを追加
-- [ ] `assets/js/emergence-network.js` 新規作成:
+- [x] `assets/js/emergence-network.js` 新規作成:
   - パーティクルシステム実装
   - パーティクル間の動的接続（共創の視覚化）
   - 有機的な動きと色彩変化（創発の表現）
   - マウスインタラクション
-- [ ] `layouts/partials/extend-head.html` 書き換え:
-  - 新しいThree.js実装を読み込み
+- [x] `layouts/partials/extend-head.html` 書き換え:
+  - 新しいThree.js実装を読み込み（js.Build + fingerprint）
   - VantaWaves関連コード削除
-- [ ] 古いファイル削除:
+- [x] 古いファイル削除:
   - `assets/js/vanta.waves.js`
   - `assets/js/three.js`（古いバージョン）
+- [x] Congo v2.13.0対応: `layouts/_partials/functions/warnings.html` オーバーライド
+  - Hugo v0.147+で削除された `site.Author` フィールド参照を除去
 
 ### Phase 7: テストと検証
 
-- [ ] `task start` で開発サーバー起動
-- [ ] 全ページの表示確認（日英両言語）:
+- [] `task start` で開発サーバー起動
+- [] 全ページの表示確認（日英両言語）:
   - トップページ
   - About
   - Contact
   - Works（24件全て）
   - Posts（2件）
   - Team
-- [ ] 背景アニメーション動作確認:
+- [] 背景アニメーション動作確認:
   - パーティクル表示
   - 接続線の動的生成
   - マウスインタラクション
   - パフォーマンス測定
-- [ ] カスタムshortcode動作確認:
+- [] カスタムshortcode動作確認:
   - contactFormJpn
   - contactFormEng
   - mapboxGl（Kawasaki、Vancouver両方）
-- [ ] `task build` で本番ビルド成功確認
-- [ ] `task test` でPlaywrightテスト実行
-- [ ] Lighthouseでパフォーマンス測定
+- [] `task build` で本番ビルド成功確認
+- [] `task test` でPlaywrightテスト実行
+- [] Lighthouseでパフォーマンス測定
 
 ### Phase 8: デプロイ
 
-- [ ] Git commit作成
-- [ ] `git push origin feature/congo-migration`
-- [ ] GitHub上でPR作成:
+- [] Git commit作成
+- [] `git push origin feature/congo-migration`
+- [] GitHub上でPR作成:
   - タイトル: "feat: Migrate to Congo v2.12.2 with Hugo Modules and Taskfile"
   - 説明: 本ドキュメントの要約を記載
-- [ ] PRレビュー
-- [ ] mainブランチへマージ
-- [ ] Netlify自動デプロイ監視
-- [ ] 本番環境の全ページ動作確認
-- [ ] パフォーマンス確認
+- [] PRレビュー
+- [] mainブランチへマージ
+- [] Netlify自動デプロイ監視
+- [] 本番環境の全ページ動作確認
+- [] パフォーマンス確認
 
 ---
 
@@ -282,12 +284,12 @@
 
 ### 移行中
 
-- [ ] 各Phase完了時にコミット作成
-- [ ] 問題発生時は本ドキュメントに記録
-- [ ] テスト結果を記録
+- [] 各Phase完了時にコミット作成
+- [] 問題発生時は本ドキュメントに記録
+- [] テスト結果を記録
 
 ### 移行後
 
-- [ ] 本番環境動作確認
-- [ ] パフォーマンス測定結果記録
-- [ ] 本ドキュメント最終更新
+- [] 本番環境動作確認
+- [] パフォーマンス測定結果記録
+- [] 本ドキュメント最終更新

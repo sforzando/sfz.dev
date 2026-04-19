@@ -12,7 +12,9 @@
       "WebFetch(domain:docs.mapbox.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:jpanther.github.io)",
-      "Bash(task build-css)"
+      "Bash(task build-css)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_navigate"
     ],
     "deny": [],
     "ask": []

@@ -1,4 +1,4 @@
-/*! Congo v2.12.2 | MIT License | https://github.com/jpanther/congo */
+/*! Congo v2.13.0 | MIT License | https://github.com/jpanther/congo */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -1849,10 +1849,6 @@ code {
   inset-inline-end: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -1867,10 +1863,6 @@ code {
 
 .top-\[calc\(100vh-5\.5rem\)\] {
   top: calc(100vh - 5.5rem);
-}
-
-.-z-50 {
-  z-index: -50;
 }
 
 .z-10 {
@@ -1899,10 +1891,6 @@ code {
 
 .order-first {
   order: -9999;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .m-1 {
@@ -2457,10 +2445,6 @@ code {
      object-position: left;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -2751,6 +2735,16 @@ code {
   text-decoration-color: rgba(var(--color-primary-500), 1);
 }
 
+.placeholder-neutral-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(var(--color-neutral-400), var(--tw-placeholder-opacity, 1));
+}
+
+.placeholder-neutral-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(var(--color-neutral-400), var(--tw-placeholder-opacity, 1));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -2891,6 +2885,11 @@ code {
   background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-primary-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-primary-700), var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-neutral:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral), var(--tw-text-opacity, 1));
@@ -2932,9 +2931,19 @@ code {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.focus\:border-primary-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-primary-500), var(--tw-border-opacity, 1));
+}
+
 .focus\:bg-primary-100:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-100), var(--tw-bg-opacity, 1));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:outline-dotted:focus {
@@ -2947,6 +2956,17 @@ code {
 
 .focus\:outline-transparent:focus {
   outline-color: transparent;
+}
+
+.focus\:ring-1:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-primary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(var(--color-primary-500), var(--tw-ring-opacity, 1));
 }
 
 .group:hover .group-hover\:visible {
@@ -3091,6 +3111,16 @@ code {
 .dark\:text-primary-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-400), var(--tw-text-opacity, 1));
+}
+
+.dark\:placeholder-neutral-500:is(.dark *)::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(var(--color-neutral-500), var(--tw-placeholder-opacity, 1));
+}
+
+.dark\:placeholder-neutral-500:is(.dark *)::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(var(--color-neutral-500), var(--tw-placeholder-opacity, 1));
 }
 
 .dark\:hover\:border-primary-600:hover:is(.dark *) {
