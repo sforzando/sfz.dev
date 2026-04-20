@@ -86,9 +86,14 @@ tasks:
       - npm run format:html
 
   test:
-    desc: 試験 - Playwrightテスト実行
+    desc: 試験 - ローカルサーバーでPlaywrightテスト実行
     cmds:
       - npx playwright test --update-snapshots --headed
+
+  test-prod:
+    desc: 試験 - 本番サーバーでPlaywrightテスト実行
+    cmds:
+      - BASE_URL=https://sfz.dev npx playwright test --update-snapshots --headed
 
   ngrok:
     desc: 転送 - ngrokでローカルサーバーを公開

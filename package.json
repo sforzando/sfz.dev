@@ -33,11 +33,12 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
     "@playwright/test": "^1.59.1",
+    "@types/three": "^0.184.0",
     "dotenv": "^17.4.2",
     "lefthook": "^2.1.6",
     "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }

@@ -1,5 +1,5 @@
-{{/* Emergence Network - particle animation representing "emergence" and "co-creation" */}}
-{{ $js := resources.Get "js/emergence-network.js" | js.Build (dict "minify" hugo.IsProduction) | resources.Fingerprint "sha512" }}
+{{/* Background wave animation — Vanta Waves ported to Three.js */}}
+{{ $js := resources.Get "js/background-waves.ts" | js.Build (dict "minify" hugo.IsProduction) | resources.Fingerprint "sha512" }}
 <script
   defer
   type="text/javascript"
