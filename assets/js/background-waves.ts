@@ -14,6 +14,12 @@ const VERTEX_Y_NOISE = 5
 const MESH_ROTATION_Y = Math.PI / 8 // avoids axis-aligned rows
 const MESH_COVERAGE_MARGIN = 1.1 // extra room for wave crests above Y=0
 
+// ── Scatter interaction ────────────────────────────────────────────────────────
+const SCATTER_RADIUS = 200 // influence radius in mesh-local units (~8 cell widths)
+const SCATTER_IMPULSE = 80 // peak outward speed at click center
+const SCATTER_SPRING_K = 0.018 // spring stiffness — raise to snap back faster (safe: 0.01–0.03)
+const SCATTER_DAMPING = 0.88 // per-frame velocity multiplier — lower returns faster
+
 // ── Camera ─────────────────────────────────────────────────────────────────────
 const CAMERA_FOV = 35
 const CAMERA_NEAR = 50
@@ -32,6 +38,10 @@ let camera: THREE.PerspectiveCamera
 let waveMesh: THREE.Mesh
 let positionData: Float32Array
 let originalY: Float32Array
+let originalX: Float32Array
+let originalZ: Float32Array
+let scatterVel: Float32Array
+let scatterOffset: Float32Array
 let positionAttr: THREE.BufferAttribute
 let gridColumns: number
 let gridRows: number
@@ -39,6 +49,7 @@ let gridRows: number
 const lookTarget = new THREE.Vector3()
 const cameraGoal = { x: 0, y: 0, z: 0 }
 const cameraRest = { x: 0, y: 0, z: 0, locked: false }
+const raycaster = new THREE.Raycaster()
 
 let animationTime = 0
 let previousFrameTime = 0
@@ -142,6 +153,10 @@ function buildGeometry(columns: number, rows: number): THREE.BufferGeometry {
   const vertexCount = (columns + 1) * stride
   positionData = new Float32Array(vertexCount * 3)
   originalY = new Float32Array(vertexCount)
+  originalX = new Float32Array(vertexCount)
+  originalZ = new Float32Array(vertexCount)
+  scatterVel = new Float32Array(vertexCount * 3) // zero-filled — no scatter at start
+  scatterOffset = new Float32Array(vertexCount * 3)
 
   for (let col = 0; col <= columns; col++) {
     for (let row = 0; row <= rows; row++) {
@@ -154,6 +169,8 @@ function buildGeometry(columns: number, rows: number): THREE.BufferGeometry {
       positionData[i * 3 + 1] = y
       positionData[i * 3 + 2] = z
       originalY[i] = y
+      originalX[i] = x
+      originalZ[i] = z
     }
   }
 
@@ -286,18 +303,38 @@ function init(): void {
   window.addEventListener("resize", onResize)
   window.addEventListener("mousemove", handleMouseMove)
   window.addEventListener("scroll", handleScroll)
-  window.addEventListener("touchstart", handleTouch, { passive: true })
+  window.addEventListener("click", handleClick)
+  window.addEventListener("touchstart", handleTouchStart, { passive: true })
   window.addEventListener("touchmove", handleTouch, { passive: true })
 }
 
 // ── Wave animation ─────────────────────────────────────────────────────────────
 
+function updateScatter(): void {
+  for (let i = 0; i < originalY.length; i++) {
+    // spring restoring force: pulls offset toward zero (wave-animated base position)
+    scatterVel[i * 3] += -scatterOffset[i * 3] * SCATTER_SPRING_K
+    scatterVel[i * 3 + 1] += -scatterOffset[i * 3 + 1] * SCATTER_SPRING_K
+    scatterVel[i * 3 + 2] += -scatterOffset[i * 3 + 2] * SCATTER_SPRING_K
+
+    scatterVel[i * 3] *= SCATTER_DAMPING
+    scatterVel[i * 3 + 1] *= SCATTER_DAMPING
+    scatterVel[i * 3 + 2] *= SCATTER_DAMPING
+
+    scatterOffset[i * 3] += scatterVel[i * 3]
+    scatterOffset[i * 3 + 1] += scatterVel[i * 3 + 1]
+    scatterOffset[i * 3 + 2] += scatterVel[i * 3 + 2]
+  }
+}
+
 function updateWaves(): void {
   const vertexCount = originalY.length
 
+  updateScatter()
+
   for (let i = 0; i < vertexCount; i++) {
-    const x = positionData[i * 3]
-    const z = positionData[i * 3 + 2]
+    const x = originalX[i]
+    const z = originalZ[i]
 
     // Trochoid wave equation (ported from Vanta Waves)
     const crossChop = WAVE_SPEED_SQRT * Math.cos(-x - z * 0.7)
@@ -309,7 +346,10 @@ function updateWaves(): void {
     )
     const trochoidDelta = (delta + 1) ** 2 / 4
 
-    positionData[i * 3 + 1] = originalY[i] + trochoidDelta * WAVE_HEIGHT
+    positionData[i * 3] = x + scatterOffset[i * 3]
+    positionData[i * 3 + 1] =
+      originalY[i] + trochoidDelta * WAVE_HEIGHT + scatterOffset[i * 3 + 1]
+    positionData[i * 3 + 2] = z + scatterOffset[i * 3 + 2]
   }
 
   positionAttr.needsUpdate = true
@@ -383,6 +423,45 @@ function handleTouch(event: TouchEvent): void {
     event.touches[0].clientX / window.innerWidth,
     event.touches[0].clientY / window.innerHeight
   )
+}
+
+function applyScatter(localPoint: THREE.Vector3): void {
+  for (let i = 0; i < originalY.length; i++) {
+    const dx = originalX[i] - localPoint.x
+    const dz = originalZ[i] - localPoint.z
+    const dist = Math.hypot(dx, dz)
+    const falloff = Math.exp(-dist / SCATTER_RADIUS)
+    if (falloff < 0.002) continue // negligible contribution — skip
+
+    const nx = dist > 0 ? dx / dist : 0
+    const nz = dist > 0 ? dz / dist : 0
+    const impulse = SCATTER_IMPULSE * falloff
+
+    scatterVel[i * 3] += nx * impulse
+    scatterVel[i * 3 + 1] += impulse * 0.6 // upward bias for eruption quality
+    scatterVel[i * 3 + 2] += nz * impulse
+  }
+}
+
+function handleClickAt(clientX: number, clientY: number): void {
+  const mouse = new THREE.Vector2(
+    (clientX / window.innerWidth) * 2 - 1,
+    -(clientY / window.innerHeight) * 2 + 1
+  )
+  raycaster.setFromCamera(mouse, camera)
+  const hits = raycaster.intersectObject(waveMesh)
+  if (hits.length === 0) return // click missed the mesh — ignore
+  applyScatter(waveMesh.worldToLocal(hits[0].point.clone()))
+}
+
+function handleClick(event: MouseEvent): void {
+  handleClickAt(event.clientX, event.clientY)
+}
+
+function handleTouchStart(event: TouchEvent): void {
+  if (event.touches.length !== 1) return
+  handleTouch(event) // existing camera-position behavior
+  handleClickAt(event.touches[0].clientX, event.touches[0].clientY)
 }
 
 function onResize(): void {
