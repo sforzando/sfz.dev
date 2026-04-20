@@ -1,0 +1,27 @@
+# Lefthook configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  commands:
+    format:
+      glob: "*.{js,ts,json,css,html}"
+      run: npm run format
+      stage_fixed: true
+
+    lint-markdown:
+      glob: "*.md"
+      run: npx markdownlint-cli2 {staged_files}
+      stage_fixed: true
+
+    test:
+      run: task test
+
+    # Sort Claude settings
+    sort-settings:
+      glob: ".claude/settings.local.json"
+      run: |
+        if [ -f .claude/settings.local.json ]; then
+          jq --indent 2 '.permissions.allow |= sort' .claude/settings.local.json > .claude/.temp.$$.json && \
+          mv .claude/.temp.$$.json .claude/settings.local.json
+        fi
+      stage_fixed: true

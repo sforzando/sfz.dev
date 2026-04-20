@@ -2,19 +2,24 @@
   "permissions": {
     "allow": [
       "Bash(cat:*)",
+      "Bash(curl *)",
       "Bash(hugo mod:*)",
+      "Bash(node *)",
+      "Bash(npx tsc *)",
+      "Bash(task build-css)",
+      "WebFetch(domain:biomejs.dev)",
+      "WebFetch(domain:docs.mapbox.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:jpanther.github.io)",
       "mcp__playwright__browser_console_messages",
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_resize",
       "mcp__playwright__browser_take_screenshot",
-      "WebFetch(domain:biomejs.dev)",
-      "WebFetch(domain:docs.mapbox.com)",
-      "WebFetch(domain:github.com)",
-      "WebFetch(domain:jpanther.github.io)",
-      "Bash(task build-css)",
-      "mcp__plugin_playwright_playwright__browser_take_screenshot",
-      "mcp__plugin_playwright_playwright__browser_navigate"
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ],
     "deny": [],
     "ask": []

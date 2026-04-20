@@ -15,8 +15,7 @@
       "!playwright-report",
       "!test-results",
       "!assets/css/compiled",
-      "!assets/js/three.js",
-      "!assets/js/vanta.waves.js",
+      "!.claude",
       "!**/*.html",
       "!**/*.md"
     ]
