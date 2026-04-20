@@ -351,6 +351,9 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,pycharm+all,visualstudiocode,hugo,node
 ### Project Specific ###
 
+# superpowers brainstorm sessions
+.superpowers/
+
 # Playwright
 .playwright-mcp/
 *snapshots
