@@ -6,19 +6,19 @@ const CELL_SIZE = 24
 
 // ── Wave appearance ────────────────────────────────────────────────────────────
 const WAVE_COLOR = 0x005577
-const WAVE_SHININESS = 30
-const WAVE_HEIGHT = 20
+const WAVE_SHININESS = 24
+const WAVE_HEIGHT = 36
 const WAVE_SPEED = 1
 const WAVE_SPEED_SQRT = Math.sqrt(WAVE_SPEED) // precomputed — used every frame per vertex
-const VERTEX_Y_NOISE = 5
+const VERTEX_Y_NOISE = 4
 const MESH_ROTATION_Y = Math.PI / 8 // avoids axis-aligned rows
-const MESH_COVERAGE_MARGIN = 1.1 // extra room for wave crests above Y=0
+const MESH_COVERAGE_MARGIN = 1.2 // extra room for wave crests above Y=0
 
 // ── Scatter interaction ────────────────────────────────────────────────────────
-const SCATTER_RADIUS = 200 // influence radius in mesh-local units (~8 cell widths)
-const SCATTER_IMPULSE = 80 // peak outward speed at click center
+const SCATTER_RADIUS = 48 // influence radius in mesh-local units (~4 cell widths)
+const SCATTER_IMPULSE = 24 // peak outward speed at click center
 const SCATTER_SPRING_K = 0.018 // spring stiffness — raise to snap back faster (safe: 0.01–0.03)
-const SCATTER_DAMPING = 0.88 // per-frame velocity multiplier — lower returns faster
+const SCATTER_DAMPING = 0.72 // per-frame velocity multiplier — lower returns faster
 
 // ── Camera ─────────────────────────────────────────────────────────────────────
 const CAMERA_FOV = 35
@@ -317,6 +317,11 @@ function updateScatter(): void {
     scatterVel[i * 3 + 1] += -scatterOffset[i * 3 + 1] * SCATTER_SPRING_K
     scatterVel[i * 3 + 2] += -scatterOffset[i * 3 + 2] * SCATTER_SPRING_K
 
+    // wing-flap: Y oscillation proportional to horizontal speed — fades naturally as vertex settles
+    const hSpeed = Math.hypot(scatterVel[i * 3], scatterVel[i * 3 + 2])
+    scatterVel[i * 3 + 1] +=
+      Math.sin(animationTime * 0.15 + i * 1.618) * hSpeed * 0.25
+
     scatterVel[i * 3] *= SCATTER_DAMPING
     scatterVel[i * 3 + 1] *= SCATTER_DAMPING
     scatterVel[i * 3 + 2] *= SCATTER_DAMPING
@@ -433,12 +438,16 @@ function applyScatter(localPoint: THREE.Vector3): void {
     const falloff = Math.exp(-dist / SCATTER_RADIUS)
     if (falloff < 0.002) continue // negligible contribution — skip
 
-    const nx = dist > 0 ? dx / dist : 0
-    const nz = dist > 0 ? dz / dist : 0
+    // randomize direction ±67.5° so vertices scatter like startled birds, not a radial shockwave
+    const baseAngle =
+      dist > 0 ? Math.atan2(dz, dx) : Math.random() * Math.PI * 2
+    const angle = baseAngle + (Math.random() - 0.5) * Math.PI * 0.75
+    const nx = Math.cos(angle)
+    const nz = Math.sin(angle)
     const impulse = SCATTER_IMPULSE * falloff
 
     scatterVel[i * 3] += nx * impulse
-    scatterVel[i * 3 + 1] += impulse * 0.6 // upward bias for eruption quality
+    scatterVel[i * 3 + 1] += impulse * 0.4 // upward bias — reduced; wing-flap adds Y variation
     scatterVel[i * 3 + 2] += nz * impulse
   }
 }
