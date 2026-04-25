@@ -136,7 +136,7 @@ tasks:
   test-ci:
     desc: 試験 - CI環境でPlaywrightテスト実行
     cmds:
-      - npx playwright test --update-snapshots
+      - npx playwright test --ignore-snapshots
 
   test-prod:
     desc: 試験 - 本番サーバーでPlaywrightテスト実行

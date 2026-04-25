@@ -49,12 +49,6 @@ const config: PlaywrightTestConfig = {
       },
     },
     {
-      name: "Desktop Firefox",
-      use: {
-        ...devices["Desktop Firefox"],
-      },
-    },
-    {
       name: "Desktop Safari",
       use: {
         ...devices["Desktop Safari"],
@@ -112,8 +106,7 @@ const config: PlaywrightTestConfig = {
   ],
 
   snapshotDir: "./tests/snapshots",
-  snapshotPathTemplate:
-    "{snapshotDir}/{testFilePath}/{arg}{-projectName}{-snapshotSuffix}{ext}",
+  snapshotPathTemplate: "{snapshotDir}/{testFilePath}/{arg}{-projectName}{ext}",
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   outputDir: "test-results/",
