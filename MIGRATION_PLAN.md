@@ -225,8 +225,8 @@
 
 ### Phase 8: デプロイ
 
-- [ ] `git push origin feature/congo-migration`
-- [ ] GitHub上でPR作成:
+- [x] `git push origin feature/congo-migration`
+- [x] GitHub上でPR作成:
   - タイトル: "feat: Migrate to Congo v2.13.0 with Hugo Modules and Taskfile"
   - 説明: 本ドキュメントの要約を記載
 - [ ] PRレビュー

@@ -40,6 +40,13 @@ tasks:
       - npm install --prefix themes/congo
       - npx playwright install --with-deps
 
+  install-ci:
+    desc: 依存パッケージをインストール（CI環境用、npm ci使用）
+    cmds:
+      - npm ci
+      - npm install --prefix themes/congo
+      - npx playwright install --with-deps
+
   open:
     desc: 閲覧 - ブラウザで開く
     cmds:
@@ -125,6 +132,11 @@ tasks:
     desc: 試験 - ローカルサーバーでPlaywrightテスト実行
     cmds:
       - npx playwright test --update-snapshots --headed
+
+  test-ci:
+    desc: 試験 - CI環境でPlaywrightテスト実行
+    cmds:
+      - npx playwright test --update-snapshots
 
   test-prod:
     desc: 試験 - 本番サーバーでPlaywrightテスト実行
