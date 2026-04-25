@@ -63,6 +63,17 @@ tasks:
     cmds:
       - NODE_ENV=production ./themes/congo/node_modules/.bin/tailwindcss -c ./themes/congo/tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
 
+  build:
+    desc: 構築 - 本番用静的サイトをビルド
+    deps:
+      - build-css
+    cmds:
+      - hugo --minify
+      - |
+        if [ "{{.OS_NAME}}" = "Darwin" ]; then
+          say "The build process is complete."
+        fi
+
   start:
     desc: 開始 - Hugo開発サーバー起動
     deps:

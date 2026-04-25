@@ -174,42 +174,45 @@
   - `assets/js/three.js`（古いバージョン）
 - [x] Congo v2.13.0対応: `layouts/_partials/functions/warnings.html` オーバーライド
   - Hugo v0.147+で削除された `site.Author` フィールド参照を除去
+- [x] `assets/js/background-waves.ts` クリック/タッチ散乱エフェクト追加:
+  - クリック点を中心に頂点が鳥のように散乱（±67.5°ランダム方向 + Y羽ばたき振動）
+  - 過減衰スプリング物理で波アニメーション位置へ自動帰還
+  - Raycasterによるメッシュローカル座標変換
+  - Playwright回帰テスト追加（chromium/firefox/webkit/モバイル 20/20 pass）
 
 ### Phase 7: テストと検証
 
-- [] `task start` で開発サーバー起動
-- [] 全ページの表示確認（日英両言語）:
-  - トップページ
-  - About
-  - Contact
-  - Works（24件全て）
-  - Posts（2件）
-  - Team
-- [] 背景アニメーション動作確認:
-  - パーティクル表示
-  - 接続線の動的生成
-  - マウスインタラクション
-  - パフォーマンス測定
-- [] カスタムshortcode動作確認:
-  - contactFormJpn
-  - contactFormEng
-  - mapboxGl（Kawasaki、Vancouver両方）
-- [] `task build` で本番ビルド成功確認
-- [] `task test` でPlaywrightテスト実行
-- [] Lighthouseでパフォーマンス測定
+- [x] `task start` で開発サーバー起動
+- [ ] 全ページの表示確認（日英両言語）:
+  - [ ] トップページ
+  - [x] About
+  - [ ] Contact
+  - [x] Works（24件全て）
+  - [x] Posts（2件）
+  - [ ] Teams
+- [x] 背景アニメーション動作確認:
+  - [x] 波メッシュ表示
+  - [x] クリック散乱インタラクション
+  - [x] マウスによるカメラ追従
+- [ ] カスタムshortcode動作確認:
+  - [ ] contactFormJpn
+  - [ ] contactFormEng
+  - [ ] mapboxGl（Kawasaki、Vancouver両方）
+- [x] `task build` で本番ビルド成功確認
+- [x] `task test` でPlaywrightテスト実行（20/20 pass）
+- [ ] Lighthouseでパフォーマンス測定
 
 ### Phase 8: デプロイ
 
-- [] Git commit作成
-- [] `git push origin feature/congo-migration`
-- [] GitHub上でPR作成:
+- [ ] `git push origin feature/congo-migration`
+- [ ] GitHub上でPR作成:
   - タイトル: "feat: Migrate to Congo v2.12.2 with Hugo Modules and Taskfile"
   - 説明: 本ドキュメントの要約を記載
-- [] PRレビュー
-- [] mainブランチへマージ
-- [] Netlify自動デプロイ監視
-- [] 本番環境の全ページ動作確認
-- [] パフォーマンス確認
+- [ ] PRレビュー
+- [ ] mainブランチへマージ
+- [ ] Netlify自動デプロイ監視
+- [ ] 本番環境の全ページ動作確認
+- [ ] パフォーマンス確認
 
 ---
 
@@ -284,12 +287,12 @@
 
 ### 移行中
 
-- [] 各Phase完了時にコミット作成
-- [] 問題発生時は本ドキュメントに記録
-- [] テスト結果を記録
+- [x] 各Phase完了時にコミット作成
+- [ ] 問題発生時は本ドキュメントに記録
+- [ ] テスト結果を記録
 
 ### 移行後
 
-- [] 本番環境動作確認
-- [] パフォーマンス測定結果記録
-- [] 本ドキュメント最終更新
+- [ ] 本番環境動作確認
+- [ ] パフォーマンス測定結果記録
+- [ ] 本ドキュメント最終更新
