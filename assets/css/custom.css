@@ -1,3 +1,17 @@
 * {
   font-feature-settings: "pwid" on;
 }
+
+/* Prevent horizontal scrollbar caused by 100vw including scrollbar width */
+html {
+  overflow-x: hidden;
+}
+
+/* Full-bleed 100vw figure, viewport-centered */
+figure.w-screen {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
