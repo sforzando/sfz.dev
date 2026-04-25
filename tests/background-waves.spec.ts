@@ -44,17 +44,12 @@ test.describe("background waves animation", () => {
 
     const canvas = page.locator("canvas").first()
     const box = await canvas.boundingBox()
-    await page.mouse.click(box!.x + box!.width / 2, box!.y + box!.height / 2)
+    if (!box) return
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
     await page.waitForTimeout(500)
 
-    await page.mouse.click(
-      box!.x + box!.width * 0.3,
-      box!.y + box!.height * 0.4
-    )
-    await page.mouse.click(
-      box!.x + box!.width * 0.7,
-      box!.y + box!.height * 0.6
-    )
+    await page.mouse.click(box.x + box.width * 0.3, box.y + box.height * 0.4)
+    await page.mouse.click(box.x + box.width * 0.7, box.y + box.height * 0.6)
     await page.waitForTimeout(500)
 
     expect(errors).toHaveLength(0)

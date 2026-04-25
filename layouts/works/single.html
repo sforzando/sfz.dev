@@ -27,9 +27,7 @@
           </div>
         </div>
       {{ end }}
-      <div class="min-h-0 min-w-0">
-        {{ .Content | emojify }}
-      </div>
+      <div class="min-h-0 min-w-0">{{ .Content | emojify }}</div>
     </section>
     {{ if (or .Params.clients .Params.collaborators .Params.references) }}
       <div
@@ -42,9 +40,7 @@
               {{ range .Params.clients }}
                 <li>
                   {{ if .url }}
-                    <a href="{{ .url }}" target="_blank">
-                      {{ .name }}
-                    </a>
+                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
                   {{ else }}
                     {{ .name }}
                   {{ end }}
@@ -60,9 +56,7 @@
               {{ range .Params.collaborators }}
                 <li>
                   {{ if .url }}
-                    <a href="{{ .url }}" target="_blank">
-                      {{ .name }}
-                    </a>
+                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
                   {{ else }}
                     {{ .name }}
                   {{ end }}
@@ -78,9 +72,7 @@
               {{ range .Params.references }}
                 <li>
                   {{ if .url }}
-                    <a href="{{ .url }}" target="_blank">
-                      {{ .name }}
-                    </a>
+                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
                   {{ else }}
                     {{ .name }}
                   {{ end }}
@@ -101,9 +93,7 @@
             <hr
               class="border-dotted border-neutral-300 dark:border-neutral-600"
             />
-            <div class="pt-3">
-              {{ partial "comments.html" . }}
-            </div>
+            <div class="pt-3">{{ partial "comments.html" . }}</div>
           </div>
         {{ else }}
           {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
