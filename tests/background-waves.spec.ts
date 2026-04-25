@@ -28,8 +28,8 @@ test.describe("background waves animation", () => {
     const canvas = page.locator("canvas").first()
     const box = await canvas.boundingBox()
     const viewportSize = page.viewportSize()
-    expect(box?.width).toBeCloseTo(viewportSize?.width, -1)
-    expect(box?.height).toBeCloseTo(viewportSize?.height, -1)
+    expect(box?.width).toBeCloseTo(viewportSize?.width ?? 0, -1)
+    expect(box?.height).toBeCloseTo(viewportSize?.height ?? 0, -1)
   })
 
   test("click triggers scatter with no JavaScript errors", async ({ page }) => {
