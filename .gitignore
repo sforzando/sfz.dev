@@ -356,7 +356,10 @@ fabric.properties
 
 # Playwright
 .playwright-mcp/
-*snapshots
+/tests/snapshots/
+
+# Lighthouse reports
+/lighthouse-reports/
 
 # Local Netlify folder
 .netlify

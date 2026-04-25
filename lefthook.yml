@@ -25,3 +25,8 @@ pre-commit:
           mv .claude/.temp.$$.json .claude/settings.local.json
         fi
       stage_fixed: true
+
+pre-push:
+  commands:
+    lighthouse:
+      run: task lighthouse

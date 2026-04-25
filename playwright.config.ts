@@ -111,6 +111,10 @@ const config: PlaywrightTestConfig = {
     },
   ],
 
+  snapshotDir: "./tests/snapshots",
+  snapshotPathTemplate:
+    "{snapshotDir}/{testFilePath}/{arg}{-projectName}{-snapshotSuffix}{ext}",
+
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   outputDir: "test-results/",
 
