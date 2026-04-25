@@ -3,11 +3,11 @@
     <a href="{{ .RelPermalink }}">
       {{ $thumbnail := resources.Get .Params.thumbnail }}
       {{ if not $thumbnail }}
-        {{ $thumbnail = resources.Get "img/800x800_ffffff.png" }}
+        {{ $thumbnail = resources.Get "img/wip.jpg" }}
       {{ end }}
       <img
         class="w-full rounded-lg object-cover transition hover:scale-105 sm:h-32 sm:w-32"
-        src="{{ $thumbnail.RelPermalink }}"
+        src="{{ if $thumbnail }}{{ $thumbnail.RelPermalink }}{{ end }}"
         alt="{{ .Title | emojify }}"
       />
     </a>

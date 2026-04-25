@@ -134,11 +134,7 @@ Transfer by ngrok is convenient for checking on a smartphone, use `task ngrok`.
 Generate dummy articles for testing.
 
 ```shell
-for i in {0000..0023}; do
-  for l in {en,ja}; do
-    hugo new "works/${i}.ja.md"
-  done
-done
+task generate-dummy
 ```
 
 All dummy photos from [Unsplash](https://unsplash.com).
