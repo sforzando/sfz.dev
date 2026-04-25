@@ -155,11 +155,26 @@ tasks:
       - git submodule update --remote --merge themes/congo
       - npm install --prefix themes/congo
 
+  lighthouse:
+    desc: 試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、HTML+JSONレポート出力）
+    vars:
+      PORT:
+        sh: node -e "const net=require('net');const s=net.createServer();s.listen(0,()=>{console.log(s.address().port);s.close()})"
+    deps:
+      - build
+    cmds:
+      - mkdir -p lighthouse-reports
+      - defer: "lsof -ti:{{.PORT}} | xargs kill -9 || true"
+      - npx serve public -l {{.PORT}} --no-clipboard &
+      - sleep 2
+      - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
+
   clean:
     desc: 掃除 - テスト結果を削除
     cmds:
       - rm -rf test-results
-      - rm -rf tests/*.ts-snapshots
+      - rm -rf tests/snapshots
+      - rm -rf lighthouse-reports
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The cleanup process is complete."

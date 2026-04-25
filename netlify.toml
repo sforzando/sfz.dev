@@ -4,15 +4,15 @@
 
 [build.environment]
   NODE_ENV = "development"
-  GO_VERSION = "1.25.3"
+  GO_VERSION = "1.26.2"
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.152.2"
+  HUGO_VERSION = "0.160.1"
   HUGO_ENV = "production"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.152.2"
+  HUGO_VERSION = "0.160.1"
 
 [[redirects]]
   from = "https://sforzando.co.jp"

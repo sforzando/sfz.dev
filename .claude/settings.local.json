@@ -5,7 +5,6 @@
       "Bash(curl *)",
       "Bash(hugo mod:*)",
       "Bash(node *)",
-      "Bash(npx biome *)",
       "Bash(npx tsc *)",
       "Bash(task build-css)",
       "Bash(task stop *)",
