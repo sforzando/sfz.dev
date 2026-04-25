@@ -96,6 +96,20 @@ tasks:
           say "The development server has been stopped."
         fi
 
+  generate-dummy:
+    desc: 生成 - テスト用ダミーコンテンツを生成
+    cmds:
+      - |
+        for i in $(seq -f "%04g" 0 23); do
+          [ -f "content/works/dummy_${i}.en.md" ] || hugo new "works/dummy_${i}.en.md"
+          [ -f "content/works/dummy_${i}.ja.md" ] || hugo new "works/dummy_${i}.ja.md"
+        done
+      - |
+        for i in $(seq -f "%04g" 0 3); do
+          [ -f "content/posts/dummy_${i}.en.md" ] || hugo new "posts/dummy_${i}.en.md"
+          [ -f "content/posts/dummy_${i}.ja.md" ] || hugo new "posts/dummy_${i}.ja.md"
+        done
+
   lint-markdown:
     desc: 検査 - Markdownlintでマークダウンを検査
     cmds:
@@ -156,7 +170,7 @@ tasks:
       - npm install --prefix themes/congo
 
   lighthouse:
-    desc: 試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、HTML+JSONレポート出力）
+    desc: 試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
     vars:
       PORT:
         sh: node -e "const net=require('net');const s=net.createServer();s.listen(0,()=>{console.log(s.address().port);s.close()})"
@@ -167,14 +181,17 @@ tasks:
       - defer: "lsof -ti:{{.PORT}} | xargs kill -9 || true"
       - npx serve public -l {{.PORT}} --no-clipboard &
       - sleep 2
-      - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
+      - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output=html,json --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
+      - node scripts/lighthouse-assert.cjs
 
   clean:
     desc: 掃除 - テスト結果を削除
     cmds:
+      - rm -rf .playwright-mcp
+      - rm -rf lighthouse-reports
+      - rm -rf playwright-report
       - rm -rf test-results
       - rm -rf tests/snapshots
-      - rm -rf lighthouse-reports
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The cleanup process is complete."

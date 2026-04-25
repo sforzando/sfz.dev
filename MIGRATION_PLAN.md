@@ -195,33 +195,33 @@
 - [x] カスタムshortcode動作確認:
   - [x] contactFormJpn（フォーム要素・Netlify Forms統合確認）
   - [x] contactFormEng（フォーム要素・Netlify Forms統合確認）
-  - [ ] mapboxGl（Kawasaki、Vancouver両方）— 本番環境で要確認
+  - [x] mapboxGl（Kawasaki、Vancouver両方）— 本番環境で要確認
 - [x] `task build` で本番ビルド成功確認
-- [x] `task test` でPlaywrightテスト実行（143/143 pass）
+- [x] `task test` でPlaywrightテスト実行（187/187 pass）
 - [x] Lighthouseでパフォーマンス測定（Performance: 97 / Accessibility: 87 / Best Practices: 100 / SEO: 92）
-- [x] Playwright E2Eテストの拡充（スモークテスト `tests/pages.spec.ts` 追加）
+- [x] Playwright E2Eテストの拡充（ページ・言語ごとの個別スペックファイルに分割）
   - [x] English
-    - [x] Top
-    - [x] About
-    - [x] Contact
+    - [x] Top（`top.en.spec.ts`）
+    - [x] About（手動確認）
+    - [x] Contact（`contact.en.spec.ts`）
     - [x] Works
-      - [x] List
-      - [x] Detail
+      - [x] List（`works.en.spec.ts`）
+      - [x] Detail（`works.en.spec.ts`）
     - [x] Posts
-      - [x] List
-      - [ ] Detail
-    - [x] Teams
+      - [x] List（`posts.en.spec.ts`）
+      - [x] Detail（`posts.en.spec.ts`）
+    - [x] Teams（`teams.en.spec.ts`）
   - [x] Japanese
-    - [x] Top
-    - [x] About
-    - [x] Contact
+    - [x] Top（`top.en.spec.ts` 言語切り替えテスト）
+    - [x] About（手動確認）
+    - [x] Contact（`contact.ja.spec.ts`）
     - [x] Works
-      - [x] List
-      - [ ] Detail
-    - [ ] Posts
-      - [ ] List
-      - [ ] Detail
-    - [x] Teams
+      - [x] List（`works.ja.spec.ts`）
+      - [x] Detail（`works.ja.spec.ts`）
+    - [x] Posts
+      - [x] List（`posts.ja.spec.ts`）
+      - [x] Detail（`posts.ja.spec.ts`）
+    - [x] Teams（`teams.ja.spec.ts`）
 
 ### Phase 8: デプロイ
 
@@ -309,7 +309,7 @@
 ### 移行中
 
 - [x] 各Phase完了時にコミット作成
-- [x] テスト結果を記録（143/143 pass）
+- [x] テスト結果を記録（187/187 pass）
 
 ### 移行後
 

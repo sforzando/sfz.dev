@@ -8,7 +8,7 @@ test.describe("works en", () => {
   })
 
   test("detail", async ({ page }) => {
-    await page.goto("/works/0000/")
+    await page.goto("/works/dummy_0000/")
     await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
     await expect(page.locator("h1")).toBeVisible()
   })
