@@ -43,34 +43,70 @@ const config: PlaywrightTestConfig = {
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium",
+      name: "Desktop Chrome",
       use: {
         ...devices["Desktop Chrome"],
       },
     },
     {
-      name: "firefox",
+      name: "Desktop Firefox",
       use: {
         ...devices["Desktop Firefox"],
       },
     },
     {
-      name: "webkit",
+      name: "Desktop Safari",
       use: {
         ...devices["Desktop Safari"],
       },
     },
     /* Test against mobile viewports. */
     {
-      name: "Mobile Chrome",
+      name: "Android (Portrait)",
       use: {
-        ...devices["Pixel 5"],
+        ...devices["Pixel 7"],
       },
     },
     {
-      name: "Mobile Safari",
+      name: "Android (Landscape)",
       use: {
-        ...devices["iPhone 12"],
+        ...devices["Pixel 7 landscape"],
+      },
+    },
+    {
+      name: "iPad (Portrait)",
+      use: {
+        ...devices["iPad Pro 11"],
+      },
+    },
+    {
+      name: "iPad (Landscape)",
+      use: {
+        ...devices["iPad Pro 11 landscape"],
+      },
+    },
+    {
+      name: "iPhone (Portrait)",
+      use: {
+        ...devices["iPhone 15 Pro"],
+      },
+    },
+    {
+      name: "iPhone (Landscape)",
+      use: {
+        ...devices["iPhone 15 Pro landscape"],
+      },
+    },
+    {
+      name: "Legacy iPhone (Portrait)",
+      use: {
+        ...devices["iPhone 8"],
+      },
+    },
+    {
+      name: "Legacy iPhone (Landscape)",
+      use: {
+        ...devices["iPhone 8 landscape"],
       },
     },
   ],
@@ -79,10 +115,13 @@ const config: PlaywrightTestConfig = {
   outputDir: "test-results/",
 
   /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: "npm run start",
-  //   port: 3000,
-  // },
+  webServer: {
+    command: "task start",
+    port: 1313,
+    reuseExistingServer: !process.env.CI,
+  },
+
+  globalTeardown: "./tests/teardown.ts",
 }
 
 export default config

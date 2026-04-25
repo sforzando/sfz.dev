@@ -8,6 +8,7 @@
       "Bash(npx biome *)",
       "Bash(npx tsc *)",
       "Bash(task build-css)",
+      "Bash(task stop *)",
       "Bash(task test *)",
       "WebFetch(domain:biomejs.dev)",
       "WebFetch(domain:docs.mapbox.com)",
