@@ -5,12 +5,12 @@ pre-commit:
   commands:
     format:
       glob: "*.{js,ts,json,css,html}"
-      run: npm run format
+      run: task format
       stage_fixed: true
 
     lint-markdown:
       glob: "*.md"
-      run: npx markdownlint-cli2 {staged_files}
+      run: task lint-markdown
       stage_fixed: true
 
     test:

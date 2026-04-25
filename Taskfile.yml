@@ -76,14 +76,25 @@ tasks:
 
   start:
     desc: 開始 - Hugo開発サーバー起動
+    aliases:
+      - dev
     deps:
       - build-css
     cmds:
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
-          say "Start the application."
+          say "Start the development server."
         fi
       - hugo server --buildDrafts --buildFuture
+
+  stop:
+    desc: 停止 - Hugo開発サーバーを全て停止
+    cmds:
+      - pkill -f "hugo server" || true
+      - |
+        if [ "{{.OS_NAME}}" = "Darwin" ]; then
+          say "The development server has been stopped."
+        fi
 
   lint-markdown:
     desc: 検査 - Markdownlintでマークダウンを検査
@@ -124,6 +135,11 @@ tasks:
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The deployment process is complete."
         fi
+
+  outdated:
+    desc: 懐古 - 依存パッケージの更新を確認
+    cmds:
+      - ncu --deep
 
   update-dependencies:
     desc: 追随 - 依存パッケージを更新
