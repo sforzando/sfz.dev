@@ -1,0 +1,12 @@
+{
+  "config": {
+    "MD013": false, // Hugo shortcodes and long URLs make lines exceed limits
+    "MD033": false, // Hugo templates and content intentionally use inline HTML
+    "MD060": false // Fenced code blocks in Hugo shortcodes lack language tags
+  },
+  "ignores": [
+    ".github/**", // PR/issue templates are not content
+    "themes/**", // Congo theme — not our code
+    "node_modules/**"
+  ]
+}

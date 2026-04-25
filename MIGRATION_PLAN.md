@@ -1,4 +1,4 @@
-# Congo v2.12.2 移行計画書
+# Congo v2.13.0 移行計画書
 
 **作成日**: 2025-11-01
 **ブランチ**: feature/congo-migration
@@ -11,14 +11,12 @@
 ### 現状の課題
 
 - **Congoテーマのバージョンが古い**: v2.4.2（2022年11月）を使用中
-  - 最新版 v2.12.2（2025年7月）と約2.5年のギャップ
-  - 8つのメジャー/マイナーバージョンの遅れ
 - **Vanta.js背景アニメーションの問題**: 3年以上開発停止、最新Three.jsで動作不可
 - **ビルドツール**: Makefileを使用中、よりモダンなTaskfileへ移行したい
 
 ### 移行の目標
 
-1. Congoテーマを最新版（v2.12.2）へ更新
+1. Congoテーマを最新版（v2.13.0）へ更新
 2. git submodule から Hugo Modules へ切り替え（公式推奨の方法）
 3. Makefileを Taskfile に置き換え
 4. Vanta.jsをカスタムThree.js実装に置き換え（「創発」「共創」のコンセプト表現）
@@ -37,9 +35,9 @@
 
 ### 移行後の環境
 
-- **Hugo**: v0.152.2+extended（変更なし）
-- **Go**: v1.25.3（変更なし）
-- **Congo**: v2.12.2（Hugo Modules）
+- **Hugo**: v0.160.1+extended+withdeploy
+- **Go**: v1.26.2
+- **Congo**: v2.13.0（Hugo Modules）
 - **ビルドツール**: Taskfile
 
 ---
@@ -80,7 +78,7 @@
 
 **Congo標準との比較**:
 
-- Congo v2.12.2にフォーム機能なし
+- Congo v2.13.0にフォーム機能なし
 
 **対応方針**:
 
@@ -90,7 +88,7 @@
 
 **Congo標準との比較**:
 
-- Congo v2.12.2に地図機能なし
+- Congo v2.13.0に地図機能なし
 
 **対応方針**:
 
@@ -121,7 +119,7 @@
 
 - [x] `netlify.toml`: Hugo 0.152.2 明記
 - [x] `config/_default/module.toml`: 最小バージョン 0.146.0 設定
-- [x] `config/_default/params.toml`: Congo v2.12.2新パラメータ追加
+- [x] `config/_default/params.toml`: Congo v2.13.0新パラメータ追加
   - `header.logo`
   - `header.showTitle`
   - その他新機能パラメータ
@@ -184,7 +182,7 @@
 
 - [x] `task start` で開発サーバー起動
 - [ ] 全ページの表示確認（日英両言語）:
-  - [ ] トップページ
+  - [ ] Top
   - [x] About
   - [ ] Contact
   - [x] Works（24件全て）
@@ -201,12 +199,35 @@
 - [x] `task build` で本番ビルド成功確認
 - [x] `task test` でPlaywrightテスト実行（20/20 pass）
 - [ ] Lighthouseでパフォーマンス測定
+- [ ] Playwright E2Eテストの拡充
+  - [ ] English
+    - [ ] Top
+    - [ ] About
+    - [ ] Contact
+    - [ ] Works
+      - [ ] List
+      - [ ] Detail
+    - [ ] Posts
+      - [ ] List
+      - [ ] Detail
+    - [ ] Teams
+  - [ ] Japanese
+    - [ ] Top
+    - [ ] About
+    - [ ] Contact
+    - [ ] Works
+      - [ ] List
+      - [ ] Detail
+    - [ ] Posts
+      - [ ] List
+      - [ ] Detail
+    - [ ] Teams
 
 ### Phase 8: デプロイ
 
 - [ ] `git push origin feature/congo-migration`
 - [ ] GitHub上でPR作成:
-  - タイトル: "feat: Migrate to Congo v2.12.2 with Hugo Modules and Taskfile"
+  - タイトル: "feat: Migrate to Congo v2.13.0 with Hugo Modules and Taskfile"
   - 説明: 本ドキュメントの要約を記載
 - [ ] PRレビュー
 - [ ] mainブランチへマージ
@@ -221,7 +242,7 @@
 ### Hugo Extended必須化
 
 - **Congo v2.4.2**: Hugo 0.87.0+（non-extended可）
-- **Congo v2.12.2**: Hugo 0.146.0+ Extended **必須**
+- **Congo v2.13.0**: Hugo 0.146.0+ Extended **必須**
 - **当環境**: v0.152.2+extended インストール済み ✅
 
 ### レイアウト構造変更

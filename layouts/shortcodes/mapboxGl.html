@@ -4,88 +4,61 @@
 <link href="{{ $mapboxCSS.RelPermalink }}" rel="stylesheet" />
 <script src="{{ $mapboxJS.RelPermalink }}"></script>
 <script>
-// Global variables to store map instances
 window.sfzMaps = window.sfzMaps || {}
 
 if (!window.sfzMapsInitialized) {
   window.sfzMapsInitialized = true
 
   document.addEventListener("DOMContentLoaded", () => {
-    mapboxgl.accessToken = "{{ getenv "MAPBOX_ACCESS_TOKEN" }}";
-    const default_zoom = 12
-    const default_pitch = 60
+    mapboxgl.accessToken = "{{ getenv "MAPBOX_ACCESS_TOKEN" }}"
+
+    const map_configs = [
+      { key: "kawasaki",  center: [139.716971, 35.527478] },
+      { key: "vancouver", center: [-123.1389,  49.261872] },
+    ]
+
+    const map_defaults = {
+      style: "mapbox://styles/mapbox/standard",
+      config: { basemap: { lightPreset: "night" } },
+      language: "{{ .Page.Language.Lang }}",
+      zoom: 12,
+      pitch: 60,
+    }
+
     const rotation_timing = 300
     const marker_color = "#ff3333"
 
-    // Remove existing map instance if any
-    if (window.sfzMaps.kawasaki) {
-      window.sfzMaps.kawasaki.remove()
-      window.sfzMaps.kawasaki = null
-    }
+    function initMap({ key, center }) {
+      const raf_key = `${key}RafId`
 
-    const map_kawasaki = new mapboxgl.Map({
-      container: "map-kawasaki",
-      style: "mapbox://styles/mapbox/dark-v11",
-      center: [139.716971, 35.527478],
-      zoom: default_zoom,
-      pitch: default_pitch,
-    })
-    window.sfzMaps.kawasaki = map_kawasaki
+      if (window.sfzMaps[raf_key]) {
+        cancelAnimationFrame(window.sfzMaps[raf_key])
+        window.sfzMaps[raf_key] = null
+      }
+      if (window.sfzMaps[key]) {
+        window.sfzMaps[key].remove()
+        window.sfzMaps[key] = null
+      }
 
-    function rotateMapKawasaki(timestamp) {
-      map_kawasaki.rotateTo((timestamp / rotation_timing) % 360, {
-        duration: 0,
+      const map = new mapboxgl.Map({ container: `map-${key}`, center, ...map_defaults })
+      window.sfzMaps[key] = map
+
+      new mapboxgl.Marker({ draggable: false, color: marker_color })
+        .setLngLat(center)
+        .addTo(map)
+
+      function rotate(timestamp) {
+        map.rotateTo((timestamp / rotation_timing) % 360, { duration: 0 })
+        window.sfzMaps[raf_key] = requestAnimationFrame(rotate)
+      }
+
+      map.on("style.load", () => {
+        map.addControl(new mapboxgl.FullscreenControl())
+        window.sfzMaps[raf_key] = requestAnimationFrame(rotate)
       })
-      requestAnimationFrame(rotateMapKawasaki)
-    }
-    const _marker_kawasaki = new mapboxgl.Marker({
-      draggable: false,
-      color: marker_color,
-    })
-      .setLngLat([139.716971, 35.527478])
-      .addTo(map_kawasaki)
-    map_kawasaki.on("style.load", () => {
-      map_kawasaki.addControl(new mapboxgl.FullscreenControl())
-      // map_kawasaki.addControl(new mapboxgl.NavigationControl());
-      rotateMapKawasaki(0)
-    })
-
-    // Remove existing map instance if any
-    if (window.sfzMaps.vancouver) {
-      window.sfzMaps.vancouver.remove()
-      window.sfzMaps.vancouver = null
     }
 
-    const map_vancouver = new mapboxgl.Map({
-      container: "map-vancouver",
-      style: "mapbox://styles/mapbox/dark-v11",
-      center: [-123.1389, 49.261872],
-      zoom: default_zoom,
-      pitch: default_pitch,
-    })
-    window.sfzMaps.vancouver = map_vancouver
-
-    function rotateMapVancouver(timestamp) {
-      map_vancouver.rotateTo((timestamp / rotation_timing) % 360, {
-        duration: 0,
-      })
-      requestAnimationFrame(rotateMapVancouver)
-    }
-    const _marker_vancouver = new mapboxgl.Marker({
-      draggable: false,
-      color: marker_color,
-    })
-      .setLngLat([-123.1389, 49.261872])
-      .addTo(map_vancouver)
-    map_vancouver.on("style.load", () => {
-      map_vancouver.addControl(new mapboxgl.FullscreenControl())
-      // map_vancouver.addControl(new mapboxgl.NavigationControl());
-      map_vancouver.setLayoutProperty("country-label", "text-field", [
-        "get",
-        "name_ja",
-      ])
-      rotateMapVancouver(0)
-    })
+    map_configs.forEach(initMap)
   })
 }
 </script>

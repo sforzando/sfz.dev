@@ -5,7 +5,8 @@
     "moduleResolution": "bundler",
     "strict": true,
     "noEmit": true,
-    "lib": ["ES2020", "DOM"]
+    "lib": ["ES2020", "DOM"],
+    "types": ["node"]
   },
-  "include": ["assets/js/**/*.ts"]
+  "include": ["assets/js/**/*.ts", "playwright.config.ts", "tests/**/*.ts"]
 }
