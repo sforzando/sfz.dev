@@ -24,9 +24,7 @@
         </div>
       </div>
     {{ end }}
-    <div class="min-h-0 min-w-0 max-w-prose">
-      {{ .Content | emojify }}
-    </div>
+    <div class="min-h-0 min-w-0 max-w-prose">{{ .Content | emojify }}</div>
   </section>
   {{ if gt .Pages 0 }}
     <section>

@@ -27,9 +27,7 @@
           </div>
         </div>
       {{ end }}
-      <div class="min-h-0 min-w-0">
-        {{ .Content | emojify }}
-      </div>
+      <div class="min-h-0 min-w-0">{{ .Content | emojify }}</div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
       {{ partial "author.html" . }}
@@ -41,9 +39,7 @@
             <hr
               class="border-dotted border-neutral-300 dark:border-neutral-600"
             />
-            <div class="pt-3">
-              {{ partial "comments.html" . }}
-            </div>
+            <div class="pt-3">{{ partial "comments.html" . }}</div>
           </div>
         {{ else }}
           {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}

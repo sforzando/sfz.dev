@@ -24,9 +24,7 @@
         </div>
       </div>
     {{ end }}
-    <div class="min-h-0 min-w-0 max-w-prose">
-      {{ .Content | emojify }}
-    </div>
+    <div class="min-h-0 min-w-0 max-w-prose">{{ .Content | emojify }}</div>
   </section>
   {{ if gt .Pages 0 }}
     <section>
@@ -40,9 +38,7 @@
           <hr class="w-36 border-dotted border-neutral-400" />
         {{ end }}
         {{ range .Pages }}
-          <div class="mt-12">
-            {{ partial "posts/article-link.html" . }}
-          </div>
+          <div class="mt-12">{{ partial "posts/article-link.html" . }}</div>
         {{ end }}
       {{ end }}
     </section>
