@@ -102,11 +102,11 @@ npm install --prefix themes/congo
 
 **TailwindCSS Build**: Congo uses TailwindCSS, which must be built from source to support custom utility classes used in this project. The build process is automatically triggered when you run `task start`.
 
-The build uses Congo's own `themes/congo/tailwind.config.js`, which already includes content paths for the project root (`./layouts/**/*.html`, `./content/**/*.{html,md}`). This means:
+The build uses `tailwind.config.js` at the project root, which extends Congo's own `themes/congo/tailwind.config.js` via `require()` without modifying the submodule. This allows project-level customizations (e.g. font family) to be layered on top of Congo's defaults while keeping `themes/` clean.
 
-- No need to create a separate tailwind.config.js in the project root
-- The submodule remains clean and easy to update
-- Custom TailwindCSS classes in project content are automatically detected
+Current customizations in `tailwind.config.js`:
+
+- **Font**: Noto Sans JP (loaded via Google Fonts in `layouts/partials/extend-head.html`) set as `fontFamily.sans`, with `fontFeatureSettings: '"palt"'` for proportional spacing of Japanese characters
 
 To manually build TailwindCSS:
 
@@ -114,7 +114,7 @@ To manually build TailwindCSS:
 task build-css
 ```
 
-This compiles `themes/congo/assets/css/main.css` using `themes/congo/tailwind.config.js` and outputs to `assets/css/compiled/main.css`, which Hugo automatically uses instead of the theme's pre-compiled CSS.
+This compiles `themes/congo/assets/css/main.css` using `tailwind.config.js` and outputs to `assets/css/compiled/main.css`, which Hugo automatically uses instead of the theme's pre-compiled CSS.
 
 ### Start
 
@@ -213,7 +213,7 @@ This project uses modern development tooling:
 - **[Hugo](https://gohugo.io/)** (v0.152.2+extended) - Static site generator
 - **[Congo](https://github.com/jpanther/congo)** (v2.12.2) - Hugo theme via Git submodule
   - **[TailwindCSS](https://tailwindcss.com/)** (v3.4.17) - Built from source to support custom utility classes
-  - Configuration: `themes/congo/tailwind.config.js`
+  - Configuration: `tailwind.config.js` (extends `themes/congo/tailwind.config.js`)
   - Output: `assets/css/compiled/main.css`
 
 ## Misc
