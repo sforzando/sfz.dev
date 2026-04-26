@@ -1,6 +1,7 @@
 /* Prevent horizontal scrollbar caused by 100vw including scrollbar width */
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Push flow content below the status bar and above the home indicator.
