@@ -1,3 +1,12 @@
+{{/* viewport-fit=cover extends the layout viewport into iOS safe areas (status bar,
+  home indicator) so the fixed canvas covers the full screen, not just the CSS viewport.
+  This tag intentionally duplicates Congo's viewport meta; browsers honour the last occurrence.
+*/}}
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+/>
+
 {{/* Noto Sans JP — preconnect reduces font load latency */}}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

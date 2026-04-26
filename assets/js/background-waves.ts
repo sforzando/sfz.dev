@@ -235,23 +235,14 @@ function init(): void {
   }
   document.body.appendChild(contentWrapper)
 
-  const computedBg = getComputedStyle(document.body).backgroundColor
-  // Congo's dark theme sets background via Tailwind on <body>; the computed value
-  // may be transparent until CSS loads, so fall back to the expected dark shade.
-  const themeBackground =
-    computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
-      ? "#1e293b"
-      : computedBg
-  // Match html/body to the canvas clear color so iOS Safari overscroll and safe
-  // areas don't reveal the default white page background around the fixed canvas.
-  document.body.style.backgroundColor = themeBackground
-  document.documentElement.style.backgroundColor = themeBackground
-
   renderer = new THREE.WebGLRenderer({
     antialias: true,
     preserveDrawingBuffer: true,
   })
-  renderer.setClearColor(new THREE.Color(themeBackground))
+  const computedBg = getComputedStyle(document.body).backgroundColor
+  const isClear =
+    computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
+  renderer.setClearColor(new THREE.Color(isClear ? "black" : computedBg))
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
   container.appendChild(renderer.domElement)
