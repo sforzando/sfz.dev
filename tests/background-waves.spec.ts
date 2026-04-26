@@ -27,9 +27,12 @@ test.describe("background waves animation", () => {
   test("canvas fills the viewport", async ({ page }) => {
     const canvas = page.locator("canvas").first()
     const box = await canvas.boundingBox()
-    const viewportSize = page.viewportSize()
-    expect(box?.width).toBeCloseTo(viewportSize?.width ?? 0, -1)
-    expect(box?.height).toBeCloseTo(viewportSize?.height ?? 0, -1)
+    const { clientWidth, clientHeight } = await page.evaluate(() => ({
+      clientWidth: document.documentElement.clientWidth,
+      clientHeight: document.documentElement.clientHeight,
+    }))
+    expect(box?.width).toBeCloseTo(clientWidth, -1)
+    expect(box?.height).toBeCloseTo(clientHeight, -1)
   })
 
   test("click triggers scatter with no JavaScript errors", async ({ page }) => {

@@ -217,10 +217,7 @@ function init(): void {
   const container = document.createElement("div")
   Object.assign(container.style, {
     position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
+    inset: "0",
     zIndex: "0",
     pointerEvents: "none",
   })
@@ -235,23 +232,24 @@ function init(): void {
   }
   document.body.appendChild(contentWrapper)
 
-  const computedBg = getComputedStyle(document.body).backgroundColor
-  // Congo's dark theme sets background via Tailwind on <body>; the computed value
-  // may be transparent until CSS loads, so fall back to the expected dark shade.
-  const themeBackground =
-    computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
-      ? "#1e293b"
-      : computedBg
-  document.body.style.backgroundColor = "transparent"
-  document.documentElement.style.backgroundColor = "transparent"
-
   renderer = new THREE.WebGLRenderer({
     antialias: true,
     preserveDrawingBuffer: true,
   })
+  const computedBg = getComputedStyle(document.body).backgroundColor
+  const isClear =
+    computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
+  // Fall back to html's CSS-computed color (set by custom.css) so the canvas
+  // clear color always matches the visible background regardless of theme.
+  const themeBackground = isClear
+    ? getComputedStyle(document.documentElement).backgroundColor
+    : computedBg
   renderer.setClearColor(new THREE.Color(themeBackground))
   renderer.setPixelRatio(window.devicePixelRatio)
-  renderer.setSize(window.innerWidth, window.innerHeight)
+  // false: skip inline px style so the CSS "100%/100%" below persists through resize calls.
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
+  renderer.domElement.style.width = "100%"
+  renderer.domElement.style.height = "100%"
   container.appendChild(renderer.domElement)
 
   scene = new THREE.Scene()
@@ -476,7 +474,7 @@ function handleTouchStart(event: TouchEvent): void {
 function onResize(): void {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
 
   const xzScale = computeMeshScale()
   waveMesh.scale.set(xzScale, 1, xzScale)
