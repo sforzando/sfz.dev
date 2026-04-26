@@ -1,7 +1,3 @@
-* {
-  font-feature-settings: "pwid" on;
-}
-
 /* Prevent horizontal scrollbar caused by 100vw including scrollbar width */
 html {
   overflow-x: hidden;
