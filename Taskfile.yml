@@ -14,7 +14,7 @@ tasks:
       - task: start
 
   setup:
-    desc: 初期セットアップ
+    desc: 初回 - 初期セットアップ
     cmds:
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
@@ -34,14 +34,14 @@ tasks:
         fi
 
   install:
-    desc: 依存パッケージをインストール
+    desc: 導入 - 依存パッケージをインストール
     cmds:
       - npm install
       - npm install --prefix themes/congo
       - npx playwright install --with-deps
 
   install-ci:
-    desc: 依存パッケージをインストール（CI環境用、npm ci使用）
+    desc: 導入 - CI環境用依存パッケージをインストール
     cmds:
       - npm ci
       - npm install --prefix themes/congo
@@ -120,7 +120,7 @@ tasks:
   lint-markdown:
     desc: 検査 - Markdownlintでマークダウンを検査
     cmds:
-      - npx markdownlint-cli2 "**/*.md"
+      - npx markdownlint-cli2 --fix "**/*.md"
 
   format:
     desc: 整形 - コードフォーマット実行
@@ -143,6 +143,21 @@ tasks:
     cmds:
       - BASE_URL=https://sfz.dev npx playwright test --update-snapshots --headed
 
+  lighthouse:
+    desc: 試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
+    vars:
+      PORT:
+        sh: node -e "const net=require('net');const s=net.createServer();s.listen(0,()=>{console.log(s.address().port);s.close()})"
+    deps:
+      - build
+    cmds:
+      - mkdir -p lighthouse-reports
+      - defer: "lsof -ti:{{.PORT}} | xargs kill -9 || true"
+      - npx serve public -l {{.PORT}} --no-clipboard &
+      - sleep 2
+      - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output=html,json --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
+      - node scripts/lighthouse-assert.cjs
+
   ngrok:
     desc: 転送 - ngrokでローカルサーバーを公開
     cmds:
@@ -163,7 +178,7 @@ tasks:
         fi
 
   outdated:
-    desc: 懐古 - 依存パッケージの更新を確認
+    desc: 点検 - 依存パッケージの更新を確認
     cmds:
       - ncu --deep
 
@@ -181,20 +196,14 @@ tasks:
       - git submodule update --remote --merge themes/congo
       - npm install --prefix themes/congo
 
-  lighthouse:
-    desc: 試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
-    vars:
-      PORT:
-        sh: node -e "const net=require('net');const s=net.createServer();s.listen(0,()=>{console.log(s.address().port);s.close()})"
-    deps:
-      - build
+  update-changelog:
+    desc: 記録 - CHANGELOGを更新
     cmds:
-      - mkdir -p lighthouse-reports
-      - defer: "lsof -ti:{{.PORT}} | xargs kill -9 || true"
-      - npx serve public -l {{.PORT}} --no-clipboard &
-      - sleep 2
-      - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output=html,json --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
-      - node scripts/lighthouse-assert.cjs
+      - git cliff --bump --output CHANGELOG.md
+      - |
+        if [ "{{.OS_NAME}}" = "Darwin" ]; then
+          say "The CHANGELOG has been updated."
+        fi
 
   clean:
     desc: 掃除 - テスト結果を削除

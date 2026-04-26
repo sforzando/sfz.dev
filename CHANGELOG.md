@@ -2,17 +2,142 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.1.0] - 2026-04-26
+
+### Bug Fixes
+
+- :bug:  translation miss
+- :bug:  rename top.spec.ts to top.en.spec.ts
+- :bug: add print:hidden to VANTA background
+- :bug: prettier bug at figureWidthFUll.html
+- :bug: set NODE_ENV=development to install husky
+- :bug: delete Beauty VSCode extension
+- :bug: adjust image paths in markdown files
+
+### Documentation
+
+- :notebook: update screenshots on README.md
+- :notebook: update profile
+- :notebook: add invoice number to about.ja
 
 ### Features
 
-- :+1: initial commit
-- :+1: add Congo
-- :+1: add blank .envrc
+- :+1:  initial commit
+- :+1:  add Congo
+- :+1:  add blank .envrc
+- :+1:  replace config files
+- :+1:  prepare shortcode of contact form
+- :+1:  add ja files
+- :+1:  write lead of top page
+- :+1:  add fathomAnalytics
+- :+1:  add endorse.sh to endorse the latest Congo
+- :+1:  add list.html of works
+- :+1:  use hamburger menu
+- :+1:  add custom header
+- :+1:  add netlify.toml
+- :+1:  implement contactform.html
+- :+1:  add deploy command
+- :+1:  add shortcode of figure which width full
+- :+1:  add vanta and three
+- :+1:  implement vanta waves
+- :+1:  implement posts/list.html
+- :+1:  write 1st blog post
+- :+1:  add .envrc to hide MAPBOX_ACCESS_TOKEN
+- :+1:  complete about.ja.md
+- :+1:  complete about.en.md
+- :+1:  implement teams/shin-sforzando
+- :+1:  revise netlify.toml to redirect
+- :+1:  add Google Analytics v3
+- :+1:  replaced with GA4
+- :+1:  introduce Playwright
+- :+1:  introduce VRT
+- :+1:  re-implement vrt
+- :+1: introduce prettier-plugin-go-template
+- :+1: introduce husky
+- :+1: update congo to v2.3.1
+- :+1: update congo to v2.4.1
+- :+1: update congo
+- :+1: update dependencies
+- :+1: set hasCJKLanguage = true
+- :+1: add legal advisor and tax advisor
+- :+1: update congo to v2.4.2
+- :+1: add congo theme as a submodule
+- :sparkles: enhance scatter interaction with click effects
+- :sparkles: add click/touch scatter interaction with spring physics
+- :sparkles: add stop task for Hugo development server
+- :sparkles: add Playwright tests and Lighthouse configuration
+- :sparkles: add new works and lighthouse assertion script
+- :sparkles: update Playwright workflow and add CI tasks
+- :sparkles: update Playwright test commands and configuration
+- :sparkles: extend TailwindCSS configuration and update styles
 
 ### Miscellaneous Tasks
 
-- :paperclip: update congo
-- :paperclip: add .github
+- :paperclip:  update congo
+- :paperclip:  add .github
+- :paperclip:  update CHANGELOG.md
+- :paperclip:  add extensions.json of VSCode
+- :paperclip:  update Congo to v2.3.0
+- :paperclip:  update congigs to Congo v2.3.0
+- :paperclip:  add Netlify status badge
+- :bulb: update netlify.toml
+- :bulb: Merge remote-tracking branch 'origin/005_contact' into 005_contact
+- :paperclip:  add required to contact form inputs
+- :paperclip:  add wip.jpg
+- :paperclip:  add demo action for self-hosted runner
+- :paperclip:  rename workspaces to workflows
+- :paperclip:  modify github-actions-demo.yml
+- :paperclip:  recompile main.css
+- :paperclip:  slight revision of text
+- :paperclip:  slight revision of _index.ja
+- :paperclip:  introduce prettier and eslint
+- :paperclip: update dependencies
+- :paperclip: update .husky/pre-commit
+- :paperclip: update hugo version at netlify.toml
+- :paperclip: update submodule hash
+- :paperclip: update dependencies and add emergence network script
+- :paperclip: update package.json and add markdownlint config
+- :paperclip: upgrade TypeScript and add @types/three
+- :paperclip: update configurations and clean up code style
+- :wrench: migrate markdownlint config and fix TypeScript errors
+
+### Refactor
+
+- :bulb:  revise author information
+- :bulb:  beautify custom.css
+- :bulb: revise text using DeepL Write
+- :bulb: remove congo theme as a submodule
+- :bulb: update permissions and improve layout in various files
+
+### Styling
+
+- :sparkles:  add favicon related files
+- :sparkles:  apply font-feature-settings
+- :sparkles:  complete works/list.html for now
+- :sparkles:  improve logo img
+- :sparkles: introduce Stylelint
+- :sparkles: apply ESLint, Stylelint and Prettier
+
+### Wip
+
+- :construction:  add assets directory
+- :construction:  add about.md as sample
+- :construction:  editing Front Matters of default archtypes
+- :construction:  arrange form items
+- :construction:  test of netlify.toml
+- :construction:  test by deleting netlify.toml
+- :construction:  test by undoing netlify.toml
+- :construction:  test from MBA
+- :construction:  update Congo
+- :construction:  add dummy works articles
+- :construction:  update dammy works articles
+- :construction:  test raw HTML in _index.en.md
+- :construction:  implementing works/list.html
+- :construction:  add client list to works/list
+- :construction:  recreate dummy articles
+- :construction:  recreate dummy articles
+- :construction:  implementing works/single.html
+- :construction:  add fathom event to contact form
+- :construction:  remove mobile browser from Playwright temporarily
 
 <!-- generated by git-cliff -->

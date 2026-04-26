@@ -10,6 +10,7 @@
       "Bash(task build-css)",
       "Bash(task stop *)",
       "Bash(task test *)",
+      "Bash(task update-changelog *)",
       "WebFetch(domain:biomejs.dev)",
       "WebFetch(domain:docs.mapbox.com)",
       "WebFetch(domain:github.com)",

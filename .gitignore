@@ -353,6 +353,7 @@ fabric.properties
 
 # superpowers brainstorm sessions
 .superpowers/
+docs/superpowers/
 
 # Playwright
 .playwright-mcp/

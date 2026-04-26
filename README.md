@@ -45,11 +45,11 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ## Prerequisites
 
 - Go (v1.25 or higher)
-  - Hugo (v.0.146.0 or higher, **Extended version required**)
-    - [Congo v2.12.2](https://github.com/jpanther/congo) (via Git submodule)
+  - Hugo (v0.160.1 or higher, **Extended version required**)
+    - [Congo v2.13.0](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
-  - [Biome](https://biomejs.dev/) (v2.3.2)
-  - [Prettier](https://prettier.io/) (v3.6.2) with go-template plugin
+  - [Biome](https://biomejs.dev/) (v2.4.13)
+  - [Prettier](https://prettier.io/) (v3.8.3) with go-template plugin
   - [Playwright](https://playwright.dev/)
 - [Task](https://taskfile.dev/) (build automation)
 - [Lefthook](https://github.com/evilmartians/lefthook) (git hooks)
@@ -63,20 +63,30 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ```shell
 $ task --list
 task: Available tasks for this project:
-* default:               常用 - 開発サーバー起動
-* build-css:             構築 - TailwindCSSをビルド
-* clean:                 掃除 - テスト結果を削除
-* deploy:                配備 - Netlifyへデプロイ
-* format:                整形 - コードフォーマット実行
-* hide:                  秘匿 - git-secretで秘密情報を暗号化
-* ngrok:                 転送 - ngrokでローカルサーバーを公開
-* open:                  閲覧 - ブラウザで開く
-* reveal:                暴露 - git-secretで秘密情報を復号化
-* setup:                 初期セットアップ
-* start:                 開始 - Hugo開発サーバー起動
-* test:                  試験 - Playwrightテスト実行
-* update-dependencies:   追随 - 依存パッケージを更新
-* update-theme:          追随 - Congoテーマを更新
+* build:                     構築 - 本番用静的サイトをビルド
+* build-css:                 構築 - TailwindCSSをビルド
+* clean:                     掃除 - テスト結果を削除
+* default:                   常用 - 開発サーバー起動
+* deploy:                    配備 - Netlifyへデプロイ
+* format:                    整形 - コードフォーマット実行
+* generate-dummy:            生成 - テスト用ダミーコンテンツを生成
+* hide:                      秘匿 - git-secretで秘密情報を暗号化
+* install:                   導入 - 依存パッケージをインストール
+* install-ci:                導入 - CI環境用依存パッケージをインストール
+* lighthouse:                試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
+* lint-markdown:             検査 - Markdownlintでマークダウンを検査
+* ngrok:                     転送 - ngrokでローカルサーバーを公開
+* open:                      閲覧 - ブラウザで開く
+* outdated:                  点検 - 依存パッケージの更新を確認
+* reveal:                    暴露 - git-secretで秘密情報を復号化
+* setup:                     初回 - 初期セットアップ
+* start:                     開始 - Hugo開発サーバー起動      (aliases: dev)
+* stop:                      停止 - Hugo開発サーバーを全て停止
+* test:                      試験 - ローカルサーバーでPlaywrightテスト実行
+* test-ci:                   試験 - CI環境でPlaywrightテスト実行
+* test-prod:                 試験 - 本番サーバーでPlaywrightテスト実行
+* update-dependencies:       追随 - 依存パッケージを更新
+* update-theme:              追随 - Congoテーマを更新
 ```
 
 ### First time preparation
@@ -178,10 +188,10 @@ After updating, rebuild TailwindCSS with `task build-css` or restart the dev ser
 
 To install [git-cliff](https://github.com/orhun/git-cliff) via [Homebrew](https://brew.sh) manually, `brew install git-cliff`.
 
-To update `CHANGELOG.md` manually, run [git-cliff](https://github.com/orhun/git-cliff) like below.
+To update `CHANGELOG.md`, run:
 
 ```shell
-git cliff --output CHANGELOG.md
+task update-changelog
 ```
 
 ### Clean
@@ -194,24 +204,24 @@ This project uses modern development tooling:
 
 ### Code Quality
 
-- **[Biome](https://biomejs.dev/)** (v2.3.2) - Fast linter and formatter for JS/TS/JSON/CSS
+- **[Biome](https://biomejs.dev/)** (v2.4.13) - Fast linter and formatter for JS/TS/JSON/CSS
   - `npm run format:biome` - Format code with Biome
   - `npm run lint` - Lint code with Biome
-- **[Prettier](https://prettier.io/)** (v3.6.2) - HTML formatter with Go template support
+- **[Prettier](https://prettier.io/)** (v3.8.3) - HTML formatter with Go template support
   - `npm run format:html` - Format HTML files with Prettier
 
 ### Git Hooks
 
-- **[Lefthook](https://github.com/evilmartians/lefthook)** (v2.0.2) - Fast Git hooks manager
+- **[Lefthook](https://github.com/evilmartians/lefthook)** (v2.1.6) - Fast Git hooks manager
   - Automatically runs `npm run format` and `task test` on pre-commit
-  - Configuration: `.lefthook.yml`
+  - Configuration: `lefthook.yml`
 
 ### Build & Development
 
 - **[Task](https://taskfile.dev/)** - Modern task runner (replaces Make)
   - Configuration: `Taskfile.yml`
-- **[Hugo](https://gohugo.io/)** (v0.152.2+extended) - Static site generator
-- **[Congo](https://github.com/jpanther/congo)** (v2.12.2) - Hugo theme via Git submodule
+- **[Hugo](https://gohugo.io/)** (v0.160.1+extended) - Static site generator
+- **[Congo](https://github.com/jpanther/congo)** (v2.13.0) - Hugo theme via Git submodule
   - **[TailwindCSS](https://tailwindcss.com/)** (v3.4.17) - Built from source to support custom utility classes
   - Configuration: `tailwind.config.js` (extends `themes/congo/tailwind.config.js`)
   - Output: `assets/css/compiled/main.css`

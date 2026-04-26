@@ -3,7 +3,8 @@
 [changelog]
 # changelog header
 header = """
-# Changelog
+# CHANGELOG
+
 All notable changes to this project will be documented in this file.\n
 """
 # template for the changelog body
@@ -49,7 +50,7 @@ commit_parsers = [
 # filter out the commits that are not matched by commit parsers
 filter_commits = false
 # glob pattern for matching git tags
-tag_pattern = "v[0-9]*"
+tag_pattern = "v?[0-9]*"
 # regex for skipping tags
 skip_tags = "v0.1.0-beta.1"
 # regex for ignoring tags
