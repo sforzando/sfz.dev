@@ -1,9 +1,14 @@
-/* Prevent horizontal scrollbar caused by 100vw including scrollbar width */
+/* Prevent horizontal scrollbar caused by 100vw including scrollbar width.
+   Background matches the wave canvas clear color so iOS safe-area bands blend in.
+   Uses Congo's CSS variables — works across color schemes, no hardcoded hex. */
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* matches ocean dark canvas clear color; prevents white flash before JS loads */
-  background-color: #1e293b;
+  background-color: rgb(var(--color-neutral)); /* light mode */
+}
+
+html.dark {
+  background-color: rgb(var(--color-neutral-800)); /* dark mode */
 }
 
 /* Push flow content below the status bar and above the home indicator.

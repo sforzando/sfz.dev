@@ -239,7 +239,11 @@ function init(): void {
   const computedBg = getComputedStyle(document.body).backgroundColor
   const isClear =
     computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
-  renderer.setClearColor(new THREE.Color(isClear ? "#1e293b" : computedBg))
+  const themeBackground = isClear ? "black" : computedBg
+  // Sync html background to the canvas clear color so iOS safe areas
+  // (status bar, home indicator) blend in — CSS sets the pre-JS fallback.
+  document.documentElement.style.backgroundColor = themeBackground
+  renderer.setClearColor(new THREE.Color(themeBackground))
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
   // setSize() writes explicit px values to canvas.style; override to fill the inset:0 container
