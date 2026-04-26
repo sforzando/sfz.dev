@@ -239,7 +239,7 @@ function init(): void {
   const computedBg = getComputedStyle(document.body).backgroundColor
   const isClear =
     computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
-  renderer.setClearColor(new THREE.Color(isClear ? "black" : computedBg))
+  renderer.setClearColor(new THREE.Color(isClear ? "#1e293b" : computedBg))
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
   // setSize() writes explicit px values to canvas.style; override to fill the inset:0 container

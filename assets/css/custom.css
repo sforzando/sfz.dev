@@ -2,6 +2,8 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /* matches ocean dark canvas clear color; prevents white flash before JS loads */
+  background-color: #1e293b;
 }
 
 /* Push flow content below the status bar and above the home indicator.
