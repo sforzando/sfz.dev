@@ -11,13 +11,6 @@ html.dark {
   background-color: rgb(var(--color-neutral-800)); /* dark mode */
 }
 
-/* Push flow content below the status bar and above the home indicator.
-   No-op on non-iOS or when viewport-fit=cover is absent (env() resolves to 0px). */
-body {
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-
 /* Full-bleed 100vw figure, viewport-centered */
 figure.w-screen {
   position: relative;

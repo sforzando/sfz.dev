@@ -27,12 +27,10 @@ test.describe("background waves animation", () => {
   test("canvas fills the viewport", async ({ page }) => {
     const canvas = page.locator("canvas").first()
     const box = await canvas.boundingBox()
-    const clientWidth = await page.evaluate(
-      () => document.documentElement.clientWidth
-    )
-    const clientHeight = await page.evaluate(
-      () => document.documentElement.clientHeight
-    )
+    const { clientWidth, clientHeight } = await page.evaluate(() => ({
+      clientWidth: document.documentElement.clientWidth,
+      clientHeight: document.documentElement.clientHeight,
+    }))
     expect(box?.width).toBeCloseTo(clientWidth, -1)
     expect(box?.height).toBeCloseTo(clientHeight, -1)
   })

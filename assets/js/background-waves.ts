@@ -239,15 +239,15 @@ function init(): void {
   const computedBg = getComputedStyle(document.body).backgroundColor
   const isClear =
     computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
-  const themeBackground = isClear ? "black" : computedBg
-  // Sync html background to the canvas clear color so iOS safe areas
-  // (status bar, home indicator) blend in — CSS sets the pre-JS fallback.
-  document.documentElement.style.backgroundColor = themeBackground
+  // Fall back to html's CSS-computed color (set by custom.css) so the canvas
+  // clear color always matches the visible background regardless of theme.
+  const themeBackground = isClear
+    ? getComputedStyle(document.documentElement).backgroundColor
+    : computedBg
   renderer.setClearColor(new THREE.Color(themeBackground))
   renderer.setPixelRatio(window.devicePixelRatio)
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  // setSize() writes explicit px values to canvas.style; override to fill the inset:0 container
-  // so the canvas stretches into safe areas (status bar, home indicator) under viewport-fit=cover.
+  // false: skip inline style update so canvas fills the inset:0 container via CSS.
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
   renderer.domElement.style.width = "100%"
   renderer.domElement.style.height = "100%"
   container.appendChild(renderer.domElement)
@@ -474,9 +474,7 @@ function handleTouchStart(event: TouchEvent): void {
 function onResize(): void {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  renderer.domElement.style.width = "100%"
-  renderer.domElement.style.height = "100%"
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
 
   const xzScale = computeMeshScale()
   waveMesh.scale.set(xzScale, 1, xzScale)
