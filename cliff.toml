@@ -5,6 +5,8 @@
 header = """
 # CHANGELOG
 
+Last updated: {{ now() | date(format="%Y-%m-%d %H:%M:%S") }}
+
 All notable changes to this project will be documented in this file.\n
 """
 # template for the changelog body
@@ -18,7 +20,7 @@ body = """
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | upper_first }}
     {% for commit in commits %}
-        - {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message | upper_first }}\
+        - {{ commit.author.timestamp | date(format="%Y-%m-%d %H:%M:%S") }} {{ commit.id }} {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message | upper_first }}{% if commit.remote.username %} _by @{{ commit.remote.username }}_{%- endif %}\
     {% endfor %}
 {% endfor %}\n
 """
@@ -60,3 +62,10 @@ ignore_tags = ""
 topo_order = false
 # sort the commits inside sections by oldest/newest order
 sort_commits = "oldest"
+# read and process commits of submodules
+recurse_submodules = false
+
+[remote.github]
+owner = "sforzando"
+repo = "sfz.dev"
+token = ""

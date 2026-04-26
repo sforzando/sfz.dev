@@ -199,7 +199,7 @@ tasks:
   update-changelog:
     desc: 記録 - CHANGELOGを更新
     cmds:
-      - git cliff --bump --output CHANGELOG.md
+      - git cliff --output CHANGELOG.md
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The CHANGELOG has been updated."
