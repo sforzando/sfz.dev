@@ -2,7 +2,7 @@ name: Claude Code Review
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
     # Optional: Only run on specific file changes
     # paths:
     #   - "src/**/*.ts"
@@ -65,4 +65,3 @@ jobs:
             --allowedTools "Bash(gh pr diff:*)"
             --allowedTools "Bash(gh pr list:*)"
             --allowedTools "Bash(gh pr view:*)"
-            --allowedTools "mcp__terraform"

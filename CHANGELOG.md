@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - 2026-04-25 19:29:09 b768babfc5e6e992efe8c04833a7fc63b7c2f8e0 :sparkles: update Playwright test commands and configuration _by @shin-sforzando_
 - 2026-04-26 04:56:39 c13273c9c9808a014df59e3c3f81ce045d743e21 :sparkles: extend TailwindCSS configuration and update styles _by @shin-sforzando_
 - 2026-04-26 05:29:25 735946c8d9fc449c9c893826a92adee51e9ef45d :sparkles: remove wave scatter click design and implementation plans _by @shin-sforzando_
+- 2026-04-26 08:03:57 ceb5e2872b25c0042acbafa59acc854809ff179c :sparkles: add Claude Code Review workflow for PR feedback
 
 ### Refactor
 

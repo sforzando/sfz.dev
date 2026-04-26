@@ -3,10 +3,9 @@
     "allow": [
       "Bash(cat:*)",
       "Bash(curl *)",
+      "Bash(gh issue *)",
       "Bash(gh run *)",
       "Bash(hugo mod:*)",
-      "Bash(node *)",
-      "Bash(npx tsc *)",
       "Bash(task build-css)",
       "Bash(task stop *)",
       "Bash(task test *)",
