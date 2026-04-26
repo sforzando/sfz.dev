@@ -246,7 +246,7 @@ function init(): void {
     : computedBg
   renderer.setClearColor(new THREE.Color(themeBackground))
   renderer.setPixelRatio(window.devicePixelRatio)
-  // false: skip inline style update so canvas fills the inset:0 container via CSS.
+  // false: skip inline px style so the CSS "100%/100%" below persists through resize calls.
   renderer.setSize(window.innerWidth, window.innerHeight, false)
   renderer.domElement.style.width = "100%"
   renderer.domElement.style.height = "100%"
