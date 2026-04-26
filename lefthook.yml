@@ -19,7 +19,6 @@ pre-commit:
       stage_fixed: true
 
     test:
-      glob: "!CHANGELOG.md"
       run: task test
 
     # Sort Claude settings

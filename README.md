@@ -9,9 +9,9 @@
 
 <!-- Screenshots -->
 
-| ![2022-08-09 01 42 31 sfz dev 8d4063d3fcf6](https://user-images.githubusercontent.com/32637762/183469678-e07a9d2f-ad62-4efd-bb42-ffbfe035b21d.png) | ![IMG_A8CD90C669D7-1](https://user-images.githubusercontent.com/32637762/183469789-fc7deb47-f6ca-4ebb-9d5c-c4c57314c97f.jpeg) |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
-|                                                                         PC                                                                         |                                                              SP                                                               |
+| PC | SP |
+| :---: | :---: |
+| ![PC](https://github.com/user-attachments/assets/8740185f-3315-4472-afef-aae157ebd815) | ![SP](https://github.com/user-attachments/assets/0e19b348-67db-40aa-ba5b-244314572223) |
 
 <!-- Synopsis -->
 
@@ -33,10 +33,6 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [Document](#document)
     - [CHANGELOG](#changelog)
   - [Clean](#clean)
-- [Toolchain](#toolchain)
-  - [Code Quality](#code-quality)
-  - [Git Hooks](#git-hooks)
-  - [Build \& Development](#build--development)
 - [Misc](#misc)
 - [Notes](#notes)
   - [LICENSE](#license)
@@ -48,8 +44,8 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - Hugo (v0.160.1 or higher, **Extended version required**)
     - [Congo v2.13.0](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
-  - [Biome](https://biomejs.dev/) (v2.4.13)
-  - [Prettier](https://prettier.io/) (v3.8.3) with go-template plugin
+  - [Biome](https://biomejs.dev/)
+  - [Prettier](https://prettier.io/) with go-template plugin
   - [Playwright](https://playwright.dev/)
 - [Task](https://taskfile.dev/) (build automation)
 - [Lefthook](https://github.com/evilmartians/lefthook) (git hooks)
@@ -70,7 +66,6 @@ task: Available tasks for this project:
 * deploy:                    配備 - Netlifyへデプロイ
 * format:                    整形 - コードフォーマット実行
 * generate-dummy:            生成 - テスト用ダミーコンテンツを生成
-* hide:                      秘匿 - git-secretで秘密情報を暗号化
 * install:                   導入 - 依存パッケージをインストール
 * install-ci:                導入 - CI環境用依存パッケージをインストール
 * lighthouse:                試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
@@ -78,15 +73,17 @@ task: Available tasks for this project:
 * ngrok:                     転送 - ngrokでローカルサーバーを公開
 * open:                      閲覧 - ブラウザで開く
 * outdated:                  点検 - 依存パッケージの更新を確認
-* reveal:                    暴露 - git-secretで秘密情報を復号化
 * setup:                     初回 - 初期セットアップ
 * start:                     開始 - Hugo開発サーバー起動      (aliases: dev)
 * stop:                      停止 - Hugo開発サーバーを全て停止
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
 * test-ci:                   試験 - CI環境でPlaywrightテスト実行
 * test-prod:                 試験 - 本番サーバーでPlaywrightテスト実行
+* update-changelog:          記録 - CHANGELOGを更新
 * update-dependencies:       追随 - 依存パッケージを更新
 * update-theme:              追随 - Congoテーマを更新
+* gs:hide:                   秘匿 - git-secretで秘密情報を暗号化
+* gs:reveal:                 暴露 - git-secretで秘密情報を復号化
 ```
 
 ### First time preparation
@@ -130,8 +127,6 @@ This compiles `themes/congo/assets/css/main.css` using `tailwind.config.js` and 
 ### Start
 
 ```shell
-task
-# or
 task start
 ```
 
@@ -198,34 +193,6 @@ task update-changelog
 ### Clean
 
 To clean up miscellaneous files, `task clean`.
-
-## Toolchain
-
-This project uses modern development tooling:
-
-### Code Quality
-
-- **[Biome](https://biomejs.dev/)** (v2.4.13) - Fast linter and formatter for JS/TS/JSON/CSS
-  - `npm run format:biome` - Format code with Biome
-  - `npm run lint` - Lint code with Biome
-- **[Prettier](https://prettier.io/)** (v3.8.3) - HTML formatter with Go template support
-  - `npm run format:html` - Format HTML files with Prettier
-
-### Git Hooks
-
-- **[Lefthook](https://github.com/evilmartians/lefthook)** (v2.1.6) - Fast Git hooks manager
-  - Automatically runs `npm run format` and `task test` on pre-commit
-  - Configuration: `lefthook.yml`
-
-### Build & Development
-
-- **[Task](https://taskfile.dev/)** - Modern task runner (replaces Make)
-  - Configuration: `Taskfile.yml`
-- **[Hugo](https://gohugo.io/)** (v0.160.1+extended) - Static site generator
-- **[Congo](https://github.com/jpanther/congo)** (v2.13.0) - Hugo theme via Git submodule
-  - **[TailwindCSS](https://tailwindcss.com/)** (v3.4.17) - Built from source to support custom utility classes
-  - Configuration: `tailwind.config.js` (extends `themes/congo/tailwind.config.js`)
-  - Output: `assets/css/compiled/main.css`
 
 ## Misc
 
