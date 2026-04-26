@@ -8,6 +8,9 @@
 colorScheme = "ocean"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
+# Matches the Three.js wave canvas clear color (ocean dark --color-neutral-800),
+# so iOS Safari status/safe areas don't render as white before appearance.js runs.
+defaultThemeColor = "#1e293b"
 enableSearch = true
 enableCodeCopy = false
 enableImageLazyLoading = true

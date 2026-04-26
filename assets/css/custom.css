@@ -1,6 +1,9 @@
-/* Prevent horizontal scrollbar caused by 100vw including scrollbar width */
+/* Prevent horizontal scrollbar caused by 100vw including scrollbar width.
+   Background color matches the Three.js wave canvas so iOS Safari overscroll
+   and safe areas (status bar, home indicator) don't flash white before JS runs. */
 html {
   overflow-x: hidden;
+  background-color: #1e293b;
 }
 
 /* Full-bleed 100vw figure, viewport-centered */

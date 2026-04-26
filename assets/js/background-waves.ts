@@ -242,8 +242,10 @@ function init(): void {
     computedBg === "rgba(0, 0, 0, 0)" || computedBg === "transparent"
       ? "#1e293b"
       : computedBg
-  document.body.style.backgroundColor = "transparent"
-  document.documentElement.style.backgroundColor = "transparent"
+  // Match html/body to the canvas clear color so iOS Safari overscroll and safe
+  // areas don't reveal the default white page background around the fixed canvas.
+  document.body.style.backgroundColor = themeBackground
+  document.documentElement.style.backgroundColor = themeBackground
 
   renderer = new THREE.WebGLRenderer({
     antialias: true,
