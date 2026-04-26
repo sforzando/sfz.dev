@@ -1,14 +1,14 @@
 import { expect, test } from "@playwright/test"
 
-test("top en", async ({ page }) => {
-  await page.goto("/")
+test("top ja", async ({ page }) => {
+  await page.goto("/ja/")
   await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
 
   const menuButton = page.locator("#menu-button")
   if (await menuButton.isVisible()) {
     await menuButton.click()
   }
-  await page.getByRole("button", { name: "EN" }).first().click()
-  await page.getByRole("link", { name: "日本語" }).click()
-  await expect(page).toHaveURL(/\/ja\//)
+  await page.getByRole("button", { name: "JA" }).first().click()
+  await page.getByRole("link", { name: "English" }).click()
+  await expect(page).not.toHaveURL(/\/ja\//)
 })
