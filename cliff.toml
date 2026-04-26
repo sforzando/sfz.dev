@@ -5,7 +5,7 @@
 header = """
 # CHANGELOG
 
-Last updated: {{ now() | date(format="%Y-%m-%d %H:%M:%S") }}
+Last updated: {{ now() | date(format="%Y-%m-%d") }}
 
 All notable changes to this project will be documented in this file.\n
 """
@@ -46,6 +46,7 @@ commit_parsers = [
     { message = "^fix", group = "Bug Fixes"},
     { message = "^perf", group = "Performance"},
     { message = "^refactor", group = "Refactor"},
+    { message = "^release", group = "Releases"},
     { message = "^style", group = "Styling"},
     { message = "^test", group = "Testing"},
     { message = "^wip", skip = true},
