@@ -94,7 +94,8 @@ task: Available tasks for this project:
 Prepare `.envrc` like this,
 
 ```.envrc
-MAPBOX_ACCESS_TOKEN="xxxx"
+export MAPBOX_ACCESS_TOKEN="xxxx"
+export GITHUB_TOKEN="xxxx"
 ```
 
 Then, run `task setup`.

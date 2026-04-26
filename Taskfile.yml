@@ -55,12 +55,12 @@ tasks:
           open {{.OPEN_TARGET}}
         fi
 
-  hide:
+  gs:hide:
     desc: 秘匿 - git-secretで秘密情報を暗号化
     cmds:
       - git secret hide -vm
 
-  reveal:
+  gs:reveal:
     desc: 暴露 - git-secretで秘密情報を復号化
     cmds:
       - git secret reveal -vf

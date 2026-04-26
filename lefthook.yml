@@ -3,6 +3,11 @@
 
 pre-commit:
   commands:
+    hide:
+      run: |
+        task gs:hide
+        git add '*.secret' .gitsecret/paths/mapping.cfg
+
     format:
       glob: "*.{js,ts,json,css,html}"
       run: task format
