@@ -1,3 +1,14 @@
+{{/* Patch Congo's viewport meta to add viewport-fit=cover.
+  An inline sync script runs before first layout, so iOS Safari picks up the
+  change without reflow — no need to copy/maintain Congo's head.html.
+*/}}
+<script>
+  ;(function () {
+    var vp = document.querySelector('meta[name="viewport"]')
+    if (vp) vp.content += ", viewport-fit=cover"
+  })()
+</script>
+
 {{/* Noto Sans JP — preconnect reduces font load latency */}}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

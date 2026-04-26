@@ -217,10 +217,7 @@ function init(): void {
   const container = document.createElement("div")
   Object.assign(container.style, {
     position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100dvh",
+    inset: "0",
     zIndex: "0",
     pointerEvents: "none",
   })
@@ -245,6 +242,10 @@ function init(): void {
   renderer.setClearColor(new THREE.Color(isClear ? "black" : computedBg))
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(window.innerWidth, window.innerHeight)
+  // setSize() writes explicit px values to canvas.style; override to fill the inset:0 container
+  // so the canvas stretches into safe areas (status bar, home indicator) under viewport-fit=cover.
+  renderer.domElement.style.width = "100%"
+  renderer.domElement.style.height = "100%"
   container.appendChild(renderer.domElement)
 
   scene = new THREE.Scene()
@@ -470,6 +471,8 @@ function onResize(): void {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.domElement.style.width = "100%"
+  renderer.domElement.style.height = "100%"
 
   const xzScale = computeMeshScale()
   waveMesh.scale.set(xzScale, 1, xzScale)
