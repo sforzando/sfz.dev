@@ -14,25 +14,23 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
+  - name: "Sample Trading Co., Ltd."
     url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "Test Industries Ltd."
 collaborators:
-  - name: "SUBARU"
+  - name: "Picos LLC."
     url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+    credits:
+      - "PM: Kawada"
+      - "Program: Sugawara"
+      - "Design: Rie"
+  - name: "sforzando LLC."
+    credits:
+      - "Direction: Suzuki"
 references:
-  - name: "AUDI"
+  - name: "Project Introduction Article"
     url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
+  - name: "Related Technical Documentation"
     url: "http://www.example.com"
 thumbnail: "img/works/dummy_0000_thumbnail.jpg"
 ---

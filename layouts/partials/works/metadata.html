@@ -1,0 +1,128 @@
+{{- /* Renders Clients / Collaborators / References as a credits-style list.
+  Each entry shows a name (linked if url is provided) with optional
+  indented credit lines below it. Sections with zero entries are hidden. */
+-}}
+{{ if (or .Params.clients .Params.collaborators .Params.references) }}
+  <aside class="mt-8 not-prose flex flex-col gap-8 sm:flex-row">
+    {{ if .Params.clients }}
+      <div class="flex-1 space-y-3">
+        <h3
+          class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400"
+        >
+          {{ partial "icon.html" "globe" }} Clients
+        </h3>
+        <div class="space-y-2">
+          {{ range .Params.clients }}
+            <div>
+              {{ if .url }}
+                <a
+                  href="{{ .url }}"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-400"
+                >
+                  {{ .name }}
+                </a>
+              {{ else }}
+                <span
+                  class="text-sm font-medium text-neutral-800 dark:text-neutral-200"
+                  >{{ .name }}</span
+                >
+              {{ end }}
+              {{ if .credits }}
+                <ul class="mt-1 space-y-0.5 pl-3">
+                  {{ range .credits }}
+                    <li class="text-xs text-neutral-500 dark:text-neutral-400">
+                      {{ . }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if .Params.collaborators }}
+      <div class="flex-1 space-y-3">
+        <h3
+          class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400"
+        >
+          {{ partial "icon.html" "pencil" }} Collaborators
+        </h3>
+        <div class="space-y-2">
+          {{ range .Params.collaborators }}
+            <div>
+              {{ if .url }}
+                <a
+                  href="{{ .url }}"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-400"
+                >
+                  {{ .name }}
+                </a>
+              {{ else }}
+                <span
+                  class="text-sm font-medium text-neutral-800 dark:text-neutral-200"
+                  >{{ .name }}</span
+                >
+              {{ end }}
+              {{ if .credits }}
+                <ul class="mt-1 space-y-0.5 pl-3">
+                  {{ range .credits }}
+                    <li class="text-xs text-neutral-500 dark:text-neutral-400">
+                      {{ . }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if .Params.references }}
+      <div class="flex-1 space-y-3">
+        <h3
+          class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400"
+        >
+          {{ partial "icon.html" "link" }} References
+        </h3>
+        <div class="space-y-2">
+          {{ range .Params.references }}
+            <div>
+              {{ if .url }}
+                <a
+                  href="{{ .url }}"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-400"
+                >
+                  {{ .name }}
+                </a>
+              {{ else }}
+                <span
+                  class="text-sm font-medium text-neutral-800 dark:text-neutral-200"
+                  >{{ .name }}</span
+                >
+              {{ end }}
+              {{ if .credits }}
+                <ul class="mt-1 space-y-0.5 pl-3">
+                  {{ range .credits }}
+                    <li class="text-xs text-neutral-500 dark:text-neutral-400">
+                      {{ . }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+  </aside>
+{{ end }}
