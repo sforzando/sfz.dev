@@ -29,60 +29,7 @@
       {{ end }}
       <div class="min-h-0 min-w-0">{{ .Content | emojify }}</div>
     </section>
-    {{ if (or .Params.clients .Params.collaborators .Params.references) }}
-      <div
-        class="flex flex-row rounded-md border border-neutral-500 bg-neutral-600/50 p-2 shadow-inner shadow-neutral-500"
-      >
-        {{ if .Params.clients }}
-          <div class="flex-auto">
-            <span class="font-semibold">Clients:</span>
-            <ul class="list-inside list-disc text-sm">
-              {{ range .Params.clients }}
-                <li>
-                  {{ if .url }}
-                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
-                  {{ else }}
-                    {{ .name }}
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-        {{ if .Params.collaborators }}
-          <div class="flex-auto">
-            <span class="font-semibold">Collaborators:</span>
-            <ul class="list-inside list-disc text-sm">
-              {{ range .Params.collaborators }}
-                <li>
-                  {{ if .url }}
-                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
-                  {{ else }}
-                    {{ .name }}
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-        {{ if .Params.references }}
-          <div class="flex-auto">
-            <span class="font-semibold">References:</span>
-            <ul class="list-inside list-disc text-sm">
-              {{ range .Params.references }}
-                <li>
-                  {{ if .url }}
-                    <a href="{{ .url }}" target="_blank"> {{ .name }} </a>
-                  {{ else }}
-                    {{ .name }}
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
+    {{ partial "works/metadata.html" . }}
     <footer class="max-w-prose pt-8 print:hidden">
       {{ partial "author.html" . }}
       {{ partial "sharing-links.html" . }}
