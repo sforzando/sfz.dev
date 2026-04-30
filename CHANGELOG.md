@@ -32,6 +32,7 @@ All notable changes to this project will be documented in this file.
 - 2026-04-26 08:03:57 :sparkles: add Claude Code Review workflow for PR feedback _by @shin-sforzando_
 - 2026-04-26 08:25:03 :sparkles: update README and add Japanese test cases _by @shin-sforzando_
 - 2026-04-26 12:57:24 :sparkles: add head partial for improved mobile layout support _by @shin-sforzando_
+- 2026-04-29 14:24:21 :sparkles: add metadata section for clients, collaborators, and references _by @shin-sforzando_
 
 ### Refactor
 
