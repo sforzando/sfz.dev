@@ -35,31 +35,37 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Enable progress tracking to post comments on PRs
-          track_progress: true
-          # Enable commit signing for security
-          use_commit_signing: true
-
-          prompt: |
-            REPO: ${{ github.repository }}
-            PR NUMBER: ${{ github.event.pull_request.number }}
-
-            このプルリクエストをレビューして、以下の観点からフィードバックを提供してください:
-            - コード品質とベストプラクティス
-            - 既存コードとの一貫性
-            - 記事中の誤字や脱字
-            - パフォーマンスやセキュリティ上の懸念
-
-            @CLAUDE.md をスタイルと規約のガイダンスとして使用してください。
-            レビューの指摘事項は `mcp__github_inline_comment__create_inline_comment` を用いて該当行にインラインコメントとして投稿し、総括は `gh pr comment` で投稿してください。
-            **重要: 全てのコメントは必ず日本語で記述してください。**
-
+          plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
+          plugins: 'code-review@claude-code-plugins'
+          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
-          # or https://docs.claude.com/en/docs/claude-code/cli-reference for available options
-          claude_args: |
-            --allowedTools "mcp__github_inline_comment__create_inline_comment"
-            --allowedTools "Bash(gh pr comment:*)"
-            --allowedTools "Bash(gh pr diff:*)"
-            --allowedTools "Bash(gh pr list:*)"
-            --allowedTools "Bash(gh pr view:*)"
+          # or https://code.claude.com/docs/en/cli-reference for available options
+
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          # # Enable progress tracking to post comments on PRs
+          # track_progress: true
+          # # Enable commit signing for security
+          # use_commit_signing: true
+
+          # prompt: |
+          #   REPO: ${{ github.repository }}
+          #   PR NUMBER: ${{ github.event.pull_request.number }}
+
+          #   このプルリクエストをレビューして、以下の観点からフィードバックを提供してください:
+          #   - コード品質とベストプラクティス
+          #   - 既存コードとの一貫性
+          #   - 記事中の誤字や脱字
+          #   - パフォーマンスやセキュリティ上の懸念
+
+          #   @CLAUDE.md をスタイルと規約のガイダンスとして使用してください。
+          #   レビューの指摘事項は `mcp__github_inline_comment__create_inline_comment` を用いて該当行にインラインコメントとして投稿し、総括は `gh pr comment` で投稿してください。
+          #   **重要: 全てのコメントは必ず日本語で記述してください。**
+
+          # # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
+          # # or https://docs.claude.com/en/docs/claude-code/cli-reference for available options
+          # claude_args: |
+          #   --allowedTools "mcp__github_inline_comment__create_inline_comment"
+          #   --allowedTools "Bash(gh pr comment:*)"
+          #   --allowedTools "Bash(gh pr diff:*)"
+          #   --allowedTools "Bash(gh pr list:*)"
+          #   --allowedTools "Bash(gh pr view:*)"
