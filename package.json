@@ -27,17 +27,17 @@
   },
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
   "dependencies": {
-    "mapbox-gl": "^3.22.0",
+    "mapbox-gl": "^3.23.1",
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.13",
+    "@biomejs/biome": "2.4.14",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0",
-    "@types/three": "^0.184.0",
+    "@types/node": "^25.6.2",
+    "@types/three": "^0.184.1",
     "dotenv": "^17.4.2",
     "lefthook": "^2.1.6",
-    "lighthouse": "^13.1.0",
+    "lighthouse": "^13.3.0",
     "markdownlint-cli2": "^0.22.1",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",

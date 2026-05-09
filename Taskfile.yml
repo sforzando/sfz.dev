@@ -11,7 +11,7 @@ tasks:
   default:
     desc: 常用 - 開発サーバー起動
     cmds:
-      - task: start
+      - task --list
 
   setup:
     desc: 初回 - 初期セットアップ
@@ -97,7 +97,7 @@ tasks:
   stop:
     desc: 停止 - Hugo開発サーバーを全て停止
     cmds:
-      - pkill -f "hugo server" || true
+      - lsof -ti:1313 | xargs kill || true
       - |
         if [ "{{.OS_NAME}}" = "Darwin" ]; then
           say "The development server has been stopped."
@@ -152,7 +152,7 @@ tasks:
       - build
     cmds:
       - mkdir -p lighthouse-reports
-      - defer: "lsof -ti:{{.PORT}} | xargs kill -9 || true"
+      - defer: "lsof -ti:{{.PORT}} | xargs kill 2>/dev/null; sleep 0.5; lsof -ti:{{.PORT}} | xargs kill -9 2>/dev/null || true"
       - npx serve public -l {{.PORT}} --no-clipboard &
       - sleep 2
       - npx lighthouse http://localhost:{{.PORT}}/ --config-path=./lighthouse.config.cjs --output=html,json --output-path=./lighthouse-reports/report --quiet --chrome-flags="--headless"
@@ -181,6 +181,12 @@ tasks:
     desc: 点検 - 依存パッケージの更新を確認
     cmds:
       - ncu --deep
+      - task: outdated:versions
+
+  outdated:versions:
+    desc: 点検 - ツール（Congo/Hugo/Go）のバージョンを確認
+    cmds:
+      - bash scripts/check-versions.sh
 
   update-dependencies:
     desc: 追随 - 依存パッケージを更新
