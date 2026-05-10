@@ -9,7 +9,7 @@ vars:
 
 tasks:
   default:
-    desc: 常用 - 開発サーバー起動
+    desc: 一覧 - タスクの一覧を表示
     cmds:
       - task --list
 

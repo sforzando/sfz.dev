@@ -3,6 +3,7 @@
     "allow": [
       "Bash(cat:*)",
       "Bash(curl *)",
+      "Bash(gh api *)",
       "Bash(gh run *)",
       "Bash(task build-css)",
       "Bash(task stop *)",
