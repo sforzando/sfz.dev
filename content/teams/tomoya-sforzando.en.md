@@ -20,8 +20,8 @@ links:
 
 ## History
 
-After graduating from the Graduate School of Information Science and Arts (IAMAS), he worked for seven years at the [NTT Inter-Communication Center](https://www.ntticc.or.jp/) as a curator and technical staff member.
-To leverage his expertise in both software and hardware, he joined sforzando LLC. as a project manager and engineer.
+After graduating from the Graduate School of Information Science and Arts (IAMAS), I worked for seven years at the [NTT Inter-Communication Center](https://www.ntticc.or.jp/) as a curator and technical staff member.
+To leverage his expertise in both software and hardware, I joined sforzando LLC. as a project manager and engineer.
 I currently hold a concurrent position at the [NTT Inter-Communication Center](https://www.ntticc.or.jp/).
 
 ## Interests

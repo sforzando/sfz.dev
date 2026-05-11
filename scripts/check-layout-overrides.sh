@@ -8,7 +8,7 @@ CUSTOM_DIR="layouts"
 overrides=()
 
 while IFS= read -r -d '' custom_file; do
-  rel="${custom_file#${CUSTOM_DIR}/}"
+  rel="${custom_file#"${CUSTOM_DIR}/"}"
   theme_file="${THEME_DIR}/${rel}"
   if [ -f "$theme_file" ]; then
     overrides+=("$rel")
