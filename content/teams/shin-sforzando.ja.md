@@ -2,17 +2,23 @@
 title: "鈴木 真一朗 / Shin'ichiro Suzuki"
 date: 2022-07-01T12:34:56+09:00
 draft: false
+weight: 10
+position: "代表社員"
 sharingLinks: false
 showAuthor: false
 showDate: false
 showDateUpdated: false
 showReadingTime: false
 showTaxonomies: false
-showTableOfContents: true
+showTableOfContents: false
 showWordCount: false
+links:
+  - bluesky: https://bsky.app/profile/bellonieta.bsky.social
+  - github: "https://github.com/shin-sforzando"
+  - linkedin: "https://www.linkedin.com/in/jl7ki"
 ---
 
-{{< figure class="w-screen" src="img/teams/shin-sforzando.jpg" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp) " >}}
+{{< figure src="../img/teams/shin-sforzando.png" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp)" >}}
 
 ## 略歴
 
@@ -31,4 +37,4 @@ NASA International Space Apps Challenge Tokyo 2011 優勝、東京大学大学�
 
 ## 信条
 
-「ゆっくり急げ」
+「[ゆっくり急げ](https://ja.wikipedia.org/wiki/%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E6%80%A5%E3%81%92)」

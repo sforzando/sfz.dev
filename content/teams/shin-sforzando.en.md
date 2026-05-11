@@ -2,17 +2,23 @@
 title: "Shin'ichiro Suzuki (鈴木 真一朗)"
 date: 2022-07-01T12:34:56+09:00
 draft: false
+weight: 10
+position: "CEO and Founder"
 sharingLinks: false
 showAuthor: false
 showDate: false
 showDateUpdated: false
 showReadingTime: false
 showTaxonomies: false
-showTableOfContents: true
+showTableOfContents: false
 showWordCount: false
+links:
+  - bluesky: https://bsky.app/profile/bellonieta.bsky.social
+  - github: "https://github.com/shin-sforzando"
+  - linkedin: "https://www.linkedin.com/in/jl7ki"
 ---
 
-{{< figure class="w-screen" src="img/teams/shin-sforzando.jpg" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp) " >}}
+{{< figure src="../img/teams/shin-sforzando.png" alt="shin-sforzando" caption="Photo by Yu Sugawara @ [Picos LLC.](https://picospec.co.jp)" >}}
 
 ## History
 
@@ -35,4 +41,4 @@ I won the NASA International Space Apps Challenge Tokyo 2011 and completed DL4US
 
 ## Motto
 
-"Make haste slowly."
+"[Festina lente.](https://en.wikipedia.org/wiki/Festina_lente)"
