@@ -196,11 +196,17 @@ tasks:
       - npm install
       - npx playwright install --with-deps
 
+  check-layouts:
+    desc: 点検 - Congoテーマのレイアウトオーバーライドを確認
+    cmds:
+      - bash scripts/check-layout-overrides.sh
+
   update-theme:
     desc: 追随 - Congoテーマを更新
     cmds:
       - git submodule update --remote --merge themes/congo
       - npm install --prefix themes/congo
+      - task: check-layouts
 
   update-changelog:
     desc: 記録 - CHANGELOGを更新

@@ -1,0 +1,106 @@
+{{ define "main" }}
+  <header>
+    <h1 class="dark:text-neutral mt-0 text-4xl font-extrabold text-neutral-900">
+      {{ .Title }}
+    </h1>
+  </header>
+  {{ if .Content }}
+    <section class="prose dark:prose-invert mt-4 max-w-prose">
+      {{ .Content | emojify }}
+    </section>
+  {{ end }}
+  {{ if gt (len .Pages) 0 }}
+    {{ $members := where (.Pages.ByWeight) ".Params.advisor" "ne" true }}
+    {{ $advisors := where (.Pages.ByWeight) ".Params.advisor" true }}
+    <section class="mt-12">
+      {{ if $members }}
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          {{ range $members }}
+            {{ partial "teams/member-card.html" . }}
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if $advisors }}
+        <h2
+          class="mt-16 text-2xl font-bold text-neutral-700 dark:text-neutral-300"
+        >
+          {{ if eq .Site.Language.Lang "ja" }}顧問{{ else }}Advisors{{ end }}
+        </h2>
+        <hr class="mb-8 w-24 border-dotted border-neutral-400" />
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          {{ range $advisors }}
+            {{ partial "teams/member-card.html" . }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  {{ else }}
+    <section class="prose dark:prose-invert mt-10">
+      <p class="border-t py-8">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
+  {{ if .Site.Params.teams.showRecruitmentBanner }}
+    <section class="mt-20">
+      <a
+        href="https://en-gage.net/sforzando/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group block rounded-2xl border border-primary-500/40 bg-neutral-800/60 px-8 py-12 text-center no-underline backdrop-blur-sm transition-all hover:border-primary-400/70 hover:shadow-lg hover:shadow-primary-900/30"
+      >
+        <svg
+          class="mx-auto mb-5 h-10 w-10 text-primary-400"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+          />
+        </svg>
+        <p class="text-2xl font-bold text-neutral-100">
+          {{ if eq .Site.Language.Lang "ja" }}
+            仲間を募集しています！
+          {{ else }}
+            Join Our Team!
+          {{ end }}
+        </p>
+        <p class="mt-3 text-neutral-400">
+          {{ if eq .Site.Language.Lang "ja" }}
+            sforzandoは、新しいメンバーを募集しています。
+          {{ else }}
+            We are looking for passionate people to build the future with us.
+          {{ end }}
+        </p>
+        <span
+          class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary-500 px-6 py-2.5 text-sm font-semibold text-white transition-colors group-hover:bg-primary-400"
+        >
+          {{ if eq .Site.Language.Lang "ja" }}
+            採用情報を見る
+          {{ else }}
+            View Job Openings
+          {{ end }}
+          <svg
+            class="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </span>
+      </a>
+    </section>
+  {{ end }}
+{{ end }}

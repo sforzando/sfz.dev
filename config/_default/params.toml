@@ -73,3 +73,8 @@ mainSections = ["posts"]
   # bing = ""
   # pinterest = ""
   # yandex = ""
+
+
+[teams]
+  # Set to false when not hiring to hide the recruitment banner
+  showRecruitmentBanner = true
