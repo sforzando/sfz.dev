@@ -8,6 +8,8 @@
   "ignores": [
     ".github/**", // PR/issue templates are not content
     "themes/**", // Congo theme — not our code
-    "node_modules/**"
+    "node_modules/**",
+    "playwright-report/**", // Playwright-generated reports
+    "test-results/**" // Playwright-generated test artifacts
   ]
 }

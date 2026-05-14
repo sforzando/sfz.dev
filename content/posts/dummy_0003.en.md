@@ -12,6 +12,7 @@ showTableOfContents: true
 showWordCount: true
 
 tags:
-  - "dummy_0003"
+  - "design"
+  - "css"
 thumbnail: "img/logo/800x800_ffffff.png"
 ---

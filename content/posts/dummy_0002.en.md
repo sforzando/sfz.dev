@@ -12,6 +12,7 @@ showTableOfContents: true
 showWordCount: true
 
 tags:
-  - "dummy_0002"
+  - "hugo"
+  - "typescript"
 thumbnail: "img/logo/800x800_ffffff.png"
 ---
