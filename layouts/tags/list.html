@@ -27,7 +27,13 @@
           <hr class="w-36 border-dotted border-neutral-400" />
         {{ end }}
         {{ range .Pages }}
-          <div class="mt-12">{{ partial "article-link.html" . }}</div>
+          <div class="mt-12">
+            {{ if eq .Section "works" }}
+              {{ partial "works/article-link.html" . }}
+            {{ else }}
+              {{ partial "posts/article-link.html" . }}
+            {{ end }}
+          </div>
         {{ end }}
       {{ end }}
     </section>

@@ -20,8 +20,13 @@ links:
 
 ## History
 
-(T. B. D.)
+A full-stack engineer specializing in React, Java, and PostgreSQL.
+Studied web accessibility in college.
+Obtained a Level 2 Color Certification due to an interest in UX/UI.
+TOEIC score: 970; EIKEN Pre-1st Grade.
 
 ## Interests
 
-(T. B. D.)
+- Horse racing
+- Illustration (mainly horses)
+- Knitting

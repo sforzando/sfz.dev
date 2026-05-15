@@ -25,9 +25,13 @@ test.describe("tags en", () => {
 
   test("non-active tag links navigate correctly", async ({ page }) => {
     await page.goto("/tags/tech/")
-    const allTags = page.locator("#tag-cloud a")
-    const count = await allTags.count()
-    expect(count).toBeGreaterThan(1)
+    const floatingTag = page.locator("#tag-cloud a.tag-cloud-float").first()
+    await expect(floatingTag).toBeVisible()
+    const href = await floatingTag.getAttribute("href")
+    if (!href) throw new Error("floating tag has no href")
+    await floatingTag.click({ force: true })
+    await page.waitForURL(`**${href}`)
+    expect(page.url()).toContain(href)
   })
 
   test("no JavaScript errors on tag page", async ({ page }) => {
