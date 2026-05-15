@@ -61,8 +61,9 @@ $ task --list
 task: Available tasks for this project:
 * build:                     構築 - 本番用静的サイトをビルド
 * build-css:                 構築 - TailwindCSSをビルド
+* check-layouts:             点検 - Congoテーマのレイアウトオーバーライドを確認
 * clean:                     掃除 - テスト結果を削除
-* default:                   常用 - 開発サーバー起動
+* default:                   一覧 - タスクの一覧を表示
 * deploy:                    配備 - Netlifyへデプロイ
 * format:                    整形 - コードフォーマット実行
 * generate-dummy:            生成 - テスト用ダミーコンテンツを生成
@@ -70,7 +71,6 @@ task: Available tasks for this project:
 * install-ci:                導入 - CI環境用依存パッケージをインストール
 * lighthouse:                試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
 * lint-markdown:             検査 - Markdownlintでマークダウンを検査
-* ngrok:                     転送 - ngrokでローカルサーバーを公開
 * open:                      閲覧 - ブラウザで開く
 * outdated:                  点検 - 依存パッケージの更新を確認
 * setup:                     初回 - 初期セットアップ
@@ -84,6 +84,7 @@ task: Available tasks for this project:
 * update-theme:              追随 - Congoテーマを更新
 * gs:hide:                   秘匿 - git-secretで秘密情報を暗号化
 * gs:reveal:                 暴露 - git-secretで秘密情報を復号化
+* outdated:versions:         点検 - ツール（Congo/Hugo/Go）のバージョンを確認
 ```
 
 ### First time preparation
@@ -132,8 +133,6 @@ task start
 
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
 To open it, `task open`.
-
-Transfer by ngrok is convenient for checking on a smartphone, use `task ngrok`.
 
 #### Dummy Articles
 

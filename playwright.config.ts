@@ -30,13 +30,13 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: [["list"], ["html", { open: "never" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto("/")`. */
-    baseURL: process.env.BASE_URL || "http://localhost:1313",
+    baseURL: process.env.BASE_URL || "http://localhost:1314",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
   },
@@ -113,8 +113,10 @@ const config: PlaywrightTestConfig = {
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: "task start",
-    port: 1313,
+    name: "Hugo Server for Playwright Tests",
+    command: "hugo server --buildDrafts --buildFuture -p 1314 --watch=false",
+    url: "http://localhost:1314/",
+    timeout: 120000,
     reuseExistingServer: !process.env.CI,
   },
 

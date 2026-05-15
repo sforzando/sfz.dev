@@ -14,3 +14,17 @@
   src="{{ $js.RelPermalink }}"
   integrity="{{ $js.Data.Integrity }}"
 ></script>
+
+{{/* Tag cloud — loaded on posts list and tag term pages */}}
+{{ if or
+  (and (eq .Section "posts") (eq .Kind "section"))
+  (and (eq .Kind "term") (eq .Data.Singular "tag"))
+}}
+  {{ $tagCloud := resources.Get "js/tag-cloud.ts" | js.Build (dict "minify" hugo.IsProduction) | resources.Fingerprint "sha512" }}
+  <script
+    defer
+    type="text/javascript"
+    src="{{ $tagCloud.RelPermalink }}"
+    integrity="{{ $tagCloud.Data.Integrity }}"
+  ></script>
+{{ end }}

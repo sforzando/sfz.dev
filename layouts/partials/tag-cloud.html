@@ -1,0 +1,19 @@
+{{/* Tag cloud — shared partial for posts list and tag term pages */}}
+{{ if .Site.Taxonomies.tags }}
+  {{ $tags := slice }}
+  {{ range .Site.Taxonomies.tags.ByCount }}
+    {{ $tags = $tags | append (dict "name" .Page.Title "count" .Count "url" .Page.RelPermalink) }}
+  {{ end }}
+  {{ $activeTag := "" }}
+  {{ if eq .Kind "term" }}{{ $activeTag = .Title }}{{ end }}
+  {{ $pinnedTags := .Site.Params.tagCloud.pinnedCenterTags | default (slice) }}
+  <div
+    id="tag-cloud"
+    data-tags="{{ $tags | jsonify }}"
+    data-active-tag="{{ $activeTag }}"
+    data-pinned-tags="{{ $pinnedTags | jsonify }}"
+    class="relative my-8 overflow-hidden"
+    style="height: 320px;"
+    aria-label="Tag cloud"
+  ></div>
+{{ end }}

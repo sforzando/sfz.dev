@@ -14,8 +14,14 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:jpanther.github.io)",
       "WebFetch(domain:www.vantajs.com)",
+      "WebSearch",
       "mcp__plugin_context7_context7__query-docs",
-      "mcp__plugin_context7_context7__resolve-library-id"
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_hover",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ],
     "deny": [],
     "ask": []

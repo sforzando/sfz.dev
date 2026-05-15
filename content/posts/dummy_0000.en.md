@@ -12,6 +12,7 @@ showTableOfContents: true
 showWordCount: true
 
 tags:
-  - "dummy_0000"
+  - "tech"
+  - "hugo"
 thumbnail: "img/logo/800x800_ffffff.png"
 ---

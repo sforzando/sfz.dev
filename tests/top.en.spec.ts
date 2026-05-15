@@ -9,6 +9,7 @@ test("top en", async ({ page }) => {
     await menuButton.click()
   }
   await page.getByRole("button", { name: "EN" }).first().click()
-  await page.getByRole("link", { name: "日本語" }).click()
+  await page.waitForTimeout(300)
+  await page.getByRole("link", { name: "日本語" }).first().click()
   await expect(page).toHaveURL(/\/ja\//)
 })

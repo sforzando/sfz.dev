@@ -78,3 +78,7 @@ mainSections = ["posts"]
 [teams]
   # Set to false when not hiring to hide the recruitment banner
   showRecruitmentBanner = true
+
+[tagCloud]
+  # Tags always placed near the center regardless of article count (case-insensitive)
+  pinnedCenterTags = ["announcement", "tech"]

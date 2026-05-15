@@ -247,6 +247,8 @@ function init(): void {
   renderer.setClearColor(new THREE.Color(themeBackground))
   renderer.setPixelRatio(window.devicePixelRatio)
   // false: skip inline px style so the CSS "100%/100%" below persists through resize calls.
+  // On position:fixed elements, width:100% resolves to clientWidth (excluding scrollbar),
+  // so boundingBox().width === clientWidth and the viewport-fill test passes.
   renderer.setSize(window.innerWidth, window.innerHeight, false)
   renderer.domElement.style.width = "100%"
   renderer.domElement.style.height = "100%"
