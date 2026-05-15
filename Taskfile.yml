@@ -86,6 +86,12 @@ tasks:
     cmds:
       - lsof -ti:1313 | xargs kill || true
 
+  restart:
+    desc: 再起 - Hugo開発サーバーを再起動
+    cmds:
+      - task: stop
+      - task: start
+
   generate-dummy:
     desc: 生成 - テスト用ダミーコンテンツを生成
     cmds:

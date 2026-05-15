@@ -1,55 +1,31 @@
 // ── Constants ──────────────────────────────────────────────────────────────────
-const FONT_MIN = 14 // px for tags with fewest articles
-const FONT_MAX = 34 // px for most-popular non-pinned tags
-const FONT_PINNED = 42 // px for pinned center tags — always larger than FONT_MAX
-const FONT_ACTIVE_BONUS = 12 // additional px on top of base size for the active tag
-const MARGIN = 0.1 // fraction of half-dimension kept clear at each edge
-const GLOW_ACTIVE = 2 // px text-shadow blur for the active tag (primary color via currentColor)
-
 // ── Helpers ────────────────────────────────────────────────────────────────────
-// Inject shine CSS once.
-// Uses background-clip:text so the gradient paints inside character shapes only —
-// no rectangular glow artifact, and no overflow:hidden needed on the tag element.
-function injectShineStyle(): void {
-  if (document.getElementById("tag-cloud-shine-style")) return
+// Inject float animation CSS once.
+// translate (individual CSS property) composes on top of the inline transform,
+// so the positioning transform is unaffected.
+function injectTagCloudStyle(): void {
+  if (document.getElementById("tag-cloud-style")) return
   const style = document.createElement("style")
-  style.id = "tag-cloud-shine-style"
+  style.id = "tag-cloud-style"
   style.textContent = `
-@keyframes tag-cloud-shine {
-  from { background-position: 100% center; }
-  to   { background-position:   0% center; }
+@keyframes tag-cloud-float {
+  0%, 100% { translate: 0 0; }
+  50%       { translate: 0 -4px; }
 }
 
-/* Silver metallic sweep for regular (white) tags */
-.tag-cloud-shine-regular {
-  background: linear-gradient(
-    105deg,
-    #606060 0%, #b0b0b0 38%, #ffffff 50%, #b0b0b0 62%, #606060 100%
-  ) no-repeat;
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: tag-cloud-shine 1.4s linear infinite alternate;
-}
-
-/* Primary-color metallic sweep for the active tag — currentColor resolves to primary */
-.tag-cloud-shine-active {
-  background: linear-gradient(
-    105deg,
-    currentColor 0%, currentColor 38%,
-    rgba(255,255,255,0.95) 50%,
-    currentColor 62%, currentColor 100%
-  ) no-repeat;
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: tag-cloud-shine 1.4s linear infinite alternate;
+.tag-cloud-float {
+  animation: tag-cloud-float var(--float-dur) ease-in-out infinite;
+  animation-delay: var(--float-del);
 }
 `
   document.head.appendChild(style)
 }
+
+const FONT_MIN = 16 // px for tags with fewest articles
+const FONT_MAX = 34 // px for most-popular non-pinned tags
+const FONT_PINNED = 42 // px for pinned center tags — always larger than FONT_MAX
+const FONT_ACTIVE_BONUS = 12 // additional px on top of base size for the active tag
+const MARGIN = 0.1 // fraction of half-dimension kept clear at each edge
 
 function tagFontSize(
   count: number,
@@ -69,13 +45,14 @@ function tagFontSize(
 }
 
 // Golden-angle radial layout: most important tags near center, least important at edges.
-// Priority: pinned tags first, then by count descending.
+// Priority: active tag first, then pinned tags, then by count descending.
 // Golden angle (~137.5°) distributes points without angular clustering.
 function radialPositions(
   tags: Array<{ name: string; count: number }>,
   containerW: number,
   containerH: number,
-  pinnedTags: string[]
+  pinnedTags: string[],
+  activeTag: string
 ): Array<{ baseX: number; baseY: number }> {
   const safeW = (containerW / 2) * (1 - 2 * MARGIN)
   const safeH = (containerH / 2) * (1 - 2 * MARGIN)
@@ -85,10 +62,12 @@ function radialPositions(
   const ranked = tags
     .map((t, i) => ({
       i,
+      active: t.name.toLowerCase() === activeTag,
       pinned: pinnedTags.includes(t.name.toLowerCase()),
       count: t.count,
     }))
     .sort((a, b) => {
+      if (a.active !== b.active) return a.active ? -1 : 1
       if (a.pinned !== b.pinned) return a.pinned ? -1 : 1
       return b.count - a.count
     })
@@ -112,7 +91,7 @@ function radialPositions(
 
 // ── Init ───────────────────────────────────────────────────────────────────────
 function initTagCloud(): void {
-  injectShineStyle()
+  injectTagCloudStyle()
 
   const container = document.getElementById("tag-cloud")
   if (!container) return
@@ -140,7 +119,13 @@ function initTagCloud(): void {
   const containerH = container.offsetHeight
   if (containerW === 0 || containerH === 0) return
 
-  const positions = radialPositions(data, containerW, containerH, pinnedTags)
+  const positions = radialPositions(
+    data,
+    containerW,
+    containerH,
+    pinnedTags,
+    activeTag
+  )
 
   container.style.position = "relative"
 
@@ -150,6 +135,12 @@ function initTagCloud(): void {
     const el = document.createElement("a")
     el.href = d.url
     el.textContent = d.name
+
+    // Baking scale() into the same transform property as the positioning translate
+    // ensures transform-origin: 50% 50% resolves to the element's visual center,
+    // so hover scale always expands from the tag's midpoint without shifting it.
+    const baseTransform = `translate(calc(-50% + ${positions[i].baseX.toFixed(1)}px), calc(-50% + ${positions[i].baseY.toFixed(1)}px))`
+
     el.style.cssText = [
       "position:absolute",
       "top:50%",
@@ -159,31 +150,29 @@ function initTagCloud(): void {
       "text-decoration:none",
       `font-weight:${isActive ? 700 : isPinned ? 600 : 500}`,
       "line-height:1.2",
-      "transition:color 0.15s",
+      "transition:color 0.15s, transform 0.22s cubic-bezier(0.34,1.56,0.64,1)",
       "color:inherit",
     ].join(";")
     el.style.fontSize = `${tagFontSize(d.count, minCount, maxCount, isPinned, isActive).toFixed(1)}px`
-    el.style.transform = `translate(calc(-50% + ${positions[i].baseX.toFixed(1)}px), calc(-50% + ${positions[i].baseY.toFixed(1)}px))`
+    el.style.transform = baseTransform
 
     if (isActive) {
-      el.className = "text-primary-500 dark:text-primary-400"
-      el.style.textShadow = `0 0 ${GLOW_ACTIVE}px currentColor, 0 0 ${GLOW_ACTIVE * 2}px currentColor`
+      el.style.filter = "drop-shadow(3px 3px 0 #687987)"
     } else {
-      el.className = "hover:text-primary-600 dark:hover:text-primary-400"
+      el.className =
+        "hover:text-primary-600 dark:hover:text-primary-400 tag-cloud-float"
+      // Stagger duration and phase per tag so they drift independently.
+      // Negative delay starts each tag partway through its cycle on load.
+      el.style.setProperty("--float-dur", `${2.6 + (i % 5) * 0.35}s`)
+      el.style.setProperty("--float-del", `-${(i * 1.1) % 3}s`)
     }
 
-    // Metallic text shine: background-clip:text confines the sweep to character shapes,
-    // avoiding the rectangular glow artifact of overlay approaches.
-    const shineClass = isActive
-      ? "tag-cloud-shine-active"
-      : "tag-cloud-shine-regular"
-
     el.addEventListener("mouseenter", () => {
-      el.classList.add(shineClass)
+      el.style.transform = `${baseTransform} scale(1.12)`
     })
 
     el.addEventListener("mouseleave", () => {
-      el.classList.remove(shineClass)
+      el.style.transform = baseTransform
     })
 
     container.appendChild(el)

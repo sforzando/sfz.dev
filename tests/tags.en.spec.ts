@@ -17,7 +17,7 @@ test.describe("tags en", () => {
   test("active tag is highlighted", async ({ page }) => {
     await page.goto("/tags/tech/")
     await page.waitForTimeout(300)
-    const activeTag = page.locator("#tag-cloud a.text-primary-500")
+    const activeTag = page.locator("#tag-cloud a:not(.tag-cloud-float)")
     await expect(activeTag).toBeVisible()
     const text = await activeTag.textContent()
     expect(text?.toLowerCase()).toBe("tech")
