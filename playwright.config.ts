@@ -116,6 +116,7 @@ const config: PlaywrightTestConfig = {
     name: "Hugo Server for Playwright Tests",
     command: "hugo server --buildDrafts --buildFuture -p 1314 --watch=false",
     url: "http://localhost:1314/",
+    timeout: 120000,
     reuseExistingServer: !process.env.CI,
   },
 
