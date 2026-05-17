@@ -9,7 +9,8 @@ test("top en", async ({ page }) => {
     await menuButton.click()
   }
   await page.getByRole("button", { name: "EN" }).first().click()
-  await page.waitForTimeout(300)
-  await page.getByRole("link", { name: "日本語" }).first().click()
+  const japaneseLink = page.getByRole("link", { name: "日本語" }).first()
+  await japaneseLink.waitFor({ state: "visible" })
+  await japaneseLink.click()
   await expect(page).toHaveURL(/\/ja\//)
 })

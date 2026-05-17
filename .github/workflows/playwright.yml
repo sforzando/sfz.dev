@@ -38,7 +38,7 @@ jobs:
     - name: Install Dependencies
       run: task install-ci
     - name: Run Playwright tests
-      run: task test-ci
+      run: task test:ci
     - uses: actions/upload-artifact@v7
       if: always()
       with:

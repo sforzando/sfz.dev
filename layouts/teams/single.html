@@ -9,6 +9,7 @@
       {{ end }}
       <h1
         class="mb-4 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral"
+        style="view-transition-name: article-{{ .File.UniqueID }}"
       >
         {{ .Title | emojify }}
       </h1>

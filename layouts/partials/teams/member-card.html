@@ -18,7 +18,10 @@
       />
     {{ end }}
     <div class="mt-4">
-      <p class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+      <p
+        class="text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+        style="view-transition-name: article-{{ .File.UniqueID }}"
+      >
         {{ .Title }}
       </p>
       {{ with .Params.position }}
@@ -48,7 +51,10 @@
       />
     {{ end }}
     <div class="mt-4">
-      <p class="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+      <p
+        class="text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+        style="view-transition-name: article-{{ .File.UniqueID }}"
+      >
         {{ .Title }}
       </p>
       {{ with .Params.position }}

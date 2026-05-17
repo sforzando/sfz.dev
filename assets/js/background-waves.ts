@@ -223,10 +223,19 @@ function init(): void {
   })
   document.body.insertBefore(container, document.body.firstChild)
 
-  // z-index:1 + position:relative lifts page content above the fixed canvas
-  // without changing existing layout.
+  // z-index:1 + position:relative lifts page content above the fixed canvas.
+  // flex:1 makes the wrapper grow to fill body's flex height so Congo's own
+  // flex sticky-footer chain (body → contentWrapper → div.grow → footer) works.
+  // display:flex + flexDirection:column propagates the column layout that body
+  // already declares so that header and div.grow remain proper flex children.
   const contentWrapper = document.createElement("div")
-  Object.assign(contentWrapper.style, { position: "relative", zIndex: "1" })
+  Object.assign(contentWrapper.style, {
+    position: "relative",
+    zIndex: "1",
+    flex: "1",
+    display: "flex",
+    flexDirection: "column",
+  })
   while (document.body.children.length > 1) {
     contentWrapper.appendChild(document.body.children[1])
   }

@@ -19,7 +19,7 @@ pre-commit:
       stage_fixed: true
 
     test:
-      run: task test
+      run: task test:headless
 
     # Sort Claude settings
     sort-settings:

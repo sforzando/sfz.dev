@@ -77,7 +77,7 @@ task: Available tasks for this project:
 * start:                     開始 - Hugo開発サーバー起動      (aliases: dev)
 * stop:                      停止 - Hugo開発サーバーを全て停止
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
-* test-ci:                   試験 - CI環境でPlaywrightテスト実行
+* test:ci:                   試験 - CI環境でPlaywrightテスト実行
 * test-prod:                 試験 - 本番サーバーでPlaywrightテスト実行
 * update-changelog:          記録 - CHANGELOGを更新
 * update-dependencies:       追随 - 依存パッケージを更新
