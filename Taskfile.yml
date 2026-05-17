@@ -122,7 +122,12 @@ tasks:
     cmds:
       - npx playwright test --update-snapshots --headed
 
-  test-ci:
+  test:headless:
+    desc: 試験 - ローカルサーバーでPlaywrightテスト実行（ヘッドレスモード）
+    cmds:
+      - npx playwright test --update-snapshots
+
+  test:ci:
     desc: 試験 - CI環境でPlaywrightテスト実行
     cmds:
       - npx playwright test --ignore-snapshots
