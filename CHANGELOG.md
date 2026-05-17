@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-05-15
+Last updated: 2026-05-17
 
 All notable changes to this project will be documented in this file.
 
@@ -37,6 +37,7 @@ All notable changes to this project will be documented in this file.
 - 2026-04-29 14:24:21 :sparkles: add metadata section for clients, collaborators, and references _by @shin-sforzando_
 - 2026-05-11 05:17:57 :sparkles: add team member profiles and layout for teams page _by @shin-sforzando_
 - 2026-05-14 15:02:17 :sparkles: add radial tag cloud to posts list and tag pages _by @shin-sforzando_
+- 2026-05-17 14:33:13 :sparkles: implement view transitions for improved navigation _by @shin-sforzando_
 
 ### Refactor
 
