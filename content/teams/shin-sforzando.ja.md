@@ -32,8 +32,8 @@ NASA International Space Apps Challenge Tokyo 2011 優勝、東京大学大学�
 ## 趣味
 
 - マイクロドローン
-- クライミング (ボルダリング)
-- 3Dプリンタ (特に、熱積層タイプ)
+- ボルダリング
+- 3Dプリンタ
 
 ## 信条
 

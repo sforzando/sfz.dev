@@ -31,7 +31,7 @@ I won the NASA International Space Apps Challenge Tokyo 2011 and completed DL4US
 
 ## Interests
 
-- Micro Drone
+- Multicopter
 - Climbing (Bouldering)
 - Tinkering
 
