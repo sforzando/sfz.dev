@@ -114,7 +114,8 @@ const config: PlaywrightTestConfig = {
   /* Run your local dev server before starting the tests */
   webServer: {
     name: "Hugo Server for Playwright Tests",
-    command: "hugo server --buildDrafts --buildFuture -p 1314 --watch=false",
+    command:
+      "hugo server --buildDrafts --buildFuture -p 1314 --watch=false --renderToMemory --disableLiveReload",
     url: "http://localhost:1314/",
     timeout: 120000,
     reuseExistingServer: !process.env.CI,

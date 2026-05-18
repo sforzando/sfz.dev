@@ -35,7 +35,7 @@ tasks:
       - npm install --prefix themes/congo
       - npx playwright install --with-deps
 
-  install-ci:
+  install:ci:
     desc: 導入 - CI環境用依存パッケージをインストール
     cmds:
       - npm ci
@@ -60,7 +60,7 @@ tasks:
     cmds:
       - git secret reveal -vf
 
-  build-css:
+  build:css:
     desc: 構築 - TailwindCSSをビルド
     cmds:
       - NODE_ENV=production ./themes/congo/node_modules/.bin/tailwindcss -c ./tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
@@ -68,7 +68,7 @@ tasks:
   build:
     desc: 構築 - 本番用静的サイトをビルド
     deps:
-      - build-css
+      - build:css
     cmds:
       - hugo --minify
 
@@ -77,7 +77,7 @@ tasks:
     aliases:
       - dev
     deps:
-      - build-css
+      - build:css
     cmds:
       - hugo server --buildDrafts --buildFuture
 
@@ -92,21 +92,12 @@ tasks:
       - task: stop
       - task: start
 
-  generate-dummy:
-    desc: 生成 - テスト用ダミーコンテンツを生成
+  generate:dummy:
+    desc: "生成 - テスト用ダミーコンテンツを生成（ex. task generate:dummy -- works 5）"
     cmds:
-      - |
-        for i in $(seq -f "%04g" 0 23); do
-          [ -f "content/works/dummy_${i}.en.md" ] || hugo new "works/dummy_${i}.en.md"
-          [ -f "content/works/dummy_${i}.ja.md" ] || hugo new "works/dummy_${i}.ja.md"
-        done
-      - |
-        for i in $(seq -f "%04g" 0 3); do
-          [ -f "content/posts/dummy_${i}.en.md" ] || hugo new "posts/dummy_${i}.en.md"
-          [ -f "content/posts/dummy_${i}.ja.md" ] || hugo new "posts/dummy_${i}.ja.md"
-        done
+      - npx tsx scripts/gen-dummy.ts {{.CLI_ARGS}}
 
-  lint-markdown:
+  lint:markdown:
     desc: 検査 - Markdownlintでマークダウンを検査
     cmds:
       - npx markdownlint-cli2 --fix "**/*.md"
@@ -132,7 +123,7 @@ tasks:
     cmds:
       - npx playwright test --ignore-snapshots
 
-  test-prod:
+  test:prod:
     desc: 試験 - 本番サーバーでPlaywrightテスト実行
     cmds:
       - BASE_URL=https://sfz.dev npx playwright test --update-snapshots --headed
@@ -169,7 +160,7 @@ tasks:
     cmds:
       - bash scripts/check-versions.sh
 
-  update-dependencies:
+  update:dependencies:
     desc: 追随 - 依存パッケージを更新
     cmds:
       - ncu --upgrade
@@ -177,19 +168,19 @@ tasks:
       - npm install
       - npx playwright install --with-deps
 
-  check-layouts:
+  check:layouts:
     desc: 点検 - Congoテーマのレイアウトオーバーライドを確認
     cmds:
-      - bash scripts/check-layout-overrides.sh
+      - bash scripts/check:layout-overrides.sh
 
-  update-theme:
+  update:theme:
     desc: 追随 - Congoテーマを更新
     cmds:
       - git submodule update --remote --merge themes/congo
       - npm install --prefix themes/congo
-      - task: check-layouts
+      - task: check:layouts
 
-  update-changelog:
+  update:changelog:
     desc: 記録 - CHANGELOGを更新
     cmds:
       - git cliff --output CHANGELOG.md

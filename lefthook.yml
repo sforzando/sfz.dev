@@ -13,9 +13,9 @@ pre-commit:
       run: task format
       stage_fixed: true
 
-    lint-markdown:
+    lint:markdown:
       glob: "*.md"
-      run: task lint-markdown
+      run: task lint:markdown
       stage_fixed: true
 
     test:

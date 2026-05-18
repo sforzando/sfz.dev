@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0005"
-date: 2026-04-26T02:29:48+09:00
+title: "dummy_0005"
+date: 2026-04-29T13:51:56+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,32 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "堤電気有限会社"
+    url: "https://adolescent-desk.net/"
+  - name: "合資会社小島食品"
+    url: "https://grim-vista.org"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合資会社笠原銀行"
+    credits:
+      - "Design: 森田"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "メディア掲載"
+    url: "https://genuine-coin.biz"
+  - name: "導入事例インタビュー"
+    url: "https://wicked-cycle.info/"
 thumbnail: "img/works/dummy_0005_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0005_key.jpg" alt="dummy_0005" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Ventosus suscipio vinculum vaco accommodo pecco arto nam benigne. Vetus vae sui varietas. Certus apparatus vergo ut bis crinis cervus defendo.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Vespillo aro tonsor cattus decipio. Apostolus vallum defleo. Omnis compello acervus pariatur.
 
 {{< figure class="w-screen" src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Adsidue terga apto volo denuo cibo venustas. Umerus umquam eos conatus vitiosus anser absconditus. Cognomen magnam id valde cura inflammatio.
+
+Viscus aspernatur nobis combibo assentator sed aliquid suggero facilis patria. Vestigium xiphias debeo celebrer dicta. Vorago sollers convoco casus clementia vergo perspiciatis sonitus solio.
 
 {{< figure src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}

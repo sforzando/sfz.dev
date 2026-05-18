@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0000"
-date: 2026-04-26T02:29:47+09:00
+title: "dummy_0000"
+date: 2026-04-24T11:51:55+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,35 +14,42 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社サンプル商事"
-    url: "http://www.example.com"
-  - name: "有限会社テスト工業"
+  - name: "谷運輸有限会社"
+    url: "https://stable-minion.name/"
 collaborators:
-  - name: "Picos LLC."
-    url: "http://www.example.com"
+  - name: "原食品合同会社"
+    url: "https://lazy-skyscraper.name/"
     credits:
-      - "PM 川田"
-      - "Program 菅原"
-      - "Design 理恵"
-  - name: "sforzando LLC."
+      - "Development: 河村"
+  - name: "牧野食品株式会社"
     credits:
-      - "Direction 鈴木"
+      - "Direction: 稲垣"
+      - "Direction: 森田"
+  - name: "有限会社溝口自動車"
+    credits:
+      - "PM: 石田"
+      - "PM: 本田"
+      - "Development: 新井"
 references:
-  - name: "プロジェクト紹介記事"
-    url: "http://www.example.com"
-  - name: "関連技術ドキュメント"
-    url: "http://www.example.com"
+  - name: "公式ウェブサイト"
+    url: "https://stupendous-decongestant.biz/"
+  - name: "メディア掲載"
+    url: "https://bruised-feather.com/"
+  - name: "導入事例インタビュー"
+    url: "https://salty-bathhouse.net"
 thumbnail: "img/works/dummy_0000_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Adhaero arbitro recusandae abutor vulgo arbitro video bestia cribro argumentum. Alveus est umerus. Aeneus thema curtus tremo.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Tam defetiscor sunt veritas adstringo. Dolore caritas turpis demens auxilium vinco quidem. Ventito non ambulo tendo arbustum.
 
 {{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Cur ullam depromo suscipit non. Alii aspernatur capio ex illum eius. Teres tergiversatio aggredior certe armarium advenio cras nam temptatio.
+
+Crastinus vero utroque adeo cernuus arto sortitus assumenda balbus. Somniculosus curiositas socius virtus velut coadunatio vere tracto. Testimonium depereo vir compello decumbo damnatio artificiose appello volubilis bellicus.
 
 {{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}

@@ -161,7 +161,7 @@ task stop
 task deploy
 ```
 
-> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint-markdown`・`task test`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task test`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
 
 ## 移行履歴
 
@@ -178,7 +178,7 @@ task deploy
 
 ### 主な変更点
 
-- git submoduleによるテーマ管理を維持（`task update-theme` で更新）
+- git submoduleによるテーマ管理を維持（`task update:theme` で更新）
 - 最新Three.jsを使用した背景アニメーションのモダン化
 - Taskfileベースのビルド自動化
 - カスタムshortcode（contactForm、mapboxGl）は維持
@@ -193,7 +193,7 @@ task deploy
 ## 今後のメンテナンスに関する注意事項
 
 1. **Worksポートフォリオ**: 現在はCongo標準レイアウトを使用。将来的に大幅なリデザインを予定。
-2. **テーマ更新**: `task update-theme`（`git submodule update --remote --merge themes/congo`）でCongoテーマを更新可能。
+2. **テーマ更新**: `task update:theme`（`git submodule update --remote --merge themes/congo`）でCongoテーマを更新可能。
 3. **カスタムShortcode**: サイト機能に必須。contactFormとmapboxGl shortcodeは削除しないこと。
 4. **背景アニメーション**: カスタム実装。変更時はパフォーマンステストを推奨。
 5. **バイリンガルコンテンツ**: 全コンテンツで必ず日英両バージョンを維持すること。

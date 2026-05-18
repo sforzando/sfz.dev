@@ -38,7 +38,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: :paperclip: update CHANGELOG"
-          branch: chore/update-changelog
+          branch: chore/update:changelog
           title: "chore: :paperclip: update CHANGELOG"
           body: "CHANGELOG update by git-cliff"
           labels: "automated"

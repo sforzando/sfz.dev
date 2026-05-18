@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0004"
-date: 2026-04-26T02:29:48+09:00
+title: "dummy_0004"
+date: 2026-04-28T12:51:56+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,38 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "有限会社牧野ホテル"
+  - name: "合資会社須田ホテル"
+    url: "https://aching-fireplace.com/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "岩井金属株式会社"
+    url: "https://mealy-fibre.net/"
+    credits:
+      - "Design: 山田"
+      - "Program: 竹村"
+      - "Design: 岩本"
+  - name: "有限会社稲葉印刷"
+    credits:
+      - "Design: 原口"
+      - "Design: 瀬戸"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "メディア掲載"
+    url: "https://impossible-yak.net/"
+  - name: "関連技術ドキュメント"
+    url: "https://critical-unique.biz/"
 thumbnail: "img/works/dummy_0004_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Molestias aduro verecundia adsum avaritia. Umerus talis curriculum caterva. Peccatus amitto venustas sulum compono.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Bos bonus combibo aperio basium libero alii. Culpo valens agnitio et supplanto pectus acervus optio crapula. Sto beatus decor.
 
 {{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Cado vicinus candidus alter bardus veniam demulceo decens vulgaris odio. Ducimus ab conqueror thesaurus maxime tumultus sumo arca. Cribro vae harum vorax necessitatibus voluptatum video.
+
+Crux thema sopor adhaero. Hic vinco benevolentia vulticulus. Cruciamentum aurum vitae subito denuo damno casso.
 
 {{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}

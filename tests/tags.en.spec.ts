@@ -2,29 +2,29 @@ import { expect, test } from "@playwright/test"
 
 test.describe("tags en", () => {
   test("tag term list", async ({ page }) => {
-    await page.goto("/tags/tech/")
+    await page.goto("/tags/works/")
     await expect(page.locator("article").first()).toBeVisible()
     await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
   })
 
   test("tag cloud visible on tag page", async ({ page }) => {
-    await page.goto("/tags/tech/")
+    await page.goto("/tags/works/")
     await expect(page.locator("#tag-cloud")).toBeVisible()
     await expect(page.locator("#tag-cloud a").first()).toBeVisible()
     await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
   })
 
   test("active tag is highlighted", async ({ page }) => {
-    await page.goto("/tags/tech/")
+    await page.goto("/tags/works/")
     await page.waitForTimeout(300)
     const activeTag = page.locator("#tag-cloud a:not(.tag-cloud-float)")
     await expect(activeTag).toBeVisible()
     const text = await activeTag.textContent()
-    expect(text?.toLowerCase()).toBe("tech")
+    expect(text?.toLowerCase()).toBe("works")
   })
 
   test("non-active tag links navigate correctly", async ({ page }) => {
-    await page.goto("/tags/tech/")
+    await page.goto("/tags/works/")
     const floatingTag = page.locator("#tag-cloud a.tag-cloud-float").first()
     await expect(floatingTag).toBeVisible()
     const href = await floatingTag.getAttribute("href")
@@ -44,7 +44,7 @@ test.describe("tags en", () => {
         errors.push(msg.text())
     })
     page.on("pageerror", (err) => errors.push(err.message))
-    await page.goto("/tags/tech/")
+    await page.goto("/tags/works/")
     await page.waitForTimeout(500)
     expect(errors).toHaveLength(0)
   })

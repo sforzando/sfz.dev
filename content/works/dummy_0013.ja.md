@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0013"
-date: 2026-04-26T02:29:49+09:00
+title: "dummy_0013"
+date: 2026-05-07T17:51:56+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,38 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "中井ガス合資会社"
+  - name: "手塚金属合名会社"
+    url: "https://hungry-gazebo.name/"
+  - name: "岡村鉄道合資会社"
+    url: "https://crazy-heating.net"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "橋本鉄道有限会社"
+    credits:
+      - "Development: 園田"
+      - "Development: 西川"
+      - "Program: 千葉"
+  - name: "株式会社藤野情報"
+    credits:
+      - "Program: 山岡"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "受賞歴"
+    url: "https://vague-linseed.com"
+  - name: "プロジェクト紹介記事"
+    url: "https://grounded-pecan.name/"
 thumbnail: "img/works/dummy_0013_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0013_key.jpg" alt="dummy_0013" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Iste alias laborum pectus vulgivagus adinventitias vitium comburo baiulus. Cinis laborum beatae video verecundia copiose curo. Exercitationem cito unde alo similique uter accusantium aperio comitatus.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Tracto autem auxilium aestas cariosus crastinus colligo adversus stillicidium. Complectus vestigium illum delibero. Coniuratio fugiat vespillo demitto censura vilis.
 
 {{< figure class="w-screen" src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Viriliter ad alii repudiandae. Adinventitias placeat absum. Defaeco sunt inflammatio conservo coepi attero ante.
+
+Rem coniuratio inflammatio amoveo crustulum crux odit conatus clibanus tergum. Natus credo delego surgo paens varietas sublime neque ducimus. Agnitio totus asperiores valetudo solvo sub curvo cupiditas temeritas.
 
 {{< figure src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}
