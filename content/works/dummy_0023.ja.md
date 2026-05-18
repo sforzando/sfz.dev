@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0023"
-date: 2026-04-26T02:29:51+09:00
+title: "dummy_0023"
+date: 2026-05-17T21:26:32+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "杉原証券合同会社"
+    url: "https://runny-final.org/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "藤村倉庫有限会社"
+    url: "https://authorized-saloon.name/"
+    credits:
+      - "PM: 石井"
+      - "Program: 村田"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "導入事例インタビュー"
+    url: "https://alarmed-brush.org"
 thumbnail: "img/works/dummy_0023_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0023_key.jpg" alt="dummy_0023" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+おおごえ シアトルし 弥生. 甲乙 ほどう ぎょうし ために 主に 開閉 よすみ きょうかい 専門 左手. おなか ひきさく 差し上げる むこう 備える 無敵 休日 いしゃりょう あつかい なんべい.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+える かいほうする ふくし 金縛り 奔放 書架 おおちがい そうだん. 零す 数える 閉じる 金 なおさら 高瀬 色々. 憂い 輸出 奔放 こうおつ 賛成 こうばん.
 
 {{< figure class="w-screen" src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+悪気 詰め込む 七つ 開閉 あれる 原油 たいりく りゃくご. 悪霊 陳列室 料理人 左手 せんじょうざい だくりゅう たび かわさき いじん つうこん. 既に わかめ はじめて ふくへい ぜんにほん.
+
+交錯 じきしょうそう りゃくず. 上手 望み とうひょうする 燃やす. 隆起 ちょうせん 慶弔 栄誉 ほうげん.
 
 {{< figure src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}

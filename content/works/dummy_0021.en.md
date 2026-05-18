@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0021"
-date: 2026-04-26T02:29:50+09:00
+title: "dummy_0021"
+date: 2026-05-15T21:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,35 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "VonRueden - Upton"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "Hermann and Sons"
+    url: "https://probable-accelerator.biz"
+    credits:
+      - "PM: Homenick"
+      - "Program: Mosciski"
+  - name: "McKenzie - Quigley"
+    credits:
+      - "Design: Russel"
+      - "Direction: Langosh"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "tardus attero cervus"
+    url: "https://sad-accelerator.net"
+  - name: "comptus antepono apostolus spectaculum atavus"
+    url: "https://soupy-strait.org/"
 thumbnail: "img/works/dummy_0021_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0021_key.jpg" alt="dummy_0021" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Spoliatio ultio spoliatio attero cuppedia cultellus conservo comitatus ver tremo. Vitae adeptio speculum sapiente. Quidem vinum crustulum vindico despecto.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Aestivus utrimque compono. Optio itaque ipsam sopor adsuesco quam ante explicabo. Fuga suadeo torrens.
 
 {{< figure class="w-screen" src="../img/works/dummy_0021_sub.jpg" alt="dummy_0021" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Socius defero cornu appono voluntarius delibero alienus solus debilito. Bellum quo amoveo thymum video. Absens provident curia ara depulso sumo urbanus tenax animi.
+
+Porro adhaero deripio tamquam cavus. Textus aggredior coniecto tandem adinventitias autem. Adimpleo aufero vulgivagus adulescens altus solvo.
 
 {{< figure src="../img/works/dummy_0021_sub.jpg" alt="dummy_0021" >}}

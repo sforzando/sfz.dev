@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0012"
-date: 2026-04-26T02:29:49+09:00
+title: "dummy_0012"
+date: 2026-05-06T19:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "合名会社溝口家具"
+    url: "https://gifted-fencing.biz/"
+  - name: "安井保険合名会社"
+    url: "https://zesty-overcoat.info/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合資会社戸田印刷"
+    url: "https://wonderful-gift.com/"
+    credits:
+      - "Development: 宮城"
+      - "Direction: 川野"
+  - name: "有限会社米山電気"
+    credits:
+      - "PM: 福原"
+  - name: "長島水産合同会社"
+    credits:
+      - "Direction: 山本"
+      - "Design: 三輪"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "受賞歴"
+    url: "https://warmhearted-inspection.biz"
+  - name: "メディア掲載"
+    url: "https://scornful-desk.info"
 thumbnail: "img/works/dummy_0012_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0012_key.jpg" alt="dummy_0012" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+壮年 書き方 不健康 裏口 あさねぼう かいせい. せんりゅう たいやく かたみち. なんべい きゅうりょう たいさ 伝統 しっぺい.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+鎮める 親切 ほんそう 普段. 大尉 弥生 さいぼう. 漠然 貨幣 しあつ 日刊 出かける かせぎ 見当たる 一生.
 
 {{< figure class="w-screen" src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+がくふ 性病 あわれ 薬. じゅうらい とうほう ようい 黙る. ぼうりょく むぜい とくに 和尚 ぐん ぎせい がんばる こうちょく だくりゅう せん.
+
+廃棄 じじょでん となえる 寮生. ふゆかい 首 大文字 ふくへい 走り回る きいろ 専門. はちまき けす あわ 可愛い ほにゅうびん 潔い 限る きいろ 上手 迷子.
 
 {{< figure src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}

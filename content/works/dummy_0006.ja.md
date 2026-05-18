@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0006"
-date: 2026-04-26T02:29:48+09:00
+title: "dummy_0006"
+date: 2026-05-01T00:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,38 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "合資会社島崎不動産"
+    url: "https://witty-tackle.name"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "土田保険合名会社"
+    url: "https://miserly-sandbar.biz"
+    credits:
+      - "Development: 下村"
+  - name: "合名会社今村ガス"
+    credits:
+      - "Program: 寺田"
+      - "Design: 斎藤"
+      - "Direction: 北野"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "導入事例インタビュー"
+    url: "https://trusty-sideboard.name"
+  - name: "プロジェクト紹介記事"
+    url: "https://purple-mallard.net/"
+  - name: "受賞歴"
+    url: "https://superior-asset.org/"
 thumbnail: "img/works/dummy_0006_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0006_key.jpg" alt="dummy_0006" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+一文字 禅寺 初めに いさぎよい かんさい 犠牲 かくじっけん 猿真似 そだてる なぞ. 毎日 はちのす かざる 図説 とちょう 問題 忍者 掛ける. 割り箸 備える 宜しく ちんもく 日欧 きょうふ ぜんにほん むらさきいろ.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+かいほうする 忍者 瞬く かんせつ こい こうちょく おくれる 風船 れいぞうこ. がんい 恨み 碁 遺失 勝手 輸出. 駆け出す くまもとけん 望み かんそく ひんきゃく.
 
 {{< figure class="w-screen" src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+面 はちのす 試験 冬休み こっせつ にんい しゅうり. 学者 ふそく のき 禅寺 指定する ついたち いなか 鋭い. たつ 輪郭 ひきざん 光年 しえんする かわさき 弥生 おきゃくさん のうし.
+
+ほうせき 液体 数える ごふく 下着 締まる なかよし. 大文字 唄う 貴賓 じゅうどう 廃墟 消す 右利き 浮世絵 ほうき. 色々 ちがい ほんらい.
 
 {{< figure src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}

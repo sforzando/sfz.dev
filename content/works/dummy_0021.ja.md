@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0021"
-date: 2026-04-26T02:29:50+09:00
+title: "dummy_0021"
+date: 2026-05-15T21:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,35 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "有限会社星野放送"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "森証券有限会社"
+    url: "https://probable-accelerator.biz"
+    credits:
+      - "PM: 阿部"
+      - "Program: 金沢"
+  - name: "野村運輸株式会社"
+    credits:
+      - "Design: 片山"
+      - "Direction: 松井"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "関連技術ドキュメント"
+    url: "https://sad-accelerator.net"
+  - name: "プレスリリース"
+    url: "https://soupy-strait.org/"
 thumbnail: "img/works/dummy_0021_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0021_key.jpg" alt="dummy_0021" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+試験 ちょうりょく 十台 沖縄. 左手 審判 ほんそう 察知. こうつう 書架 米国 配慮 ふうふ 形.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+よくげつ 運 めいよ 紛らわしい 夏 審判 てら. いち 何度 頂く さいばん. かんえん 盛り上がる 老齢 奇襲 冬休み 切迫 りゅうき あらあらしい 一生.
 
 {{< figure class="w-screen" src="../img/works/dummy_0021_sub.jpg" alt="dummy_0021" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+色彩 愛国心 むこう 推奨 風船 機嫌 教える 親子丼 帳簿 椅子. ぼきん フランス語 ばい. やぶれる 核実験 面積 ふくぶくろ れいぞうこ 並 秘める.
+
+りゃくず 合う 悔しい ひがい えんちょうする 二巻 おとろえる ろくおん. しばふ 知り合い はかる しょうりゃく 華道 れいせい. 配慮 ちえん たす こたえる 量 こうぞく.
 
 {{< figure src="../img/works/dummy_0021_sub.jpg" alt="dummy_0021" >}}

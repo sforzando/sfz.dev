@@ -24,7 +24,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [First time preparation](#first-time-preparation)
     - [Introduce Congo](#introduce-congo)
   - [Start](#start)
-    - [Dummy Articles](#dummy-articles)
+  - [Generate Dummy Content](#generate-dummy-content)
   - [Test](#test)
   - [Deploy](#deploy)
   - [Update](#update)
@@ -40,8 +40,8 @@ Official Corporate Web site of sforzando LLC. and Inc.
 
 ## Prerequisites
 
-- Go (v1.25 or higher)
-  - Hugo (v0.160.1 or higher, **Extended version required**)
+- Go (v1.26 or higher)
+  - Hugo (v0.161.1 or higher, **Extended version required**)
     - [Congo v2.13.0](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
   - [Biome](https://biomejs.dev/)
@@ -60,31 +60,33 @@ Official Corporate Web site of sforzando LLC. and Inc.
 $ task --list
 task: Available tasks for this project:
 * build:                     構築 - 本番用静的サイトをビルド
-* build-css:                 構築 - TailwindCSSをビルド
-* check-layouts:             点検 - Congoテーマのレイアウトオーバーライドを確認
 * clean:                     掃除 - テスト結果を削除
 * default:                   一覧 - タスクの一覧を表示
 * deploy:                    配備 - Netlifyへデプロイ
 * format:                    整形 - コードフォーマット実行
-* generate-dummy:            生成 - テスト用ダミーコンテンツを生成
 * install:                   導入 - 依存パッケージをインストール
-* install-ci:                導入 - CI環境用依存パッケージをインストール
 * lighthouse:                試験 - Lighthouseパフォーマンス計測（本番ビルドで実行、スコアアサーション付き）
-* lint-markdown:             検査 - Markdownlintでマークダウンを検査
 * open:                      閲覧 - ブラウザで開く
 * outdated:                  点検 - 依存パッケージの更新を確認
+* restart:                   再起 - Hugo開発サーバーを再起動
 * setup:                     初回 - 初期セットアップ
 * start:                     開始 - Hugo開発サーバー起動      (aliases: dev)
 * stop:                      停止 - Hugo開発サーバーを全て停止
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
-* test:ci:                   試験 - CI環境でPlaywrightテスト実行
-* test-prod:                 試験 - 本番サーバーでPlaywrightテスト実行
-* update-changelog:          記録 - CHANGELOGを更新
-* update-dependencies:       追随 - 依存パッケージを更新
-* update-theme:              追随 - Congoテーマを更新
+* build:css:                 構築 - TailwindCSSをビルド
+* check:layouts:             点検 - Congoテーマのレイアウトオーバーライドを確認
+* generate:dummy:            生成 - テスト用ダミーコンテンツを生成（ex. task generate:dummy -- works 5）
 * gs:hide:                   秘匿 - git-secretで秘密情報を暗号化
 * gs:reveal:                 暴露 - git-secretで秘密情報を復号化
+* install:ci:                導入 - CI環境用依存パッケージをインストール
+* lint:markdown:             検査 - Markdownlintでマークダウンを検査
 * outdated:versions:         点検 - ツール（Congo/Hugo/Go）のバージョンを確認
+* test:ci:                   試験 - CI環境でPlaywrightテスト実行
+* test:headless:             試験 - ローカルサーバーでPlaywrightテスト実行（ヘッドレスモード）
+* test:prod:                 試験 - 本番サーバーでPlaywrightテスト実行
+* update:changelog:          記録 - CHANGELOGを更新
+* update:dependencies:       追随 - 依存パッケージを更新
+* update:theme:              追随 - Congoテーマを更新
 ```
 
 ### First time preparation
@@ -134,15 +136,24 @@ task start
 Then, web server is available at [http://0.0.0.0:1313/](http://0.0.0.0:1313/).
 To open it, `task open`.
 
-#### Dummy Articles
+### Generate Dummy Content
 
-Generate dummy articles for testing.
+Generate dummy content for testing layouts and snapshots.
 
 ```shell
-task generate-dummy
+task generate:dummy -- works 5
+task generate:dummy -- posts 3
 ```
 
-All dummy photos from [Unsplash](https://unsplash.com).
+Use `--force` to overwrite existing files.
+
+```shell
+task generate:dummy -- works 5 --force
+```
+
+> **Warning**: `--force` overwrites existing dummy files without confirmation.
+
+Dummy photos for `works` are automatically downloaded from [Lorem Picsum](https://picsum.photos).
 
 ### Test
 
@@ -157,7 +168,7 @@ To deploy this to [Netlify](https://www.netlify.com) manually, `task deploy`.
 #### Dependencies
 
 ```shell
-task update-dependencies
+task update:dependencies
 ```
 
 #### Congo
@@ -165,7 +176,7 @@ task update-dependencies
 To update the Congo theme to the latest stable version:
 
 ```shell
-task update-theme
+task update:theme
 ```
 
 This executes:
@@ -186,7 +197,7 @@ To install [git-cliff](https://github.com/orhun/git-cliff) via [Homebrew](https:
 To update `CHANGELOG.md`, run:
 
 ```shell
-task update-changelog
+task update:changelog
 ```
 
 ### Clean

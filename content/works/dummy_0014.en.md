@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0014"
-date: 2026-04-26T02:29:49+09:00
+title: "dummy_0014"
+date: 2026-05-08T22:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,31 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "Rowe, Frami and Kohler"
+    url: "https://some-amendment.info/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
-references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "Stracke Group"
+    url: "https://dense-blowgun.net/"
+    credits:
+      - "Development: Hane"
+      - "Program: Conroy"
+  - name: "Wolff, Wilkinson and Keebler"
+    credits:
+      - "Design: Glover"
+      - "Program: Collier"
 thumbnail: "img/works/dummy_0014_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0014_key.jpg" alt="dummy_0014" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+Tergo aliquam caput eius non tolero decerno. Dignissimos viscus pauper accendo ultio claro sollicito abundans conculco curiositas. Urbs tempore enim civitas tertius argentum angulus deporto cunae.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+Ad pel aestus ulterius celo omnis beneficium vulnus. Sit virga quasi tutamen paens thesis teres illo cauda. Coepi animi sopor benevolentia nulla vitiosus voluptatem.
 
 {{< figure class="w-screen" src="../img/works/dummy_0014_sub.jpg" alt="dummy_0014" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+Sonitus vulgus curatio terebro sursum. Alioqui vivo ventus thorax debilito adipisci. Thermae credo appositus tergum civitas thorax venustas cunctatio.
+
+Sequi capitulus caelestis vox ipsum tenuis tamen pel sortitus. Vitiosus ter curis amissio triumphus statua compello aeternus. Conitor verto iste.
 
 {{< figure src="../img/works/dummy_0014_sub.jpg" alt="dummy_0014" >}}

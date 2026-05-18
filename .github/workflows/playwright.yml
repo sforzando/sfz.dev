@@ -36,7 +36,7 @@ jobs:
         node-version-file: ".node-version"
         cache: "npm"
     - name: Install Dependencies
-      run: task install-ci
+      run: task install:ci
     - name: Run Playwright tests
       run: task test:ci
     - uses: actions/upload-artifact@v7

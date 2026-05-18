@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0000"
-date: 2026-04-26T02:29:47+09:00
+title: "dummy_0000"
+date: 2026-04-24T13:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,35 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社サンプル商事"
-    url: "http://www.example.com"
-  - name: "有限会社テスト工業"
+  - name: "合資会社浅井化学"
+    url: "https://glorious-boulevard.net/"
+  - name: "大森電気合資会社"
+  - name: "小泉鉱業合名会社"
 collaborators:
-  - name: "Picos LLC."
-    url: "http://www.example.com"
+  - name: "有限会社原放送"
     credits:
-      - "PM 川田"
-      - "Program 菅原"
-      - "Design 理恵"
-  - name: "sforzando LLC."
+      - "PM: 森岡"
+      - "Design: 落合"
+      - "Direction: 堀内"
+  - name: "合同会社笠井化学"
     credits:
-      - "Direction 鈴木"
+      - "Program: 金井"
+      - "PM: 野中"
 references:
-  - name: "プロジェクト紹介記事"
-    url: "http://www.example.com"
-  - name: "関連技術ドキュメント"
-    url: "http://www.example.com"
+  - name: "受賞歴"
+    url: "https://short-term-dead.com/"
 thumbnail: "img/works/dummy_0000_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+ふたたび 縛る とうさく. 唄う こうちょく しょくん あらす じしん. 墓 年額 うみ ふかぶん 胃腸.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+機嫌 すける きんく 飽くまでも あわ 漠然 鈍器 ごらん むぼう. 金縛り 教える はだか かど しきもう がくふ 十台 ひんかく 間接 残業. あさねぼう 平壌 ごらん 仰々しい しどう しざい たいほう.
 
 {{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+かいほうする めいわくめーる 媒介. 輸出 ひかくする 高瀬 牛乳 終点 開閉 しゅうり せんりゅう つうこん. まぎらす 暴走 合う ちょう 渦巻き なさけない.
+
+めいよ 塾生 れいせい 体重 長唄 やしなう. 面倒臭い たい 誇張 せいじょう こづつみ 号 以下. 曲 賀状 以下 反則.
 
 {{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}

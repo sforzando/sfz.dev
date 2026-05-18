@@ -4,18 +4,18 @@
 
 [build.environment]
   NODE_ENV = "development"
-  GO_VERSION = "1.26.2"
+  GO_VERSION = "1.26.3"
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.160.1"
+  HUGO_VERSION = "0.161.1"
   HUGO_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.160.1"
+  HUGO_VERSION = "0.161.1"
 
 [[redirects]]
   from = "https://sforzando.co.jp"

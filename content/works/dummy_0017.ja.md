@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0017"
-date: 2026-04-26T02:29:50+09:00
+title: "dummy_0017"
+date: 2026-05-11T18:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "小川通信合名会社"
+  - name: "合名会社越智運輸"
+    url: "https://lumpy-jogging.org"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合資会社山川楽器"
+    url: "https://similar-cutlet.org/"
+    credits:
+      - "PM: 村山"
+      - "Direction: 畠山"
+      - "PM: 田島"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "受賞歴"
+    url: "https://magnificent-corporation.com"
+  - name: "導入事例インタビュー"
+    url: "https://ornery-representation.org/"
+  - name: "プロジェクト紹介記事"
+    url: "https://gleaming-newsletter.org"
 thumbnail: "img/works/dummy_0017_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0017_key.jpg" alt="dummy_0017" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+きょうふ 前 果てる 宝くじ 栞 貨物船. 縛る 難しい めいよ. 錠 りゅうき 雄犬 シアトルし けいかん よぼう.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+火 料理人 てんぷく 防犯 象牙 香り. さと 済ます え まつ. さわやか かんそく 溶岩 書き方 弱点 原油 悲しみ.
 
 {{< figure class="w-screen" src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+拒否 屈む 濃紺 封筒 たんれん かおつき 閉じる 慶弔. いし しょくん ひめさま かつ 生える しめらせる いっさくじつ 川底 恥ずかしがる 化粧. きじゅつ 杏 塾生 不思議 ゆるむ ふかさ 蛇 よわよわしい しばふ.
+
+一文字 社員 福祉 憂い 廃棄 かんせつ こうちょく 全日本 電源 ざんぴん. りょうど 首 博物館 こくみん いつ頃 じどうし. 閉じる 漠然 窒息 日欧 せいめい はなのあな てんぷく 運命.
 
 {{< figure src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}

@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0018"
-date: 2026-04-26T02:29:50+09:00
+title: "dummy_0018"
+date: 2026-05-12T23:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,33 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "北川家具有限会社"
+    url: "https://unselfish-ignorance.info"
+  - name: "合資会社川島自動車"
+  - name: "有限会社高島化学"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "岡崎家具有限会社"
+    url: "https://wilted-championship.com/"
+    credits:
+      - "Design: 塚本"
+      - "Development: 鶴田"
+      - "Design: 中川"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "プレスリリース"
+    url: "https://giving-jet.org"
 thumbnail: "img/works/dummy_0018_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0018_key.jpg" alt="dummy_0018" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+栞 風潮 移す 賀状. 下さい しめらせる しゅいん つぎ 緊張する 運 さいほう. 閉める 待合 みさき.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+とふ ごふく いちだい ひんかく ちらかす 空き瓶. れいぞうこ かぐ たいこうする くつじょく 博物館 構え. 魔術 髪の毛 のうみん 哀れむ じぶん 入江.
 
 {{< figure class="w-screen" src="../img/works/dummy_0018_sub.jpg" alt="dummy_0018" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+ひはん 忘れ物 とくに 潔い. ふくぶくろ 渦巻き 栄誉 いちだい ほ 図説 がくふ. りゃくご 継承 なげすてる.
+
+あおい とうき 殻 じゅうらい ちんみ 察知 漬物 失う まつり 匿名. 怖い 自立 りゅうこうご しきもう ぶっきょう 都合 さんぎょう かい 模型 運ぶ. はりい しあつ こうばん 弱点 ふかさ 鎮める 公共.
 
 {{< figure src="../img/works/dummy_0018_sub.jpg" alt="dummy_0018" >}}

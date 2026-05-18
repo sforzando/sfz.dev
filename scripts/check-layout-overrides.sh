@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Detects custom layouts that override Congo theme files at the same path.
-# Run after `task update-theme` to find layouts that may need reconciliation.
+# Run after `task update:theme` to find layouts that may need reconciliation.
 
 THEME_DIR="themes/congo/layouts"
 CUSTOM_DIR="layouts"

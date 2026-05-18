@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0016"
-date: 2026-04-26T02:29:50+09:00
+title: "dummy_0016"
+date: 2026-05-10T15:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,33 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "株式会社小山鉄道"
+    url: "https://slow-coal.net/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "小柳不動産株式会社"
+    url: "https://evil-guacamole.net/"
+    credits:
+      - "Program: 広田"
+  - name: "合同会社泉通信"
+    url: "https://beneficial-fraudster.net"
+    credits:
+      - "Development: 小林"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "公式ウェブサイト"
+    url: "https://upset-pronoun.biz/"
 thumbnail: "img/works/dummy_0016_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0016_key.jpg" alt="dummy_0016" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+火 乾燥 あびる 丼 陳列室 はくじん せっぷく 匿名. 悲しみ さいげつ 詰め込む. 憂い 墓 悲しみ 総括 伝統 唄う 拘置.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+じぎする 写す 誘惑 じこ 芽 せいぞう てら. 羊毛 ざぜん 貞操 じょうじゅん. きょうしつ 不可欠 隆起 逆 匿名 問題 ばい.
 
 {{< figure class="w-screen" src="../img/works/dummy_0016_sub.jpg" alt="dummy_0016" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+果てる 平壌 きづく かんえん のき 慶弔 こうぞく 専門 しょうじょう. ながさき あらあらしい 運. めいし 好き 壊す なつかしい 通す 面積 ちょうせん.
+
+いさぎよい 液体 風船 とむ 抑制 うみ 初めに 間接 ねばる とくに. おりめ けす いままで じゅうらい 超〜. つく 液体 指定する 体重.
 
 {{< figure src="../img/works/dummy_0016_sub.jpg" alt="dummy_0016" >}}

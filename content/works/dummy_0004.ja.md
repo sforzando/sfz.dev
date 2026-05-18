@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0004"
-date: 2026-04-26T02:29:48+09:00
+title: "dummy_0004"
+date: 2026-04-28T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,32 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "小林銀行合同会社"
+    url: "https://serene-moment.net"
+  - name: "岡部情報合資会社"
+  - name: "柴田銀行有限会社"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合名会社倉田通信"
+    url: "https://live-pocket-watch.info"
+    credits:
+      - "PM: 福原"
+      - "Direction: 森下"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "公式ウェブサイト"
+    url: "https://considerate-worth.net/"
 thumbnail: "img/works/dummy_0004_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+好奇心 浅い つぎつぎ この頃 悲しみ 貨幣. 指紋 泳ぐ 辞儀する. 没落 没落 えきびょう ぎせい けす ふじょ 川底 ほうげん 七つ.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+魅力 ほ ぜんにほん かせぎ とうとい 牛乳 主観的 おくれる. もちいる あらじお 買い物 やさしい さわ 雄犬 しめる. こうちょく あれる ちょうりょく とくに 血液 移す 主に 全日本 きょだい.
 
 {{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+繁茂 悪霊 じょうだん さわ 病床 とう 部首. 暴力 頑張れ せいじょう 大文字 没落 いしゃりょう かいじゅう ほんるいだ. かつ じっかん じょうき 電源 狂う えんちょうする 原油.
+
+山葵 せんじょうざい 親切 あらそう. 独裁 秘める 狂う. 燃やす 俵 おとこのこ 品詞 桜色.
 
 {{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}

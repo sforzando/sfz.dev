@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0001"
-date: 2026-04-26T02:29:47+09:00
+title: "dummy_0001"
+date: 2026-04-26T00:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,38 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "合名会社佐野自動車"
+    url: "https://better-clavicle.name"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合同会社津田家具"
+    credits:
+      - "Program: 久保田"
+      - "PM: 篠田"
+      - "Design: 梅田"
+  - name: "有限会社広瀬ホテル"
+    url: "https://tight-newsletter.net"
+    credits:
+      - "Direction: 斉藤"
+      - "Development: 川原"
+      - "Direction: 大槻"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "受賞歴"
+    url: "https://steep-scholarship.name"
+  - name: "導入事例インタビュー"
+    url: "https://darling-sonata.com/"
 thumbnail: "img/works/dummy_0001_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0001_key.jpg" alt="dummy_0001" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+ちょうしゃ 窓 さんぎょう. なかよし しゃっか 汚す とむ こいぬ ひんきゃく むらさきいろ 底. ごらく ふうふ ぞうえん かぐ かいころく 済ます つうこん 貴賓 いちにち.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+えんちょうする 無糖 俵 一文字 好き しんし 性病 瞬く 金 こうせい. 〜系 傑作 入江 廉価 機嫌 あしくび 空き瓶. 病院 底 靖国神社 疎外 となえる 模型 せん.
 
 {{< figure class="w-screen" src="../img/works/dummy_0001_sub.jpg" alt="dummy_0001" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+しずむ 忘れ物 かんそく. はちまき あびる ようい のき ねんじゅう しききん 乗せる せんじょうざい しんし. 大文字 おどろく 碁 当て字 はいき じゅうらい ひめさま けいじばん.
+
+左手 冷酷 普及 かく. 壮年 フランス語 いっかい 会議 ぎょうし 待合 こせき ふくし. 先ず 伐採 魔法 ほ 半額 みさき.
 
 {{< figure src="../img/works/dummy_0001_sub.jpg" alt="dummy_0001" >}}

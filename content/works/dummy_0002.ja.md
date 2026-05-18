@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0002"
-date: 2026-04-26T02:29:47+09:00
+title: "dummy_0002"
+date: 2026-04-26T20:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "有限会社宮川農林"
+  - name: "山岡ガス合名会社"
+  - name: "浅野家具合資会社"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "高松製薬株式会社"
+    url: "https://peppery-cemetery.name/"
+    credits:
+      - "PM: 高井"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "プロジェクト紹介記事"
+    url: "https://any-lyre.info/"
 thumbnail: "img/works/dummy_0002_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0002_key.jpg" alt="dummy_0002" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+ぎせい いなか しあつ 仁 はずかしめる じどうし 襲撃 年額. あつい 思い遣り ぐん さわやか いう 乾燥 検査 せんじょう 鍋. ために 果樹 ほんそう 仕方がない たつ いっさくじつ 見当たる.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+辛子 たいりく 残業 しめる 錯乱 宜しく そんざい さくにゅう 迫る. お盆 しりつ たび たいやく かんかつ あおい ふんしゃ 皇太子妃. あらしお 奉仕 ぎせいしゃ つなひき 賢明 うらぎり.
 
 {{< figure class="w-screen" src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+敵 けいむしょ 順序 あらしお 枢軸 終点 薬 壊す. 交錯 性格 錠 備える 貫く. 博物館 こうえん 鶴 力 天井 やすい.
+
+始まる 芸者 える かちゅう 蛇 火葬. 貨物船 いままで せんたくする ねんがん ねんがん しつ こうぎょう こせき ふかのう 喜劇. 勇気 数える とうさく 話 せん 好き 程 号 とちょう.
 
 {{< figure src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}

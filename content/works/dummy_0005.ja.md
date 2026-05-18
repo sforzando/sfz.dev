@@ -1,6 +1,6 @@
 ---
-title: "Dummy_0005"
-date: 2026-04-26T02:29:48+09:00
+title: "dummy_0005"
+date: 2026-04-29T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,37 +14,39 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "TOYOTA"
-    url: "http://www.example.com"
-  - name: "HONDA"
-    url: "http://www.example.com"
-  - name: "NISSAN"
-    url: "http://www.example.com"
+  - name: "合資会社森岡放送"
+    url: "https://grave-suspension.net/"
+  - name: "株式会社久保田自動車"
+  - name: "白井家具合同会社"
+    url: "https://warped-going.net/"
 collaborators:
-  - name: "SUBARU"
-    url: "http://www.example.com"
-  - name: "MAZDA"
-    url: "http://www.example.com"
-  - name: "SUZUKI"
-    url: "http://www.example.com"
+  - name: "合資会社稲田電気"
+    credits:
+      - "Design: 宮城"
+  - name: "鶴田建設合資会社"
+    credits:
+      - "PM: 山根"
+      - "PM: 藤村"
+  - name: "福岡鉱業合名会社"
+    url: "https://cloudy-bump.biz"
+    credits:
+      - "PM: 服部"
 references:
-  - name: "AUDI"
-    url: "http://www.example.com"
-  - name: "LAND ROVER"
-    url: "http://www.example.com"
-  - name: "JAGUAR"
-    url: "http://www.example.com"
+  - name: "公式ウェブサイト"
+    url: "https://paltry-verve.net/"
 thumbnail: "img/works/dummy_0005_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0005_key.jpg" alt="dummy_0005" >}}
 
-Officia anim laborum aute voluptate est laborum commodo duis. Quis ad esse est sunt et mollit aliqua fugiat ipsum. Sunt nostrud et fugiat ullamco quis mollit veniam sit excepteur ipsum in.
+漠然 いままで おおごえ 普及 切迫 残業 かく. きょうしつ ちんもく 大丈夫 せいかん あわれ 一生. 廃棄 すみ こうせい 延長.
 
-Aute labore labore est irure est culpa id tempor Lorem fugiat officia. Adipisicing ipsum excepteur mollit eu Lorem veniam consectetur deserunt qui. Eiusmod nostrud commodo ut laborum sunt ullamco esse officia ad cillum excepteur. Fugiat in in commodo enim nostrud officia commodo excepteur enim qui qui. Labore quis proident occaecat elit Lorem pariatur elit mollit laborum aliquip dolor elit. Magna irure laborum duis eiusmod ipsum qui veniam cillum ut do commodo consectetur ad. Proident ut ullamco dolor nulla sint excepteur eiusmod anim veniam.
+りゅうこうご 残業 ために おうしゅう 閉じる ふたたび ぞくご せんたくする. まぎらす 薬 だいがくいんせい めいし のうし 知り合い. れつあく しゅしょう 累進 ごうけん 年額 底 果樹.
 
 {{< figure class="w-screen" src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
 
-Commodo ullamco deserunt commodo cillum Lorem minim minim officia eu culpa exercitation qui ipsum. Enim consequat labore nulla deserunt nisi enim velit nisi mollit id. Deserunt fugiat in eu ex cillum exercitation laboris et occaecat et sit. Eiusmod adipisicing commodo aliqua ea irure est reprehenderit occaecat cupidatat laboris adipisicing nulla esse nostrud. Qui id consequat irure magna Lorem ullamco sit quis enim quis sunt eiusmod cupidatat dolore.
+きゅうりょう 双 のぞいて たいさ. 窒息 うえる おおごえ 休日 いさぎよい 品詞. だくりゅう とうき そあく ふくせん 禅寺 たらす はりい たいりく.
+
+下着 よくあつ 奔放 うえる れいせい とうさん いたずら 栄誉 ぞくご. しっぺい 難しい 思い遣り じじょでん 乾燥 鶴 ごらん へいがい 象牙 はなのあな. 貨物船 りゅうこうご 浅い 待遇 濃紺 うらぎり.
 
 {{< figure src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
