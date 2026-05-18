@@ -1,6 +1,6 @@
 ---
 title: "dummy_0020"
-date: 2026-05-14T11:51:57+09:00
+date: 2026-05-14T12:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,44 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "丸山不動産有限会社"
+  - name: "合資会社梅田鉄道"
+    url: "https://unfortunate-orchid.name/"
+  - name: "合名会社大城ホテル"
+  - name: "平松証券有限会社"
+    url: "https://mediocre-cope.org/"
 collaborators:
-  - name: "有限会社富田証券"
+  - name: "竹内ガス有限会社"
+    url: "https://whispered-secret.org/"
     credits:
-      - "PM: 小森"
-  - name: "株式会社原口ガス"
-    url: "https://willing-thorn.net"
+      - "Program: 篠原"
+      - "Development: 片桐"
+  - name: "有限会社山川自動車"
     credits:
-      - "PM: 根本"
-      - "Design: 川原"
-      - "Direction: 小森"
-  - name: "合同会社西沢証券"
+      - "Design: 鎌田"
+      - "PM: 栗原"
+      - "Design: 林田"
+  - name: "合同会社本間農林"
+    url: "https://dead-expansion.org/"
     credits:
-      - "Program: 田代"
+      - "Design: 吉井"
 references:
-  - name: "関連技術ドキュメント"
-    url: "https://excellent-papa.org/"
+  - name: "プレスリリース"
+    url: "https://needy-comparison.biz/"
   - name: "導入事例インタビュー"
-    url: "https://natural-skean.info/"
+    url: "https://sure-footed-cheetah.name"
 thumbnail: "img/works/dummy_0020_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0020_key.jpg" alt="dummy_0020" >}}
 
-Abutor victoria cultellus ver. Cumque aveho vorago demitto thorax absorbeo reiciendis dolorum ambulo suscipit. Audentia asper tandem torqueo cinis sed articulus deludo suscipit credo.
+超音波 牛乳 江戸 だいどころ. きょうかい ちんもく いっこ つぐなう つぐなう きょうき 基盤 しあとるし 老齢 きょうかい. 糸 髪の毛 じしょ かいじゅう こうちょく 糸 そんけい 靖国神社.
 
-Cauda artificiose usitas tonsor combibo delicate decor. Turpis vinco maiores decet vergo clam solutio valetudo ad ager. Theca voco vitiosus curriculum cometes subnecto.
+旧姓 裏口 おなか アメリカ製 でんせんびょう 間接 つく. 戦没 所 七つ がぞう しゃこ つぎつぎ. 隆起 よくげつ しょうゆ みなもと しゃこ 奴ら 数詞 光年 弱虫.
 
 {{< figure class="w-screen" src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
 
-Averto veritas contra acies curriculum talus stultus timidus tersus. Iure eos vilicus vinco tergeo adsuesco. Vetus auctor creator terra copiose.
+あまる 月刊 ほどう じぶん ざせき 墓 雄犬. 液体 体重 既に 廃墟. たて 避ける 愛国心 黙る じきしょうそう.
 
-Cupiditate tot cicuta tamen. Tero cedo cunctatio venio quasi sollers celer aut canis. Audax succedo exercitationem absque corrigo.
+いっかい あっとうする ぶっきょう すみ はちのす 普段. こうぞく 縮小 みなもと もちいる ぼくし 電源 しっぷう 出かける 巡回. 総括 ようい いさぎよい 図説 暇 副大統領 ねんがん はなはだ.
 
 {{< figure src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}

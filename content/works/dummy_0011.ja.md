@@ -1,6 +1,6 @@
 ---
 title: "dummy_0011"
-date: 2026-05-05T19:51:56+09:00
+date: 2026-05-05T22:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,36 +14,43 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社向井放送"
-  - name: "合同会社阿部家具"
-    url: "https://murky-incandescence.name"
+  - name: "齋藤楽器有限会社"
 collaborators:
-  - name: "合資会社安達自動車"
+  - name: "岩崎ホテル合同会社"
+    url: "https://intrepid-cod.biz"
     credits:
-      - "Program: 加納"
-      - "PM: 上村"
-  - name: "福岡自動車合同会社"
+      - "Direction: 谷"
+      - "Program: 杉田"
+      - "Development: 金子"
+  - name: "梶原建設合同会社"
     credits:
-      - "Direction: 米山"
-      - "Direction: 三浦"
-      - "Development: 奥山"
-  - name: "合名会社石橋鉄道"
-    url: "https://quarrelsome-e-mail.org"
+      - "Direction: 星"
+      - "Direction: 若林"
+  - name: "小出水産合資会社"
     credits:
-      - "Program: 奥野"
+      - "PM: 片桐"
+      - "Design: 中西"
+      - "Design: 高木"
+references:
+  - name: "プレスリリース"
+    url: "https://bad-cake.name/"
+  - name: "導入事例インタビュー"
+    url: "https://similar-baseboard.org"
+  - name: "受賞歴"
+    url: "https://heavy-forage.biz/"
 thumbnail: "img/works/dummy_0011_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0011_key.jpg" alt="dummy_0011" >}}
 
-Modi umquam uterque. Amet cohibeo summisse porro. Voluptates vinco explicabo id aer aestus annus qui.
+金 没落 買い物 年額. つなひき 競艇 洋服 匿名 子守歌. りゃくご はんけん 床 親子丼 九日 しんじゅく 移譲 巡回.
 
-Vestrum aperio currus adinventitias deinde. Venia ventosus celer sulum arto bellum. Debitis strues circumvenio sursum vero sequi arto aperiam aestus.
+にる 始まる 恨み けしき. せんげん のうし 和尚 けいむしょ. どうめい 力 あう おくれる とうほう 間隔 はい.
 
 {{< figure class="w-screen" src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}
 
-Doloribus vulgivagus adfectus conventus damnatio adimpleo. Charisma ipsum spoliatio utique conforto. Corrupti totus apparatus derideo allatus claustrum vulpes.
+暗い ろくおん 歯 独裁 しばふ 電話 栞 ねんがじょう. じょうきゅう 思い遣り 避ける たいこうする てんし なおさら 慶弔 始まる 六. しどう 合う 金縛り 皇太子妃.
 
-Ciminatio conitor cotidie viscus vehemens apud compono suppono turba. Considero volva tergum odit volup. Capio comparo sursum vitae.
+しゃこ 延長 ふゆかい 評価. 不可欠 どうめい じょうだん つくる. 漬物 かわさき 模型 どうめい 首 ぼうりょく 貨幣 備える 不況.
 
 {{< figure src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}

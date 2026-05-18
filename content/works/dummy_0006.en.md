@@ -1,6 +1,6 @@
 ---
 title: "dummy_0006"
-date: 2026-04-30T16:51:56+09:00
+date: 2026-05-01T00:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,31 +14,38 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Aufderhar - Hackett"
-  - name: "Ernser, Feil and Hansen"
-    url: "https://orange-papa.net"
+  - name: "Hickle and Sons"
+    url: "https://witty-tackle.name"
 collaborators:
-  - name: "Rippin Inc"
+  - name: "Heaney Inc"
+    url: "https://miserly-sandbar.biz"
     credits:
-      - "Development: Muller"
-      - "Design: Sawayn"
-  - name: "Barrows LLC"
+      - "Development: Rippin"
+  - name: "Considine Inc"
     credits:
-      - "Direction: Boyer"
-      - "Development: Cruickshank"
+      - "Program: McDermott"
+      - "Design: Price"
+      - "Direction: Marquardt"
+references:
+  - name: "claro certe cetera vero"
+    url: "https://trusty-sideboard.name"
+  - name: "aperiam crebro aliquid cicuta tibi"
+    url: "https://purple-mallard.net/"
+  - name: "allatus suspendo validus"
+    url: "https://superior-asset.org/"
 thumbnail: "img/works/dummy_0006_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0006_key.jpg" alt="dummy_0006" >}}
 
-Vigilo adaugeo temporibus approbo modi terga thesaurus umerus allatus turba. Acceptus vereor thermae statua. Angustus ullus coma aegre ars officiis suppono deserunt asporto usitas.
+Veritas tenuis volaticus curia. Tertius tenax vaco alo talus debitis tam soleo. Credo debitis defungo reiciendis verumtamen tenuis cometes sol.
 
-Attero cotidie tricesimus degenero vivo degusto defetiscor ocer. Via tertius cultura. Quos eligendi tabesco crustulum coepi velut tepidus candidus catena coepi.
+Quasi deduco advenio demum alii ustilo artificiose brevis architecto aliquam. Stella amita vita statim. Adstringo colo eaque blanditiis vox admitto ventus caveo antea sub.
 
 {{< figure class="w-screen" src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}
 
-Accommodo vigilo arx adsidue amplus arcus vulgus cibo tonsor inflammatio. Ultio benigne conforto magni velociter sortitus aeternus vero cognomen contra. Verbum convoco cupressus enim curso tenus animadverto aperte vix vorago.
+Non aliqua quaerat crinis trucido vindico auditor claustrum canis. Damnatio ceno coma statim adversus cimentarius contabesco torrens. Nam arx cohibeo porro aurum expedita tui.
 
-Aeternus curvo addo calcar vereor adimpleo numquam argumentum comptus. Eveniet concedo catena dolore cimentarius coepi aetas molestiae contra cruentus. Pecus asporto adficio bardus absens commemoro paens.
+Enim crinis curvo dignissimos decretum tabella aspicio capitulus cupiditate sophismata. Verumtamen quo quaerat. Sui artificiose atrocitas vestigium denuncio vel.
 
 {{< figure src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}

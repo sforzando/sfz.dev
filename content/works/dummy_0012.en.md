@@ -1,6 +1,6 @@
 ---
 title: "dummy_0012"
-date: 2026-05-06T15:51:56+09:00
+date: 2026-05-06T19:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,41 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Muller - Brown"
-    url: "https://intent-monocle.org"
-  - name: "Wolf - Wunsch"
-  - name: "O'Keefe - Beer"
-    url: "https://gaseous-technologist.com"
+  - name: "Romaguera, Medhurst and Lubowitz"
+    url: "https://gifted-fencing.biz/"
+  - name: "Bauch - Rohan"
+    url: "https://zesty-overcoat.info/"
 collaborators:
-  - name: "Kilback - Brakus"
-    url: "https://lovely-equal.net/"
+  - name: "Cassin, Sporer and Schoen"
+    url: "https://wonderful-gift.com/"
     credits:
-      - "Design: Hilll"
-      - "Direction: Carroll"
-  - name: "Hodkiewicz and Sons"
-    url: "https://stupendous-labourer.net/"
+      - "Development: Stanton"
+      - "Direction: Crist-Mayer"
+  - name: "Raynor, Hickle and Champlin"
     credits:
-      - "Development: Johns"
-      - "Development: Jenkins"
-      - "Development: Tromp"
+      - "PM: Nitzsche"
+  - name: "Renner - Hudson"
+    credits:
+      - "Direction: Willms"
+      - "Design: Bergstrom"
 references:
-  - name: "laudantium vitae terreo"
-    url: "https://potable-acquaintance.net/"
-  - name: "virgo stultus adficio vado cohors"
-    url: "https://slushy-heartache.name"
+  - name: "collum suppellex tantillus despecto ambulo"
+    url: "https://warmhearted-inspection.biz"
+  - name: "delego soluta cito valetudo"
+    url: "https://scornful-desk.info"
 thumbnail: "img/works/dummy_0012_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0012_key.jpg" alt="dummy_0012" >}}
 
-Solitudo veritatis ventito ullus. Tumultus depopulo comes. Textus derelinquo vomica conturbo bellicus.
+Attonbitus condico umquam. Delego solvo asper. Voco uberrime terminatio advoco subnecto ait suffragium absconditus.
 
-Spoliatio adsuesco clarus. Vobis eius verecundia. Tabella valetudo defungo.
+Vos attero cui. Deprimo sumo admiratio acquiro. Crustulum nesciunt victoria congregatio.
 
 {{< figure class="w-screen" src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
 
-Calamitas coniecto deinde adduco aliquid suscipio. Peccatus cupressus atrox talio bardus. Avarus cohors bene deduco.
+Sortitus civis acidus defleo. Benevolentia derelinquo pax cruentus demens careo aiunt bellum suggero decretum. Tibi spiculum avarus victus.
 
-Ciminatio paens harum deficio. Comitatus bene harum utique vita una. Super supra color circumvenio.
+Texo acsi nam deludo aduro voluptatibus. Uredo officia coma. Est pauci apostolus trepide terror corona angelus paens cognomen.
 
 {{< figure src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}

@@ -1,6 +1,6 @@
 ---
 title: "dummy_0017"
-date: 2026-05-11T08:51:57+09:00
+date: 2026-05-11T18:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,28 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Kshlerin and Sons"
-    url: "https://outstanding-battle.com/"
-  - name: "Jakubowski - Homenick"
+  - name: "Ziemann LLC"
+  - name: "Gislason - Little"
+    url: "https://lumpy-jogging.org"
 collaborators:
-  - name: "Sipes - Dietrich"
-    url: "https://impressionable-valentine.net/"
+  - name: "Runolfsdottir, Langworth and Murazik"
+    url: "https://similar-cutlet.org/"
     credits:
-      - "Program: Beer"
-      - "Design: Roob"
+      - "PM: Baumbach"
+      - "Direction: Hettinger"
+      - "PM: O'Hara"
+references:
+  - name: "perferendis repellat caritas temptatio"
+    url: "https://magnificent-corporation.com"
+  - name: "cauda celo aequitas"
+    url: "https://ornery-representation.org/"
+  - name: "anser testimonium torrens"
+    url: "https://gleaming-newsletter.org"
 thumbnail: "img/works/dummy_0017_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0017_key.jpg" alt="dummy_0017" >}}
 
-Aurum ambulo repellendus apud tui depromo contabesco. Claustrum vulgaris triumphus adfero strues cetera nemo caute. Cursus atque teneo cibus vociferor nemo.
+Bestia delinquo velociter trado cogito. Bonus depraedor culpo comedo arcus viduo. Suppellex custodia error tersus victus coruscus tres adhuc maiores.
 
-Tolero vel cupiditas certus virgo tui volva. Facere thalassinus chirographum aurum chirographum. Laboriosam tristis abeo video brevis talis.
+Argentum cruciamentum clibanus viscus sum deorsum. Curiositas virga fugiat comptus terminatio cena labore. Omnis umbra deduco defessus textilis usitas adsuesco.
 
 {{< figure class="w-screen" src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}
 
-Surculus annus decerno temperantia aranea. Debitis titulus decet coaegresco temperantia. Tondeo compono auctor terreo calco.
+Tunc canis sulum conturbo officiis cruentus aestas. Apud amissio sumo ascisco teres denuncio approbo caute. Contego nobis umerus.
 
-Bardus stella corrupti creta calcar beatus turpis asperiores molestiae. Ambitus agnitio tum surculus voveo versus supra thesaurus suffoco crastinus. Cogito officia canonicus speculum condico modi amicitia.
+Varietas tamquam creator carus paulatim. Colo deficio viridis articulus. Adicio creber a quisquam neque solitudo crastinus.
 
 {{< figure src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}

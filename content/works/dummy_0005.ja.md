@@ -1,6 +1,6 @@
 ---
 title: "dummy_0005"
-date: 2026-04-29T13:51:56+09:00
+date: 2026-04-29T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,32 +14,39 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "堤電気有限会社"
-    url: "https://adolescent-desk.net/"
-  - name: "合資会社小島食品"
-    url: "https://grim-vista.org"
+  - name: "合資会社森岡放送"
+    url: "https://grave-suspension.net/"
+  - name: "株式会社久保田自動車"
+  - name: "白井家具合同会社"
+    url: "https://warped-going.net/"
 collaborators:
-  - name: "合資会社笠原銀行"
+  - name: "合資会社稲田電気"
     credits:
-      - "Design: 森田"
+      - "Design: 宮城"
+  - name: "鶴田建設合資会社"
+    credits:
+      - "PM: 山根"
+      - "PM: 藤村"
+  - name: "福岡鉱業合名会社"
+    url: "https://cloudy-bump.biz"
+    credits:
+      - "PM: 服部"
 references:
-  - name: "メディア掲載"
-    url: "https://genuine-coin.biz"
-  - name: "導入事例インタビュー"
-    url: "https://wicked-cycle.info/"
+  - name: "公式ウェブサイト"
+    url: "https://paltry-verve.net/"
 thumbnail: "img/works/dummy_0005_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0005_key.jpg" alt="dummy_0005" >}}
 
-Ventosus suscipio vinculum vaco accommodo pecco arto nam benigne. Vetus vae sui varietas. Certus apparatus vergo ut bis crinis cervus defendo.
+漠然 いままで おおごえ 普及 切迫 残業 かく. きょうしつ ちんもく 大丈夫 せいかん あわれ 一生. 廃棄 すみ こうせい 延長.
 
-Vespillo aro tonsor cattus decipio. Apostolus vallum defleo. Omnis compello acervus pariatur.
+りゅうこうご 残業 ために おうしゅう 閉じる ふたたび ぞくご せんたくする. まぎらす 薬 だいがくいんせい めいし のうし 知り合い. れつあく しゅしょう 累進 ごうけん 年額 底 果樹.
 
 {{< figure class="w-screen" src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
 
-Adsidue terga apto volo denuo cibo venustas. Umerus umquam eos conatus vitiosus anser absconditus. Cognomen magnam id valde cura inflammatio.
+きゅうりょう 双 のぞいて たいさ. 窒息 うえる おおごえ 休日 いさぎよい 品詞. だくりゅう とうき そあく ふくせん 禅寺 たらす はりい たいりく.
 
-Viscus aspernatur nobis combibo assentator sed aliquid suggero facilis patria. Vestigium xiphias debeo celebrer dicta. Vorago sollers convoco casus clementia vergo perspiciatis sonitus solio.
+下着 よくあつ 奔放 うえる れいせい とうさん いたずら 栄誉 ぞくご. しっぺい 難しい 思い遣り じじょでん 乾燥 鶴 ごらん へいがい 象牙 はなのあな. 貨物船 りゅうこうご 浅い 待遇 濃紺 うらぎり.
 
 {{< figure src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}

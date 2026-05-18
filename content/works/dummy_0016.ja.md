@@ -1,6 +1,6 @@
 ---
 title: "dummy_0016"
-date: 2026-05-10T08:51:57+09:00
+date: 2026-05-10T15:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,34 +14,33 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "合同会社富永鉄道"
-  - name: "有限会社浜野銀行"
-    url: "https://weary-councilman.biz"
+  - name: "株式会社小山鉄道"
+    url: "https://slow-coal.net/"
 collaborators:
-  - name: "合同会社吉野運輸"
+  - name: "小柳不動産株式会社"
+    url: "https://evil-guacamole.net/"
     credits:
-      - "Direction: 金田"
-      - "Design: 後藤"
-      - "Design: 植田"
-  - name: "有限会社星野食品"
-    url: "https://happy-atrium.org"
+      - "Program: 広田"
+  - name: "合同会社泉通信"
+    url: "https://beneficial-fraudster.net"
     credits:
-      - "Development: 安達"
-      - "Development: 向井"
-      - "Direction: 平松"
+      - "Development: 小林"
+references:
+  - name: "公式ウェブサイト"
+    url: "https://upset-pronoun.biz/"
 thumbnail: "img/works/dummy_0016_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0016_key.jpg" alt="dummy_0016" >}}
 
-Cultellus animi absum cunae sit soleo deporto optio coepi. Eligendi unde vorago alius cras utroque animi. Audacia trepide dolores bis peior utique.
+火 乾燥 あびる 丼 陳列室 はくじん せっぷく 匿名. 悲しみ さいげつ 詰め込む. 憂い 墓 悲しみ 総括 伝統 唄う 拘置.
 
-Antea vito cunctatio tolero praesentium pectus ascisco. Vinco patruus audentia eius tergum demum averto cubitum modi alias. Defungo copiose virgo verto calamitas apparatus cunctatio amplexus altus abbas.
+じぎする 写す 誘惑 じこ 芽 せいぞう てら. 羊毛 ざぜん 貞操 じょうじゅん. きょうしつ 不可欠 隆起 逆 匿名 問題 ばい.
 
 {{< figure class="w-screen" src="../img/works/dummy_0016_sub.jpg" alt="dummy_0016" >}}
 
-Comis solvo vir cometes audacia rerum veritas atqui. Copia ipsa arca una beneficium textor turbo dolorum adeo. Subvenio urbs consuasor.
+果てる 平壌 きづく かんえん のき 慶弔 こうぞく 専門 しょうじょう. ながさき あらあらしい 運. めいし 好き 壊す なつかしい 通す 面積 ちょうせん.
 
-Aqua adsum facere. Vado sustineo atque eius. Curtus contabesco bestia conventus alter terror appono.
+いさぎよい 液体 風船 とむ 抑制 うみ 初めに 間接 ねばる とくに. おりめ けす いままで じゅうらい 超〜. つく 液体 指定する 体重.
 
 {{< figure src="../img/works/dummy_0016_sub.jpg" alt="dummy_0016" >}}

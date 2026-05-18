@@ -1,6 +1,6 @@
 ---
 title: "dummy_0004"
-date: 2026-04-28T12:51:56+09:00
+date: 2026-04-28T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,32 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "有限会社牧野ホテル"
-  - name: "合資会社須田ホテル"
-    url: "https://aching-fireplace.com/"
+  - name: "小林銀行合同会社"
+    url: "https://serene-moment.net"
+  - name: "岡部情報合資会社"
+  - name: "柴田銀行有限会社"
 collaborators:
-  - name: "岩井金属株式会社"
-    url: "https://mealy-fibre.net/"
+  - name: "合名会社倉田通信"
+    url: "https://live-pocket-watch.info"
     credits:
-      - "Design: 山田"
-      - "Program: 竹村"
-      - "Design: 岩本"
-  - name: "有限会社稲葉印刷"
-    credits:
-      - "Design: 原口"
-      - "Design: 瀬戸"
+      - "PM: 福原"
+      - "Direction: 森下"
 references:
-  - name: "メディア掲載"
-    url: "https://impossible-yak.net/"
-  - name: "関連技術ドキュメント"
-    url: "https://critical-unique.biz/"
+  - name: "公式ウェブサイト"
+    url: "https://considerate-worth.net/"
 thumbnail: "img/works/dummy_0004_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
 
-Molestias aduro verecundia adsum avaritia. Umerus talis curriculum caterva. Peccatus amitto venustas sulum compono.
+好奇心 浅い つぎつぎ この頃 悲しみ 貨幣. 指紋 泳ぐ 辞儀する. 没落 没落 えきびょう ぎせい けす ふじょ 川底 ほうげん 七つ.
 
-Bos bonus combibo aperio basium libero alii. Culpo valens agnitio et supplanto pectus acervus optio crapula. Sto beatus decor.
+魅力 ほ ぜんにほん かせぎ とうとい 牛乳 主観的 おくれる. もちいる あらじお 買い物 やさしい さわ 雄犬 しめる. こうちょく あれる ちょうりょく とくに 血液 移す 主に 全日本 きょだい.
 
 {{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
 
-Cado vicinus candidus alter bardus veniam demulceo decens vulgaris odio. Ducimus ab conqueror thesaurus maxime tumultus sumo arca. Cribro vae harum vorax necessitatibus voluptatum video.
+繁茂 悪霊 じょうだん さわ 病床 とう 部首. 暴力 頑張れ せいじょう 大文字 没落 いしゃりょう かいじゅう ほんるいだ. かつ じっかん じょうき 電源 狂う えんちょうする 原油.
 
-Crux thema sopor adhaero. Hic vinco benevolentia vulticulus. Cruciamentum aurum vitae subito denuo damno casso.
+山葵 せんじょうざい 親切 あらそう. 独裁 秘める 狂う. 燃やす 俵 おとこのこ 品詞 桜色.
 
 {{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}

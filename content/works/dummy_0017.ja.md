@@ -1,6 +1,6 @@
 ---
 title: "dummy_0017"
-date: 2026-05-11T08:51:57+09:00
+date: 2026-05-11T18:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,28 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社足立楽器"
-    url: "https://outstanding-battle.com/"
-  - name: "小柳化学合同会社"
+  - name: "小川通信合名会社"
+  - name: "合名会社越智運輸"
+    url: "https://lumpy-jogging.org"
 collaborators:
-  - name: "本多保険有限会社"
-    url: "https://impressionable-valentine.net/"
+  - name: "合資会社山川楽器"
+    url: "https://similar-cutlet.org/"
     credits:
-      - "Program: 原"
-      - "Design: 梶原"
+      - "PM: 村山"
+      - "Direction: 畠山"
+      - "PM: 田島"
+references:
+  - name: "受賞歴"
+    url: "https://magnificent-corporation.com"
+  - name: "導入事例インタビュー"
+    url: "https://ornery-representation.org/"
+  - name: "プロジェクト紹介記事"
+    url: "https://gleaming-newsletter.org"
 thumbnail: "img/works/dummy_0017_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0017_key.jpg" alt="dummy_0017" >}}
 
-Aurum ambulo repellendus apud tui depromo contabesco. Claustrum vulgaris triumphus adfero strues cetera nemo caute. Cursus atque teneo cibus vociferor nemo.
+きょうふ 前 果てる 宝くじ 栞 貨物船. 縛る 難しい めいよ. 錠 りゅうき 雄犬 シアトルし けいかん よぼう.
 
-Tolero vel cupiditas certus virgo tui volva. Facere thalassinus chirographum aurum chirographum. Laboriosam tristis abeo video brevis talis.
+火 料理人 てんぷく 防犯 象牙 香り. さと 済ます え まつ. さわやか かんそく 溶岩 書き方 弱点 原油 悲しみ.
 
 {{< figure class="w-screen" src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}
 
-Surculus annus decerno temperantia aranea. Debitis titulus decet coaegresco temperantia. Tondeo compono auctor terreo calco.
+拒否 屈む 濃紺 封筒 たんれん かおつき 閉じる 慶弔. いし しょくん ひめさま かつ 生える しめらせる いっさくじつ 川底 恥ずかしがる 化粧. きじゅつ 杏 塾生 不思議 ゆるむ ふかさ 蛇 よわよわしい しばふ.
 
-Bardus stella corrupti creta calcar beatus turpis asperiores molestiae. Ambitus agnitio tum surculus voveo versus supra thesaurus suffoco crastinus. Cogito officia canonicus speculum condico modi amicitia.
+一文字 社員 福祉 憂い 廃棄 かんせつ こうちょく 全日本 電源 ざんぴん. りょうど 首 博物館 こくみん いつ頃 じどうし. 閉じる 漠然 窒息 日欧 せいめい はなのあな てんぷく 運命.
 
 {{< figure src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}

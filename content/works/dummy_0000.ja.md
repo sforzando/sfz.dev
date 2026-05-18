@@ -1,6 +1,6 @@
 ---
 title: "dummy_0000"
-date: 2026-04-24T11:51:55+09:00
+date: 2026-04-24T13:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,42 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "谷運輸有限会社"
-    url: "https://stable-minion.name/"
+  - name: "合資会社浅井化学"
+    url: "https://glorious-boulevard.net/"
+  - name: "大森電気合資会社"
+  - name: "小泉鉱業合名会社"
 collaborators:
-  - name: "原食品合同会社"
-    url: "https://lazy-skyscraper.name/"
+  - name: "有限会社原放送"
     credits:
-      - "Development: 河村"
-  - name: "牧野食品株式会社"
+      - "PM: 森岡"
+      - "Design: 落合"
+      - "Direction: 堀内"
+  - name: "合同会社笠井化学"
     credits:
-      - "Direction: 稲垣"
-      - "Direction: 森田"
-  - name: "有限会社溝口自動車"
-    credits:
-      - "PM: 石田"
-      - "PM: 本田"
-      - "Development: 新井"
+      - "Program: 金井"
+      - "PM: 野中"
 references:
-  - name: "公式ウェブサイト"
-    url: "https://stupendous-decongestant.biz/"
-  - name: "メディア掲載"
-    url: "https://bruised-feather.com/"
-  - name: "導入事例インタビュー"
-    url: "https://salty-bathhouse.net"
+  - name: "受賞歴"
+    url: "https://short-term-dead.com/"
 thumbnail: "img/works/dummy_0000_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
 
-Adhaero arbitro recusandae abutor vulgo arbitro video bestia cribro argumentum. Alveus est umerus. Aeneus thema curtus tremo.
+ふたたび 縛る とうさく. 唄う こうちょく しょくん あらす じしん. 墓 年額 うみ ふかぶん 胃腸.
 
-Tam defetiscor sunt veritas adstringo. Dolore caritas turpis demens auxilium vinco quidem. Ventito non ambulo tendo arbustum.
+機嫌 すける きんく 飽くまでも あわ 漠然 鈍器 ごらん むぼう. 金縛り 教える はだか かど しきもう がくふ 十台 ひんかく 間接 残業. あさねぼう 平壌 ごらん 仰々しい しどう しざい たいほう.
 
 {{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
 
-Cur ullam depromo suscipit non. Alii aspernatur capio ex illum eius. Teres tergiversatio aggredior certe armarium advenio cras nam temptatio.
+かいほうする めいわくめーる 媒介. 輸出 ひかくする 高瀬 牛乳 終点 開閉 しゅうり せんりゅう つうこん. まぎらす 暴走 合う ちょう 渦巻き なさけない.
 
-Crastinus vero utroque adeo cernuus arto sortitus assumenda balbus. Somniculosus curiositas socius virtus velut coadunatio vere tracto. Testimonium depereo vir compello decumbo damnatio artificiose appello volubilis bellicus.
+めいよ 塾生 れいせい 体重 長唄 やしなう. 面倒臭い たい 誇張 せいじょう こづつみ 号 以下. 曲 賀状 以下 反則.
 
 {{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}

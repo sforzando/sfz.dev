@@ -1,6 +1,6 @@
 ---
 title: "dummy_0000"
-date: 2026-04-24T11:51:55+09:00
+date: 2026-04-24T13:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,42 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Johnston, Shields and Will"
-    url: "https://stable-minion.name/"
+  - name: "O'Kon - Sauer"
+    url: "https://glorious-boulevard.net/"
+  - name: "Schulist - Bruen"
+  - name: "Dooley Group"
 collaborators:
-  - name: "Gleichner and Sons"
-    url: "https://lazy-skyscraper.name/"
+  - name: "Lemke, Pagac and Stracke"
     credits:
-      - "Development: Erdman"
-  - name: "Lesch - Pacocha"
+      - "PM: Kuhn-Bednar"
+      - "Design: Wuckert"
+      - "Direction: Cruickshank-McCullough"
+  - name: "Bradtke, Lind and Ortiz"
     credits:
-      - "Direction: Streich"
-      - "Direction: Legros"
-  - name: "Schumm, Powlowski and Goyette"
-    credits:
-      - "PM: Morar"
-      - "PM: Hand"
-      - "Development: Jacobi-Bayer"
+      - "Program: West"
+      - "PM: Koepp"
 references:
-  - name: "canonicus defaeco pauper"
-    url: "https://stupendous-decongestant.biz/"
-  - name: "surculus tunc damnatio creta aperiam"
-    url: "https://bruised-feather.com/"
-  - name: "degenero chirographum creo apto aestus"
-    url: "https://salty-bathhouse.net"
+  - name: "coerceo contabesco voluptatibus"
+    url: "https://short-term-dead.com/"
 thumbnail: "img/works/dummy_0000_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
 
-Adhaero arbitro recusandae abutor vulgo arbitro video bestia cribro argumentum. Alveus est umerus. Aeneus thema curtus tremo.
+Magnam cervus arbitro quae victus. Teres venio sufficio attollo facere acervus spectaculum advenio antepono. Decor concido maiores vociferor quod sed uredo.
 
-Tam defetiscor sunt veritas adstringo. Dolore caritas turpis demens auxilium vinco quidem. Ventito non ambulo tendo arbustum.
+Minus voluptatibus quas accusantium denuncio suasoria absens amet. Repellat caste attollo defetiscor tondeo amor. Animadverto corrumpo crapula vereor magnam defendo antiquus sequi.
 
 {{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
 
-Cur ullam depromo suscipit non. Alii aspernatur capio ex illum eius. Teres tergiversatio aggredior certe armarium advenio cras nam temptatio.
+Fugit sulum timor. Certe tamisium toties video. Deputo nostrum caelestis coniecto eum.
 
-Crastinus vero utroque adeo cernuus arto sortitus assumenda balbus. Somniculosus curiositas socius virtus velut coadunatio vere tracto. Testimonium depereo vir compello decumbo damnatio artificiose appello volubilis bellicus.
+Theca voluntarius iusto illo comedo. Aro vulgo credo soleo expedita defaeco thema thalassinus rem. Tergeo vere attero vulgivagus.
 
 {{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}

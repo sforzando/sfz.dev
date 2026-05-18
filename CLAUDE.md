@@ -142,7 +142,7 @@ content/
 ## カスタムレイアウト
 
 - `layouts/partials/extend-head.html` - 背景アニメーション・View Transition統合
-- `layouts/partials/tag-cloud.html` - 3D球体タグクラウド
+- `layouts/partials/tag-cloud.html` - ラジアルタグクラウド
 - `layouts/partials/posts/` - Postsカスタムパーシャル
 - `layouts/partials/teams/` - Teamsカスタムパーシャル
 - `layouts/partials/works/` - Worksカスタムパーシャル
@@ -210,7 +210,7 @@ task gs:reveal
 task update:changelog
 ```
 
-> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task test`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task test:headless`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
 
 ## セキュリティ
 

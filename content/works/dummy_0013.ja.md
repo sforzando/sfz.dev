@@ -1,6 +1,6 @@
 ---
 title: "dummy_0013"
-date: 2026-05-07T17:51:56+09:00
+date: 2026-05-07T15:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "中井ガス合資会社"
-  - name: "手塚金属合名会社"
-    url: "https://hungry-gazebo.name/"
-  - name: "岡村鉄道合資会社"
-    url: "https://crazy-heating.net"
+  - name: "辻運輸合名会社"
 collaborators:
-  - name: "橋本鉄道有限会社"
+  - name: "合資会社上野農林"
+    url: "https://lighthearted-knitting.net"
     credits:
-      - "Development: 園田"
-      - "Development: 西川"
-      - "Program: 千葉"
-  - name: "株式会社藤野情報"
-    credits:
-      - "Program: 山岡"
+      - "Direction: 野中"
+      - "Development: 金子"
+      - "Direction: 越智"
 references:
-  - name: "受賞歴"
-    url: "https://vague-linseed.com"
-  - name: "プロジェクト紹介記事"
-    url: "https://grounded-pecan.name/"
+  - name: "導入事例インタビュー"
+    url: "https://monthly-sonar.info"
 thumbnail: "img/works/dummy_0013_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0013_key.jpg" alt="dummy_0013" >}}
 
-Iste alias laborum pectus vulgivagus adinventitias vitium comburo baiulus. Cinis laborum beatae video verecundia copiose curo. Exercitationem cito unde alo similique uter accusantium aperio comitatus.
+そうぐう 公共 よくし 碁 よくげつ 乾燥. 請ける かおつき おりめ ために 大間違い 敬語 同僚 かぜ. わかめ くつじょく じどうし いじん たつ.
 
-Tracto autem auxilium aestas cariosus crastinus colligo adversus stillicidium. Complectus vestigium illum delibero. Coniuratio fugiat vespillo demitto censura vilis.
+ざせき はい 鈍器 はちのす げんめつ 襲撃 母 暴力 〜系. 枢軸 ふじょ 桜色. 助手 びんぼう 始まる 墓 きんく かんさい 戦没 こわす しりつ 遺失.
 
 {{< figure class="w-screen" src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}
 
-Viriliter ad alii repudiandae. Adinventitias placeat absum. Defaeco sunt inflammatio conservo coepi attero ante.
+妻 すいがら めいわくメール 面 じしょ 新婚旅行 たいほう. 非難 減俸 老齢 礎 窓 はなはだ ひはん. 買い物 かいじゅう げいひんかん ちょさくけん いち.
 
-Rem coniuratio inflammatio amoveo crustulum crux odit conatus clibanus tergum. Natus credo delego surgo paens varietas sublime neque ducimus. Agnitio totus asperiores valetudo solvo sub curvo cupiditas temeritas.
+しあとるし 寮生 雇用 かく ねばり ごらく 錯乱. いたずら 早々 りゅうこうご 窒息 せんりゅう はんけん かざる いく. さわ 輸出 色々 うごき 閉じる.
 
 {{< figure src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}

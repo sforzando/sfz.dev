@@ -1,6 +1,6 @@
 ---
 title: "dummy_0019"
-date: 2026-05-13T07:51:57+09:00
+date: 2026-05-13T21:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,40 +14,36 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "大内化学有限会社"
-    url: "https://antique-leading.org"
+  - name: "堀口ホテル株式会社"
+    url: "https://pastel-baritone.com/"
+  - name: "井上製薬合資会社"
+    url: "https://giving-stall.name/"
+  - name: "湯浅化学合名会社"
+    url: "https://fat-membership.com"
 collaborators:
-  - name: "上田家具合名会社"
+  - name: "榊原不動産合資会社"
     credits:
-      - "PM: 長沢"
-  - name: "有限会社中西印刷"
-    credits:
-      - "Development: 原"
-      - "Program: 安田"
-      - "Direction: 飯塚"
-  - name: "有限会社臼井鉱業"
-    credits:
-      - "Program: 内田"
-      - "Direction: 桜井"
-      - "Program: 戸田"
+      - "Development: 佐伯"
+      - "PM: 山田"
+      - "PM: 瀬戸"
 references:
   - name: "導入事例インタビュー"
-    url: "https://grubby-circumference.info/"
+    url: "https://delectable-density.biz"
   - name: "受賞歴"
-    url: "https://slow-monasticism.net/"
+    url: "https://probable-expansion.net"
 thumbnail: "img/works/dummy_0019_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0019_key.jpg" alt="dummy_0019" >}}
 
-Tamisium statim coadunatio surgo. Capillus dedecor patria ad. Uredo tego quis circumvenio maxime neque.
+あらす きいろ 無敵 げいひんかん しゃくや 店. 前 けす きょうき. むぜい 俵 開閉.
 
-Enim torqueo combibo complectus dolore decens. Baiulus conspergo caries uter calco. Celo uberrime velociter inflammatio viduo textus eveniet vomer adicio.
+かっこう じょうき 懇談 じょうだん 移す せいめい かざる はやて 悲しみ. てんぷく 火 ちかく きとく. しずむ くら ねんがん 対応 色々.
 
 {{< figure class="w-screen" src="../img/works/dummy_0019_sub.jpg" alt="dummy_0019" >}}
 
-Abundans ara quia cura. Quibusdam armarium acquiro alienus cauda textor umerus depulso viridis. Alveus universe combibo arma antepono dolores velum addo caecus.
+喜劇 試験 ふかぶん かくしゅう 継承 かんかつ 消す. 鎮める なつかしい 恨み. とうき 謙虚 ぜんにほん ひんきゃく 怖い 学院 糸 じしん.
 
-Adversus fuga optio casus usus angustus tener verecundia xiphias cornu. Coniecto via praesentium spectaculum. Rerum aegre armarium via tendo abbas bene tripudio sustineo abutor.
+ぼきん まつ かんえん ぼうりょく かくじっけん 汚す. 空き瓶 数える 大尉 げいひんかん もよう ふん ひはん 号 なみだ 面. かざる えきびょう じぎする みつ 仰々しい ひがい しえんする 月刊 旧姓 きょうき.
 
 {{< figure src="../img/works/dummy_0019_sub.jpg" alt="dummy_0019" >}}

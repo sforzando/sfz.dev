@@ -1,6 +1,6 @@
 ---
 title: "dummy_0002"
-date: 2026-04-26T12:51:55+09:00
+date: 2026-04-26T20:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Howell - Rolfson"
-  - name: "Grimes, Dickens and Schaden"
-  - name: "Schaefer, Bahringer and Batz"
-    url: "https://irresponsible-depot.net/"
+  - name: "Ondricka - Gusikowski"
+  - name: "Towne, Watsica and Gutmann"
+  - name: "Lockman LLC"
 collaborators:
-  - name: "Toy Group"
+  - name: "Bashirian - Feil"
+    url: "https://peppery-cemetery.name/"
     credits:
-      - "Program: Ruecker-Stark"
-      - "PM: Frami"
-      - "Direction: Ziemann"
-  - name: "Hoppe, Jerde and Krajcik"
-    url: "https://dirty-lid.biz"
-    credits:
-      - "Program: Bogisich"
-  - name: "Bernier - Langworth"
-    url: "https://hopeful-doing.name"
-    credits:
-      - "Design: Cassin"
-      - "Design: Kuhn"
+      - "PM: Harber"
+references:
+  - name: "thalassinus tumultus viduo suggero"
+    url: "https://any-lyre.info/"
 thumbnail: "img/works/dummy_0002_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0002_key.jpg" alt="dummy_0002" >}}
 
-Delicate vix dolorem dolorum accusamus. Canonicus beneficium odit caelestis. Arx carbo causa attero solium totus numquam verbera auctor.
+Caecus denuo odio cotidie. Cedo natus aureus. Aegre alioqui ullus toties.
 
-Aestas surculus earum. Ventosus bellicus strues. Accedo totidem paens crastinus.
+Conventus cernuus debilito artificiose terreo. Sit spero calcar illo error aeneus. Acsi corpus tondeo eius basium vorago eligendi defungo arbustum cresco.
 
 {{< figure class="w-screen" src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}
 
-Ancilla voveo aestas rerum viduo. Cibo crux aqua admoveo undique alioqui pariatur. Pecco corpus voluptatem solum beatae soluta peior.
+Voro conscendo damnatio torrens currus astrum. Abundans caritas explicabo tenus sustineo tricesimus vomica succedo depromo. Curiositas depromo ipsum subiungo videlicet paens.
 
-Reiciendis alienus molestias cauda at tabesco facere alter valde. Alioqui fugit aeger aequus ambulo viriliter. Somnus subito uterque cito.
+Attero vitiosus facilis tabella. At argentum sollers thermae. Speciosus voluptatem aduro defaeco demoror sonitus coruscus cognatus cito ambulo.
 
 {{< figure src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}

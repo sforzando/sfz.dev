@@ -1,6 +1,6 @@
 ---
 title: "dummy_0007"
-date: 2026-05-01T11:51:56+09:00
+date: 2026-05-01T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,28 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Spinka Group"
-  - name: "Maggio - Rolfson"
-  - name: "O'Conner Inc"
-    url: "https://next-complication.biz/"
+  - name: "Trantow - Volkman"
+  - name: "West, Aufderhar and Sawayn"
 collaborators:
-  - name: "Rath Inc"
-    url: "https://bulky-riser.info"
+  - name: "Zemlak - Keeling"
     credits:
-      - "Design: Rempel"
+      - "Program: Watsica"
+  - name: "Hegmann Group"
+    url: "https://oblong-icebreaker.net/"
+    credits:
+      - "Program: O'Hara"
+      - "Program: Borer"
+  - name: "Kuhlman, Greenfelder and Rohan"
+    url: "https://sinful-configuration.net"
+    credits:
+      - "Direction: Lynch"
+references:
+  - name: "tabella cruentus aqua termes concedo"
+    url: "https://incomplete-vision.info/"
+  - name: "defungo molestias"
+    url: "https://creamy-vision.name/"
+  - name: "votum via adhaero arma"
+    url: "https://internal-publication.com/"
 thumbnail: "img/works/dummy_0007_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0007_key.jpg" alt="dummy_0007" >}}
 
-Supplanto vulgaris deputo aggredior despecto vergo eum adsidue alius sonitus. Similique usque supra pectus celebrer turbo amaritudo. Tersus suspendo tenuis.
+Annus colo vulnus porro tredecim xiphias tempora timor desipio. Cedo eveniet campana certe spiritus thermae. Alter viduo consequatur templum accedo suggero canto.
 
-Conscendo aestas consequuntur saepe amplitudo verbum. Adsidue tempora clibanus defendo dolore. Corroboro quam blanditiis venia armarium cilicium demergo harum strenuus.
+Facere vociferor desparatus tumultus baiulus comes coniecto appono volubilis delego. Cerno suspendo vomica. Admoneo carbo damnatio adulescens victoria admitto.
 
 {{< figure class="w-screen" src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}
 
-Defleo officia umquam tutis cubicularis sed accendo spectaculum basium quasi. Depopulo celer compello a voluptatum compello. Arceo basium velociter corrumpo considero voluptatibus damnatio tot vigor.
+Communis claustrum comis aer argumentum synagoga urbanus cupiditate advenio thermae. Textus attollo colo. Suscipit cresco deficio eum tenus crustulum consequuntur atrocitas amet absorbeo.
 
-Spes xiphias stipes clibanus appello. Auctor claudeo laborum cubo vulgus acervus deporto caritas. Desino capillus a tyrannus suppono quaerat repellat.
+Ultio vesco agnitio terebro vorago cum textilis repellat tempora. Caveo pectus vicinus cornu voro validus patrocinor aestas sub delinquo. Laboriosam territo odio basium abundans volutabrum casso causa abscido vesica.
 
 {{< figure src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}

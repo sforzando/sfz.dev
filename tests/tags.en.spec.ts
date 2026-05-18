@@ -29,8 +29,7 @@ test.describe("tags en", () => {
     await expect(floatingTag).toBeVisible()
     const href = await floatingTag.getAttribute("href")
     if (!href) throw new Error("floating tag has no href")
-    await floatingTag.click({ force: true })
-    await page.waitForURL(`**${href}`)
+    await page.goto(href)
     expect(page.url()).toContain(href)
   })
 

@@ -61,7 +61,7 @@ function toHugoDate(date: Date): string {
 }
 
 async function downloadImage(url: string, destPath: string): Promise<void> {
-  const response = await fetch(url)
+  const response = await fetch(url, { signal: AbortSignal.timeout(15_000) })
   if (!response.ok) throw new Error(`fetch failed: ${response.status} ${url}`)
   const buf = await response.arrayBuffer()
   writeFileSync(destPath, Buffer.from(buf))
@@ -103,7 +103,8 @@ interface WorksSharedData {
   creditsPerCollaborator: string[][]
   refCount: number
   refUrls: string[]
-  bodyParagraphs: [string, string]
+  bodyParagraphsEn: [string, string]
+  bodyParagraphsJa: [string, string]
 }
 
 function generateWorksShared(): WorksSharedData {
@@ -130,9 +131,13 @@ function generateWorksShared(): WorksSharedData {
   const refCount = fakerEN.number.int({ min: 0, max: 3 })
   const refUrls = Array.from({ length: refCount }, () => fakerEN.internet.url())
 
-  const bodyParagraphs: [string, string] = [
+  const bodyParagraphsEn: [string, string] = [
     fakerEN.lorem.paragraphs(2, "\n\n"),
     fakerEN.lorem.paragraphs(2, "\n\n"),
+  ]
+  const bodyParagraphsJa: [string, string] = [
+    fakerJA.lorem.paragraphs(2, "\n\n"),
+    fakerJA.lorem.paragraphs(2, "\n\n"),
   ]
 
   return {
@@ -143,7 +148,8 @@ function generateWorksShared(): WorksSharedData {
     creditsPerCollaborator,
     refCount,
     refUrls,
-    bodyParagraphs,
+    bodyParagraphsEn,
+    bodyParagraphsJa,
   }
 }
 
@@ -152,7 +158,8 @@ function generateWorks(
   date: string
 ): { en: string; ja: string } {
   const shared = generateWorksShared()
-  const { clientUrls, collaboratorUrls, bodyParagraphs } = shared
+  const { clientUrls, collaboratorUrls, bodyParagraphsEn, bodyParagraphsJa } =
+    shared
 
   const enClientNames = Array.from({ length: shared.clientCount }, () =>
     fakerEN.company.name()
@@ -218,14 +225,26 @@ showWordCount: false
 tags:
   - "works"`
 
-  const body = `
+  const bodyEn = `
 {{< figure src="../img/works/${baseName}_key.jpg" alt="${baseName}" >}}
 
-${bodyParagraphs[0]}
+${bodyParagraphsEn[0]}
 
 {{< figure class="w-screen" src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
 
-${bodyParagraphs[1]}
+${bodyParagraphsEn[1]}
+
+{{< figure src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+`
+
+  const bodyJa = `
+{{< figure src="../img/works/${baseName}_key.jpg" alt="${baseName}" >}}
+
+${bodyParagraphsJa[0]}
+
+{{< figure class="w-screen" src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+
+${bodyParagraphsJa[1]}
 
 {{< figure src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
 `
@@ -240,7 +259,7 @@ collaborators:
 ${enCollaborators}
 ${enRefs}thumbnail: "img/works/${baseName}_thumbnail.jpg"
 ---
-${body}`
+${bodyEn}`
 
   const ja = `---
 title: "${baseName}"
@@ -252,7 +271,7 @@ collaborators:
 ${jaCollaborators}
 ${jaRefs}thumbnail: "img/works/${baseName}_thumbnail.jpg"
 ---
-${body}`
+${bodyJa}`
 
   return { en, ja }
 }
@@ -266,7 +285,8 @@ function generatePosts(
   const tagLines = tags.map((t) => `  - "${t}"`).join("\n")
 
   const sectionCount = fakerEN.number.int({ min: 2, max: 4 })
-  const sections = Array.from({ length: sectionCount }, () => {
+
+  const enSections = Array.from({ length: sectionCount }, () => {
     const heading = fakerEN.lorem.sentence(
       fakerEN.number.int({ min: 3, max: 7 })
     )
@@ -277,7 +297,18 @@ function generatePosts(
     return `## ${heading}\n\n${body}`
   }).join("\n\n")
 
-  const content = `---
+  const jaSections = Array.from({ length: sectionCount }, () => {
+    const heading = fakerJA.lorem.sentence(
+      fakerEN.number.int({ min: 3, max: 7 })
+    )
+    const body = fakerJA.lorem.paragraphs(
+      fakerEN.number.int({ min: 1, max: 3 }),
+      "\n\n"
+    )
+    return `## ${heading}\n\n${body}`
+  }).join("\n\n")
+
+  const commonFrontmatter = `---
 title: "${baseName}"
 date: ${date}
 draft: true
@@ -296,13 +327,21 @@ thumbnail: "img/posts/${baseName}.jpg"
 ---
 
 {{< figure src="../img/posts/${baseName}.jpg" alt="${baseName}" >}}
-
-${fakerEN.lorem.paragraphs(2, "\n\n")}
-
-${sections}
 `
 
-  return { en: content, ja: content }
+  const en = `${commonFrontmatter}
+${fakerEN.lorem.paragraphs(2, "\n\n")}
+
+${enSections}
+`
+
+  const ja = `${commonFrontmatter}
+${fakerJA.lorem.paragraphs(2, "\n\n")}
+
+${jaSections}
+`
+
+  return { en, ja }
 }
 
 async function runWorks(count: number, force: boolean): Promise<void> {
@@ -317,14 +356,14 @@ async function runWorks(count: number, force: boolean): Promise<void> {
 
     const mdExists = existsSync(enPath) || existsSync(jaPath)
     if (mdExists && !force) {
-      console.log(`  skip:    ${baseName}`)
+      process.stdout.write(`  skip:    ${baseName}\n`)
       continue
     }
 
     const { en, ja } = generateWorks(baseName, dateForIndex(i, count))
     writeFileSync(enPath, en, "utf-8")
     writeFileSync(jaPath, ja, "utf-8")
-    console.log(`  created: ${baseName}.en.md, ${baseName}.ja.md`)
+    process.stdout.write(`  created: ${baseName}.en.md, ${baseName}.ja.md\n`)
 
     for (const { suffix, w, h } of IMG_SPECS) {
       const imgPath = join(imgDir, `${baseName}_${suffix}.jpg`)
@@ -332,7 +371,7 @@ async function runWorks(count: number, force: boolean): Promise<void> {
         const seed = `${baseName}-${suffix}`
         const url = `https://picsum.photos/seed/${seed}/${w}/${h}.jpg`
         await downloadImage(url, imgPath)
-        console.log(`  downloaded: ${baseName}_${suffix}.jpg`)
+        process.stdout.write(`  downloaded: ${baseName}_${suffix}.jpg\n`)
       }
     }
   }
@@ -350,20 +389,20 @@ async function runPosts(count: number, force: boolean): Promise<void> {
 
     const mdExists = existsSync(enPath) || existsSync(jaPath)
     if (mdExists && !force) {
-      console.log(`  skip:    ${baseName}`)
+      process.stdout.write(`  skip:    ${baseName}\n`)
       continue
     }
 
     const { en, ja } = generatePosts(baseName, dateForIndex(i, count))
     writeFileSync(enPath, en, "utf-8")
     writeFileSync(jaPath, ja, "utf-8")
-    console.log(`  created: ${baseName}.en.md, ${baseName}.ja.md`)
+    process.stdout.write(`  created: ${baseName}.en.md, ${baseName}.ja.md\n`)
 
     const imgPath = join(imgDir, `${baseName}.jpg`)
     if (!existsSync(imgPath) || force) {
       const url = `https://picsum.photos/seed/${baseName}/1920/1280.jpg`
       await downloadImage(url, imgPath)
-      console.log(`  downloaded: ${baseName}.jpg`)
+      process.stdout.write(`  downloaded: ${baseName}.jpg\n`)
     }
   }
 }
@@ -378,20 +417,20 @@ async function main(): Promise<void> {
     !VALID_TYPES.includes(contentType as ContentType) ||
     countStr === undefined
   ) {
-    console.error(
-      "Usage: npx tsx scripts/gen-dummy.ts <works|posts> <count> [--force]"
+    process.stderr.write(
+      "Usage: npx tsx scripts/gen-dummy.ts <works|posts> <count> [--force]\n"
     )
     process.exit(1)
   }
 
   const count = parseInt(countStr, 10)
   if (Number.isNaN(count) || count < 1) {
-    console.error("Error: count must be a positive integer")
+    process.stderr.write("Error: count must be a positive integer\n")
     process.exit(1)
   }
 
-  console.log(
-    `Generating ${count} dummy ${contentType} page(s)${force ? " (force)" : ""}...`
+  process.stdout.write(
+    `Generating ${count} dummy ${contentType} page(s)${force ? " (force)" : ""}...\n`
   )
 
   if (contentType === "works") {
@@ -400,10 +439,10 @@ async function main(): Promise<void> {
     await runPosts(count, force)
   }
 
-  console.log("Done.")
+  process.stdout.write("Done.\n")
 }
 
 main().catch((err) => {
-  console.error(err)
+  process.stderr.write(`${String(err)}\n`)
   process.exit(1)
 })

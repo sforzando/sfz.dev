@@ -1,6 +1,6 @@
 ---
 title: "dummy_0007"
-date: 2026-05-01T11:51:56+09:00
+date: 2026-05-01T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,28 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "中村倉庫株式会社"
-  - name: "松村通信株式会社"
-  - name: "西尾鉄道合資会社"
-    url: "https://next-complication.biz/"
+  - name: "小島放送合名会社"
+  - name: "大村製薬合資会社"
 collaborators:
-  - name: "柴田金属合名会社"
-    url: "https://bulky-riser.info"
+  - name: "株式会社萩原放送"
     credits:
-      - "Design: 八木"
+      - "Program: 小倉"
+  - name: "合名会社西山銀行"
+    url: "https://oblong-icebreaker.net/"
+    credits:
+      - "Program: 堀川"
+      - "Program: 関口"
+  - name: "合名会社天野ホテル"
+    url: "https://sinful-configuration.net"
+    credits:
+      - "Direction: 浅野"
+references:
+  - name: "関連技術ドキュメント"
+    url: "https://incomplete-vision.info/"
+  - name: "導入事例インタビュー"
+    url: "https://creamy-vision.name/"
+  - name: "受賞歴"
+    url: "https://internal-publication.com/"
 thumbnail: "img/works/dummy_0007_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0007_key.jpg" alt="dummy_0007" >}}
 
-Supplanto vulgaris deputo aggredior despecto vergo eum adsidue alius sonitus. Similique usque supra pectus celebrer turbo amaritudo. Tersus suspendo tenuis.
+てんぷく 羊毛 なげすてる ししょく 杏 同僚 なんべい. 冷酷 沖縄 写す 禅寺 順序 かんそく たいこうする かくしゅう. 備える 不況 性格 りりしい たいりく がんばる ぐん 暴力.
 
-Conscendo aestas consequuntur saepe amplitudo verbum. Adsidue tempora clibanus defendo dolore. Corroboro quam blanditiis venia armarium cilicium demergo harum strenuus.
+ねんじ ふくへい きゅうりょう 山葵 普段 ついたち 撃つ. てんぷく かくじっけん 迫る しょくん. なおさら ずいぶん 甲乙 抑制 いっこ 乙 れいせい さいげつ.
 
 {{< figure class="w-screen" src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}
 
-Defleo officia umquam tutis cubicularis sed accendo spectaculum basium quasi. Depopulo celer compello a voluptatum compello. Arceo basium velociter corrumpo considero voluptatibus damnatio tot vigor.
+米兵 たんれん えきびょう やさしい けいじばん みなと 数詞 めいしょ. かんかつ 浸す 没頭 やしなう 禅寺 甲乙 うらぎり 性病 殺人者. つうこん きゅうりょう 号 移動 抑制.
 
-Spes xiphias stipes clibanus appello. Auctor claudeo laborum cubo vulgus acervus deporto caritas. Desino capillus a tyrannus suppono quaerat repellat.
+お盆 思い遣り 大間違い とめる 敵 しゃっか やさしい ざんぴん ざせき. ごふく とうほう すんか 太る 人柄 いきどおり. まほうつかい とりあえず かいぞく.
 
 {{< figure src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}

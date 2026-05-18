@@ -1,6 +1,6 @@
 ---
 title: "dummy_0012"
-date: 2026-05-06T15:51:56+09:00
+date: 2026-05-06T19:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,41 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社須藤金属"
-    url: "https://intent-monocle.org"
-  - name: "株式会社大場楽器"
-  - name: "合同会社森下ガス"
-    url: "https://gaseous-technologist.com"
+  - name: "合名会社溝口家具"
+    url: "https://gifted-fencing.biz/"
+  - name: "安井保険合名会社"
+    url: "https://zesty-overcoat.info/"
 collaborators:
-  - name: "合資会社柏木証券"
-    url: "https://lovely-equal.net/"
+  - name: "合資会社戸田印刷"
+    url: "https://wonderful-gift.com/"
     credits:
-      - "Design: 藤本"
-      - "Direction: 関根"
-  - name: "合名会社河村農林"
-    url: "https://stupendous-labourer.net/"
+      - "Development: 宮城"
+      - "Direction: 川野"
+  - name: "有限会社米山電気"
     credits:
-      - "Development: 桑原"
-      - "Development: 泉"
-      - "Development: 落合"
+      - "PM: 福原"
+  - name: "長島水産合同会社"
+    credits:
+      - "Direction: 山本"
+      - "Design: 三輪"
 references:
-  - name: "関連技術ドキュメント"
-    url: "https://potable-acquaintance.net/"
-  - name: "導入事例インタビュー"
-    url: "https://slushy-heartache.name"
+  - name: "受賞歴"
+    url: "https://warmhearted-inspection.biz"
+  - name: "メディア掲載"
+    url: "https://scornful-desk.info"
 thumbnail: "img/works/dummy_0012_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0012_key.jpg" alt="dummy_0012" >}}
 
-Solitudo veritatis ventito ullus. Tumultus depopulo comes. Textus derelinquo vomica conturbo bellicus.
+壮年 書き方 不健康 裏口 あさねぼう かいせい. せんりゅう たいやく かたみち. なんべい きゅうりょう たいさ 伝統 しっぺい.
 
-Spoliatio adsuesco clarus. Vobis eius verecundia. Tabella valetudo defungo.
+鎮める 親切 ほんそう 普段. 大尉 弥生 さいぼう. 漠然 貨幣 しあつ 日刊 出かける かせぎ 見当たる 一生.
 
 {{< figure class="w-screen" src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
 
-Calamitas coniecto deinde adduco aliquid suscipio. Peccatus cupressus atrox talio bardus. Avarus cohors bene deduco.
+がくふ 性病 あわれ 薬. じゅうらい とうほう ようい 黙る. ぼうりょく むぜい とくに 和尚 ぐん ぎせい がんばる こうちょく だくりゅう せん.
 
-Ciminatio paens harum deficio. Comitatus bene harum utique vita una. Super supra color circumvenio.
+廃棄 じじょでん となえる 寮生. ふゆかい 首 大文字 ふくへい 走り回る きいろ 専門. はちまき けす あわ 可愛い ほにゅうびん 潔い 限る きいろ 上手 迷子.
 
 {{< figure src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}

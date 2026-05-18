@@ -8,6 +8,7 @@
       "Bash(task build:css)",
       "Bash(task stop *)",
       "Bash(task test *)",
+      "Bash(task test:headless)",
       "Bash(task update:changelog *)",
       "WebFetch(domain:biomejs.dev)",
       "WebFetch(domain:docs.mapbox.com)",

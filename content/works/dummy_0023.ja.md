@@ -1,6 +1,6 @@
 ---
 title: "dummy_0023"
-date: 2026-05-17T12:51:57+09:00
+date: 2026-05-17T21:26:32+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,43 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "株式会社奧村証券"
-  - name: "合名会社森下電気"
-    url: "https://wicked-yak.info/"
+  - name: "杉原証券合同会社"
+    url: "https://runny-final.org/"
 collaborators:
-  - name: "沼田情報合名会社"
+  - name: "藤村倉庫有限会社"
+    url: "https://authorized-saloon.name/"
     credits:
-      - "Development: 松尾"
-      - "Design: 平岡"
-  - name: "天野保険有限会社"
-    url: "https://somber-dream.biz"
-    credits:
-      - "Design: 福田"
-      - "Design: 大山"
-      - "Program: 川田"
-  - name: "尾崎水産合同会社"
-    url: "https://gullible-porter.com/"
-    credits:
-      - "Development: 本間"
-      - "Development: 天野"
+      - "PM: 石井"
+      - "Program: 村田"
 references:
-  - name: "プレスリリース"
-    url: "https://mature-cellar.org/"
-  - name: "プロジェクト紹介記事"
-    url: "https://frequent-precedent.biz"
+  - name: "導入事例インタビュー"
+    url: "https://alarmed-brush.org"
 thumbnail: "img/works/dummy_0023_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0023_key.jpg" alt="dummy_0023" >}}
 
-Praesentium deleo curatio dedico crinis ait. Suscipit adversus claudeo accusamus eius vae tamdiu coepi ulciscor depopulo. Deficio vulgivagus rem talis tutamen vinitor xiphias magnam sumptus.
+おおごえ シアトルし 弥生. 甲乙 ほどう ぎょうし ために 主に 開閉 よすみ きょうかい 専門 左手. おなか ひきさく 差し上げる むこう 備える 無敵 休日 いしゃりょう あつかい なんべい.
 
-Sulum sufficio nostrum celo villa. Unus vir creta tutis amor tyrannus alias bonus. Accusamus anser suppellex conitor.
+える かいほうする ふくし 金縛り 奔放 書架 おおちがい そうだん. 零す 数える 閉じる 金 なおさら 高瀬 色々. 憂い 輸出 奔放 こうおつ 賛成 こうばん.
 
 {{< figure class="w-screen" src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}
 
-Sed confido deprecator vinitor varietas conturbo armarium adsidue pauper deinde. Sto tenetur attero reiciendis angustus somnus. Spero solium comminor cito viriliter textor.
+悪気 詰め込む 七つ 開閉 あれる 原油 たいりく りゃくご. 悪霊 陳列室 料理人 左手 せんじょうざい だくりゅう たび かわさき いじん つうこん. 既に わかめ はじめて ふくへい ぜんにほん.
 
-Currus vulnero corpus beneficium ante. Ancilla trucido aetas balbus. Vulticulus thorax dedecor nesciunt atque.
+交錯 じきしょうそう りゃくず. 上手 望み とうひょうする 燃やす. 隆起 ちょうせん 慶弔 栄誉 ほうげん.
 
 {{< figure src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}

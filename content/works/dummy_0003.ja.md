@@ -1,6 +1,6 @@
 ---
 title: "dummy_0003"
-date: 2026-04-27T11:51:56+09:00
+date: 2026-04-27T14:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,29 +14,41 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "長野金属合同会社"
-    url: "https://lumpy-annual.com/"
-  - name: "安達電気合資会社"
+  - name: "岡野証券合資会社"
 collaborators:
-  - name: "株式会社三木保険"
-    url: "https://fixed-follower.info"
+  - name: "浅野倉庫株式会社"
+    url: "https://flawless-excess.name"
     credits:
-      - "Design: 荒井"
-      - "Direction: 松本"
-      - "Development: 今野"
+      - "PM: 飯島"
+  - name: "長谷川印刷合資会社"
+    url: "https://prestigious-in-joke.name/"
+    credits:
+      - "Development: 田村"
+      - "Direction: 桑原"
+      - "Design: 松野"
+  - name: "合同会社南電気"
+    url: "https://gaseous-giant.biz/"
+    credits:
+      - "Development: 戸田"
+      - "PM: 福本"
+references:
+  - name: "プロジェクト紹介記事"
+    url: "https://primary-waist.name/"
+  - name: "公式ウェブサイト"
+    url: "https://foolish-gripper.biz"
 thumbnail: "img/works/dummy_0003_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0003_key.jpg" alt="dummy_0003" >}}
 
-Aestus sufficio arbor thorax vulariter. Angustus tergo fuga quidem vinum auctus cibo. Vinculum debitis trado tantum ipsum vobis spiculum.
+済ます 誓い つく ちょうしゃ めいわくめーる かくしゅう. ふくぶくろ おととい さと 米国 巡回 あらかじめ ないしょばなし ぎゃくしゅう 金星. 糸 いちだい 差し上げる 移譲 米国.
 
-Tum surculus utor casus villa. Totidem tribuo vix tersus. Tutis veritatis tabula curiositas viduo arbor sono aperiam facere vulgaris.
+にゅうせき きひん 旧姓 ぎじゅく はきだす 七つ. 殻 ちょうりょく もはん. にる 歯を磨く のうし だくりゅう 歯を磨く 程 人柄 たおす 色彩.
 
 {{< figure class="w-screen" src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}
 
-Contabesco asperiores cometes totidem dolorum cohibeo dapifer auditor cornu. Ait cunctatio audeo solvo atavus molestias conforto cometes decor adflicto. Absconditus apostolus armarium.
+はんけん あがる つみ. 会議 閉じる みつ ふそく 滝 となえる 見当たる よそく 入江 原油. 洋服 いしずえ 運ぶ.
 
-Id timidus deleo caterva demonstro cuius amet sol necessitatibus sequi. Voluptatem vero ancilla. Cupressus aureus cogito.
+歌謡 買い物 金縛り 累進 しばふ. うらぎり となえる 勝手 誓い あがる ちかく ちんみ. けいけんしゃ かいそく せっぷく ちょくせつ りょこう.
 
 {{< figure src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}

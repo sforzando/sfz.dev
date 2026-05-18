@@ -1,6 +1,6 @@
 ---
 title: "dummy_0023"
-date: 2026-05-17T12:51:57+09:00
+date: 2026-05-17T21:26:32+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,43 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Gleichner, Hagenes and Zulauf"
-  - name: "Roob, Baumbach and Nikolaus"
-    url: "https://wicked-yak.info/"
+  - name: "Runte Group"
+    url: "https://runny-final.org/"
 collaborators:
-  - name: "O'Conner - Emmerich"
+  - name: "Parisian Inc"
+    url: "https://authorized-saloon.name/"
     credits:
-      - "Development: Mohr"
-      - "Design: Spencer"
-  - name: "Welch and Sons"
-    url: "https://somber-dream.biz"
-    credits:
-      - "Design: Grady"
-      - "Design: Nitzsche"
-      - "Program: Schroeder"
-  - name: "Mann - Hagenes"
-    url: "https://gullible-porter.com/"
-    credits:
-      - "Development: Barton"
-      - "Development: Schneider"
+      - "PM: Waelchi"
+      - "Program: Becker"
 references:
-  - name: "solio contra enim"
-    url: "https://mature-cellar.org/"
-  - name: "curso stips teres constans"
-    url: "https://frequent-precedent.biz"
+  - name: "virga non magnam"
+    url: "https://alarmed-brush.org"
 thumbnail: "img/works/dummy_0023_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0023_key.jpg" alt="dummy_0023" >}}
 
-Praesentium deleo curatio dedico crinis ait. Suscipit adversus claudeo accusamus eius vae tamdiu coepi ulciscor depopulo. Deficio vulgivagus rem talis tutamen vinitor xiphias magnam sumptus.
+Ars vere repellat victoria caute sequi summisse unus bellum. Attonbitus succurro studio tandem. Arbitro attonbitus veniam canto et annus.
 
-Sulum sufficio nostrum celo villa. Unus vir creta tutis amor tyrannus alias bonus. Accusamus anser suppellex conitor.
+Ara deputo despecto articulus capio taedium. Stipes facilis testimonium assumenda dens tamisium taedium. Reiciendis cum cruciamentum.
 
 {{< figure class="w-screen" src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}
 
-Sed confido deprecator vinitor varietas conturbo armarium adsidue pauper deinde. Sto tenetur attero reiciendis angustus somnus. Spero solium comminor cito viriliter textor.
+Adimpleo vinum advenio deinde. Denique considero curis coaegresco thymbra. Teres cubicularis traho volaticus curia utor adulatio vir.
 
-Currus vulnero corpus beneficium ante. Ancilla trucido aetas balbus. Vulticulus thorax dedecor nesciunt atque.
+Acidus careo maiores. Vilitas tergo adeptio vicinus undique ex aufero adipisci distinctio. Denego quisquam vulariter.
 
 {{< figure src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}

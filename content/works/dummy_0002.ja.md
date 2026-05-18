@@ -1,6 +1,6 @@
 ---
 title: "dummy_0002"
-date: 2026-04-26T12:51:55+09:00
+date: 2026-04-26T20:26:29+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "長野不動産合資会社"
-  - name: "合名会社岡村印刷"
-  - name: "浜田家具合同会社"
-    url: "https://irresponsible-depot.net/"
+  - name: "有限会社宮川農林"
+  - name: "山岡ガス合名会社"
+  - name: "浅野家具合資会社"
 collaborators:
-  - name: "有限会社酒井自動車"
+  - name: "高松製薬株式会社"
+    url: "https://peppery-cemetery.name/"
     credits:
-      - "Program: 竹中"
-      - "PM: 山岡"
-      - "Direction: 五十嵐"
-  - name: "山田家具株式会社"
-    url: "https://dirty-lid.biz"
-    credits:
-      - "Program: 比嘉"
-  - name: "中谷自動車合名会社"
-    url: "https://hopeful-doing.name"
-    credits:
-      - "Design: 広田"
-      - "Design: 岸"
+      - "PM: 高井"
+references:
+  - name: "プロジェクト紹介記事"
+    url: "https://any-lyre.info/"
 thumbnail: "img/works/dummy_0002_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0002_key.jpg" alt="dummy_0002" >}}
 
-Delicate vix dolorem dolorum accusamus. Canonicus beneficium odit caelestis. Arx carbo causa attero solium totus numquam verbera auctor.
+ぎせい いなか しあつ 仁 はずかしめる じどうし 襲撃 年額. あつい 思い遣り ぐん さわやか いう 乾燥 検査 せんじょう 鍋. ために 果樹 ほんそう 仕方がない たつ いっさくじつ 見当たる.
 
-Aestas surculus earum. Ventosus bellicus strues. Accedo totidem paens crastinus.
+辛子 たいりく 残業 しめる 錯乱 宜しく そんざい さくにゅう 迫る. お盆 しりつ たび たいやく かんかつ あおい ふんしゃ 皇太子妃. あらしお 奉仕 ぎせいしゃ つなひき 賢明 うらぎり.
 
 {{< figure class="w-screen" src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}
 
-Ancilla voveo aestas rerum viduo. Cibo crux aqua admoveo undique alioqui pariatur. Pecco corpus voluptatem solum beatae soluta peior.
+敵 けいむしょ 順序 あらしお 枢軸 終点 薬 壊す. 交錯 性格 錠 備える 貫く. 博物館 こうえん 鶴 力 天井 やすい.
 
-Reiciendis alienus molestias cauda at tabesco facere alter valde. Alioqui fugit aeger aequus ambulo viriliter. Somnus subito uterque cito.
+始まる 芸者 える かちゅう 蛇 火葬. 貨物船 いままで せんたくする ねんがん ねんがん しつ こうぎょう こせき ふかのう 喜劇. 勇気 数える とうさく 話 せん 好き 程 号 とちょう.
 
 {{< figure src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}

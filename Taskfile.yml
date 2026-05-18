@@ -171,7 +171,7 @@ tasks:
   check:layouts:
     desc: 点検 - Congoテーマのレイアウトオーバーライドを確認
     cmds:
-      - bash scripts/check:layout-overrides.sh
+      - bash scripts/check-layout-overrides.sh
 
   update:theme:
     desc: 追随 - Congoテーマを更新

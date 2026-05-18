@@ -1,6 +1,6 @@
 ---
 title: "dummy_0004"
-date: 2026-04-28T12:51:56+09:00
+date: 2026-04-28T23:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,32 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Wisozk Group"
-  - name: "Hirthe - D'Amore"
-    url: "https://aching-fireplace.com/"
+  - name: "Bahringer Inc"
+    url: "https://serene-moment.net"
+  - name: "Yost - Cruickshank"
+  - name: "Hilpert, Lehner and Walsh"
 collaborators:
-  - name: "Olson, Nitzsche and Hegmann"
-    url: "https://mealy-fibre.net/"
+  - name: "Wunsch, Fadel and Lesch"
+    url: "https://live-pocket-watch.info"
     credits:
-      - "Design: Pollich"
-      - "Program: Hansen"
-      - "Design: Kuphal"
-  - name: "Kub Inc"
-    credits:
-      - "Design: Veum"
-      - "Design: Powlowski"
+      - "PM: Cartwright"
+      - "Direction: Torphy"
 references:
-  - name: "amita vesco sed provident"
-    url: "https://impossible-yak.net/"
-  - name: "utroque adicio sequi adfectus"
-    url: "https://critical-unique.biz/"
+  - name: "victus audentia"
+    url: "https://considerate-worth.net/"
 thumbnail: "img/works/dummy_0004_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
 
-Molestias aduro verecundia adsum avaritia. Umerus talis curriculum caterva. Peccatus amitto venustas sulum compono.
+Ascisco vacuus stipes tonsor ventosus utrum aiunt. Commodi unde benevolentia praesentium. Verbera corona quidem.
 
-Bos bonus combibo aperio basium libero alii. Culpo valens agnitio et supplanto pectus acervus optio crapula. Sto beatus decor.
+Totam cuius itaque delego sublime viridis cognomen voluptas convoco alveus. Turbo ubi abutor demens cruentus cresco tantum somniculosus asper reiciendis. Combibo ullam aveho.
 
 {{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
 
-Cado vicinus candidus alter bardus veniam demulceo decens vulgaris odio. Ducimus ab conqueror thesaurus maxime tumultus sumo arca. Cribro vae harum vorax necessitatibus voluptatum video.
+Venio deludo sponte condico. Demo atrocitas voluptate aestivus. Capto aptus arbustum admiratio advoco atrocitas tres torqueo sollicito.
 
-Crux thema sopor adhaero. Hic vinco benevolentia vulticulus. Cruciamentum aurum vitae subito denuo damno casso.
+Crinis iure aveho totidem. Vinitor vilicus cras via. Creta illo suffragium tempora delicate cunae.
 
 {{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}

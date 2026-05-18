@@ -1,6 +1,6 @@
 ---
 title: "dummy_0024"
-date: 2026-05-18T16:51:57+09:00
+date: 2026-05-18T14:26:32+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,30 +14,39 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Raynor - Koelpin"
+  - name: "DuBuque and Sons"
+    url: "https://yummy-other.biz"
+  - name: "Feil, Jenkins and Koch"
 collaborators:
-  - name: "Murphy, Bosco and Homenick"
+  - name: "Larson - Mayert"
     credits:
-      - "Program: Waters"
-      - "Program: Littel"
+      - "Program: Greenfelder"
+      - "Direction: Pfannerstill"
+  - name: "Grimes Inc"
+    url: "https://ragged-retrospectivity.info/"
+    credits:
+      - "Development: Fay"
+      - "Development: Rice"
+      - "PM: O'Keefe"
+  - name: "Will Inc"
+    credits:
+      - "Direction: Reichel"
 references:
-  - name: "tum altus"
-    url: "https://affectionate-dusk.name/"
-  - name: "abutor caelestis trepide nam defungo"
-    url: "https://sleepy-overheard.net"
+  - name: "curia peccatus vilicus amitto fugiat"
+    url: "https://front-pendant.org/"
 thumbnail: "img/works/dummy_0024_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0024_key.jpg" alt="dummy_0024" >}}
 
-Compello astrum stips adhaero molestias callide decor ciminatio verto. Adnuo ipsum tenax adfero demum. Abundans omnis cernuus coruscus decet cognatus.
+Apparatus depono supellex. Ante canonicus velut. Solium spero pel culpo velum studio studio casso sopor rerum.
 
-Vilis termes solvo decerno cumque. Aveho coadunatio enim cohors pel curto commodo capio. Baiulus ait sunt desidero dolor crux ambitus quibusdam odit video.
+Dolor utor cursim. Aut paens civitas canto terra suus aer vergo vos pel. Sui dapifer apud.
 
 {{< figure class="w-screen" src="../img/works/dummy_0024_sub.jpg" alt="dummy_0024" >}}
 
-Explicabo ustulo varietas altus solum doloribus claustrum. Voro antepono urbanus sperno collum coruscus clamo apparatus. Minima verumtamen undique curia beatus adduco vestigium cimentarius.
+Voluptatem corpus tristis quibusdam tergeo pel. Clamo vapulus utilis curo thorax comes advoco eveniet sub tolero. Tamdiu artificiose conventus cursim abstergo demitto illo thorax.
 
-Quaerat veniam cultellus expedita maxime. Debeo deleo ipsa crustulum deduco coaegresco pauci blanditiis. Delinquo sophismata conatus.
+Caritas abscido cohors. Deripio terror tabella assentator abeo ait solitudo. Thalassinus terebro ambitus textus bos bonus.
 
 {{< figure src="../img/works/dummy_0024_sub.jpg" alt="dummy_0024" >}}

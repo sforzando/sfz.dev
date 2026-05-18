@@ -1,6 +1,6 @@
 ---
 title: "dummy_0015"
-date: 2026-05-09T14:51:57+09:00
+date: 2026-05-09T21:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,36 +14,29 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "有限会社大谷化学"
-    url: "https://well-groomed-angle.name"
-  - name: "丸山倉庫有限会社"
-    url: "https://cavernous-fraudster.org"
+  - name: "下田電気合同会社"
+    url: "https://frugal-pearl.biz/"
 collaborators:
-  - name: "川本運輸合名会社"
+  - name: "合資会社山岡印刷"
     credits:
-      - "Direction: 甲斐"
-  - name: "谷本ホテル株式会社"
-    url: "https://international-roadway.org/"
-    credits:
-      - "Program: 丹羽"
+      - "Design: 荒木"
+      - "Direction: 村井"
 references:
-  - name: "プレスリリース"
-    url: "https://gruesome-cinder.biz"
-  - name: "プロジェクト紹介記事"
-    url: "https://clear-rosemary.name/"
+  - name: "公式ウェブサイト"
+    url: "https://realistic-understanding.info"
 thumbnail: "img/works/dummy_0015_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0015_key.jpg" alt="dummy_0015" >}}
 
-Appello tamquam canto tametsi. Caelum corrigo condico cunae. Peccatus tardus vitae.
+ざせき せっぷく いっさくじつ しっぷう しゃくや いちにち 超〜 先週. 擬装 魔術 なみだ てんのう けいむしょ ながさき 原因 撃つ. かくじっけん 主観的 駆け出す 頂く.
 
-Vestrum degusto cura creta curo acerbitas adulatio voluptatem thesis. Adicio atque nam terebro ipsa cena consuasor crinis excepturi. Summopere uter eius.
+勇気 甲乙 切迫 つぎつぎ 基盤 手作り. 賢明 やぶれる 氏名 そんざい 徳川 仕方がない かつ おんとう ししょく はちのす. となえる 前 こくひん.
 
 {{< figure class="w-screen" src="../img/works/dummy_0015_sub.jpg" alt="dummy_0015" >}}
 
-Necessitatibus crustulum cohibeo quia vitium abscido crux vigor articulus perferendis. Varietas alienus quam solitudo vallum corrupti absconditus ver peccatus. Amitto degero consuasor odit ter cupressus corrumpo.
+おととい 色盲 はちのす 望み 順序 せいじょう 耐火 やぶれる 憂い. かいじゅう 暴走 推奨 きょだい 雇用 のぞいて たいほう 消す 旧姓. なんべい ふたたび けいじばん.
 
-Stultus bene adhuc comparo. Supra absum voluntarius delego. Tricesimus summa callide delectatio capillus distinctio rem.
+ひんかく 仁 ほうき. にんい ほんらい 指定する せんりゅう 秘める. フランス語 機嫌 しょくん くまもとけん きづく りゃくず ふねんゴミ ねんがじょう 愛国心.
 
 {{< figure src="../img/works/dummy_0015_sub.jpg" alt="dummy_0015" >}}

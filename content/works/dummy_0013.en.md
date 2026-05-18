@@ -1,6 +1,6 @@
 ---
 title: "dummy_0013"
-date: 2026-05-07T17:51:56+09:00
+date: 2026-05-07T15:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,30 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Parisian, Pfeffer and Lockman"
-  - name: "MacGyver - Kuvalis"
-    url: "https://hungry-gazebo.name/"
-  - name: "Metz Group"
-    url: "https://crazy-heating.net"
+  - name: "Torphy, Witting and Fahey"
 collaborators:
-  - name: "Abshire Group"
+  - name: "Auer LLC"
+    url: "https://lighthearted-knitting.net"
     credits:
-      - "Development: Wiegand"
-      - "Development: Wiza"
-      - "Program: Kutch"
-  - name: "Hettinger - Block"
-    credits:
-      - "Program: Lemke"
+      - "Direction: Hilpert"
+      - "Development: Gutkowski"
+      - "Direction: Gottlieb"
 references:
-  - name: "tero dedico tamisium crinis"
-    url: "https://vague-linseed.com"
-  - name: "accommodo quis"
-    url: "https://grounded-pecan.name/"
+  - name: "peior nobis tristis armarium temptatio"
+    url: "https://monthly-sonar.info"
 thumbnail: "img/works/dummy_0013_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0013_key.jpg" alt="dummy_0013" >}}
 
-Iste alias laborum pectus vulgivagus adinventitias vitium comburo baiulus. Cinis laborum beatae video verecundia copiose curo. Exercitationem cito unde alo similique uter accusantium aperio comitatus.
+Sum defaeco avaritia adsidue depromo cunctatio vita casso distinctio. Utilis spiculum cariosus. Tametsi quas curiositas.
 
-Tracto autem auxilium aestas cariosus crastinus colligo adversus stillicidium. Complectus vestigium illum delibero. Coniuratio fugiat vespillo demitto censura vilis.
+Aut adulescens benigne astrum animus calco tergiversatio tametsi umbra eveniet. Arcus itaque administratio conculco tactus. Tardus neque tamen turba bene verumtamen admitto tertius ex.
 
 {{< figure class="w-screen" src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}
 
-Viriliter ad alii repudiandae. Adinventitias placeat absum. Defaeco sunt inflammatio conservo coepi attero ante.
+Aduro illo pecco talus verus dedico tum ultra tricesimus civis. Absconditus totus adipiscor. Et totus verecundia nulla creta nostrum tonsor degenero similique.
 
-Rem coniuratio inflammatio amoveo crustulum crux odit conatus clibanus tergum. Natus credo delego surgo paens varietas sublime neque ducimus. Agnitio totus asperiores valetudo solvo sub curvo cupiditas temeritas.
+Vulpes angulus comburo. Sublime tibi cui argentum urbs. Vinculum vehemens adipisci alo attero uredo tamisium curriculum absconditus.
 
 {{< figure src="../img/works/dummy_0013_sub.jpg" alt="dummy_0013" >}}

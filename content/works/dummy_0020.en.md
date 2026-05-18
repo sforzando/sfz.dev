@@ -1,6 +1,6 @@
 ---
 title: "dummy_0020"
-date: 2026-05-14T11:51:57+09:00
+date: 2026-05-14T12:26:31+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,38 +14,44 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Friesen and Sons"
+  - name: "Feest Group"
+    url: "https://unfortunate-orchid.name/"
+  - name: "Frami, Gulgowski and Franecki"
+  - name: "Kiehn and Sons"
+    url: "https://mediocre-cope.org/"
 collaborators:
-  - name: "Daniel and Sons"
+  - name: "Casper - Littel"
+    url: "https://whispered-secret.org/"
     credits:
-      - "PM: Hand"
-  - name: "Ward - Dickens"
-    url: "https://willing-thorn.net"
+      - "Program: Willms"
+      - "Development: Bosco"
+  - name: "Schiller LLC"
     credits:
-      - "PM: Bogisich"
-      - "Design: Crooks"
-      - "Direction: Pollich"
-  - name: "Strosin and Sons"
+      - "Design: Wilkinson"
+      - "PM: Gusikowski"
+      - "Design: Reynolds"
+  - name: "Cassin LLC"
+    url: "https://dead-expansion.org/"
     credits:
-      - "Program: Stoltenberg"
+      - "Design: Hamill"
 references:
-  - name: "verbera vicissitudo velit"
-    url: "https://excellent-papa.org/"
-  - name: "ulterius virtus velut"
-    url: "https://natural-skean.info/"
+  - name: "advenio error"
+    url: "https://needy-comparison.biz/"
+  - name: "adsum vis"
+    url: "https://sure-footed-cheetah.name"
 thumbnail: "img/works/dummy_0020_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0020_key.jpg" alt="dummy_0020" >}}
 
-Abutor victoria cultellus ver. Cumque aveho vorago demitto thorax absorbeo reiciendis dolorum ambulo suscipit. Audentia asper tandem torqueo cinis sed articulus deludo suscipit credo.
+Suasoria volva unde adfectus defaeco. Vivo asperiores adduco demum patior quam avaritia alo. Aestus titulus videlicet comes viridis talus aptus deludo.
 
-Cauda artificiose usitas tonsor combibo delicate decor. Turpis vinco maiores decet vergo clam solutio valetudo ad ager. Theca voco vitiosus curriculum cometes subnecto.
+Vomica absens tremo certe cattus virgo. Vomica tempus cometes canonicus calculus depereo solus degusto votum. Carpo super cervus coadunatio patior tener defluo umerus adversus maxime.
 
 {{< figure class="w-screen" src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
 
-Averto veritas contra acies curriculum talus stultus timidus tersus. Iure eos vilicus vinco tergeo adsuesco. Vetus auctor creator terra copiose.
+Damno solus desolo voluptas copia cavus adficio praesentium. Tabgo decerno averto supellex delinquo venustas tabesco. Tolero congregatio veritatis thermae uberrime.
 
-Cupiditate tot cicuta tamen. Tero cedo cunctatio venio quasi sollers celer aut canis. Audax succedo exercitationem absque corrigo.
+Adficio calco basium suscipio volaticus aperiam. Temeritas atque deduco tergeo cicuta terminatio tenus deludo amo. Toties spiculum subiungo officia quae utor tonsor tubineus confugo valde.
 
 {{< figure src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}

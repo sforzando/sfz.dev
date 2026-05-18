@@ -1,6 +1,6 @@
 ---
 title: "dummy_0009"
-date: 2026-05-03T15:51:56+09:00
+date: 2026-05-03T16:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,34 +14,35 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "篠田水産合名会社"
-  - name: "有限会社河原金属"
+  - name: "関電気合同会社"
+    url: "https://harmful-swine.net"
+  - name: "有限会社木村通信"
 collaborators:
-  - name: "市川銀行有限会社"
-    url: "https://another-guard.org/"
+  - name: "合同会社下田不動産"
     credits:
-      - "Program: 山村"
-      - "Program: 角田"
-  - name: "松永通信株式会社"
+      - "Direction: 小池"
+      - "Program: 福井"
+      - "Direction: 関根"
+  - name: "北川鉱業合資会社"
+    url: "https://honored-unibody.com"
     credits:
-      - "Program: 澤田"
-      - "Design: 大谷"
-  - name: "千田食品合資会社"
+      - "PM: 藤本"
+  - name: "大西倉庫有限会社"
     credits:
-      - "Development: 竹内"
+      - "PM: 野村"
 thumbnail: "img/works/dummy_0009_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0009_key.jpg" alt="dummy_0009" >}}
 
-Valens adaugeo utique cribro statim. Approbo ademptio nisi conduco averto sed. Argumentum tantillus verecundia.
+ぎょうし 大文字 きょうき 無糖 分ける 間隔 むこう. みさき 自立 ふそく あまる のき 狂う 溶岩. 柱 超音波 ぶそう.
 
-Nesciunt desino aequitas coruscus tenus comminor bestia delibero vitium. Defaeco verbera conculco adipisci vado agnitio conscendo. Ubi solium incidunt stillicidium tenus tantillus versus conor nesciunt ter.
+面 輪郭 猿真似 ずいぶん. あらしお みなもと じょうだん 馬 めいわくめーる つぎ かいぞく ばい. けんしゅうせい ごらん 床 たいりく きぼうする.
 
 {{< figure class="w-screen" src="../img/works/dummy_0009_sub.jpg" alt="dummy_0009" >}}
 
-Usque paens corrumpo barba corrumpo ulterius natus. Rem defleo dignissimos. Spero comparo defaeco velit.
+さくにゅう しゅしょう ちかく ざんぴん 冬休み 光年. 早々 鶴 墨 知り合い. ふうふ ふてい はなじ 救急車 難しい 博物館 かんしん 雰囲気.
 
-Nemo antiquus administratio corroboro celebrer deripio appositus voluptatibus ara tantum. Testimonium saepe valetudo defendo admiratio. Ciminatio concido amiculum admiratio crinis tergeo condico patrocinor cometes.
+脱税 ふかぶん 漂う フランス語 媒介 備える 没落 輪郭 あがる. 形 望み つばさ 請ける まつ はかる たいやく 日欧 かんそく. 〜系 核実験 思い遣り.
 
 {{< figure src="../img/works/dummy_0009_sub.jpg" alt="dummy_0009" >}}

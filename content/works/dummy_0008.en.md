@@ -1,6 +1,6 @@
 ---
 title: "dummy_0008"
-date: 2026-05-02T19:51:56+09:00
+date: 2026-05-03T00:26:30+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -14,33 +14,34 @@ showWordCount: false
 tags:
   - "works"
 clients:
-  - name: "Thompson, Russel and Denesik"
-  - name: "Jast - Lesch"
-  - name: "Zieme, Will and Kulas"
-    url: "https://limping-publicity.net"
+  - name: "Bashirian, Trantow and Ortiz"
+    url: "https://jagged-hunt.name/"
+  - name: "Hudson Inc"
+    url: "https://sniveling-integer.com/"
+  - name: "Turcotte - Brakus"
 collaborators:
-  - name: "Graham, Conroy and Daugherty"
-    url: "https://witty-signature.biz/"
+  - name: "Langworth - Denesik"
+    url: "https://adolescent-folklore.info"
     credits:
-      - "Program: Upton"
-      - "PM: Weimann"
-      - "Direction: Casper-Wehner"
+      - "Development: Kautzer"
 references:
-  - name: "autus suffoco decet"
-    url: "https://shady-event.biz/"
+  - name: "veritas carpo tabernus taedium cenaculum"
+    url: "https://mindless-department.com"
+  - name: "coma vulnus"
+    url: "https://monumental-glider.info"
 thumbnail: "img/works/dummy_0008_thumbnail.jpg"
 ---
 
 {{< figure src="../img/works/dummy_0008_key.jpg" alt="dummy_0008" >}}
 
-Arx defungo cruciamentum altus adulatio debitis. Viridis sub cruentus suggero. Ambitus tumultus triduana tantillus incidunt crustulum amoveo urbanus alveus.
+Corrigo ultra cauda stultus conspergo caterva. Delinquo animi thermae auctor tribuo anser peccatus antiquus tandem decor. Urbanus sublime patior nisi coruscus inflammatio bardus utroque apto adiuvo.
 
-Tergeo aperiam id utrimque voluptates pax suppellex coerceo tricesimus. Pectus deludo damno minima. Uberrime vester textilis annus.
+Tamquam et adduco antiquus antiquus cetera tabgo utpote curvo valens. Adfectus similique aetas. Varietas cimentarius trans nihil tandem minus.
 
 {{< figure class="w-screen" src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
 
-Conturbo dolore aestas ulterius facilis tibi doloribus vilitas caveo. Consuasor verus bardus celer cumque. Apto derelinquo vesco.
+Demitto voveo explicabo defluo arbitro sufficio taedium vicinus viduo. Appono adsum repellendus bellicus solium victus illum. Ultra quo caries custodia.
 
-Torrens veritas tabernus reprehenderit. Cavus absum dicta usitas fugit adamo attonbitus solitudo cena tabella. Fugiat attero audax vomica terreo tremo.
+Absens cimentarius alius. Aperte coniuratio alii accusator volup delinquo sono et varietas. Ratione amplexus est solio strenuus stultus.
 
 {{< figure src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
