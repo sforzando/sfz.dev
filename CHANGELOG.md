@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 All notable changes to this project will be documented in this file.
 
@@ -40,6 +40,7 @@ All notable changes to this project will be documented in this file.
 - 2026-05-17 14:33:13 :sparkles: implement view transitions for improved navigation _by @shin-sforzando_
 - 2026-05-18 05:40:39 :sparkles: add dummy posts and works with multilingual support _by @shin-sforzando_
 - 2026-05-18 11:20:32 :sparkles: update works and scripts for new content generation _by @shin-sforzando_
+- 2026-05-19 07:02:33 :sparkles: enhance tag cloud responsiveness and add viewport tests _by @shin-sforzando_
 
 ### Refactor
 
