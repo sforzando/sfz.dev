@@ -45,4 +45,21 @@ test.describe("posts en", () => {
     await page.waitForTimeout(500)
     expect(errors).toHaveLength(0)
   })
+
+  test("tag cloud container stays within viewport", async ({ page }) => {
+    await page.goto("/posts/")
+    await page.waitForTimeout(300)
+    const overflow = await page.evaluate(() => {
+      const cloud = document.getElementById("tag-cloud")
+      if (!cloud) return -1
+      const rect = cloud.getBoundingClientRect()
+      const internalScroll = cloud.scrollWidth - cloud.clientWidth
+      const externalOverflow = Math.max(
+        0,
+        rect.right - document.documentElement.clientWidth
+      )
+      return internalScroll + externalOverflow
+    })
+    expect(overflow).toBe(0)
+  })
 })

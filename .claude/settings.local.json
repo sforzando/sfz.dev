@@ -6,6 +6,7 @@
       "Bash(gh api *)",
       "Bash(gh run *)",
       "Bash(task build:css)",
+      "Bash(task format *)",
       "Bash(task stop *)",
       "Bash(task test *)",
       "Bash(task test:headless)",

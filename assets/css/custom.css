@@ -86,3 +86,14 @@ html.dark::view-transition {
     transform: scale(1);
   }
 }
+
+/* overflow:hidden (from the overflow-hidden Tailwind class on the element) creates
+   a BFC — absolutely-positioned children are clipped at layout time and cannot
+   expand document scrollWidth on any browser including iOS Safari/WebKit.
+   overflow:clip (no BFC) would allow children to contribute to document scroll
+   in WebKit, so we must not override the Tailwind class here.
+   Height uses clamp() for responsive sizing: 240px floor for mobile portrait,
+   320px ceiling from tablet-width upward (50vw reaches 320 at 640px viewport). */
+#tag-cloud {
+  height: clamp(240px, 50vw, 320px);
+}
