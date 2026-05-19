@@ -73,13 +73,16 @@ tasks:
       - hugo --minify
 
   start:
-    desc: 開始 - Hugo開発サーバー起動
+    desc: 開始 - Hugo開発サーバー起動（LAN内スマホからもアクセス可）
     aliases:
       - dev
+    vars:
+      LOCAL_IP:
+        sh: ipconfig getifaddr en0 2>/dev/null || echo "localhost"
     deps:
       - build:css
     cmds:
-      - hugo server --buildDrafts --buildFuture
+      - hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --baseURL http://{{.LOCAL_IP}}:1313/
 
   stop:
     desc: 停止 - Hugo開発サーバーを全て停止

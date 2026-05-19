@@ -54,6 +54,7 @@
     "Fukushima",
     "funcs",
     "getenv",
+    "getifaddr",
     "gitsecret",
     "goldmark",
     "hashnode",

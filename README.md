@@ -70,7 +70,7 @@ task: Available tasks for this project:
 * outdated:                  点検 - 依存パッケージの更新を確認
 * restart:                   再起 - Hugo開発サーバーを再起動
 * setup:                     初回 - 初期セットアップ
-* start:                     開始 - Hugo開発サーバー起動      (aliases: dev)
+* start:                     開始 - Hugo開発サーバー起動（LAN内スマホからもアクセス可）      (aliases: dev)
 * stop:                      停止 - Hugo開発サーバーを全て停止
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
 * build:css:                 構築 - TailwindCSSをビルド

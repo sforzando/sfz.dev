@@ -89,35 +89,29 @@ function radialPositions(
   return positions
 }
 
-// ── Init ───────────────────────────────────────────────────────────────────────
-function initTagCloud(): void {
-  injectTagCloudStyle()
+type TagData = { name: string; count: number; url: string }
 
-  const container = document.getElementById("tag-cloud")
-  if (!container) return
+// ── Render ─────────────────────────────────────────────────────────────────────
+// Extracted so ResizeObserver can re-invoke without re-parsing data attributes.
+function renderTagCloud(
+  container: HTMLElement,
+  data: TagData[],
+  activeTag: string,
+  pinnedTags: string[]
+): void {
+  container.replaceChildren()
 
-  const raw = container.dataset.tags
-  if (!raw) return
+  // clientWidth excludes scrollbar width — more accurate than offsetWidth here
+  const containerW = container.clientWidth
+  const containerH = container.clientHeight
+  if (containerW === 0 || containerH === 0) return
 
-  const parsed: unknown = JSON.parse(raw)
-  if (!Array.isArray(parsed) || parsed.length === 0) return
-  const data = parsed as Array<{ name: string; count: number; url: string }>
-
-  const activeTag = (container.dataset.activeTag ?? "").toLowerCase()
-
-  // pinnedCenterTags is configured in config/_default/params.toml [tagCloud]
-  const rawPinned = container.dataset.pinnedTags
-  const pinnedTags: string[] = rawPinned
-    ? (JSON.parse(rawPinned) as string[]).map((s) => s.toLowerCase())
-    : []
+  const safeHalfW = (containerW / 2) * (1 - 2 * MARGIN)
+  const safeHalfH = (containerH / 2) * (1 - 2 * MARGIN)
 
   const counts = data.map((d) => d.count)
   const minCount = Math.min(...counts)
   const maxCount = Math.max(...counts)
-
-  const containerW = container.offsetWidth
-  const containerH = container.offsetHeight
-  if (containerW === 0 || containerH === 0) return
 
   const positions = radialPositions(
     data,
@@ -127,8 +121,6 @@ function initTagCloud(): void {
     activeTag
   )
 
-  container.style.position = "relative"
-
   for (const [i, d] of data.entries()) {
     const isActive = d.name.toLowerCase() === activeTag
     const isPinned = pinnedTags.includes(d.name.toLowerCase())
@@ -136,10 +128,21 @@ function initTagCloud(): void {
     el.href = d.url
     el.textContent = d.name
 
+    // Clamp each tag's center offset to the safe area so no tag can escape the
+    // container boundary regardless of GPU compositor clipping behaviour.
+    const clampedX = Math.max(
+      -safeHalfW,
+      Math.min(safeHalfW, positions[i].baseX)
+    )
+    const clampedY = Math.max(
+      -safeHalfH,
+      Math.min(safeHalfH, positions[i].baseY)
+    )
+
     // Baking scale() into the same transform property as the positioning translate
     // ensures transform-origin: 50% 50% resolves to the element's visual center,
     // so hover scale always expands from the tag's midpoint without shifting it.
-    const baseTransform = `translate(calc(-50% + ${positions[i].baseX.toFixed(1)}px), calc(-50% + ${positions[i].baseY.toFixed(1)}px))`
+    const baseTransform = `translate(calc(-50% + ${clampedX.toFixed(1)}px), calc(-50% + ${clampedY.toFixed(1)}px))`
 
     el.style.cssText = [
       "position:absolute",
@@ -153,7 +156,23 @@ function initTagCloud(): void {
       "transition:color 0.15s, transform 0.22s cubic-bezier(0.34,1.56,0.64,1)",
       "color:inherit",
     ].join(";")
-    el.style.fontSize = `${tagFontSize(d.count, minCount, maxCount, isPinned, isActive).toFixed(1)}px`
+    const baseFontSize = tagFontSize(
+      d.count,
+      minCount,
+      maxCount,
+      isPinned,
+      isActive
+    )
+    // Active tag sits at center (offsetX≈0) with white-space:nowrap, so its full
+    // text width must fit within the container. Cap using ~0.58× char-width ratio
+    // for the sans-serif font; floor at FONT_MIN so it never becomes illegible.
+    const fontSize = isActive
+      ? Math.max(
+          FONT_MIN,
+          Math.min(baseFontSize, (containerW * 0.88) / (d.name.length * 0.58))
+        )
+      : baseFontSize
+    el.style.fontSize = `${fontSize.toFixed(1)}px`
     el.style.transform = baseTransform
 
     if (isActive) {
@@ -177,6 +196,37 @@ function initTagCloud(): void {
 
     container.appendChild(el)
   }
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────────
+function initTagCloud(): void {
+  injectTagCloudStyle()
+
+  const container = document.getElementById("tag-cloud")
+  if (!container) return
+
+  const raw = container.dataset.tags
+  if (!raw) return
+
+  const parsed: unknown = JSON.parse(raw)
+  if (!Array.isArray(parsed) || parsed.length === 0) return
+  const data = parsed as TagData[]
+
+  const activeTag = (container.dataset.activeTag ?? "").toLowerCase()
+
+  // pinnedCenterTags is configured in config/_default/params.toml [tagCloud]
+  const rawPinned = container.dataset.pinnedTags
+  const pinnedTags: string[] = rawPinned
+    ? (JSON.parse(rawPinned) as string[]).map((s) => s.toLowerCase())
+    : []
+
+  renderTagCloud(container, data, activeTag, pinnedTags)
+
+  // Re-render on container resize to handle orientation changes and layout shifts.
+  const observer = new ResizeObserver(() => {
+    renderTagCloud(container, data, activeTag, pinnedTags)
+  })
+  observer.observe(container)
 }
 
 if (document.readyState === "loading") {
