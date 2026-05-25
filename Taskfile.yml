@@ -179,7 +179,10 @@ tasks:
   update:theme:
     desc: 追随 - Congoテーマを更新
     cmds:
-      - git submodule update --remote --merge themes/congo
+      # Use --checkout (default) instead of --merge: --merge creates a local
+      # merge commit unreachable from Congo's remote, which breaks CI submodule
+      # fetch with "not our ref" errors.
+      - git submodule update --remote --checkout themes/congo
       - npm install --prefix themes/congo
       - task: check:layouts
 

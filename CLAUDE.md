@@ -27,7 +27,7 @@ Hugo静的サイトジェネレーターとCongoテーマを使用して構築�
 ## 技術スタック
 
 - **Hugo**: v0.161.1+extended（静的サイトジェネレーター）
-- **テーマ**: Congo v2.13.0（git submodule経由）
+- **テーマ**: Congo v2.14.0（git submodule経由）
 - **Go**: 1.26.3
 - **Task**: go-task/task（ビルド自動化）
 - **TypeScript**: v6.0.3（`assets/js/` のソース言語）

@@ -1,9 +1,9 @@
-languageCode = "ja"
-languageName = "日本語"
+locale = "ja"
+label = "日本語"
 displayName = ":jp: To Jpn"
 isoCode = "ja"
 weight = 2
-rtl = false
+direction = "ltr"
 
 title = "sforzando LLC. and Inc."
 description = "sforzando LLC. and Inc. specializes in rapid and flexible prototyping with a focus on software development."
