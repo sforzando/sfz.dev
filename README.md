@@ -42,7 +42,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 
 - Go (v1.26 or higher)
   - Hugo (v0.161.1 or higher, **Extended version required**)
-    - [Congo v2.13.0](https://github.com/jpanther/congo) (via Git submodule)
+    - [Congo v2.14.0](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
   - [Biome](https://biomejs.dev/)
   - [Prettier](https://prettier.io/) with go-template plugin
@@ -182,7 +182,7 @@ task update:theme
 This executes:
 
 ```shell
-git submodule update --remote --merge themes/congo
+git submodule update --remote --checkout themes/congo
 npm install --prefix themes/congo
 ```
 

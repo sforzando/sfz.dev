@@ -1,9 +1,9 @@
-languageCode = "en"
-languageName = "English"
+locale = "en"
+label = "English"
 displayName = ":us: To Eng"
 isoCode = "en"
 weight = 1
-rtl = false
+direction = "ltr"
 
 title = "sforzando LLC. and Inc."
 description = "sforzando LLC. and Inc. specializes in rapid and flexible prototyping with a focus on software development."
