@@ -24,7 +24,11 @@
         <h2
           class="mt-16 text-2xl font-bold text-neutral-700 dark:text-neutral-300"
         >
-          {{ if eq .Site.Language.Lang "ja" }}顧問{{ else }}Advisors{{ end }}
+          {{ if eq .Site.Language.Lang "ja" }}
+            顧問
+          {{ else }}
+            Advisors
+          {{ end }}
         </h2>
         <hr class="mb-8 w-24 border-dotted border-neutral-400" />
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
