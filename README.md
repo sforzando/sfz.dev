@@ -41,7 +41,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
 ## Prerequisites
 
 - Go (v1.26 or higher)
-  - Hugo (v0.161.1 or higher, **Extended version required**)
+  - Hugo (**Extended version required**)
     - [Congo v2.14.0](https://github.com/jpanther/congo) (via Git submodule)
 - Node.js (v24 or higher)
   - [Biome](https://biomejs.dev/)

@@ -33,6 +33,7 @@
     "Aibo",
     "Aizuwakamatsu",
     "anthropics",
+    "autorun",
     "basemap",
     "Blographer",
     "Bouldering",
@@ -51,6 +52,7 @@
     "externalurl",
     "Festina",
     "flickr",
+    "fontawesome",
     "Fukushima",
     "funcs",
     "getenv",
@@ -65,6 +67,7 @@
     "jsonify",
     "Junpei",
     "Kanagawa",
+    "katex",
     "Kbps",
     "Keinosuke",
     "keybase",
@@ -75,6 +78,7 @@
     "Lefthook",
     "lente",
     "lerp",
+    "lhci",
     "lighthouseci",
     "mapbox",
     "mapboxgl",
@@ -103,6 +107,7 @@
     "pinterest",
     "pkill",
     "pwid",
+    "quicklink",
     "raycaster",
     "researchgate",
     "shortcode",
@@ -128,5 +133,12 @@
     "wireframe",
     "xmark",
     "Yuki"
-  ]
+  ],
+  "snyk.advanced.autoSelectOrganization": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#283593",
+    "titleBar.activeForeground": "#FFFFFF",
+    "titleBar.inactiveBackground": "#283593",
+    "titleBar.inactiveForeground": "#FFFFFF"
+  }
 }

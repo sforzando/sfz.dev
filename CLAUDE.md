@@ -26,15 +26,14 @@ Hugo静的サイトジェネレーターとCongoテーマを使用して構築�
 
 ## 技術スタック
 
-- **Hugo**: v0.161.1+extended（静的サイトジェネレーター）
-- **テーマ**: Congo v2.14.0（git submodule経由）
-- **Go**: 1.26.3
+- **Hugo**: 静的サイトジェネレーター
+- **テーマ**: git submodule経由
 - **Task**: go-task/task（ビルド自動化）
-- **TypeScript**: v6.0.3（`assets/js/` のソース言語）
-- **Three.js**: v0.184.0（背景アニメーションのみ使用）
+- **TypeScript**: `assets/js/` のソース言語
+- **Three.js**: 背景アニメーション
 - **TailwindCSS**: Congoテーマに統合（`tailwind.config.js` でカスタマイズ）
-- **Playwright**: v1.60.0（E2Eテスト）
-- **Faker.js**: v9.9.0（ダミーコンテンツ生成）
+- **Playwright**: E2Eテスト
+- **Faker.js**: ダミーコンテンツ生成
 - **Biome**: JS/TSリンター・フォーマッター
 - **Lefthook**: Gitフックマネージャー
 - **デプロイ**: Netlify

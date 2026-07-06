@@ -8,14 +8,14 @@
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.161.1"
+  HUGO_VERSION = "0.163.3"
   HUGO_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.161.1"
+  HUGO_VERSION = "0.163.3"
 
 [[redirects]]
   from = "https://sforzando.co.jp"
@@ -25,12 +25,6 @@
 
 [[redirects]]
   from = "https://sforzando.net"
-  to = "https://sfz.dev"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://szk-engineering.com"
   to = "https://sfz.dev"
   status = 301
   force = true
