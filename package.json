@@ -39,7 +39,7 @@
     "dotenv": "^17.4.2",
     "lefthook": "^2.1.9",
     "lighthouse": "^13.4.0",
-    "markdownlint-cli2": "^0.23.0",
+    "markdownlint-cli2": "^0.23.1",
     "prettier": "^3.9.4",
     "prettier-plugin-go-template": "^0.0.15",
     "serve": "^14.2.6",
