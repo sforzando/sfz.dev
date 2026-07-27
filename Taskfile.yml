@@ -105,6 +105,11 @@ tasks:
     cmds:
       - npx markdownlint-cli2 --fix "**/*.md"
 
+  typecheck:
+    desc: 検査 - TypeScriptの型を検査
+    cmds:
+      - npx tsc --noEmit
+
   format:
     desc: 整形 - コードフォーマット実行
     cmds:
@@ -125,6 +130,11 @@ tasks:
     desc: 試験 - CI環境でPlaywrightテスト実行
     cmds:
       - npx playwright test --ignore-snapshots
+
+  test:verify:
+    desc: 試験 - スナップショットを更新せず厳密比較（回帰検出用）
+    cmds:
+      - npx playwright test
 
   test:prod:
     desc: 試験 - 本番サーバーでPlaywrightテスト実行
