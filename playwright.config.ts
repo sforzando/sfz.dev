@@ -20,6 +20,17 @@ const config: PlaywrightTestConfig = {
      * For example in `await expect(locator).toHaveText();`
      */
     timeout: 5000,
+    toMatchSnapshot: {
+      /**
+       * `threshold` only bounds per-pixel color distance; without a cap on how
+       * many pixels may differ, a single pixel fails the comparison. The tag
+       * cloud, the Three.js background and the Mapbox globe all animate, so a
+       * strict run reported ~80 of 380 comparisons as failures on unchanged
+       * code. Measured noise floor is <= 0.03, so 0.05 absorbs it with margin
+       * while still catching a genuine rendering regression.
+       */
+      maxDiffPixelRatio: 0.05,
+    },
   },
   /* Run tests in files in parallel */
   fullyParallel: true,

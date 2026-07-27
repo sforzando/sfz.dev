@@ -4,18 +4,17 @@
 
 [build.environment]
   NODE_ENV = "development"
-  GO_VERSION = "1.26.3"
+  GO_VERSION = "1.26.5"
+  # Single source of truth: inherited by production, deploy-preview, and branch-deploy.
+  # Defining it per-context previously left branch-deploy on Netlify's default Hugo.
+  HUGO_VERSION = "0.164.0"
   TZ = "Asia/Tokyo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.163.3"
   HUGO_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.163.3"
 
 [[redirects]]
   from = "https://sforzando.co.jp"

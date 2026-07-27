@@ -355,6 +355,9 @@ fabric.properties
 .superpowers/
 docs/superpowers/
 
+# Claude Code working artifacts (plans are per-session scratch, not deliverables)
+.claude/plans/
+
 # Playwright
 .playwright-mcp/
 /tests/snapshots/

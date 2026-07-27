@@ -182,8 +182,14 @@ task test:headless
 task test:ci
 task test:prod
 
+# スナップショットを更新せず厳密比較（回帰検出用）
+task test:verify
+
 # Lighthouseパフォーマンス計測
 task lighthouse
+
+# TypeScriptの型検査
+task typecheck
 
 # コード整形
 task format

@@ -22,6 +22,10 @@ summaryLength = 0
   getenv = ["^HUGO_", "^MAPBOX"]
 
 [module]
+  # Single source of truth for the Hugo version. Netlify and CI pin their own
+  # copies, so this makes a stale pin fail loudly instead of building silently
+  # on a different Hugo. Congo needs the extended edition for TailwindCSS.
+  hugoVersion = { min = "0.164.0", extended = true }
   [[module.mounts]]
     source = "node_modules/mapbox-gl/dist"
     target = "assets/vendor/mapbox-gl"

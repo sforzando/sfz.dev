@@ -73,6 +73,7 @@ task: Available tasks for this project:
 * start:                     開始 - Hugo開発サーバー起動（LAN内スマホからもアクセス可）      (aliases: dev)
 * stop:                      停止 - Hugo開発サーバーを全て停止
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
+* typecheck:                 検査 - TypeScriptの型を検査
 * build:css:                 構築 - TailwindCSSをビルド
 * check:layouts:             点検 - Congoテーマのレイアウトオーバーライドを確認
 * generate:dummy:            生成 - テスト用ダミーコンテンツを生成（ex. task generate:dummy -- works 5）
@@ -84,6 +85,7 @@ task: Available tasks for this project:
 * test:ci:                   試験 - CI環境でPlaywrightテスト実行
 * test:headless:             試験 - ローカルサーバーでPlaywrightテスト実行（ヘッドレスモード）
 * test:prod:                 試験 - 本番サーバーでPlaywrightテスト実行
+* test:verify:               試験 - スナップショットを更新せず厳密比較（回帰検出用）
 * update:changelog:          記録 - CHANGELOGを更新
 * update:dependencies:       追随 - 依存パッケージを更新
 * update:theme:              追随 - Congoテーマを更新
@@ -158,6 +160,24 @@ Dummy photos for `works` are automatically downloaded from [Lorem Picsum](https:
 ### Test
 
 E2E tests is available, `task test`.
+
+Note that `task test`, `task test:headless` and `task test:prod` all run with
+`--update-snapshots`, so they rewrite the stored screenshots instead of
+comparing against them. To detect a visual regression, use `task test:verify`,
+which compares strictly without updating anything.
+
+```shell
+task test:verify
+```
+
+### Typecheck
+
+TypeScript is transpiled by Hugo's `js.Build` (esbuild) and by `tsx`, neither of
+which checks types. Run the type checker explicitly:
+
+```shell
+task typecheck
+```
 
 ### Deploy
 
