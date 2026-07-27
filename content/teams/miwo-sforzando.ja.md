@@ -2,6 +2,12 @@
 title: "小山 みを / Miwo Koyama"
 date: 2022-07-01T12:34:56+09:00
 draft: false
+# Retired member. Kept for the record but excluded from the site:
+# list: never drops the card from the teams list, render: never returns 404
+# for the member page itself.
+build:
+  list: never
+  render: never
 weight: 40
 position: "総務"
 sharingLinks: false
