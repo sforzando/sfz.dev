@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-07-06
+Last updated: 2026-07-27
 
 All notable changes to this project will be documented in this file.
 
@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - 2026-04-26 14:30:38 :bug: remove unnecessary body padding for iOS safe areas _by @shin-sforzando_
 - 2026-05-15 10:16:40 :bug: increase webServer timeout for CI _by @shin-sforzando_
 - 2026-05-15 10:39:58 :bug: fix tag page partial reference and improve navigation tests _by @shin-sforzando_
+- 2026-07-27 19:29:12 :bug: grant gh permissions to Claude Code Review workflow _by @shin-sforzando_
 
 ### Features
 
