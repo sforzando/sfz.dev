@@ -19,6 +19,8 @@ All notable changes to this project will be documented in this file.
 - 2026-05-15 10:39:58 :bug: fix tag page partial reference and improve navigation tests _by @shin-sforzando_
 - 2026-07-27 19:29:12 :bug: grant gh permissions to Claude Code Review workflow _by @shin-sforzando_
 - 2026-07-27 20:52:16 :bug: allow review subagents to read the repository _by @shin-sforzando_
+- 2026-07-27 21:20:02 :bug: wait for visible images before works screenshots _by @shin-sforzando_
+- 2026-07-28 03:24:55 :bug: allow the Skill tool so the review plugin can start _by @shin-sforzando_
 
 ### Features
 
