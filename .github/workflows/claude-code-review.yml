@@ -41,17 +41,15 @@ jobs:
           prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }} --comment'
           display_report: true
           use_sticky_comment: true
-          # TEMPORARY (revert once diagnosed): the run reports success but never
-          # comments, and permission_denials_count stays at 1 no matter what the
-          # allow list below grants. The SDK output is hidden by default and
-          # display_report writes an empty job summary, so there is no other way
-          # to see which call is refused. Remove this as soon as it is known.
-          show_full_output: true
           # Because the PR head is untrusted, the action restores .claude/ from the
           # base branch, so this repository's settings.local.json allow list governs
-          # the run. It grants gh api and gh run but no gh pr, so the plugin's very
-          # first gate check (gh pr view --comments, to see whether Claude already
-          # reviewed) was denied and the run ended after 3 turns without commenting.
+          # the run, and anything missing from it is refused.
+          #
+          # Skill is what actually blocked this for three runs: the prompt below is
+          # a slash command, so Claude reaches for the Skill tool to start the
+          # plugin and was refused before running a single step. It then improvised
+          # its own agents and finished without commenting. Only the code-review
+          # plugin is installed here, so allowing Skill grants nothing else.
           #
           # The gh entries mirror the plugin's allowed-tools frontmatter. The rest
           # cover what its subagents need but the frontmatter does not declare: the
@@ -75,6 +73,7 @@ jobs:
                   "Glob",
                   "Grep",
                   "Read",
+                  "Skill",
                   "mcp__github_inline_comment__create_inline_comment"
                 ]
               }
