@@ -26,12 +26,12 @@ summaryLength = 0
   # copies, so this makes a stale pin fail loudly instead of building silently
   # on a different Hugo. Congo needs the extended edition for TailwindCSS.
   hugoVersion = { min = "0.164.0", extended = true }
+  # mapbox-gl is loaded as a prebuilt bundle by the mapboxGl shortcode, so its
+  # dist has to be reachable from assets. three needs no such mount: it is
+  # imported from node_modules and bundled by js.Build.
   [[module.mounts]]
     source = "node_modules/mapbox-gl/dist"
     target = "assets/vendor/mapbox-gl"
-  [[module.mounts]]
-    source = "node_modules/three/build"
-    target = "assets/vendor/three"
   [[module.mounts]]
     source = "assets"
     target = "assets"
