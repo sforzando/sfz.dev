@@ -22,10 +22,11 @@ summaryLength = 0
   getenv = ["^HUGO_", "^MAPBOX"]
 
 [module]
-  # Single source of truth for the Hugo version. Netlify and CI pin their own
-  # copies, so this makes a stale pin fail loudly instead of building silently
-  # on a different Hugo. Congo needs the extended edition for TailwindCSS.
-  hugoVersion = { min = "0.164.0", extended = true }
+  # No hugoVersion here: it only warns consumers of a module, so it does nothing
+  # for a root project like this one -- a bogus min of 9.999.0 still builds
+  # clean. The Hugo version is pinned in netlify.toml and playwright.yml, and
+  # keeping those in step is a manual job for now.
+  #
   # mapbox-gl is loaded as a prebuilt bundle by the mapboxGl shortcode, so its
   # dist has to be reachable from assets. three needs no such mount: it is
   # imported from node_modules and bundled by js.Build.
