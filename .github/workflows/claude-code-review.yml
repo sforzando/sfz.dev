@@ -38,7 +38,12 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
-          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }} --comment'
+          # Pass the full URL. The plugin feeds this straight to `gh pr view`,
+          # which only understands a number, a full URL or a branch name -- the
+          # old owner/repo/pull/N string was read as a branch and failed with
+          # "no pull requests found for branch", so the plugin could not tell
+          # whether it had already reviewed the PR and stopped at its first step.
+          prompt: '/code-review:code-review ${{ github.event.pull_request.html_url }} --comment'
           display_report: true
           use_sticky_comment: true
           # Because the PR head is untrusted, the action restores .claude/ from the
