@@ -46,6 +46,11 @@ jobs:
           prompt: '/code-review:code-review ${{ github.event.pull_request.html_url }} --comment'
           display_report: true
           use_sticky_comment: true
+          # TEMPORARY (revert once diagnosed): denials are zero and the plugin
+          # now starts, but it still finishes in ~7 turns without commenting.
+          # Its first step may be deciding the change needs no review, which is
+          # not observable while the output is hidden. Remove once known.
+          show_full_output: true
           # Because the PR head is untrusted, the action restores .claude/ from the
           # base branch, so this repository's settings.local.json allow list governs
           # the run, and anything missing from it is refused.
