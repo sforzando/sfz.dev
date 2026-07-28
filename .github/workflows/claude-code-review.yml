@@ -41,6 +41,12 @@ jobs:
           prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }} --comment'
           display_report: true
           use_sticky_comment: true
+          # TEMPORARY (revert once diagnosed): the run reports success but never
+          # comments, and permission_denials_count stays at 1 no matter what the
+          # allow list below grants. The SDK output is hidden by default and
+          # display_report writes an empty job summary, so there is no other way
+          # to see which call is refused. Remove this as soon as it is known.
+          show_full_output: true
           # Because the PR head is untrusted, the action restores .claude/ from the
           # base branch, so this repository's settings.local.json allow list governs
           # the run. It grants gh api and gh run but no gh pr, so the plugin's very
