@@ -23,17 +23,17 @@
 [[main]]
   name = "Teams"
   pageRef = "teams"
-  weight = 25
+  weight = 30
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 40
 
 [[main]]
   name = "Contact"
   pageRef = "contact"
-  weight = 40
+  weight = 50
 
 [[main]]
   identifier = "search"
