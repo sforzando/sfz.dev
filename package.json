@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
   "dependencies": {
+    "@microsoft/clarity": "^1.0.2",
     "mapbox-gl": "^3.27.0",
     "three": "^0.185.1"
   },

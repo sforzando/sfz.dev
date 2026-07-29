@@ -15,6 +15,24 @@
   integrity="{{ $js.Data.Integrity }}"
 ></script>
 
+{{/* Microsoft Clarity — production only, matching the theme's analytics gate */}}
+{{ $clarityProjectId := .Site.Params.clarityAnalytics.projectId | default "" }}
+{{ if and hugo.IsProduction $clarityProjectId }}
+  {{ $clarity := resources.Get "js/clarity.ts"
+    | js.Build (dict
+    "minify" hugo.IsProduction
+    "params" (dict "projectId" $clarityProjectId)
+    )
+    | resources.Fingerprint "sha512"
+  }}
+  <script
+    defer
+    type="text/javascript"
+    src="{{ $clarity.RelPermalink }}"
+    integrity="{{ $clarity.Data.Integrity }}"
+  ></script>
+{{ end }}
+
 {{/* Tag cloud — loaded on posts list and tag term pages */}}
 {{ if or
   (and (eq .Section "posts") (eq .Kind "section"))
