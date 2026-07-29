@@ -58,12 +58,6 @@ jobs:
             job ends and the review is lost before it can be posted.
           display_report: true
           use_sticky_comment: true
-          # TEMPORARY (revert once confirmed): PR #90 was the first run to clear
-          # the gate and actually review, and it hit 10 denials in the process.
-          # Task and TodoWrite below are the gaps the plugin's steps point to,
-          # but the denial list is not visible without this, so keep it on until
-          # a run comes back with zero denials and a posted comment.
-          show_full_output: true
           # Because the PR head is untrusted, the action restores .claude/ from the
           # base branch, so this repository's settings.local.json allow list governs
           # the run, and anything missing from it is refused.
