@@ -1,3 +1,9 @@
+# Warns when Hugo is older than this. It does not fail the build, so treat it
+# as a signal rather than a gate. Keep in step with the pins in netlify.toml
+# and .github/workflows/playwright.yml.
+#
+# No extended here: the flag was deprecated in Hugo v0.153.0 and the check was
+# removed in v0.153.2, since WebP now works in every edition and LibSass gave
+# way to Dart Sass.
 [hugoVersion]
-  extended = true
-  min = "0.146.0"
+  min = "0.164.0"

@@ -22,10 +22,10 @@ summaryLength = 0
   getenv = ["^HUGO_", "^MAPBOX"]
 
 [module]
-  # Single source of truth for the Hugo version. Netlify and CI pin their own
-  # copies, so this makes a stale pin fail loudly instead of building silently
-  # on a different Hugo. Congo needs the extended edition for TailwindCSS.
-  hugoVersion = { min = "0.164.0", extended = true }
+  # hugoVersion lives in module.toml, not here. Files in this directory merge
+  # under a key taken from their basename, so module.toml's [hugoVersion] lands
+  # on module.hugoVersion and, being read later, wins over anything set here.
+  #
   # mapbox-gl is loaded as a prebuilt bundle by the mapboxGl shortcode, so its
   # dist has to be reachable from assets. three needs no such mount: it is
   # imported from node_modules and bundled by js.Build.
