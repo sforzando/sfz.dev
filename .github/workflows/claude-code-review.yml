@@ -46,6 +46,12 @@ jobs:
           prompt: '/code-review:code-review ${{ github.event.pull_request.html_url }} --comment'
           display_report: true
           use_sticky_comment: true
+          # TEMPORARY (revert once confirmed): PR #90 was the first run to clear
+          # the gate and actually review, and it hit 10 denials in the process.
+          # Task and TodoWrite below are the gaps the plugin's steps point to,
+          # but the denial list is not visible without this, so keep it on until
+          # a run comes back with zero denials and a posted comment.
+          show_full_output: true
           # Because the PR head is untrusted, the action restores .claude/ from the
           # base branch, so this repository's settings.local.json allow list governs
           # the run, and anything missing from it is refused.
@@ -55,6 +61,9 @@ jobs:
           # plugin and was refused before running a single step. It then improvised
           # its own agents and finished without commenting. Only the code-review
           # plugin is installed here, so allowing Skill grants nothing else.
+          #
+          # Every step of the plugin launches a subagent and it is told to open a
+          # todo list first, hence Task and TodoWrite.
           #
           # The gh entries mirror the plugin's allowed-tools frontmatter. The rest
           # cover what its subagents need but the frontmatter does not declare: the
@@ -79,6 +88,8 @@ jobs:
                   "Grep",
                   "Read",
                   "Skill",
+                  "Task",
+                  "TodoWrite",
                   "mcp__github_inline_comment__create_inline_comment"
                 ]
               }
