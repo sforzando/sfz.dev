@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file.
 - 2026-07-28 03:24:55 :bug: allow the Skill tool so the review plugin can start _by @shin-sforzando_
 - 2026-07-28 05:20:51 :bug: pass a PR reference gh can actually resolve _by @shin-sforzando_
 - 2026-07-29 04:07:26 :bug: let the review launch subagents and track todos _by @shin-sforzando_
+- 2026-07-29 04:24:51 :bug: keep the review agents in the foreground _by @shin-sforzando_
 
 ### Features
 
