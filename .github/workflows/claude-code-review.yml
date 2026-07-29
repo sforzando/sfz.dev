@@ -43,7 +43,19 @@ jobs:
           # old owner/repo/pull/N string was read as a branch and failed with
           # "no pull requests found for branch", so the plugin could not tell
           # whether it had already reviewed the PR and stopped at its first step.
-          prompt: '/code-review:code-review ${{ github.event.pull_request.html_url }} --comment'
+          #
+          # The foreground instruction is what makes the review survive to the
+          # end. Left alone, step 4 starts its four reviewers in the background
+          # and the main agent closes its turn to await them. A turn ending is
+          # the whole job ending here, so their findings were discarded and
+          # nothing was ever posted.
+          prompt: |
+            /code-review:code-review ${{ github.event.pull_request.html_url }} --comment
+
+            Run every agent in the foreground and wait for its result before
+            continuing. This is a headless run with no one to receive a
+            background notification: if you end your turn waiting for one, the
+            job ends and the review is lost before it can be posted.
           display_report: true
           use_sticky_comment: true
           # TEMPORARY (revert once confirmed): PR #90 was the first run to clear
@@ -74,6 +86,7 @@ jobs:
             {
               "permissions": {
                 "allow": [
+                  "Bash(gh api:*)",
                   "Bash(gh issue list:*)",
                   "Bash(gh issue view:*)",
                   "Bash(gh pr comment:*)",
