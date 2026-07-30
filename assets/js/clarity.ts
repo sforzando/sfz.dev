@@ -1,6 +1,5 @@
-// Microsoft Clarity — heatmaps and session replay.
-// The npm package is a thin loader: init() injects https://www.clarity.ms/tag/<id>
-// asynchronously and guards against duplicate injection itself.
+// Preferred over Clarity's raw <script> snippet so the project ID travels through
+// js.Build params under type checking and the version stays tracked in package.json.
 import Clarity from "@microsoft/clarity"
 import params from "@params"
 
