@@ -68,6 +68,11 @@ mainSections = ["posts"]
 [fathomAnalytics]
   site = "NDBFFLKC"
 
+# Clarity treats the project ID as the client API key and expects it in plain
+# markup, so it is committed here rather than injected via getenv.
+[clarityAnalytics]
+  projectId = "9a6aus6eoq"
+
 [verification]
   # google = ""
   # bing = ""

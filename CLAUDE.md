@@ -109,8 +109,14 @@ PostsページおよびTagページに表示されるラジアルタグクラウ
 
 ### アナリティクス
 
-- **Google Analytics**: G-L2MP8FTCW6
-- **Fathom Analytics**: NDBFFLKC
+- **Google Analytics**: G-L2MP8FTCW6（`config/_default/hugo.toml`）
+- **Fathom Analytics**: NDBFFLKC（`config/_default/params.toml`）
+- **Microsoft Clarity**: 9a6aus6eoq（`config/_default/params.toml` の `[clarityAnalytics]`）
+  - ヒートマップ・セッションリプレイ担当。`@microsoft/clarity` を `assets/js/clarity.ts` から読み、`layouts/partials/extend-head.html` でバンドル
+  - 本番ビルドかつ `projectId` が空でない場合のみスクリプトが出力される
+  - Cookie同意基盤は未整備（Issue #98）
+
+> **注意**: 上記のIDはいずれもクライアントに露出する前提の公開値であり、秘匿情報ではない。
 
 ### デプロイ（Netlify）
 
