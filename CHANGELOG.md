@@ -70,6 +70,7 @@ All notable changes to this project will be documented in this file.
 - 2026-07-06 21:08:12 :art: format language condition for advisor heading _by @shin-sforzando_
 - 2026-07-29 04:17:50 :art: space the main menu weights evenly _by @shin-sforzando_
 - 2026-07-30 06:59:42 :art: clarity.tsの冒頭コメントを「なぜ」の説明に書き換える _by @shin-sforzando_
+- 2026-08-14 09:25:19 :art: Tailwindが拾う語をテンプレートのコメントから外す _by @shin-sforzando_
 
 ### Testing
 
