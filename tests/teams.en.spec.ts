@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test"
+import { waitForVisibleImages } from "./helpers"
 
 test("teams en", async ({ page }) => {
   await page.goto("/teams/")
+  await waitForVisibleImages(page)
   await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
   await expect(page.getByText("Shin'ichiro")).toBeVisible()
   await expect(page.getByText("Sakai")).toBeVisible()

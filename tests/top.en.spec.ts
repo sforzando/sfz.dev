@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test"
+import { waitForVisibleImages } from "./helpers"
 
 test("top en", async ({ page }) => {
   await page.goto("/")
+  await waitForVisibleImages(page)
   await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
 
   const menuButton = page.locator("#menu-button")

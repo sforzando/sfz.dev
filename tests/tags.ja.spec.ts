@@ -1,9 +1,11 @@
 import { expect, test } from "@playwright/test"
+import { waitForVisibleImages } from "./helpers"
 
 test.describe("tags ja", () => {
   test("tag term list", async ({ page }) => {
     await page.goto("/ja/tags/works/")
     await expect(page.locator("article").first()).toBeVisible()
+    await waitForVisibleImages(page)
     await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
   })
 
@@ -11,6 +13,7 @@ test.describe("tags ja", () => {
     await page.goto("/ja/tags/works/")
     await expect(page.locator("#tag-cloud")).toBeVisible()
     await expect(page.locator("#tag-cloud a").first()).toBeVisible()
+    await waitForVisibleImages(page)
     await expect(await page.screenshot()).toMatchSnapshot({ threshold: 0.3 })
   })
 
