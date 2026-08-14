@@ -22,8 +22,12 @@
     />
     {{/* .Summary is unusable here: summaryLength is 0 site-wide because word
       counting is meaningless for Japanese, so it always returns empty.
-      Slice .Plain by character count instead and collapse the whitespace
+      Slice .Plain by character count instead and squeeze the whitespace
       that paragraph breaks would otherwise leave in the excerpt.
+
+      Avoid Tailwind utility names in these comments: the JIT scanner extracts
+      tokens from the whole file without parsing it, so a bare utility word
+      written in prose emits an unused rule into the compiled CSS.
     */}}
     {{ $excerpt := .Plain | replaceRE `\s+` " " | truncate 120 }}
     {{ with $excerpt }}
