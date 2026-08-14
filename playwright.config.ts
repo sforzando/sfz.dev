@@ -50,6 +50,16 @@ const config: PlaywrightTestConfig = {
     baseURL: process.env.BASE_URL || "http://localhost:1314",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
+    /**
+     * Works cards reveal themselves with `animation-timeline: view()`, so which
+     * cards count as "entered" depends on capture timing and full-page
+     * screenshots come out non-deterministic. Forcing reduce trips the
+     * prefers-reduced-motion guard in custom.css, which disables the reveal and
+     * renders every card at full opacity. Real visitors are unaffected.
+     */
+    contextOptions: {
+      reducedMotion: "reduce",
+    },
   },
   /* Configure projects for major browsers */
   projects: [
