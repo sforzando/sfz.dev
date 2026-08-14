@@ -97,3 +97,67 @@ html.dark::view-transition {
 #tag-cloud {
   height: clamp(240px, 50vw, 320px);
 }
+
+/* Works card summary overlay. Gated on (hover: hover) because a hover-only
+   reveal strands the summary on touch devices; those users read the client
+   name from the always-visible card footer instead, so nothing is lost.
+   pointer-events:none keeps the title link's ::after card-wide hit area intact. */
+@media (hover: hover) {
+  .works-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    /* Keeps a floor of contrast across the whole panel rather than only at the
+       bottom: the excerpt can wrap to several lines over an arbitrarily bright
+       photo, and a gradient fading to transparent leaves the top lines unreadable. */
+    background: linear-gradient(
+      to top,
+      rgb(0 0 0 / 0.9),
+      rgb(0 0 0 / 0.6) 60%,
+      rgb(0 0 0 / 0.45)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* focus-within keeps the summary reachable for keyboard navigation. */
+  .works-card:hover .works-card__overlay,
+  .works-card:focus-within .works-card__overlay {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .works-card__overlay {
+    display: none;
+  }
+}
+
+/* Scroll-driven reveal, guarded twice on purpose:
+   @supports so browsers without animation-timeline never leave cards stuck at
+   opacity 0 (Safari <= 18.7 and Firefox <= 155 as of 2026-08), and
+   prefers-reduced-motion so the effect stays opt-out. Without the @supports
+   gate the initial opacity would be permanent on those browsers. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .works-card {
+      animation: works-card-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
+}
+
+@keyframes works-card-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

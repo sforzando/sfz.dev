@@ -1,39 +1,75 @@
-<article class="group sm:flex lg:items-start">
-  <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-    <a href="{{ .RelPermalink }}">
-      {{ $thumbnail := resources.Get .Params.thumbnail }}
-      {{ if not $thumbnail }}
-        {{ $thumbnail = resources.Get "img/wip.jpg" }}
-      {{ end }}
-      <img
-        class="w-full rounded-lg object-cover transition hover:scale-105 sm:h-32 sm:w-32"
-        src="{{ $thumbnail.RelPermalink }}"
-        alt="{{ .Title | emojify }}"
-      />
-    </a>
+{{/* Card-wide click target comes from an ::after pseudo-element on the title
+  link rather than wrapping the card in an <a>, because article-meta.html
+  emits its own tag anchors and nesting anchors is invalid HTML.
+*/}}
+<article class="works-card group relative">
+  <div class="relative overflow-hidden rounded-lg">
+    {{ $thumbnail := resources.Get .Params.thumbnail }}
+    {{ if not $thumbnail }}
+      {{ $thumbnail = resources.Get "img/wip.jpg" }}
+    {{ end }}
+    {{/* Fill normalizes every thumbnail to 16:9 whatever its source aspect ratio,
+      so the grid stays aligned without changing the image naming convention.
+    */}}
+    {{ $card := $thumbnail.Fill "1200x675 Center" }}
+    <img
+      class="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      src="{{ $card.RelPermalink }}"
+      width="{{ $card.Width }}"
+      height="{{ $card.Height }}"
+      loading="lazy"
+      alt="{{ .Title | emojify }}"
+    />
+    {{/* .Summary is unusable here: summaryLength is 0 site-wide because word
+      counting is meaningless for Japanese, so it always returns empty.
+      Slice .Plain by character count instead and collapse the whitespace
+      that paragraph breaks would otherwise leave in the excerpt.
+    */}}
+    {{ $excerpt := .Plain | replaceRE `\s+` " " | truncate 120 }}
+    {{ with $excerpt }}
+      <div class="works-card__overlay">
+        <p class="text-sm leading-relaxed text-neutral-50">{{ . }}</p>
+      </div>
+    {{ end }}
   </div>
-  <div>
-    <div class="mt-3 text-lg font-medium leading-6">
-      <h3
-        style="{{ with .File }}
-          view-transition-name:
-          article-{{ .UniqueID }}
-        {{ end }}"
+  <div class="mt-4">
+    <h3
+      class="text-xl font-medium leading-6"
+      style="{{ with .File }}
+        view-transition-name:
+        article-{{ .UniqueID }}
+      {{ end }}"
+    >
+      <a
+        href="{{ .RelPermalink }}"
+        class="text-neutral-800 after:absolute after:inset-0 hover:text-primary-600 dark:text-neutral-100 dark:hover:text-primary-400"
       >
-        <a
-          href="{{ .RelPermalink }}"
-          class="text-xl text-gray-800 hover:text-gray-500"
-        >
-          {{ .Title | emojify }}
-        </a>
-        {{ if and .Draft .Site.Params.article.showDraftLabel }}
-          <div class="inline">
-            {{ partial "badge.html" (i18n "article.draft" | emojify) }}
-          </div>
-        {{ end }}
-      </h3>
-    </div>
-    <span class="text-sm text-gray-500">
+        {{ .Title | emojify }}
+      </a>
+      {{ if and .Draft .Site.Params.article.showDraftLabel }}
+        <div class="inline">
+          {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+        </div>
+      {{ end }}
+    </h3>
+    {{/* Clients stay outside the hover overlay so touch users never lose them. */}}
+    {{ with .Params.clients }}
+      {{/* delimit keeps the separator inside a string literal. Written as a bare
+        text node, Prettier would strip its surrounding spaces on every format
+        run and the names would run together.
+      */}}
+      {{ $names := slice }}
+      {{ range . }}
+        {{ $names = $names | append .name }}
+      {{ end }}
+      <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+        {{ delimit $names " / " }}
+      </p>
+    {{ end }}
+    {{/* z-10 lifts the meta block above the title link's ::after overlay, which
+      would otherwise swallow clicks on the tag links rendered inside it.
+    */}}
+    <span class="relative z-10 text-sm text-neutral-500 dark:text-neutral-400">
       {{ partial "article-meta.html" . }}
     </span>
   </div>

@@ -28,15 +28,15 @@
   "homepage": "https://github.com/sforzando/sfz.dev#readme",
   "dependencies": {
     "@microsoft/clarity": "^1.0.2",
-    "mapbox-gl": "^3.27.0",
+    "mapbox-gl": "^3.28.1",
     "three": "^0.185.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.6",
+    "@biomejs/biome": "2.5.8",
     "@faker-js/faker": "^10.5.0",
-    "@playwright/test": "^1.62.0",
-    "@types/node": "^26.1.1",
-    "@types/three": "^0.185.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "@types/three": "^0.185.4",
     "dotenv": "^17.4.2",
     "lefthook": "^2.1.10",
     "lighthouse": "^13.4.1",
@@ -44,7 +44,7 @@
     "prettier": "^3.9.6",
     "prettier-plugin-go-template": "^0.0.15",
     "serve": "^14.2.6",
-    "tsx": "^4.23.1",
+    "tsx": "^4.23.12",
     "typescript": "^6.0.3"
   }
 }
