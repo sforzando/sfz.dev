@@ -1,6 +1,6 @@
 ---
 title: "Flipples"
-date: 2026-08-14T00:00:00+09:00
+date: 2026-08-12T00:00:00+09:00
 draft: true
 sharingLinks: false
 showAuthor: true
@@ -34,7 +34,7 @@ collaborators:
     url: "https://embodyme.com"
     credits:
       - "DigiSelf TTS API"
-  - name: "Picos LLC"
+  - name: "Picos LLC."
     url: "https://picospec.co.jp"
     credits:
       - "Frontend: Tomonori Kawata"
