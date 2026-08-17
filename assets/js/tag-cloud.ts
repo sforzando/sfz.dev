@@ -129,7 +129,7 @@ function renderTagCloud(
     el.textContent = d.name
 
     // Clamp each tag's center offset to the safe area so no tag can escape the
-    // container boundary regardless of GPU compositor clipping behaviour.
+    // container boundary regardless of GPU compositor clipping behavior.
     const clampedX = Math.max(
       -safeHalfW,
       Math.min(safeHalfW, positions[i].baseX)

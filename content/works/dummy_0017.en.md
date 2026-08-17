@@ -31,19 +31,19 @@ references:
     url: "https://ornery-representation.org/"
   - name: "anser testimonium torrens"
     url: "https://gleaming-newsletter.org"
-thumbnail: "img/works/dummy_0017_thumbnail.jpg"
+thumbnail: "img/works/dummy_0017/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0017_key.jpg" alt="dummy_0017" >}}
+{{< figure src="../img/works/dummy_0017/key.jpg" alt="dummy_0017" >}}
 
 Bestia delinquo velociter trado cogito. Bonus depraedor culpo comedo arcus viduo. Suppellex custodia error tersus victus coruscus tres adhuc maiores.
 
 Argentum cruciamentum clibanus viscus sum deorsum. Curiositas virga fugiat comptus terminatio cena labore. Omnis umbra deduco defessus textilis usitas adsuesco.
 
-{{< figure class="w-screen" src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0017/sub.jpg" alt="dummy_0017" >}}
 
 Tunc canis sulum conturbo officiis cruentus aestas. Apud amissio sumo ascisco teres denuncio approbo caute. Contego nobis umerus.
 
 Varietas tamquam creator carus paulatim. Colo deficio viridis articulus. Adicio creber a quisquam neque solitudo crastinus.
 
-{{< figure src="../img/works/dummy_0017_sub.jpg" alt="dummy_0017" >}}
+{{< figure src="../img/works/dummy_0017/sub.jpg" alt="dummy_0017" >}}

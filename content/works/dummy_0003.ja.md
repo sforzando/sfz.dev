@@ -36,19 +36,19 @@ references:
     url: "https://primary-waist.name/"
   - name: "公式ウェブサイト"
     url: "https://foolish-gripper.biz"
-thumbnail: "img/works/dummy_0003_thumbnail.jpg"
+thumbnail: "img/works/dummy_0003/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0003_key.jpg" alt="dummy_0003" >}}
+{{< figure src="../img/works/dummy_0003/key.jpg" alt="dummy_0003" >}}
 
 済ます 誓い つく ちょうしゃ めいわくめーる かくしゅう. ふくぶくろ おととい さと 米国 巡回 あらかじめ ないしょばなし ぎゃくしゅう 金星. 糸 いちだい 差し上げる 移譲 米国.
 
 にゅうせき きひん 旧姓 ぎじゅく はきだす 七つ. 殻 ちょうりょく もはん. にる 歯を磨く のうし だくりゅう 歯を磨く 程 人柄 たおす 色彩.
 
-{{< figure class="w-screen" src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0003/sub.jpg" alt="dummy_0003" >}}
 
 はんけん あがる つみ. 会議 閉じる みつ ふそく 滝 となえる 見当たる よそく 入江 原油. 洋服 いしずえ 運ぶ.
 
 歌謡 買い物 金縛り 累進 しばふ. うらぎり となえる 勝手 誓い あがる ちかく ちんみ. けいけんしゃ かいそく せっぷく ちょくせつ りょこう.
 
-{{< figure src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}
+{{< figure src="../img/works/dummy_0003/sub.jpg" alt="dummy_0003" >}}

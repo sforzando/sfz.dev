@@ -32,19 +32,19 @@ references:
     url: "https://tangible-slipper.name"
   - name: "関連技術ドキュメント"
     url: "https://scared-numeric.biz/"
-thumbnail: "img/works/dummy_0010_thumbnail.jpg"
+thumbnail: "img/works/dummy_0010/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0010_key.jpg" alt="dummy_0010" >}}
+{{< figure src="../img/works/dummy_0010/key.jpg" alt="dummy_0010" >}}
 
 配慮 ちらかす ねばる こうぎょう ぼうず いか 思い遣り せんげん. 髪の毛 こくみん すみ. りゃくご てんのう シアトルし はなじ きぼうする 構える 移動.
 
 哺育 雑音 当て字 あらかじめ. 問題 むぜい 人口 左手 基盤 ようじ 運ぶ. 間隔 ぎせいしゃ しゃくや じどうし.
 
-{{< figure class="w-screen" src="../img/works/dummy_0010_sub.jpg" alt="dummy_0010" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0010/sub.jpg" alt="dummy_0010" >}}
 
 いつ頃 とふ 開閉 じょうだん 六 月刊 すける. え 請ける 並 基盤 逆 かんさい. とふ さくにゅう 公共 待合 書き方 おおちがい ひとごみ.
 
 狂う とちょう ちめいてき 誤用 よくあつ もくひょう 床 怖い いちだい 冷酷. ことばつき 殻 うみ ねんがん 悲しみ 比較 火葬 液体 乗せる. 仰々しい ふくへい めいよ.
 
-{{< figure src="../img/works/dummy_0010_sub.jpg" alt="dummy_0010" >}}
+{{< figure src="../img/works/dummy_0010/sub.jpg" alt="dummy_0010" >}}

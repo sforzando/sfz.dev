@@ -29,19 +29,19 @@ references:
     url: "https://mindless-department.com"
   - name: "coma vulnus"
     url: "https://monumental-glider.info"
-thumbnail: "img/works/dummy_0008_thumbnail.jpg"
+thumbnail: "img/works/dummy_0008/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0008_key.jpg" alt="dummy_0008" >}}
+{{< figure src="../img/works/dummy_0008/key.jpg" alt="dummy_0008" >}}
 
 Corrigo ultra cauda stultus conspergo caterva. Delinquo animi thermae auctor tribuo anser peccatus antiquus tandem decor. Urbanus sublime patior nisi coruscus inflammatio bardus utroque apto adiuvo.
 
 Tamquam et adduco antiquus antiquus cetera tabgo utpote curvo valens. Adfectus similique aetas. Varietas cimentarius trans nihil tandem minus.
 
-{{< figure class="w-screen" src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0008/sub.jpg" alt="dummy_0008" >}}
 
 Demitto voveo explicabo defluo arbitro sufficio taedium vicinus viduo. Appono adsum repellendus bellicus solium victus illum. Ultra quo caries custodia.
 
 Absens cimentarius alius. Aperte coniuratio alii accusator volup delinquo sono et varietas. Ratione amplexus est solio strenuus stultus.
 
-{{< figure src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
+{{< figure src="../img/works/dummy_0008/sub.jpg" alt="dummy_0008" >}}

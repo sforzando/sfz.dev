@@ -1,0 +1,48 @@
+name: Lint
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  CLICOLOR: 1
+
+jobs:
+  lint:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+    # No submodules: every linter here excludes themes/, so fetching Congo
+    # would only cost time.
+    - uses: actions/checkout@v4
+    # Pinned to a patch release rather than @v1, because a new typos release
+    # can find new typos and turn a branch red without any change of ours.
+    - name: Check spelling
+      uses: crate-ci/typos@v1.49.0
+    - name: Setup Task
+      uses: go-task/setup-task@v2
+      with:
+        version: 3.x
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/setup-node@v6
+      with:
+        node-version-file: ".node-version"
+        cache: "npm"
+    # Not task install:ci, which also downloads Playwright browsers and the
+    # theme's dependencies that no linter here needs.
+    - name: Install Dependencies
+      run: npm ci
+    - name: Run linters
+      run: task lint:ci

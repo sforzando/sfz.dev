@@ -30,19 +30,19 @@ collaborators:
   - name: "Fisher, Franecki and Nikolaus"
     credits:
       - "PM: Luettgen"
-thumbnail: "img/works/dummy_0009_thumbnail.jpg"
+thumbnail: "img/works/dummy_0009/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0009_key.jpg" alt="dummy_0009" >}}
+{{< figure src="../img/works/dummy_0009/key.jpg" alt="dummy_0009" >}}
 
 Desino admiratio curo vigor texo absum tibi adfectus cubo officia. Necessitatibus tactus sapiente ait pecco solio cum. Aqua dolores acerbitas.
 
 Sed utroque depono tempore. Socius utilis bis sub. Viriliter desparatus suffoco demens venustas coniecto curso.
 
-{{< figure class="w-screen" src="../img/works/dummy_0009_sub.jpg" alt="dummy_0009" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0009/sub.jpg" alt="dummy_0009" >}}
 
 Amet decumbo claustrum dignissimos subnecto ceno solitudo inventore defaeco. Bene varietas basium una corpus nisi. Ulciscor quia templum.
 
 Conforto angulus talio tutamen vilicus carcer bellicus aer. Testimonium velum conor inventore deorsum cohaero adnuo. Apto crinis temperantia cumque volva cura.
 
-{{< figure src="../img/works/dummy_0009_sub.jpg" alt="dummy_0009" >}}
+{{< figure src="../img/works/dummy_0009/sub.jpg" alt="dummy_0009" >}}

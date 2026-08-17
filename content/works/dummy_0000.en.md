@@ -31,19 +31,19 @@ collaborators:
 references:
   - name: "coerceo contabesco voluptatibus"
     url: "https://short-term-dead.com/"
-thumbnail: "img/works/dummy_0000_thumbnail.jpg"
+thumbnail: "img/works/dummy_0000/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
+{{< figure src="../img/works/dummy_0000/key.jpg" alt="dummy_0000" >}}
 
 Magnam cervus arbitro quae victus. Teres venio sufficio attollo facere acervus spectaculum advenio antepono. Decor concido maiores vociferor quod sed uredo.
 
 Minus voluptatibus quas accusantium denuncio suasoria absens amet. Repellat caste attollo defetiscor tondeo amor. Animadverto corrumpo crapula vereor magnam defendo antiquus sequi.
 
-{{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0000/sub.jpg" alt="dummy_0000" >}}
 
 Fugit sulum timor. Certe tamisium toties video. Deputo nostrum caelestis coniecto eum.
 
 Theca voluntarius iusto illo comedo. Aro vulgo credo soleo expedita defaeco thema thalassinus rem. Tergeo vere attero vulgivagus.
 
-{{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
+{{< figure src="../img/works/dummy_0000/sub.jpg" alt="dummy_0000" >}}
