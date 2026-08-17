@@ -34,19 +34,19 @@ collaborators:
 references:
   - name: "公式ウェブサイト"
     url: "https://paltry-verve.net/"
-thumbnail: "img/works/dummy_0005_thumbnail.jpg"
+thumbnail: "img/works/dummy_0005/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0005_key.jpg" alt="dummy_0005" >}}
+{{< figure src="../img/works/dummy_0005/key.jpg" alt="dummy_0005" >}}
 
 漠然 いままで おおごえ 普及 切迫 残業 かく. きょうしつ ちんもく 大丈夫 せいかん あわれ 一生. 廃棄 すみ こうせい 延長.
 
 りゅうこうご 残業 ために おうしゅう 閉じる ふたたび ぞくご せんたくする. まぎらす 薬 だいがくいんせい めいし のうし 知り合い. れつあく しゅしょう 累進 ごうけん 年額 底 果樹.
 
-{{< figure class="w-screen" src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0005/sub.jpg" alt="dummy_0005" >}}
 
 きゅうりょう 双 のぞいて たいさ. 窒息 うえる おおごえ 休日 いさぎよい 品詞. だくりゅう とうき そあく ふくせん 禅寺 たらす はりい たいりく.
 
 下着 よくあつ 奔放 うえる れいせい とうさん いたずら 栄誉 ぞくご. しっぺい 難しい 思い遣り じじょでん 乾燥 鶴 ごらん へいがい 象牙 はなのあな. 貨物船 りゅうこうご 浅い 待遇 濃紺 うらぎり.
 
-{{< figure src="../img/works/dummy_0005_sub.jpg" alt="dummy_0005" >}}
+{{< figure src="../img/works/dummy_0005/sub.jpg" alt="dummy_0005" >}}

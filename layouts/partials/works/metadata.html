@@ -93,10 +93,24 @@
         </h3>
         <div class="space-y-2">
           {{ range .Params.references }}
+            {{/* A reference may point at a file shipped in assets/ (a press
+              release PDF, say) instead of an external URL. Those are resolved
+              through the asset pipeline, which is also what publishes them:
+              Hugo only emits assets that something actually references. URLs
+              carrying a scheme are passed through untouched.
+            */}}
+            {{ $url := .url }}
+            {{ if and $url (not (strings.Contains $url "://")) }}
+              {{ with resources.Get $url }}
+                {{ $url = .RelPermalink }}
+              {{ else }}
+                {{ errorf "works/metadata: reference asset not found: %q" $url }}
+              {{ end }}
+            {{ end }}
             <div>
-              {{ if .url }}
+              {{ if $url }}
                 <a
-                  href="{{ .url }}"
+                  href="{{ $url }}"
                   target="_blank"
                   rel="noopener"
                   class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-400"

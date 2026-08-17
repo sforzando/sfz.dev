@@ -39,19 +39,19 @@ references:
     url: "https://needy-comparison.biz/"
   - name: "adsum vis"
     url: "https://sure-footed-cheetah.name"
-thumbnail: "img/works/dummy_0020_thumbnail.jpg"
+thumbnail: "img/works/dummy_0020/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0020_key.jpg" alt="dummy_0020" >}}
+{{< figure src="../img/works/dummy_0020/key.jpg" alt="dummy_0020" >}}
 
 Suasoria volva unde adfectus defaeco. Vivo asperiores adduco demum patior quam avaritia alo. Aestus titulus videlicet comes viridis talus aptus deludo.
 
 Vomica absens tremo certe cattus virgo. Vomica tempus cometes canonicus calculus depereo solus degusto votum. Carpo super cervus coadunatio patior tener defluo umerus adversus maxime.
 
-{{< figure class="w-screen" src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0020/sub.jpg" alt="dummy_0020" >}}
 
 Damno solus desolo voluptas copia cavus adficio praesentium. Tabgo decerno averto supellex delinquo venustas tabesco. Tolero congregatio veritatis thermae uberrime.
 
 Adficio calco basium suscipio volaticus aperiam. Temeritas atque deduco tergeo cicuta terminatio tenus deludo amo. Toties spiculum subiungo officia quae utor tonsor tubineus confugo valde.
 
-{{< figure src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
+{{< figure src="../img/works/dummy_0020/sub.jpg" alt="dummy_0020" >}}

@@ -38,19 +38,19 @@ references:
     url: "https://similar-baseboard.org"
   - name: "vulnero cubitum voveo antepono"
     url: "https://heavy-forage.biz/"
-thumbnail: "img/works/dummy_0011_thumbnail.jpg"
+thumbnail: "img/works/dummy_0011/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0011_key.jpg" alt="dummy_0011" >}}
+{{< figure src="../img/works/dummy_0011/key.jpg" alt="dummy_0011" >}}
 
 Ventus tollo crux causa voluptate. Attero volo ascisco terebro voro adeptio. Non maiores ut nesciunt aeneus ustilo vespillo conforto concido.
 
 Armarium alii apud confugo terror cumque utilis arx amplus. Annus censura sophismata alienus addo adopto textus. Clarus delinquo pariatur vesco sursum cauda bos.
 
-{{< figure class="w-screen" src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0011/sub.jpg" alt="dummy_0011" >}}
 
 Solum arbor pauper vilicus peior talus claudeo comminor molestiae. Capitulus casso cedo. Dapifer sublime pecco dignissimos verbum benevolentia vinco tantum.
 
 Excepturi curvo crux vehemens vulgo depopulo vita confero. Derelinquo abundans cribro saepe quia virgo cursus abundans. Asperiores basium defendo utor ratione beneficium audax cultellus cubo.
 
-{{< figure src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}
+{{< figure src="../img/works/dummy_0011/sub.jpg" alt="dummy_0011" >}}

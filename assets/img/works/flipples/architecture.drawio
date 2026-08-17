@@ -1,0 +1,173 @@
+<mxfile host="sfz.dev" agent="hand-authored" version="24.0.0">
+  <diagram name="flipples-infra" id="flipples-infra">
+    <mxGraphModel dx="1400" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1460" pageHeight="620" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="gcp" value="Google Cloud (serverless)" style="rounded=1;arcSize=4;whiteSpace=wrap;html=0;fillColor=#f4f6f9;strokeColor=#9aa5b1;dashed=1;dashPattern=6 4;verticalAlign=top;align=left;spacingLeft=16;spacingTop=10;fontSize=13;fontColor=#5c6b7a;" vertex="1" parent="1">
+          <mxGeometry x="190" y="40" width="1000" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="listener" value="Listener" style="rounded=1;arcSize=40;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontColor=#3d3226;" vertex="1" parent="1">
+          <mxGeometry x="40" y="95" width="110" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="operator" value="Operator" style="rounded=1;arcSize=40;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontColor=#3d3226;" vertex="1" parent="1">
+          <mxGeometry x="40" y="235" width="110" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cdn" value="Cloud CDN / Load Balancing" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="220" y="95" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="frontend" value="Frontend (Cloud Run)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="470" y="95" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="backend" value="Backend (Cloud Run)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="720" y="95" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="queue" value="Cloud Tasks" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="990" y="95" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="admin" value="Admin console (Cloud Run)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="220" y="235" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="db" value="Cloud SQL" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#23401d;" vertex="1" parent="1">
+          <mxGeometry x="745" y="230" width="150" height="66" as="geometry" />
+        </mxCell>
+
+        <mxCell id="worker" value="Media worker (Cloud Run)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#1f3a5f;" vertex="1" parent="1">
+          <mxGeometry x="965" y="180" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="storage" value="Cloud Storage" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#23401d;" vertex="1" parent="1">
+          <mxGeometry x="990" y="255" width="150" height="66" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ai" value="Vertex AI (Gemini)" style="rounded=1;arcSize=40;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontColor=#4a3410;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="120" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tts" value="EmbodyMe TTS API" style="rounded=1;arcSize=40;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontColor=#4a3410;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="225" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="deploy" value="Delivery" style="rounded=1;arcSize=4;whiteSpace=wrap;html=0;fillColor=#f4f6f9;strokeColor=#9aa5b1;dashed=1;dashPattern=6 4;verticalAlign=top;align=left;spacingLeft=16;spacingTop=10;fontSize=13;fontColor=#5c6b7a;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="1000" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="github" value="GitHub" style="rounded=1;arcSize=40;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontColor=#3d3226;" vertex="1" parent="1">
+          <mxGeometry x="220" y="455" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="actions" value="GitHub Actions" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;" vertex="1" parent="1">
+          <mxGeometry x="420" y="455" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="staging" value="Staging" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;" vertex="1" parent="1">
+          <mxGeometry x="640" y="455" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="approve" value="Approve" style="rhombus;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontColor=#4a3410;" vertex="1" parent="1">
+          <mxGeometry x="840" y="445" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="production" value="Production" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="455" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rollbacknote" value="back to a previous release" style="text;html=0;align=left;verticalAlign=middle;fontSize=12;fontColor=#3b2a44;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="520" width="230" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" value="letter" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="listener" target="cdn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;" edge="1" parent="1" source="cdn" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e3" value="API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="frontend" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;startArrow=classic;startFill=1;strokeColor=#5c6b7a;" edge="1" parent="1" source="backend" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e5" value="enqueue" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="backend" target="queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="queue" target="worker">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e7" value="script" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#d79b00;fontSize=12;fontColor=#4a3410;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="worker" target="ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e8" value="speech" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#d79b00;fontSize=12;fontColor=#4a3410;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="worker" target="tts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e9" value="store" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="worker" target="storage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e10" value="delivered as a reply" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;dashed=1;strokeColor=#3d4852;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="storage" target="listener">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1065" y="366" />
+              <mxPoint x="95" y="366" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;" edge="1" parent="1" source="operator" target="admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e12" value="manage episodes and characters" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#5c6b7a;fontSize=12;fontColor=#3d4852;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="admin" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d1" value="push / merge" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="github" target="actions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d2" value="deploy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="actions" target="staging">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d3" value="promote" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="staging" target="approve">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;strokeColor=#9673a6;" edge="1" parent="1" source="approve" target="production">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Rollback returns Production to a previous release, so the edge loops
+          back to Production rather than pointing at Staging, which would read as
+          "revert to the staging build". -->
+        <mxCell id="d5" value="rollback" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=0;dashed=1;strokeColor=#9673a6;fontSize=12;fontColor=#3b2a44;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="production" target="production">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="480" />
+              <mxPoint x="1200" y="530" />
+              <mxPoint x="1095" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

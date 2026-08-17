@@ -26,19 +26,19 @@ collaborators:
     credits:
       - "Design: Glover"
       - "Program: Collier"
-thumbnail: "img/works/dummy_0014_thumbnail.jpg"
+thumbnail: "img/works/dummy_0014/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0014_key.jpg" alt="dummy_0014" >}}
+{{< figure src="../img/works/dummy_0014/key.jpg" alt="dummy_0014" >}}
 
 Tergo aliquam caput eius non tolero decerno. Dignissimos viscus pauper accendo ultio claro sollicito abundans conculco curiositas. Urbs tempore enim civitas tertius argentum angulus deporto cunae.
 
 Ad pel aestus ulterius celo omnis beneficium vulnus. Sit virga quasi tutamen paens thesis teres illo cauda. Coepi animi sopor benevolentia nulla vitiosus voluptatem.
 
-{{< figure class="w-screen" src="../img/works/dummy_0014_sub.jpg" alt="dummy_0014" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0014/sub.jpg" alt="dummy_0014" >}}
 
 Sonitus vulgus curatio terebro sursum. Alioqui vivo ventus thorax debilito adipisci. Thermae credo appositus tergum civitas thorax venustas cunctatio.
 
 Sequi capitulus caelestis vox ipsum tenuis tamen pel sortitus. Vitiosus ter curis amissio triumphus statua compello aeternus. Conitor verto iste.
 
-{{< figure src="../img/works/dummy_0014_sub.jpg" alt="dummy_0014" >}}
+{{< figure src="../img/works/dummy_0014/sub.jpg" alt="dummy_0014" >}}

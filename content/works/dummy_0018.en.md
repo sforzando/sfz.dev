@@ -28,19 +28,19 @@ collaborators:
 references:
   - name: "casus summopere"
     url: "https://giving-jet.org"
-thumbnail: "img/works/dummy_0018_thumbnail.jpg"
+thumbnail: "img/works/dummy_0018/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0018_key.jpg" alt="dummy_0018" >}}
+{{< figure src="../img/works/dummy_0018/key.jpg" alt="dummy_0018" >}}
 
 Cubitum vindico cribro utilis qui vicissitudo. Viscus somniculosus comburo magnam dens calculus alienus earum derideo. Atque soleo verto ambitus volup nisi vociferor.
 
 Vado armarium arca altus suasoria. Atrocitas video delego eveniet. Depono expedita crinis triumphus textilis adnuo tubineus valeo.
 
-{{< figure class="w-screen" src="../img/works/dummy_0018_sub.jpg" alt="dummy_0018" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0018/sub.jpg" alt="dummy_0018" >}}
 
 Cervus constans aro aequitas deripio. Caritas molestias sed. Animus capio soleo consequatur.
 
 A error calco modi supellex ceno aspernatur demoror. Delego utique abbas tribuo. Aestivus curo caveo.
 
-{{< figure src="../img/works/dummy_0018_sub.jpg" alt="dummy_0018" >}}
+{{< figure src="../img/works/dummy_0018/sub.jpg" alt="dummy_0018" >}}

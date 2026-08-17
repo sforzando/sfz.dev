@@ -25,19 +25,19 @@ collaborators:
 references:
   - name: "virga non magnam"
     url: "https://alarmed-brush.org"
-thumbnail: "img/works/dummy_0023_thumbnail.jpg"
+thumbnail: "img/works/dummy_0023/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0023_key.jpg" alt="dummy_0023" >}}
+{{< figure src="../img/works/dummy_0023/key.jpg" alt="dummy_0023" >}}
 
 Ars vere repellat victoria caute sequi summisse unus bellum. Attonbitus succurro studio tandem. Arbitro attonbitus veniam canto et annus.
 
 Ara deputo despecto articulus capio taedium. Stipes facilis testimonium assumenda dens tamisium taedium. Reiciendis cum cruciamentum.
 
-{{< figure class="w-screen" src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0023/sub.jpg" alt="dummy_0023" >}}
 
 Adimpleo vinum advenio deinde. Denique considero curis coaegresco thymbra. Teres cubicularis traho volaticus curia utor adulatio vir.
 
 Acidus careo maiores. Vilitas tergo adeptio vicinus undique ex aufero adipisci distinctio. Denego quisquam vulariter.
 
-{{< figure src="../img/works/dummy_0023_sub.jpg" alt="dummy_0023" >}}
+{{< figure src="../img/works/dummy_0023/sub.jpg" alt="dummy_0023" >}}

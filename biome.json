@@ -17,7 +17,8 @@
       "!assets/css/compiled",
       "!.claude",
       "!**/*.html",
-      "!**/*.md"
+      "!**/*.md",
+      "!**/*.svg"
     ]
   },
   "formatter": {

@@ -36,19 +36,19 @@ references:
     url: "https://warmhearted-inspection.biz"
   - name: "delego soluta cito valetudo"
     url: "https://scornful-desk.info"
-thumbnail: "img/works/dummy_0012_thumbnail.jpg"
+thumbnail: "img/works/dummy_0012/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0012_key.jpg" alt="dummy_0012" >}}
+{{< figure src="../img/works/dummy_0012/key.jpg" alt="dummy_0012" >}}
 
 Attonbitus condico umquam. Delego solvo asper. Voco uberrime terminatio advoco subnecto ait suffragium absconditus.
 
 Vos attero cui. Deprimo sumo admiratio acquiro. Crustulum nesciunt victoria congregatio.
 
-{{< figure class="w-screen" src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0012/sub.jpg" alt="dummy_0012" >}}
 
 Sortitus civis acidus defleo. Benevolentia derelinquo pax cruentus demens careo aiunt bellum suggero decretum. Tibi spiculum avarus victus.
 
 Texo acsi nam deludo aduro voluptatibus. Uredo officia coma. Est pauci apostolus trepide terror corona angelus paens cognomen.
 
-{{< figure src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
+{{< figure src="../img/works/dummy_0012/sub.jpg" alt="dummy_0012" >}}

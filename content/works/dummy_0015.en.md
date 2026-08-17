@@ -24,19 +24,19 @@ collaborators:
 references:
   - name: "valde vinculum stultus pax cado"
     url: "https://realistic-understanding.info"
-thumbnail: "img/works/dummy_0015_thumbnail.jpg"
+thumbnail: "img/works/dummy_0015/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0015_key.jpg" alt="dummy_0015" >}}
+{{< figure src="../img/works/dummy_0015/key.jpg" alt="dummy_0015" >}}
 
 Totidem commodi deleo curvo sustineo ambitus. Vereor avarus adstringo commodo. Argumentum abundans combibo antepono allatus vomer demulceo voveo utpote.
 
 Aliquid utrum tabella pel vigor praesentium. Patior tenuis valeo censura collum coadunatio desolo auxilium degenero voveo. Ver corporis patrocinor.
 
-{{< figure class="w-screen" src="../img/works/dummy_0015_sub.jpg" alt="dummy_0015" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0015/sub.jpg" alt="dummy_0015" >}}
 
 Video sponte occaecati clementia atavus nulla turba. Cresco decet patruus. Acidus crapula officia autem capillus derelinquo.
 
 Cuius pecus atrocitas alo vestigium tergum advoco caveo suppellex. Ustilo quod deleo pauper aduro. Video surgo arma saepe venustas.
 
-{{< figure src="../img/works/dummy_0015_sub.jpg" alt="dummy_0015" >}}
+{{< figure src="../img/works/dummy_0015/sub.jpg" alt="dummy_0015" >}}

@@ -35,6 +35,7 @@ Hugo静的サイトジェネレーターとCongoテーマを使用して構築�
 - **Playwright**: E2Eテスト
 - **Faker.js**: ダミーコンテンツ生成
 - **Biome**: JS/TSリンター・フォーマッター
+- **typos**: 綴り検査（US英語へ統一）
 - **Lefthook**: Gitフックマネージャー
 - **デプロイ**: Netlify
 - **言語**: 日英バイリンガル
@@ -46,7 +47,9 @@ Hugo静的サイトジェネレーターとCongoテーマを使用して構築�
 会社実績を紹介するカスタムコンテンツタイプ:
 
 - カスタムメタデータ: `clients`（クライアント）、`collaborators`（協力者）、`references`（参考URL、任意）
-- 構造化された画像命名規則: `{name}_thumbnail.jpg`, `{name}_key.jpg`, `{name}_sub.jpg`
+- 画像は作品ごとのディレクトリに格納: `assets/img/works/{name}/{thumbnail,key,sub}.jpg`
+  - `thumbnail.jpg` は一覧カード用。`.Fill "1200x675 Center"` で16:9にクロップされるため16:9で用意する
+  - `key.jpg` は詳細ページ冒頭、`sub.jpg` は本文中（`w-screen` でフルブリード表示）
 - 日英バイリンガルコンテンツ
 - カスタムアーキタイプ: `archetypes/works.md`
 
@@ -98,12 +101,54 @@ PostsページおよびTagページに表示されるラジアルタグクラウ
 - 回転アニメーション付き3D地球儀表示
 - 必要な環境変数: `MAPBOX_ACCESS_TOKEN`
 
+**動画埋め込み**:
+
+- `layouts/shortcodes/videoPlayer.html` - 自前ホスティング動画の再生
+- パラメータ: `src`（必須）、`poster`、`caption`、`maxWidth`（縦長動画の幅制限用）
+- パスは `assets/` 基準で書く（例: `img/works/flipples/teaser.mp4`）
+- `preload="none"` 固定。数MBの動画が初期読み込みに乗るとLCPを支配するため
+- 使用例: `{{< videoPlayer src="img/works/flipples/teaser.mp4" poster="img/works/flipples/teaser-poster.png" caption="紹介動画" >}}`
+
+**スマートフォンのモック枠**:
+
+- `layouts/shortcodes/deviceFrame.html` - スクリーンショットを端末枠に収める
+- パラメータ: `src`（必須）、`alt`、`caption`、`orientation`（`portrait`（既定）/ `landscape`）、`safeAreaColor`、`notchColor`
+- `safeAreaColor` はiOSセーフエリア相当の帯の色。スクリーンショットの背景色に合わせると画面が続いて見える（既定は黒）
+- `notchColor` は切り欠きの色。明るい `safeAreaColor` を指定したときに併せて指定する
+- `layouts/shortcodes/deviceFrames.html` - 複数の `deviceFrame` を横並びにする器
+- スタイルは `assets/css/custom.css` の `.device-frame*`。ベゼルの造形に疑似要素が要るためTailwindでは表現できない
+- 枠は自身でアスペクト比を固定するので、別デバイスで撮った画像を入れても枠が歪まない
+
 ### 4. 多言語対応
 
 - デフォルト言語: 英語（en）
 - 第二言語: 日本語（ja）
 - 言語別のメニューとナビゲーション
 - 設定ファイル: `config/_default/languages.{ja,en}.toml`, `menus.{ja,en}.toml`
+
+### 8. 記事中の図版
+
+**Mermaid**（Congoに同梱、追加設定不要）:
+
+- `{{< mermaid >}}` を使ったページでのみ mermaid.js が読み込まれる（`themes/congo/layouts/_partials/vendor.html`）
+- **`architecture-beta` 構文は使えない**: ラベルが非ASCII文字を受け付けずLexerエラーになる。またエッジにラベルを付ける構文がなく、描画も非決定的（スナップショットが揺れる）。日本語の図は `flowchart` を使う
+- 背景が透過だと背景アニメーションと干渉するため、`.mermaid` に半透明パネルを敷いている（`assets/css/custom.css`）
+
+**draw.io**（複雑な図はこちら。原本と書き出しの両方をコミットする）:
+
+```bash
+# 編集: assets/img/works/{slug}/architecture.drawio を draw.io で開く
+# 書き出し: 引数なしで assets/img/ 配下の全 .drawio を対象にする
+task build:diagrams
+# 単一ファイルのみ書き出す場合
+task build:diagrams -- assets/img/works/flipples/architecture.drawio
+```
+
+`task build` の依存には**あえて含めていない**。書き出し済みのSVGをコミットしているため、CIはdraw.io CLIなしでビルドできる。
+
+- 図中のスタイルは **`html=0`** にすること。`html=1` だとラベルが `<foreignObject>` で出力され、SVGが2倍近く肥大する
+- **ラベルは折り返さない前提で1行に収める**。`<img>` で表示するとSVGの `<text>` フォールバックが使われ、折り返しが効かずノードからはみ出す
+- **図は英語ラベルで1枚だけ作り、日英どちらの記事からも同じSVGを参照する**。2枚を並行して保守すると、片方だけ更新される事故が起きるため。記事ごとに変えるのは `alt` テキストのみ
 
 ## 重要な設定
 
@@ -179,6 +224,9 @@ task restart
 # 本番用アセットビルド
 task build
 
+# draw.io図をSVGへ書き出し（引数なしで全件）
+task build:diagrams
+
 # ダミーコンテンツ生成（例: works を5件）
 task generate:dummy -- works 5
 
@@ -199,6 +247,12 @@ task typecheck
 
 # コード整形
 task format
+
+# 綴り検査（US英語へ自動修正）
+task lint:typos
+
+# CIと同じLinter一式を検査のみで実行（書き換えない）
+task lint:ci
 
 # 依存パッケージの更新確認 / 更新
 task outdated
@@ -221,7 +275,22 @@ task gs:reveal
 task update:changelog
 ```
 
-> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task test:headless`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+> **注意**: Lefthookのpre-commitフックにより、コミット時に `task lint:typos`・`task format`・`task lint:markdown`・`task test:headless`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+
+### 綴り検査（typos）
+
+英文のUK綴り混入を防ぐため [typos](https://github.com/crate-ci/typos) を導入している。設定は `_typos.toml`。
+
+- **`locale = "en-us"` が本質**。typosのデフォルト（`locale = "en"`）は英語の方言差を全て正しい綴りとして扱うため、`colour` や `behaviour` を一切検出しない <!-- spellchecker:disable-line -->
+- **`ignore-hidden` は既定の `true` のまま**にすること。`false` にすると typos が `.git/objects/` のzlib圧縮オブジェクトをテキストと誤認して走査し、`--write-changes` がリポジトリを破壊しうる
+- 除外対象は `themes/`（Congoはsubmodule）、`content/**/dummy_*`（Faker.jsのラテン語Lorem Ipsumが誤検出される）、`CHANGELOG.md`（コミット件名から生成されるためその場で直せない）
+- 誤りをあえて引用する必要がある行（本節のような説明文）は、行末に `<!-- spellchecker:disable-line -->` を付けると除外される
+- **npmパッケージは存在しない**（2023年にunpublish済み）。ローカルはHomebrew（formula名 `typos-cli` / コマンド名 `typos`）、CIは公式Action `crate-ci/typos`
+- CI側のバージョンは `@v1` ではなく**パッチまで固定**する。新リリースが新しいtypoを検出してブランチが無関係に赤くなるのを防ぐため
+
+### CI
+
+`.github/workflows/lint.yml` が `crate-ci/typos` アクションと `task lint:ci`（Biome / Prettier / markdownlint / `tsc --noEmit`）を実行する。submoduleは取得しない（全Linterが `themes/` を除外しているため）。
 
 ## セキュリティ
 

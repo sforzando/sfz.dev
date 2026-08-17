@@ -151,6 +151,124 @@ html.dark::view-transition {
   }
 }
 
+/* Mermaid diagrams sit over the animated canvas background, where thin connector
+   lines compete with the moving pattern behind them. A translucent panel keeps
+   the diagram readable without cutting a hard opaque rectangle out of a page
+   that is transparent everywhere else. */
+.mermaid {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(var(--color-neutral) / 0.55);
+}
+
+html.dark .mermaid {
+  background-color: rgb(var(--color-neutral-800) / 0.55);
+}
+
+/* Phone frame for app screenshots (deviceFrame shortcode).
+   The frame fixes its own ratio rather than inheriting the image's, so a capture
+   from another device still reads as a phone instead of stretching the bezel. */
+.device-frame {
+  position: relative;
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 2.5rem;
+  background-color: rgb(var(--color-neutral-800));
+  box-shadow: 0 18px 40px -12px rgb(0 0 0 / 0.45);
+}
+
+.device-frame--portrait {
+  max-width: 16rem;
+  aspect-ratio: 430 / 932;
+}
+
+.device-frame--landscape {
+  max-width: 34rem;
+  aspect-ratio: 932 / 430;
+}
+
+/* The bezel would disappear into the page in dark mode, where the background is
+   itself neutral-800, so lift it one step. */
+html.dark .device-frame {
+  background-color: rgb(var(--color-neutral-700));
+}
+
+/* Captures cover the viewport alone, with no room reserved for the iOS safe
+   areas. Dropping one straight into a rounded screen clips the app's own header
+   and tab bar at the corners, so the screen reserves those bands itself and
+   letterboxes the capture between them. */
+.device-frame__screen {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  /* Overridable per instance via the shortcode's safeAreaColor, so the bands can
+     continue the screenshot's own background instead of framing it in black. */
+  background-color: var(--device-safe-area, #000);
+}
+
+.device-frame--portrait .device-frame__screen {
+  padding: 1.7rem 0 1.2rem;
+}
+
+.device-frame--landscape .device-frame__screen {
+  padding: 0 1.7rem;
+}
+
+.device-frame img {
+  width: 100%;
+  height: 100%;
+  /* prose gives images vertical margins that would push the capture out of its
+     own bezel. */
+  margin: 0;
+  object-fit: contain;
+}
+
+/* Barely-there cutout: enough to read as a phone against the black safe-area
+   band without imitating a specific handset. */
+.device-frame--portrait::after,
+.device-frame--landscape::after {
+  position: absolute;
+  border-radius: 999px;
+  /* Translucent white reads against the default black band; a light
+     safeAreaColor needs notchColor to stay visible. */
+  background-color: var(--device-notch, rgb(255 255 255 / 0.09));
+  content: "";
+}
+
+.device-frame--portrait::after {
+  top: 1.15rem;
+  left: 50%;
+  width: 28%;
+  height: 0.9rem;
+  transform: translateX(-50%);
+}
+
+.device-frame--landscape::after {
+  top: 50%;
+  left: 1.15rem;
+  width: 0.9rem;
+  height: 28%;
+  transform: translateY(-50%);
+}
+
+/* Frames sit side by side and wrap rather than shrink: below a certain width a
+   phone mock stops reading as a phone. */
+.device-frame-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1.5rem;
+}
+
+.device-frame-row figure {
+  margin: 0;
+}
+
 @keyframes works-card-reveal {
   from {
     opacity: 0;

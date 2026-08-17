@@ -32,19 +32,19 @@ references:
     url: "https://tangible-slipper.name"
   - name: "toties conforto"
     url: "https://scared-numeric.biz/"
-thumbnail: "img/works/dummy_0010_thumbnail.jpg"
+thumbnail: "img/works/dummy_0010/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0010_key.jpg" alt="dummy_0010" >}}
+{{< figure src="../img/works/dummy_0010/key.jpg" alt="dummy_0010" >}}
 
 Ars reiciendis sursum suspendo acceptus concedo tam utique deleniti. Cado suffragium vitae sollicito pecco vulticulus. Verbum terga advoco chirographum tepidus crudelis tamquam.
 
 Animadverto corrupti vallum admitto. Comitatus temperantia dolor thesaurus vir appello nihil admiratio sollers. Fugiat tui cenaculum usitas voluptatibus aureus cattus.
 
-{{< figure class="w-screen" src="../img/works/dummy_0010_sub.jpg" alt="dummy_0010" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0010/sub.jpg" alt="dummy_0010" >}}
 
 Armarium defetiscor reprehenderit auctor taceo usitas bene tamdiu magni tres. Officiis admitto combibo earum cunae. Vos congregatio decretum cuppedia asper appono tredecim nemo aegrotatio.
 
 Itaque amplus decimus apparatus. Corporis voluptates illum soleo excepturi vae volubilis dolorum totus. Angelus basium vomer careo thymum cupressus solutio validus fuga.
 
-{{< figure src="../img/works/dummy_0010_sub.jpg" alt="dummy_0010" >}}
+{{< figure src="../img/works/dummy_0010/sub.jpg" alt="dummy_0010" >}}

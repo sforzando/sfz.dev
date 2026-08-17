@@ -1,0 +1,10 @@
+{{/* Row wrapper: put several deviceFrame calls inside it to lay them out
+  side by side.
+
+  Inner shortcodes are already rendered by the time .Inner is read, so it is
+  emitted as-is. The row wraps on narrow viewports rather than shrinking the
+  frames, because a phone mock below a certain width stops reading as a phone.
+*/}}
+<div class="device-frame-row">
+  {{- .Inner -}}
+</div>
