@@ -7,7 +7,7 @@
   GO_VERSION = "1.26.5"
   # Single source of truth: inherited by production, deploy-preview, and branch-deploy.
   # Defining it per-context previously left branch-deploy on Netlify's default Hugo.
-  HUGO_VERSION = "0.164.0"
+  HUGO_VERSION = "0.168.0"
   TZ = "Asia/Tokyo"
 
 [context.production.environment]

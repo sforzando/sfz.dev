@@ -134,7 +134,6 @@
     "xmark",
     "Yuki"
   ],
-  "snyk.advanced.autoSelectOrganization": true,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#283593",
     "titleBar.activeForeground": "#FFFFFF",

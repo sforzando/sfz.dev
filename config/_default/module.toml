@@ -6,4 +6,4 @@
 # removed in v0.153.2, since WebP now works in every edition and LibSass gave
 # way to Dart Sass.
 [hugoVersion]
-  min = "0.164.0"
+  min = "0.168.0"
