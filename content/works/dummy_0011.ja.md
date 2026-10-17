@@ -38,19 +38,19 @@ references:
     url: "https://similar-baseboard.org"
   - name: "受賞歴"
     url: "https://heavy-forage.biz/"
-thumbnail: "img/works/dummy_0011_thumbnail.jpg"
+thumbnail: "img/works/dummy_0011/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0011_key.jpg" alt="dummy_0011" >}}
+{{< figure src="../img/works/dummy_0011/key.jpg" alt="dummy_0011" >}}
 
 金 没落 買い物 年額. つなひき 競艇 洋服 匿名 子守歌. りゃくご はんけん 床 親子丼 九日 しんじゅく 移譲 巡回.
 
 にる 始まる 恨み けしき. せんげん のうし 和尚 けいむしょ. どうめい 力 あう おくれる とうほう 間隔 はい.
 
-{{< figure class="w-screen" src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0011/sub.jpg" alt="dummy_0011" >}}
 
 暗い ろくおん 歯 独裁 しばふ 電話 栞 ねんがじょう. じょうきゅう 思い遣り 避ける たいこうする てんし なおさら 慶弔 始まる 六. しどう 合う 金縛り 皇太子妃.
 
 しゃこ 延長 ふゆかい 評価. 不可欠 どうめい じょうだん つくる. 漬物 かわさき 模型 どうめい 首 ぼうりょく 貨幣 備える 不況.
 
-{{< figure src="../img/works/dummy_0011_sub.jpg" alt="dummy_0011" >}}
+{{< figure src="../img/works/dummy_0011/sub.jpg" alt="dummy_0011" >}}

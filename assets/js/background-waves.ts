@@ -428,7 +428,7 @@ function handleMouseMove(event: MouseEvent): void {
 }
 
 function handleScroll(): void {
-  applyMousePosition(0.5, 0.5) // re-centre so camera stays coherent after page scroll
+  applyMousePosition(0.5, 0.5) // re-center so camera stays coherent after page scroll
 }
 
 function handleTouch(event: TouchEvent): void {

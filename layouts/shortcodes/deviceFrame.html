@@ -1,0 +1,62 @@
+{{/* Phone-shaped frame for app screenshots.
+
+  src is resolved from assets/ (e.g. "img/works/flipples/chat.png"), matching
+  videoPlayer.html rather than the theme's figure lookup chain.
+
+  Parameters:
+  src              asset path (required)
+  alt              alt text
+  caption          text below the frame
+  orientation      "portrait" (default) or "landscape"
+  safeAreaColor    color of the bands standing in for the iOS safe areas,
+  so they can match the screenshot instead of defaulting to
+  black (e.g. "#ff2d55", "white")
+  notchColor       color of the cutout, for when the default translucent
+  white disappears against a light safe area
+
+  The frame fixes its own aspect ratio instead of inheriting the image's, so a
+  capture taken on a different device still sits inside a phone-shaped bezel
+  rather than stretching it. Styling lives in assets/css/custom.css because the
+  bezel needs pseudo-element geometry that Tailwind utilities cannot express.
+
+  Wrap several of these in the deviceFrames shortcode to lay them out in a row.
+*/}}
+{{- $img := resources.Get (.Get "src") -}}
+{{- $orientation := or (.Get "orientation") "portrait" -}}
+{{/* safeCSS is required because Go templates blank out unrecognized values in a
+  style attribute. The values come from the article author, not from user
+  input, so the escape is confined to content we control.
+*/}}
+{{- $vars := slice -}}
+{{- with .Get "safeAreaColor" }}
+  {{ $vars = $vars | append (printf "--device-safe-area: %s" .) }}
+{{ end -}}
+{{- with .Get "notchColor" }}
+  {{ $vars = $vars | append (printf "--device-notch: %s" .) }}
+{{ end -}}
+{{- if $img -}}
+  <figure class="my-8 flex flex-col items-center">
+    <div
+      class="device-frame device-frame--{{ $orientation }}"
+      {{- with $vars }}style="{{ delimit . "; " | safeCSS }}"{{ end }}
+    >
+      <div class="device-frame__screen">
+        <img
+          src="{{ $img.RelPermalink }}"
+          alt="{{ .Get "alt" }}"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
+    {{- with .Get "caption" }}
+      <figcaption
+        class="mt-3 text-center text-sm text-neutral-500 dark:text-neutral-400"
+      >
+        {{ . }}
+      </figcaption>
+    {{- end }}
+  </figure>
+{{- else -}}
+  {{- errorf "deviceFrame: asset not found: %q" (.Get "src") -}}
+{{- end -}}

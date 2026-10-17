@@ -1,4 +1,4 @@
-import { existsSync, writeFileSync } from "node:fs"
+import { existsSync, mkdirSync, writeFileSync } from "node:fs"
 import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"
 import { fakerEN, fakerJA } from "@faker-js/faker"
@@ -226,27 +226,27 @@ tags:
   - "works"`
 
   const bodyEn = `
-{{< figure src="../img/works/${baseName}_key.jpg" alt="${baseName}" >}}
+{{< figure src="../img/works/${baseName}/key.jpg" alt="${baseName}" >}}
 
 ${bodyParagraphsEn[0]}
 
-{{< figure class="w-screen" src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+{{< figure class="w-screen" src="../img/works/${baseName}/sub.jpg" alt="${baseName}" >}}
 
 ${bodyParagraphsEn[1]}
 
-{{< figure src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+{{< figure src="../img/works/${baseName}/sub.jpg" alt="${baseName}" >}}
 `
 
   const bodyJa = `
-{{< figure src="../img/works/${baseName}_key.jpg" alt="${baseName}" >}}
+{{< figure src="../img/works/${baseName}/key.jpg" alt="${baseName}" >}}
 
 ${bodyParagraphsJa[0]}
 
-{{< figure class="w-screen" src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+{{< figure class="w-screen" src="../img/works/${baseName}/sub.jpg" alt="${baseName}" >}}
 
 ${bodyParagraphsJa[1]}
 
-{{< figure src="../img/works/${baseName}_sub.jpg" alt="${baseName}" >}}
+{{< figure src="../img/works/${baseName}/sub.jpg" alt="${baseName}" >}}
 `
 
   const en = `---
@@ -257,7 +257,7 @@ clients:
 ${enClients}
 collaborators:
 ${enCollaborators}
-${enRefs}thumbnail: "img/works/${baseName}_thumbnail.jpg"
+${enRefs}thumbnail: "img/works/${baseName}/thumbnail.jpg"
 ---
 ${bodyEn}`
 
@@ -269,7 +269,7 @@ clients:
 ${jaClients}
 collaborators:
 ${jaCollaborators}
-${jaRefs}thumbnail: "img/works/${baseName}_thumbnail.jpg"
+${jaRefs}thumbnail: "img/works/${baseName}/thumbnail.jpg"
 ---
 ${bodyJa}`
 
@@ -365,13 +365,18 @@ async function runWorks(count: number, force: boolean): Promise<void> {
     writeFileSync(jaPath, ja, "utf-8")
     process.stdout.write(`  created: ${baseName}.en.md, ${baseName}.ja.md\n`)
 
+    // Each work owns a directory for its three images, so the asset tree stays
+    // navigable as the portfolio grows instead of flattening into one listing.
+    const workImgDir = join(imgDir, baseName)
+    mkdirSync(workImgDir, { recursive: true })
+
     for (const { suffix, w, h } of IMG_SPECS) {
-      const imgPath = join(imgDir, `${baseName}_${suffix}.jpg`)
+      const imgPath = join(workImgDir, `${suffix}.jpg`)
       if (!existsSync(imgPath) || force) {
         const seed = `${baseName}-${suffix}`
         const url = `https://picsum.photos/seed/${seed}/${w}/${h}.jpg`
         await downloadImage(url, imgPath)
-        process.stdout.write(`  downloaded: ${baseName}_${suffix}.jpg\n`)
+        process.stdout.write(`  downloaded: ${baseName}/${suffix}.jpg\n`)
       }
     }
   }

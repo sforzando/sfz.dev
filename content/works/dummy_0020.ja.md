@@ -39,19 +39,19 @@ references:
     url: "https://needy-comparison.biz/"
   - name: "導入事例インタビュー"
     url: "https://sure-footed-cheetah.name"
-thumbnail: "img/works/dummy_0020_thumbnail.jpg"
+thumbnail: "img/works/dummy_0020/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0020_key.jpg" alt="dummy_0020" >}}
+{{< figure src="../img/works/dummy_0020/key.jpg" alt="dummy_0020" >}}
 
 超音波 牛乳 江戸 だいどころ. きょうかい ちんもく いっこ つぐなう つぐなう きょうき 基盤 しあとるし 老齢 きょうかい. 糸 髪の毛 じしょ かいじゅう こうちょく 糸 そんけい 靖国神社.
 
 旧姓 裏口 おなか アメリカ製 でんせんびょう 間接 つく. 戦没 所 七つ がぞう しゃこ つぎつぎ. 隆起 よくげつ しょうゆ みなもと しゃこ 奴ら 数詞 光年 弱虫.
 
-{{< figure class="w-screen" src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0020/sub.jpg" alt="dummy_0020" >}}
 
 あまる 月刊 ほどう じぶん ざせき 墓 雄犬. 液体 体重 既に 廃墟. たて 避ける 愛国心 黙る じきしょうそう.
 
 いっかい あっとうする ぶっきょう すみ はちのす 普段. こうぞく 縮小 みなもと もちいる ぼくし 電源 しっぷう 出かける 巡回. 総括 ようい いさぎよい 図説 暇 副大統領 ねんがん はなはだ.
 
-{{< figure src="../img/works/dummy_0020_sub.jpg" alt="dummy_0020" >}}
+{{< figure src="../img/works/dummy_0020/sub.jpg" alt="dummy_0020" >}}

@@ -53,6 +53,7 @@ Official Corporate Web site of sforzando LLC. and Inc.
   - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 - [Mapbox](https://www.mapbox.com)
   - [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/)
+- [draw.io](https://www.drawio.com/) (only needed to edit the diagrams in `assets/img/works/*/`)
 
 ## How to
 
@@ -75,12 +76,15 @@ task: Available tasks for this project:
 * test:                      試験 - ローカルサーバーでPlaywrightテスト実行
 * typecheck:                 検査 - TypeScriptの型を検査
 * build:css:                 構築 - TailwindCSSをビルド
+* build:diagrams:            構築 - draw.io図をSVGへ書き出し（ex. task build:diagrams -- assets/img/works/flipples/architecture.drawio）
 * check:layouts:             点検 - Congoテーマのレイアウトオーバーライドを確認
 * generate:dummy:            生成 - テスト用ダミーコンテンツを生成（ex. task generate:dummy -- works 5）
 * gs:hide:                   秘匿 - git-secretで秘密情報を暗号化
 * gs:reveal:                 暴露 - git-secretで秘密情報を復号化
 * install:ci:                導入 - CI環境用依存パッケージをインストール
+* lint:ci:                   検査 - CI環境で全Linterを検査（修正はしない）
 * lint:markdown:             検査 - Markdownlintでマークダウンを検査
+* lint:typos:                検査 - typosで綴りを検査しUS英語へ修正
 * outdated:versions:         点検 - ツール（Congo/Hugo/Go）のバージョンを確認
 * test:ci:                   試験 - CI環境でPlaywrightテスト実行
 * test:headless:             試験 - ローカルサーバーでPlaywrightテスト実行（ヘッドレスモード）
@@ -157,6 +161,27 @@ task generate:dummy -- works 5 --force
 
 Dummy photos for `works` are automatically downloaded from [Lorem Picsum](https://picsum.photos).
 
+### Diagrams
+
+Diagrams under `assets/img/works/` keep both an editable source (`*.drawio`) and the exported `*.svg` that articles reference. After editing a source, re-export it:
+
+```shell
+task build:diagrams
+```
+
+With no arguments every `*.drawio` under `assets/img/` is exported. Pass a path to export a single file.
+
+```shell
+task build:diagrams -- assets/img/works/flipples/architecture.drawio
+```
+
+This task is deliberately not a dependency of `task build`: the exported SVGs are committed, so CI builds the site without needing the draw.io CLI.
+
+Two constraints apply because the SVG is displayed with `<img>`:
+
+- Keep `html=0` in the shape styles, otherwise labels are emitted as `<foreignObject>` and the file roughly doubles in size.
+- Keep node labels on a single line. The `<text>` fallback used by `<img>` does not wrap, so long labels overflow their nodes.
+
 ### Test
 
 E2E tests is available, `task test`.
@@ -177,6 +202,41 @@ which checks types. Run the type checker explicitly:
 
 ```shell
 task typecheck
+```
+
+### Spelling
+
+[typos](https://github.com/crate-ci/typos) keeps the English on this site in US
+spelling. It is configured in `_typos.toml` with `locale = "en-us"`, which is
+what makes it reject `colour`, `behaviour` and `optimised` <!-- spellchecker:disable-line -->
+— at its default locale typos accepts every English dialect and catches none
+of them.
+
+```shell
+task lint:typos
+```
+
+The binary comes from Homebrew (`brew install typos-cli`, installed by
+`task setup`) because typos publishes no npm package. The pre-commit hook runs
+this task and restages what it rewrote, and CI runs the same check through the
+`crate-ci/typos` action, which annotates the offending lines in the pull
+request diff.
+
+`_typos.toml` excludes `themes/` (Congo is a submodule), `content/**/dummy_*`
+(Faker.js writes Latin lorem ipsum that reads as misspelled English) and
+`CHANGELOG.md` (generated from commit subjects). Prose that has to quote a
+misspelling — the paragraph above, for instance — can end the line with
+`<!-- spellchecker:disable-line -->` to opt that line out.
+
+### Lint
+
+`task lint:ci` runs Biome, Prettier, markdownlint and `tsc --noEmit` in
+check-only mode — the same set the `Lint` workflow runs on every pull request.
+Unlike `task format` and `task lint:markdown` it never writes to the working
+tree, so it is safe to run to find out whether CI will pass.
+
+```shell
+task lint:ci
 ```
 
 ### Deploy

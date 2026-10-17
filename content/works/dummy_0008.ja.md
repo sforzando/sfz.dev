@@ -29,19 +29,19 @@ references:
     url: "https://mindless-department.com"
   - name: "プレスリリース"
     url: "https://monumental-glider.info"
-thumbnail: "img/works/dummy_0008_thumbnail.jpg"
+thumbnail: "img/works/dummy_0008/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0008_key.jpg" alt="dummy_0008" >}}
+{{< figure src="../img/works/dummy_0008/key.jpg" alt="dummy_0008" >}}
 
 抑制 あまい ぎょうし かたみち 色々 報じる はやて. 比較 豪華 芸者 ほんそう 電源 かくじっけん じきしょうそう しえんする 迷子. がくふ 不思議 話.
 
 こはん てら じゅうらい けしき 妥協する. 投資 性病 はなじ 戦没. 所 おとこのこ うえる 開閉 やしなう 残業 無駄 髪の毛 逆 燃やす.
 
-{{< figure class="w-screen" src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0008/sub.jpg" alt="dummy_0008" >}}
 
 あっとうする 疾走 みさき 弱点. つぎ 馬鹿馬鹿しい 絹糸 はだか つなひき くら 掛ける. 素材 いし 忘れ物.
 
 自宅 のうし つばさ いちだい 華道 泳ぐ 懇談. ろくおん 廃棄 難しい. 量 ちえん 滝 六 底 天井 近視 抑制.
 
-{{< figure src="../img/works/dummy_0008_sub.jpg" alt="dummy_0008" >}}
+{{< figure src="../img/works/dummy_0008/sub.jpg" alt="dummy_0008" >}}

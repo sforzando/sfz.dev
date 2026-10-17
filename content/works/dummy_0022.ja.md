@@ -34,19 +34,19 @@ references:
     url: "https://weighty-cannon.org/"
   - name: "プロジェクト紹介記事"
     url: "https://innocent-lay.com"
-thumbnail: "img/works/dummy_0022_thumbnail.jpg"
+thumbnail: "img/works/dummy_0022/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0022_key.jpg" alt="dummy_0022" >}}
+{{< figure src="../img/works/dummy_0022/key.jpg" alt="dummy_0022" >}}
 
 かんぜん 下さい てんのう 仰々しい こうぎょう. しあとるし 仁 しえんする ふきつ 恥ずかしがる 始まる. 左手 ふうふ げんめつ.
 
 縮小 原因 だいがくいんせい. おきゃくさん うんがいい 暇 とうとい こづつみ ほんらい うらぎり 果てる. ぎせいしゃ じしょ 書き方 切迫 ぼうず.
 
-{{< figure class="w-screen" src="../img/works/dummy_0022_sub.jpg" alt="dummy_0022" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0022/sub.jpg" alt="dummy_0022" >}}
 
 提案する そだてる ふそく 天井 黒板 味噌 配慮 せっぷく とうほう せいしん. 子守歌 復旧 化粧 けいかん ちょうりょく ひとごみ 無駄 死ぬ ちんみ 焦がす. たらす そんけい げいひんかん 間隔 ようじ なつかしい いじん.
 
 風船 たて 誇張 ちめいてき. はいき 問題 とうさく こいぬ つぎ 貨幣. つみ 縛る ひふ ぎせい せいめい.
 
-{{< figure src="../img/works/dummy_0022_sub.jpg" alt="dummy_0022" >}}
+{{< figure src="../img/works/dummy_0022/sub.jpg" alt="dummy_0022" >}}

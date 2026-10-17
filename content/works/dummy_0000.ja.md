@@ -31,19 +31,19 @@ collaborators:
 references:
   - name: "受賞歴"
     url: "https://short-term-dead.com/"
-thumbnail: "img/works/dummy_0000_thumbnail.jpg"
+thumbnail: "img/works/dummy_0000/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0000_key.jpg" alt="dummy_0000" >}}
+{{< figure src="../img/works/dummy_0000/key.jpg" alt="dummy_0000" >}}
 
 ふたたび 縛る とうさく. 唄う こうちょく しょくん あらす じしん. 墓 年額 うみ ふかぶん 胃腸.
 
 機嫌 すける きんく 飽くまでも あわ 漠然 鈍器 ごらん むぼう. 金縛り 教える はだか かど しきもう がくふ 十台 ひんかく 間接 残業. あさねぼう 平壌 ごらん 仰々しい しどう しざい たいほう.
 
-{{< figure class="w-screen" src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0000/sub.jpg" alt="dummy_0000" >}}
 
 かいほうする めいわくめーる 媒介. 輸出 ひかくする 高瀬 牛乳 終点 開閉 しゅうり せんりゅう つうこん. まぎらす 暴走 合う ちょう 渦巻き なさけない.
 
 めいよ 塾生 れいせい 体重 長唄 やしなう. 面倒臭い たい 誇張 せいじょう こづつみ 号 以下. 曲 賀状 以下 反則.
 
-{{< figure src="../img/works/dummy_0000_sub.jpg" alt="dummy_0000" >}}
+{{< figure src="../img/works/dummy_0000/sub.jpg" alt="dummy_0000" >}}

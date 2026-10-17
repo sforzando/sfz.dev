@@ -33,19 +33,19 @@ references:
     url: "https://purple-mallard.net/"
   - name: "受賞歴"
     url: "https://superior-asset.org/"
-thumbnail: "img/works/dummy_0006_thumbnail.jpg"
+thumbnail: "img/works/dummy_0006/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0006_key.jpg" alt="dummy_0006" >}}
+{{< figure src="../img/works/dummy_0006/key.jpg" alt="dummy_0006" >}}
 
 一文字 禅寺 初めに いさぎよい かんさい 犠牲 かくじっけん 猿真似 そだてる なぞ. 毎日 はちのす かざる 図説 とちょう 問題 忍者 掛ける. 割り箸 備える 宜しく ちんもく 日欧 きょうふ ぜんにほん むらさきいろ.
 
 かいほうする 忍者 瞬く かんせつ こい こうちょく おくれる 風船 れいぞうこ. がんい 恨み 碁 遺失 勝手 輸出. 駆け出す くまもとけん 望み かんそく ひんきゃく.
 
-{{< figure class="w-screen" src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0006/sub.jpg" alt="dummy_0006" >}}
 
 面 はちのす 試験 冬休み こっせつ にんい しゅうり. 学者 ふそく のき 禅寺 指定する ついたち いなか 鋭い. たつ 輪郭 ひきざん 光年 しえんする かわさき 弥生 おきゃくさん のうし.
 
 ほうせき 液体 数える ごふく 下着 締まる なかよし. 大文字 唄う 貴賓 じゅうどう 廃墟 消す 右利き 浮世絵 ほうき. 色々 ちがい ほんらい.
 
-{{< figure src="../img/works/dummy_0006_sub.jpg" alt="dummy_0006" >}}
+{{< figure src="../img/works/dummy_0006/sub.jpg" alt="dummy_0006" >}}

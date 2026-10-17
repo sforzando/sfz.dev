@@ -1,0 +1,43 @@
+{{/* Self-hosted video with a poster frame.
+
+  src/poster are resolved from assets/ (e.g. "img/works/flipples/teaser.mp4"),
+  not relative to the content file, because this shortcode calls resources.Get
+  directly rather than going through the theme's figure lookup chain.
+
+  preload="none" is deliberate: these files run to several megabytes and would
+  otherwise be fetched on page load, dominating Largest Contentful Paint on a
+  portfolio page where most visitors never press play. The poster image stands
+  in until someone actually asks for the video.
+
+  maxWidth exists for portrait footage, which would otherwise tower over the
+  surrounding text at full column width.
+*/}}
+{{- $video := resources.Get (.Get "src") -}}
+{{- $poster := "" -}}
+{{- with .Get "poster" }}{{ $poster = resources.Get . }}{{ end -}}
+{{- if $video -}}
+  <figure class="my-8 flex flex-col items-center">
+    <video
+      class="w-full rounded-md"
+      {{- with .Get "maxWidth" }}style="max-width: {{ . }}"{{ end }}
+      controls
+      playsinline
+      preload="none"
+      {{- with $poster }}poster="{{ .RelPermalink }}"{{ end }}
+    >
+      <source
+        src="{{ $video.RelPermalink }}"
+        type="{{ $video.MediaType.Type }}"
+      />
+    </video>
+    {{- with .Get "caption" }}
+      <figcaption
+        class="mt-2 text-center text-sm text-neutral-500 dark:text-neutral-400"
+      >
+        {{ . }}
+      </figcaption>
+    {{- end }}
+  </figure>
+{{- else -}}
+  {{- errorf "videoPlayer: asset not found: %q" (.Get "src") -}}
+{{- end -}}

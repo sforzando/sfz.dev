@@ -25,19 +25,19 @@ collaborators:
 references:
   - name: "thalassinus tumultus viduo suggero"
     url: "https://any-lyre.info/"
-thumbnail: "img/works/dummy_0002_thumbnail.jpg"
+thumbnail: "img/works/dummy_0002/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0002_key.jpg" alt="dummy_0002" >}}
+{{< figure src="../img/works/dummy_0002/key.jpg" alt="dummy_0002" >}}
 
 Caecus denuo odio cotidie. Cedo natus aureus. Aegre alioqui ullus toties.
 
 Conventus cernuus debilito artificiose terreo. Sit spero calcar illo error aeneus. Acsi corpus tondeo eius basium vorago eligendi defungo arbustum cresco.
 
-{{< figure class="w-screen" src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0002/sub.jpg" alt="dummy_0002" >}}
 
 Voro conscendo damnatio torrens currus astrum. Abundans caritas explicabo tenus sustineo tricesimus vomica succedo depromo. Curiositas depromo ipsum subiungo videlicet paens.
 
 Attero vitiosus facilis tabella. At argentum sollers thermae. Speciosus voluptatem aduro defaeco demoror sonitus coruscus cognatus cito ambulo.
 
-{{< figure src="../img/works/dummy_0002_sub.jpg" alt="dummy_0002" >}}
+{{< figure src="../img/works/dummy_0002/sub.jpg" alt="dummy_0002" >}}

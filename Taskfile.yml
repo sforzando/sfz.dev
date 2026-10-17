@@ -23,6 +23,7 @@ tasks:
           brew install git-secret
           brew install hugo
           brew install netlify-cli
+          brew install typos-cli
         fi
       - git submodule update --init --recursive
       - task: reveal
@@ -65,6 +66,21 @@ tasks:
     cmds:
       - NODE_ENV=production ./themes/congo/node_modules/.bin/tailwindcss -c ./tailwind.config.js -i ./themes/congo/assets/css/main.css -o ./assets/css/compiled/main.css --jit
 
+  build:diagrams:
+    desc: "構築 - draw.io図をSVGへ書き出し（ex. task build:diagrams -- assets/img/works/flipples/architecture.drawio）"
+    cmds:
+      - |
+        # -o is mandatory: without it draw.io reads the destination as another
+        # input file and the export fails.
+        # Not a dependency of `build` on purpose — the exported SVGs are
+        # committed, so CI builds the site without needing the draw.io CLI.
+        files="{{.CLI_ARGS}}"
+        [ -n "$files" ] || files=$(find assets/img -name '*.drawio' | sort)
+        [ -n "$files" ] || { echo "  no .drawio files found"; exit 0; }
+        for f in $files; do
+          drawio --no-sandbox -x -f svg -o "${f%.drawio}.svg" "$f"
+        done
+
   build:
     desc: 構築 - 本番用静的サイトをビルド
     deps:
@@ -104,6 +120,21 @@ tasks:
     desc: 検査 - Markdownlintでマークダウンを検査
     cmds:
       - npx markdownlint-cli2 --fix "**/*.md"
+
+  lint:typos:
+    desc: 検査 - typosで綴りを検査しUS英語へ修正
+    cmds:
+      - typos --write-changes
+
+  lint:ci:
+    # Spelling is checked by the crate-ci/typos action instead, which annotates
+    # the offending lines in the pull request diff.
+    desc: 検査 - CI環境で全Linterを検査（修正はしない）
+    cmds:
+      - npx biome check .
+      - npx prettier --check '**/*.html'
+      - npx markdownlint-cli2 "**/*.md"
+      - npx tsc --noEmit
 
   typecheck:
     desc: 検査 - TypeScriptの型を検査

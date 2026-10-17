@@ -36,19 +36,19 @@ references:
     url: "https://creamy-vision.name/"
   - name: "受賞歴"
     url: "https://internal-publication.com/"
-thumbnail: "img/works/dummy_0007_thumbnail.jpg"
+thumbnail: "img/works/dummy_0007/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0007_key.jpg" alt="dummy_0007" >}}
+{{< figure src="../img/works/dummy_0007/key.jpg" alt="dummy_0007" >}}
 
 てんぷく 羊毛 なげすてる ししょく 杏 同僚 なんべい. 冷酷 沖縄 写す 禅寺 順序 かんそく たいこうする かくしゅう. 備える 不況 性格 りりしい たいりく がんばる ぐん 暴力.
 
 ねんじ ふくへい きゅうりょう 山葵 普段 ついたち 撃つ. てんぷく かくじっけん 迫る しょくん. なおさら ずいぶん 甲乙 抑制 いっこ 乙 れいせい さいげつ.
 
-{{< figure class="w-screen" src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0007/sub.jpg" alt="dummy_0007" >}}
 
 米兵 たんれん えきびょう やさしい けいじばん みなと 数詞 めいしょ. かんかつ 浸す 没頭 やしなう 禅寺 甲乙 うらぎり 性病 殺人者. つうこん きゅうりょう 号 移動 抑制.
 
 お盆 思い遣り 大間違い とめる 敵 しゃっか やさしい ざんぴん ざせき. ごふく とうほう すんか 太る 人柄 いきどおり. まほうつかい とりあえず かいぞく.
 
-{{< figure src="../img/works/dummy_0007_sub.jpg" alt="dummy_0007" >}}
+{{< figure src="../img/works/dummy_0007/sub.jpg" alt="dummy_0007" >}}

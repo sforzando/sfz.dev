@@ -8,6 +8,16 @@ pre-commit:
         task gs:hide
         git add '*.secret' .gitsecret/paths/mapping.cfg
 
+    # No glob: a typo can live in any text file, and a whole-repo scan takes
+    # about 50ms. Lefthook runs commands without a priority last, so without an
+    # explicit priority this would land after format; a rewritten word can
+    # shorten a line enough for Prettier to want to rejoin it, so spelling has
+    # to settle before the formatters get their turn.
+    lint:typos:
+      priority: 1
+      run: task lint:typos
+      stage_fixed: true
+
     format:
       glob: "*.{js,ts,json,css,html}"
       run: task format

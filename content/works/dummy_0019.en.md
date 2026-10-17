@@ -31,19 +31,19 @@ references:
     url: "https://delectable-density.biz"
   - name: "ante mollitia"
     url: "https://probable-expansion.net"
-thumbnail: "img/works/dummy_0019_thumbnail.jpg"
+thumbnail: "img/works/dummy_0019/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0019_key.jpg" alt="dummy_0019" >}}
+{{< figure src="../img/works/dummy_0019/key.jpg" alt="dummy_0019" >}}
 
 Tempus sponte cado corrupti distinctio aliquid crustulum. Vilicus caterva sufficio sufficio balbus sperno terra vociferor victoria. Cumque administratio abutor caritas autem omnis minima sumptus.
 
 Addo blanditiis auctus. Uberrime adopto absque crur templum abduco. Vos assumenda earum tunc argentum collum tergeo theatrum vociferor.
 
-{{< figure class="w-screen" src="../img/works/dummy_0019_sub.jpg" alt="dummy_0019" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0019/sub.jpg" alt="dummy_0019" >}}
 
 Ea dapifer tracto nihil eos acceptus. Vulnero viduo adulescens denique eligendi utpote viridis tum. Conforto patria consuasor conatus benigne trans suadeo.
 
 Carcer impedit perferendis possimus crepusculum appositus carmen strues. Copiose aequitas barba. Eum socius tonsor arx stabilis.
 
-{{< figure src="../img/works/dummy_0019_sub.jpg" alt="dummy_0019" >}}
+{{< figure src="../img/works/dummy_0019/sub.jpg" alt="dummy_0019" >}}

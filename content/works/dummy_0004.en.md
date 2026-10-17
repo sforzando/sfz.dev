@@ -27,19 +27,19 @@ collaborators:
 references:
   - name: "victus audentia"
     url: "https://considerate-worth.net/"
-thumbnail: "img/works/dummy_0004_thumbnail.jpg"
+thumbnail: "img/works/dummy_0004/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
+{{< figure src="../img/works/dummy_0004/key.jpg" alt="dummy_0004" >}}
 
 Ascisco vacuus stipes tonsor ventosus utrum aiunt. Commodi unde benevolentia praesentium. Verbera corona quidem.
 
 Totam cuius itaque delego sublime viridis cognomen voluptas convoco alveus. Turbo ubi abutor demens cruentus cresco tantum somniculosus asper reiciendis. Combibo ullam aveho.
 
-{{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0004/sub.jpg" alt="dummy_0004" >}}
 
 Venio deludo sponte condico. Demo atrocitas voluptate aestivus. Capto aptus arbustum admiratio advoco atrocitas tres torqueo sollicito.
 
 Crinis iure aveho totidem. Vinitor vilicus cras via. Creta illo suffragium tempora delicate cunae.
 
-{{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
+{{< figure src="../img/works/dummy_0004/sub.jpg" alt="dummy_0004" >}}

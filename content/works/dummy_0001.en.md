@@ -33,19 +33,19 @@ references:
     url: "https://steep-scholarship.name"
   - name: "quaerat deduco"
     url: "https://darling-sonata.com/"
-thumbnail: "img/works/dummy_0001_thumbnail.jpg"
+thumbnail: "img/works/dummy_0001/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0001_key.jpg" alt="dummy_0001" >}}
+{{< figure src="../img/works/dummy_0001/key.jpg" alt="dummy_0001" >}}
 
 Adamo volubilis sui tyrannus. Ventus degusto decerno ultra adhaero curis tenax terebro articulus dolorem. Tenus tamen summa vel tam.
 
 Substantia depromo tardus tero ara vetus tot terminatio assumenda. Deporto veritas conduco sumptus utrum deserunt decipio adstringo. Carmen colo neque cursim vulnus cena studio.
 
-{{< figure class="w-screen" src="../img/works/dummy_0001_sub.jpg" alt="dummy_0001" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0001/sub.jpg" alt="dummy_0001" >}}
 
 Tumultus depono verbera commemoro voro color exercitationem synagoga. Error ipsum correptius consuasor certe claro statim. Vesper desino contigo similique terra dolore.
 
 Approbo summopere usque sub adstringo adfectus. Aestivus caste ocer. Amo clementia accedo terror defessus aer culpa curiositas.
 
-{{< figure src="../img/works/dummy_0001_sub.jpg" alt="dummy_0001" >}}
+{{< figure src="../img/works/dummy_0001/sub.jpg" alt="dummy_0001" >}}

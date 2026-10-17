@@ -36,19 +36,19 @@ references:
     url: "https://warmhearted-inspection.biz"
   - name: "メディア掲載"
     url: "https://scornful-desk.info"
-thumbnail: "img/works/dummy_0012_thumbnail.jpg"
+thumbnail: "img/works/dummy_0012/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0012_key.jpg" alt="dummy_0012" >}}
+{{< figure src="../img/works/dummy_0012/key.jpg" alt="dummy_0012" >}}
 
 壮年 書き方 不健康 裏口 あさねぼう かいせい. せんりゅう たいやく かたみち. なんべい きゅうりょう たいさ 伝統 しっぺい.
 
 鎮める 親切 ほんそう 普段. 大尉 弥生 さいぼう. 漠然 貨幣 しあつ 日刊 出かける かせぎ 見当たる 一生.
 
-{{< figure class="w-screen" src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0012/sub.jpg" alt="dummy_0012" >}}
 
 がくふ 性病 あわれ 薬. じゅうらい とうほう ようい 黙る. ぼうりょく むぜい とくに 和尚 ぐん ぎせい がんばる こうちょく だくりゅう せん.
 
 廃棄 じじょでん となえる 寮生. ふゆかい 首 大文字 ふくへい 走り回る きいろ 専門. はちまき けす あわ 可愛い ほにゅうびん 潔い 限る きいろ 上手 迷子.
 
-{{< figure src="../img/works/dummy_0012_sub.jpg" alt="dummy_0012" >}}
+{{< figure src="../img/works/dummy_0012/sub.jpg" alt="dummy_0012" >}}

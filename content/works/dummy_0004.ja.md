@@ -27,19 +27,19 @@ collaborators:
 references:
   - name: "公式ウェブサイト"
     url: "https://considerate-worth.net/"
-thumbnail: "img/works/dummy_0004_thumbnail.jpg"
+thumbnail: "img/works/dummy_0004/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0004_key.jpg" alt="dummy_0004" >}}
+{{< figure src="../img/works/dummy_0004/key.jpg" alt="dummy_0004" >}}
 
 好奇心 浅い つぎつぎ この頃 悲しみ 貨幣. 指紋 泳ぐ 辞儀する. 没落 没落 えきびょう ぎせい けす ふじょ 川底 ほうげん 七つ.
 
 魅力 ほ ぜんにほん かせぎ とうとい 牛乳 主観的 おくれる. もちいる あらじお 買い物 やさしい さわ 雄犬 しめる. こうちょく あれる ちょうりょく とくに 血液 移す 主に 全日本 きょだい.
 
-{{< figure class="w-screen" src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0004/sub.jpg" alt="dummy_0004" >}}
 
 繁茂 悪霊 じょうだん さわ 病床 とう 部首. 暴力 頑張れ せいじょう 大文字 没落 いしゃりょう かいじゅう ほんるいだ. かつ じっかん じょうき 電源 狂う えんちょうする 原油.
 
 山葵 せんじょうざい 親切 あらそう. 独裁 秘める 狂う. 燃やす 俵 おとこのこ 品詞 桜色.
 
-{{< figure src="../img/works/dummy_0004_sub.jpg" alt="dummy_0004" >}}
+{{< figure src="../img/works/dummy_0004/sub.jpg" alt="dummy_0004" >}}

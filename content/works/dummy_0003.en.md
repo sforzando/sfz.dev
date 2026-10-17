@@ -36,19 +36,19 @@ references:
     url: "https://primary-waist.name/"
   - name: "suscipit eum victus"
     url: "https://foolish-gripper.biz"
-thumbnail: "img/works/dummy_0003_thumbnail.jpg"
+thumbnail: "img/works/dummy_0003/thumbnail.jpg"
 ---
 
-{{< figure src="../img/works/dummy_0003_key.jpg" alt="dummy_0003" >}}
+{{< figure src="../img/works/dummy_0003/key.jpg" alt="dummy_0003" >}}
 
 Conventus nobis vesper deorsum textilis cupressus magni labore defluo depopulo. Copiose eum alveus solutio textor arma addo ullus. Subiungo commodi suus accusantium adhaero comis carpo decor carus.
 
 Cuppedia quam quo chirographum bene condico. Auctor corroboro stultus consequuntur ulterius terra vesco delicate tredecim. Arbustum defluo clibanus.
 
-{{< figure class="w-screen" src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}
+{{< figure class="w-screen" src="../img/works/dummy_0003/sub.jpg" alt="dummy_0003" >}}
 
 Timidus ocer spiculum ambulo curiositas. Desolo caelestis distinctio advoco. Nostrum volva crux.
 
 Corporis arx adsidue apud ager virga veritatis. Ustulo amicitia tripudio sodalitas cresco voco tergo cura deprecator. Varius consequatur tribuo votum pauper cauda timor compono ubi cultellus.
 
-{{< figure src="../img/works/dummy_0003_sub.jpg" alt="dummy_0003" >}}
+{{< figure src="../img/works/dummy_0003/sub.jpg" alt="dummy_0003" >}}
