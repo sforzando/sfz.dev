@@ -56,6 +56,7 @@ All notable changes to this project will be documented in this file.
 - 2026-07-29 19:44:40 :sparkles: Microsoft Clarityを導入しヒートマップ計測を開始する _by @shin-sforzando_
 - 2026-08-14 05:33:50 :sparkles: Works一覧を大型カードグリッドにリデザインする _by @shin-sforzando_
 - 2026-10-19 19:26:23 :sparkles: run typecheck and biome lint in ci and pre-commit _by @shin-sforzando_
+- 2026-10-19 19:56:44 :sparkles: respect prefers-reduced-motion in background and view transitions _by @shin-sforzando_
 
 ### Refactor
 
