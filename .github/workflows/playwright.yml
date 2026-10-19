@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: CI
 
 on:
   workflow_dispatch:
@@ -37,6 +37,13 @@ jobs:
         cache: "npm"
     - name: Install Dependencies
       run: task install:ci
+    # Hugo's js.Build and Playwright both strip types without checking them,
+    # so this is the only gate that keeps type errors out of main.
+    # Placed before Playwright so a type error fails in seconds, not minutes.
+    - name: Typecheck
+      run: task typecheck
+    - name: Lint
+      run: task lint:biome
     - name: Run Playwright tests
       run: task test:ci
     - uses: actions/upload-artifact@v7

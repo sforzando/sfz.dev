@@ -18,6 +18,11 @@ pre-commit:
       run: task lint:markdown
       stage_fixed: true
 
+    # tsc checks the whole project, so the glob only decides whether to run it
+    typecheck:
+      glob: "*.ts"
+      run: task typecheck
+
     test:
       run: task test:headless
 

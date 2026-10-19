@@ -197,6 +197,9 @@ task lighthouse
 # TypeScriptの型検査
 task typecheck
 
+# BiomeでJS/TSを検査
+task lint:biome
+
 # コード整形
 task format
 
@@ -221,7 +224,9 @@ task gs:reveal
 task update:changelog
 ```
 
-> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task test:headless`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+> **注意**: Lefthookのpre-commitフックにより、コミット時に `task format`・`task lint:markdown`・`task typecheck`（`.ts` 変更時のみ）・`task test:headless`（Playwright）が自動実行される。Playwrightテストが走るためコミットに数分かかる場合がある。
+>
+> **CI**: GitHub Actions（`.github/workflows/playwright.yml`、ワークフロー名 `CI`）は Playwright の前に `task typecheck` と `task lint:biome` を実行する。
 
 ## セキュリティ
 
