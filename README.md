@@ -80,6 +80,7 @@ task: Available tasks for this project:
 * gs:hide:                   秘匿 - git-secretで秘密情報を暗号化
 * gs:reveal:                 暴露 - git-secretで秘密情報を復号化
 * install:ci:                導入 - CI環境用依存パッケージをインストール
+* lint:biome:                検査 - BiomeでJS/TSを検査
 * lint:markdown:             検査 - Markdownlintでマークダウンを検査
 * outdated:versions:         点検 - ツール（Congo/Hugo/Go）のバージョンを確認
 * test:ci:                   試験 - CI環境でPlaywrightテスト実行
@@ -178,6 +179,9 @@ which checks types. Run the type checker explicitly:
 ```shell
 task typecheck
 ```
+
+CI runs `task typecheck` and `task lint:biome` before the Playwright tests, and
+the pre-commit hook runs `task typecheck` whenever a `.ts` file is staged.
 
 ### Deploy
 
