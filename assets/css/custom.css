@@ -87,6 +87,16 @@ html.dark::view-transition {
   }
 }
 
+/* The zoom is decorative motion; under reduced motion swap pages instantly,
+   matching the background animation which also stops for this preference. */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
+}
+
 /* overflow:hidden (from the overflow-hidden Tailwind class on the element) creates
    a BFC — absolutely-positioned children are clipped at layout time and cannot
    expand document scrollWidth on any browser including iOS Safari/WebKit.

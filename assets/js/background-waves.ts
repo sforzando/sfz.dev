@@ -53,6 +53,9 @@ const raycaster = new THREE.Raycaster()
 
 let animationTime = 0
 let previousFrameTime = 0
+let animationFrameId = 0 // 0 = loop stopped; requestAnimationFrame never returns 0
+
+const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -390,7 +393,8 @@ function updateCamera(): void {
 }
 
 function animate(): void {
-  requestAnimationFrame(animate)
+  // Keep the latest id so stopAnimation() can cancel whichever frame is pending
+  animationFrameId = requestAnimationFrame(animate)
 
   // Normalize to 60fps ticks so wave speed is frame-rate independent
   const now = performance.now()
@@ -403,6 +407,36 @@ function animate(): void {
   updateWaves()
   updateCamera()
   renderer.render(scene, camera)
+}
+
+function startAnimation(): void {
+  if (animationFrameId !== 0) return
+  // Without this reset the first tick would count the whole paused span
+  previousFrameTime = 0
+  animationFrameId = requestAnimationFrame(animate)
+}
+
+function stopAnimation(): void {
+  cancelAnimationFrame(animationFrameId)
+  animationFrameId = 0
+}
+
+// Renders the current state once without advancing waves, scatter or camera
+// easing, so a reduced-motion page shows a still image instead of a blank canvas.
+function renderStillFrame(): void {
+  camera.lookAt(lookTarget)
+  renderer.render(scene, camera)
+}
+
+// Reduced motion stops the loop outright rather than slowing it: WCAG 2.3.3
+// covers motion triggered by interaction too, and an idle loop still burns CPU.
+function applyMotionPreference(): void {
+  if (reducedMotionQuery.matches) {
+    stopAnimation()
+    renderStillFrame()
+  } else {
+    startAnimation()
+  }
 }
 
 // ── Controls ───────────────────────────────────────────────────────────────────
@@ -462,6 +496,8 @@ function applyScatter(localPoint: THREE.Vector3): void {
 }
 
 function handleClickAt(clientX: number, clientY: number): void {
+  // Queued impulses would otherwise burst out later if motion is re-enabled
+  if (reducedMotionQuery.matches) return
   const mouse = new THREE.Vector2(
     (clientX / window.innerWidth) * 2 - 1,
     -(clientY / window.innerHeight) * 2 + 1
@@ -499,11 +535,21 @@ function onResize(): void {
   cameraRest.y = position.y
   cameraRest.z = position.z
   cameraRest.locked = false
+
+  // No loop will ease the camera to its new goal, so jump there and redraw;
+  // otherwise the still frame stays stretched to the old aspect ratio.
+  if (animationFrameId === 0) {
+    camera.position.set(cameraGoal.x, cameraGoal.y, cameraGoal.z)
+    renderStillFrame()
+  }
 }
 
 // ── Entry point ────────────────────────────────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", () => {
   init()
-  animate()
+  // Shape the mesh once so a still frame shows waves rather than a flat grid
+  updateWaves()
+  applyMotionPreference()
+  reducedMotionQuery.addEventListener("change", applyMotionPreference)
 })
