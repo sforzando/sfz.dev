@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-10-19
+Last updated: 2026-10-20
 
 All notable changes to this project will be documented in this file.
 
@@ -28,6 +28,7 @@ All notable changes to this project will be documented in this file.
 - 2026-07-29 04:44:00 :bug: correct the hugoVersion claim and refresh the pin _by @shin-sforzando_
 - 2026-10-17 11:14:26 :bug: bump vulnerable transitive deps flagged by dependabot _by @shin-sforzando_
 - 2026-10-17 13:08:00 :bug: pin playwright to 1.63.0 until linux webkit is fixed _by @shin-sforzando_
+- 2026-10-20 10:49:20 :bug: override vulnerable transitive dev deps without upstream fixes _by @shin-sforzando_
 
 ### Features
 
